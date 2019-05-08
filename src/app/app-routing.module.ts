@@ -1,3 +1,4 @@
+import { BuyerSideNavbarComponent } from './buyer/buyer-side-navbar/buyer-side-navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './shared/signin/signin.component';
 import { NgModule } from '@angular/core';
