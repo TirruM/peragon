@@ -1,0 +1,55 @@
+.side-bg {
+    background-color: #222d32;
+}
+#dashboard {
+    .small-box {
+        border-radius: 2px;
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        height: 200px;
+        color: #fff !important;
+        .inner {
+            padding: 10px;
+            height: 169px;
+            h3 {
+                z-index: 5;
+                font-size: 38px;
+                font-weight: bold;
+                margin: 0 0 10px 0;
+                white-space: nowrap;
+                padding: 0;
+                font-family: 'Source Sans Pro',sans-serif;  
+            }
+        }
+        p {
+            z-index: 5;
+            font-size: 15px;
+            margin: 0 0 10px;
+        }
+        // .icon {
+        //     .ion-bag:before {
+        //         content: "\f110";
+        //     }
+        // }
+        .small-box-footer {
+            position: relative;
+            text-align: center;
+            padding: 3px 0;
+            color: #fff;
+            color: rgba(255,255,255,0.8);
+            display: block;
+            z-index: 10;
+            background: rgba(0,0,0,0.1);
+            text-decoration: none;
+        }
+            
+    }
+    .bg-aqua { background-color: #00c0ef !important; }
+    .bg-green { background-color: #00a65a !important; }
+    .bg-yellow { background-color: #f39c12 !important; }
+    .bg-red { background-color: #dd4b39 !important; }
+    .bg-violet { background-color: #7460ef !important; }
+    .bg-blue { background-color: #3c8dbc !important; }
+}
