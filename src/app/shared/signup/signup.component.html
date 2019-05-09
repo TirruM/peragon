@@ -1,3 +1,202 @@
-<p>
-  signup works!
-</p>
+<div class="container signup-body">
+  <h4>Complete Your Sign Up
+  </h4>
+  <div [hidden]="isRegisterForm" class="container">
+    <h6>Choose Your Type</h6>
+    <mat-card class="tp-card mat-elevation-z5">
+      <mat-card-header>
+        <div mat-card-avatar class="tp-header-image"></div>
+        <mat-card-title>Buyer</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          You are a buyer, working for an apparel brand, private label or your own business. Create your personal login
+          here.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="selectSignUp(0)">Iam a buyer</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="tp-card mat-elevation-z5">
+      <mat-card-header>
+        <div mat-card-avatar class="tp-header-image"></div>
+        <mat-card-title>Manufacturer</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          You are an apparel garment manufacturer or sub-contractor, not an agent. Create your account here.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="selectSignUp(1)">Iam a manufacturer</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+  <div class="clearfix"></div>
+
+
+  <div [hidden]="!isRegisterForm">
+    <div class="container" [hidden]="!isManufacurer">
+      <mat-card class="form-card mat-elevation-z5 m-auto">
+        <h5>Fill out information</h5>
+        <form [formGroup]="manufacturersignupForm" class="example-form">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="First name"
+                      [formControl]="manufacturersignupForm.controls['firstname']">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Last name" [formControl]="manufacturersignupForm.controls['lastname']">
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="E-mail" [formControl]="manufacturersignupForm.controls['email']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Company name" [formControl]="manufacturersignupForm.controls['companyname']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Address" [formControl]="manufacturersignupForm.controls['address']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="City" [formControl]="manufacturersignupForm.controls['city']">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Zip code" [formControl]="manufacturersignupForm.controls['zipcode']">
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Country" [formControl]="manufacturersignupForm.controls['country']">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Phone number" [formControl]="manufacturersignupForm.controls['phno']">
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Website" [formControl]="manufacturersignupForm.controls['website']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Reference code"
+                [formControl]="manufacturersignupForm.controls['referencecode']">
+            </mat-form-field>
+          </div>
+          <button mat-stroked-button color="primary" (click)="manufactureSignUp()">Join</button>
+
+          <button mat-flat-button color="primary" class="back-btn" (click)="back()">Back</button>
+          <!-- [disabled]="manufacturersignupForm.invalid" -->
+        </form>
+      </mat-card>
+    </div>
+    <div class="container" [hidden]="isManufacurer">
+      <mat-card class="form-card mat-elevation-z5 m-auto">
+        <h5>Fill out information</h5>
+        <form [formGroup]="buyersignupForm" class="example-form">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="First name" [formControl]="buyersignupForm.controls['firstname']">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Last name" [formControl]="buyersignupForm.controls['lastname']">
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="E-mail" [formControl]="buyersignupForm.controls['email']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Company name" [formControl]="buyersignupForm.controls['companyname']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Job title" [formControl]="buyersignupForm.controls['jobtitle']">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Country" [formControl]="buyersignupForm.controls['country']">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Phone number" [formControl]="buyersignupForm.controls['phno']">
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Website" [formControl]="buyersignupForm.controls['website']">
+            </mat-form-field>
+          </div>
+          <button mat-stroked-button color="primary" (click)="buyerSignup()">Join as a buyer</button>
+
+          <button mat-flat-button color="primary" class="back-btn" (click)="back()">Back</button>
+          <!-- [disabled]="manufacturersignupForm.invalid" -->
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>

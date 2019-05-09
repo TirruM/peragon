@@ -22,7 +22,7 @@
   }
   
   #sidebar-wrapper .list-group {
-    width: 15rem;
+    width: 253px;
   }
   
   #page-content-wrapper {
@@ -50,7 +50,44 @@
 
   
   ///custom css
+  .user-panel {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    .pull-left {
+      float: left!important;
+      
+      }
+      .image {
+        img {
+          width: 100%;
+          max-width: 45px;
+          height: auto;
+        }
+    }
+    .info {
+      color: #fff;
+      padding: 5px 5px 5px 15px;
+    line-height: 1;
+    // position: absolute;
+    left: 55px;
+     p {
+      font-weight: 600;
+      margin-bottom: 9px;
+     }
+     a {
+      color: #fff;
+      text-decoration: none;
+      padding-right: 5px;
+      margin-top: 3px;
+      font-size: 11px;
+     }
+    }
+  }
   .active-list-item {
-      background-color: black !important;
-      color:#fff
+      background-color: #1e282c !important;
+      color:#fff;
+      border-left-width: 3px;
+      border-left-color: #be2859;
+      border-left-style: solid;
   }

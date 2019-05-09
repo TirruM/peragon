@@ -1,16 +1,20 @@
-<div>
+<div class="signin-body">
   <h4>Login</h4>
-  <div class="form-group">
-    <div class="row">
-      <input type="text" placeholder="E-mail">
-    </div>
+  <div class="container">
+    <mat-card class="form-card mat-elevation-z5 m-auto">
+      <form [formGroup]="loginForm" class="example-form">
 
-    <div class="row">
-      <input type="text" placeholder="Password">
-    </div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="E-mail" [formControl]="loginForm.controls['email']">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="E-mail" placeholder="Password" [formControl]="loginForm.controls['password']">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <button mat-raised-button [disabled]="loginForm.invalid" color="primary" (click)="login()">Login</button>
+        </mat-form-field>
 
-    <div class="row">
-      <button (click)="login()">Login</button>
-    </div>
+      </form>
+    </mat-card>
   </div>
 </div>
