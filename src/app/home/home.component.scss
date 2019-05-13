@@ -1,3 +1,5 @@
+$primary-bg-color: #f40785;
+
 h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
 /********************* shopping Demo-1 **********************/
@@ -195,8 +197,10 @@ a {color:#696969;}
     background-image: url('../../assets/Images/background.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 90vh;
     padding-top: 50px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 }
 .banner-image h1, .banner-image h5{
     color:#ffffff;
@@ -205,6 +209,11 @@ a {color:#696969;}
 .image-text-box{
     width:650px;
     padding: 40px 0 0 60px;
+        .signup-btn {
+            background-color: $primary-bg-color;
+            color: #fff;
+            padding-bottom: 13px;
+        }
 }
 
 /* buyer-manufacturers section */
@@ -214,7 +223,7 @@ a {color:#696969;}
 }
 
 .bm-head h2 {
-    color: #f36ce2;
+    color: $primary-bg-color;
     font-weight: 600;
     margin-bottom: 25px;
 }
@@ -222,4 +231,26 @@ a {color:#696969;}
 .bm-para{
     font-weight: 700;
     margin-bottom: 30px;
+}
+.list-para p {
+    margin-bottom: 0;
+    &::before {
+        content: f00c;
+    }
+    i {
+        padding-right: 3px;
+    }
+}
+.head-part {
+    position: relative;
+    .our_members-btn {
+        color: $primary-bg-color;
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+    }
+}
+.signup-btn {
+    background-color: $primary-bg-color;
+    color: #fff;
 }
