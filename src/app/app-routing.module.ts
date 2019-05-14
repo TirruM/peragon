@@ -5,12 +5,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SignupComponent } from './shared/signup/signup.component';
 import { SearchComponent } from './search/search.component';
+import { ForBuyerComponent } from './for-buyer/for-buyer.component';
+import { ForManufacturersComponent } from './for-manufacturers/for-manufacturers.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'search', component: SearchComponent}
+  { path: 'search', component: SearchComponent},
+  { path: 'forBuyer', component: ForBuyerComponent},
+  { path: 'forManufacturers', component: ForManufacturersComponent},
+  { path: 'howitworks', component: HowItWorksComponent}
 ];
 
 @NgModule({
