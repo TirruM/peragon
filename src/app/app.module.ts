@@ -13,13 +13,20 @@ import { SignupComponent } from './shared/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
 import { SellerModule } from './seller/seller.module';
+import { ForBuyerComponent } from './for-buyer/for-buyer.component';
+import { ForManufacturersComponent } from './for-manufacturers/for-manufacturers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent, SigninComponent, SignupComponent, SearchComponent
+    HomeComponent, 
+    SigninComponent, 
+    SignupComponent, 
+    SearchComponent, 
+    ForBuyerComponent, 
+    ForManufacturersComponent
   ],
   imports: [
     BrowserModule,
