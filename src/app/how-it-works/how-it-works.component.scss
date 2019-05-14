@@ -1,0 +1,57 @@
+$primary-bg-color: #f40785;
+
+/* banner section */
+.banner-image {
+    background-image: url('../../assets/Images/background.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 50px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    h1, h5{
+        color:#ffffff;
+        padding-bottom: 15px;
+    }
+}
+
+.image-text-box{
+    width:650px;
+    padding: 40px 0 0 60px;
+        .signup-btn {
+            background-color: $primary-bg-color;
+            color: #fff;
+            padding-bottom: 13px;
+        }
+}
+
+.company-profile, .bookmarks, digital-supplier{
+    padding: 40px 0;
+    .top-mar{
+        margin-top:40px;
+    }
+}
+.digital-supplier{
+    padding-bottom: 40px;
+}
+
+.list-para p {
+    margin-bottom: 15px;
+    &::before {
+        content: f00c;
+    }
+    i {
+        padding-right: 3px;
+    }
+}
+
+.head-color{
+    color: $primary-bg-color;
+    margin-bottom: 20px;
+}
+
+.res-img{
+    width:540px;
+    height: 300px;
+    border: 1px solid #69616136;
+}
