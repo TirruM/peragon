@@ -1,0 +1,147 @@
+$primary-bg-color: #f40785;
+
+/*------------------------------------*\
+  #Main Image Section
+\*------------------------------------*/
+
+.buyers-hero {
+    position: relative;
+    .banner-hero-image {
+        background-image: url('../../assets/Images/background.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        padding-top: 50px;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+        .image-text-box {
+            padding: 40px 0 0 60px;
+            h1 {
+                color:#ffffff;
+                padding-bottom: 15px;
+            }
+            p {
+                color: #fff;
+                font-size: 21px;
+                margin-bottom: 30px;
+            }
+            .signup-btn {
+                background-color: $primary-bg-color;
+                color: #fff;
+                padding-bottom: 13px;
+            }
+        }
+    }
+}
+
+.filter_wrapper {
+    border: 1px solid #f2f2f2;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    .filter_search_btn {
+        text-align: end;
+        color: #fff;
+    }
+}
+
+.about_manufacturers {
+    margin-top: 3rem;
+    .manu_header {
+        h3 {
+            color: $primary-bg-color;
+        }
+    }
+    .manufact_card {
+        img {
+            width: 150px;
+        }
+        .ratings {
+            color: yellow;
+            padding-right: 5px;
+        }
+        .manufact_details {
+            margin-top: 5px;
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: block;
+            }
+            .manufact_brand {
+                margin-left: 10px;
+                margin-top: 7px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.sport-source-info {
+    margin-top: 3rem;
+    .title {
+        border-bottom:4px solid $primary-bg-color;
+        width: 485px;
+        margin: auto;
+        h3 {
+            text-align: center;
+        }
+    }
+    .info {
+        h5 {
+            color: $primary-bg-color;
+        }
+        p {
+            margin-bottom: 0;
+            i {
+                padding-right: 7px;
+            }
+        }
+    }
+}
+
+.manufacturers_list {
+    margin: 2rem 0;
+    .title {
+        color: $primary-bg-color;
+    }
+    .buyers_card {
+        border: 1px solid black;
+        .card-wrapper {
+            .rfqs {
+                label {
+                    background-color: $primary-bg-color;
+                    color: #fff;
+                    padding: 5px 10px;                
+                }
+            }
+            .manfact_details_card {
+                width: 150px;
+                margin: auto;
+                .ratings {
+                    color: yellow;
+                }
+                p {
+                    margin-bottom: 0.2rem;
+                }
+                .units {
+                    background-color: black;
+                    color: #fff;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+.become_a_member {
+    margin: 2rem 0;
+    .title {
+        color: $primary-bg-color;
+    }
+    .working_img {
+        img {
+            width: 276px;
+        }
+    }
+}
