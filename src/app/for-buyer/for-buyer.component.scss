@@ -52,13 +52,20 @@ $primary-bg-color: #f40785;
         }
     }
     .manufact_card {
-        img {
-            width: 150px;
-        }
+        box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+        .manufact_logo {
+            height: 150px;
+            img {
+                width: 150px;
+            }
+        }        
         .ratings {
             color: yellow;
             padding-right: 5px;
         }
+        .reviews {
+            height: 60px;
+        }        
         .manufact_details {
             margin-top: 5px;
             img {
