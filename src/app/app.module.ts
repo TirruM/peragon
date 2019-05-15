@@ -16,6 +16,7 @@ import { SellerModule } from './seller/seller.module';
 import { ForBuyerComponent } from './for-buyer/for-buyer.component';
 import { ForManufacturersComponent } from './for-manufacturers/for-manufacturers.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
     SignupComponent, 
     SearchComponent, 
     ForBuyerComponent, 
-    ForManufacturersComponent, HowItWorksComponent
+    ForManufacturersComponent, HowItWorksComponent, PricingComponent
   ],
   imports: [
     BrowserModule,
