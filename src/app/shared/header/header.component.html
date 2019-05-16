@@ -18,14 +18,17 @@
         <a class="nav-link" [routerLink]="['/forManufacturers']">For Manufacturers</a>
       </li>
       <li class="nav-item custom-nav-item">
-        <a class="nav-link"  [routerLink]="['/pricing']">Pricing</a>
+        <a class="nav-link" [routerLink]="['/pricing']">Pricing</a>
       </li>
-      <li class="nav-item join-btn">
+      <li class="nav-item join-btn" *ngIf="signInFlag">
         <a class="nav-link" (click)="signUp()">Join Now</a>
       </li>
-      <li class="nav-item login-btn">
-          <a class="nav-link" (click)="signIn()">Login</a>
-        </li>
+      <li class="nav-item login-btn" *ngIf="signInFlag">
+        <a class="nav-link" (click)="signIn()">Login</a>
+      </li>
+      <li class="nav-item login-btn" *ngIf="!signInFlag">
+        <a class="nav-link" (click)="logout()">Logout</a>
+      </li>
     </ul>
   </div>
 </nav>

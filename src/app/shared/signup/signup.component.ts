@@ -1,3 +1,4 @@
+import { BroadcastserviceService } from './../../services/broadcastservice.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -13,7 +14,7 @@ export class SignupComponent implements OnInit {
   buyersignupForm: FormGroup;
   isManufacurer: boolean = false;
 
-  constructor(private router: Router, private fb: FormBuilder) {
+  constructor(private router: Router, private fb: FormBuilder, private sharedService: BroadcastserviceService) {
     this.loadManufacturerForm(fb);
     this.loadBuyerForm(fb);
   }
@@ -68,8 +69,18 @@ export class SignupComponent implements OnInit {
       "email": this.manufacturersignupForm.value.email,
       "companyname": this.manufacturersignupForm.value.companyname,
     }
+    //localStorage.setItem("manufacturelogin_flag", "0");
+    this.sharedService.hideButtons.emit(true);
     localStorage.setItem("manufactureData", JSON.stringify(userObj));
-    this.router.navigateByUrl("/seDashboard");
+    if (localStorage.getItem("manufacturelogin_flag") == "0") {
+      this.router.navigateByUrl("/addProduct");
+    } if (localStorage.getItem("manufacturelogin_flag") == "1") {
+      this.router.navigateByUrl("/seDashboard");
+    } else {
+      localStorage.setItem("manufacturelogin_flag", "0");
+      this.router.navigateByUrl("/addProduct");
+    }
+
   }
   public buyerSignup() {
     this.router.navigateByUrl("/buyerDashboard");
