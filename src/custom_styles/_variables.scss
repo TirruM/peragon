@@ -1,0 +1,43 @@
+$gradient_bg_color: linear-gradient(45deg, #a2088e 0%, #ce354e 35%, #f2581d 100%);
+
+$box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+
+$text-color: #262626;
+
+$p-letter-spacing: 1px;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+%h1-styles {
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 3.3px;
+    font-weight: 700;
+}
+%h-styles {
+    font-size: 34px;
+    letter-spacing: 4.5px;
+    line-height: 58.2px;
+    margin-bottom: 20px;
+}
+%btn-styles {
+    color: #fff;
+    background-image: $gradient_bg_color;
+    @include border-radius(30px);
+}
+%p-styles {
+    color: $text-color;
+    font-size: 20px;
+    letter-spacing: $p-letter-spacing;
+}
+%list-p-styles {
+    color: $text-color;
+    font-size: 17px;
+    letter-spacing: $p-letter-spacing;
+    font-weight: 400;
+    padding-bottom: 10px;
+}

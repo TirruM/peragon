@@ -1,0 +1,7 @@
+@import "../../custom_styles/variables";
+
+
+.custom-btn {
+    @extend %btn-styles;
+    padding: 6px 26px;
+}
