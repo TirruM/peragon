@@ -1,3 +1,4 @@
+import { BroadcastserviceService } from './../../services/broadcastservice.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -10,11 +11,12 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class SigninComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(private router: Router, private fb: FormBuilder) { this.loadLoginForm(fb); }
+  constructor(private router: Router, private fb: FormBuilder, private sharedService: BroadcastserviceService) { this.loadLoginForm(fb); }
 
   ngOnInit() {
 
   }
+
 
   public loadLoginForm(fb) {
     this.loginForm = fb.group({
@@ -25,10 +27,21 @@ export class SigninComponent implements OnInit {
   }
 
   public login() {
+    this.sharedService.hideButtons.emit(true);
     if (this.loginForm.value.email === 'buyer@gmail.com' && this.loginForm.value.password === 'buyer') {
       this.router.navigateByUrl("/buyerDashboard")
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
-      this.router.navigateByUrl("/seDashboard")
+      if (localStorage.getItem("manufacturelogin_flag") == "0") {
+        this.router.navigateByUrl("/addProduct");
+      } if (localStorage.getItem("manufacturelogin_flag") == "1") {
+        this.router.navigateByUrl("/seDashboard");
+      } else {
+        localStorage.setItem("manufacturelogin_flag", "0");
+        this.router.navigateByUrl("/addProduct");
+      }
+
+
+      // this.router.navigateByUrl("/seDashboard")
     }
 
   }

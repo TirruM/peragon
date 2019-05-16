@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare var $;
 
@@ -11,7 +12,7 @@ export class SellerMyproductsComponent implements OnInit {
   @ViewChild('dataTable') table;
   dataTable: any;
   
-  constructor() { }
+  constructor(private router: Router ) { }
 
   ngOnInit() {
     this.dataTable = $(this.table.nativeElement);
@@ -21,5 +22,11 @@ export class SellerMyproductsComponent implements OnInit {
       }
     );
   }
+
+  public addNewProduct(){
+    this.router.navigateByUrl('/addProduct');
+  }
+
+  
 
 }

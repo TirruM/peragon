@@ -15,7 +15,7 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="selectSignUp(0)">Iam a buyer</button>
+        <button mat-raised-button class="join-btn" (click)="selectSignUp(0)">Iam a buyer</button>
       </mat-card-actions>
     </mat-card>
 
@@ -30,7 +30,7 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="selectSignUp(1)">Iam a manufacturer</button>
+        <button mat-raised-button class="join-btn" (click)="selectSignUp(1)">Iam a manufacturer</button>
       </mat-card-actions>
     </mat-card>
 
@@ -124,9 +124,9 @@
                 [formControl]="manufacturersignupForm.controls['referencecode']">
             </mat-form-field>
           </div>
-          <button mat-stroked-button color="primary" (click)="manufactureSignUp()">Join</button>
+          <button mat-stroked-button class="join-btn" (click)=" manufactureSignUp()">Join</button>
 
-          <button mat-flat-button color="primary" class="back-btn" (click)="back()">Back</button>
+          <button mat-flat-button class="back-btn" (click)="back()">Back</button>
           <!-- [disabled]="manufacturersignupForm.invalid" -->
         </form>
       </mat-card>
@@ -191,9 +191,9 @@
               <input matInput placeholder="Website" [formControl]="buyersignupForm.controls['website']">
             </mat-form-field>
           </div>
-          <button mat-stroked-button color="primary" (click)="buyerSignup()">Join as a buyer</button>
+          <button mat-stroked-button class="join-btn" (click)=" buyerSignup()">Join as a buyer</button>
 
-          <button mat-flat-button color="primary" class="back-btn" (click)="back()">Back</button>
+          <button mat-flat-button class="back-btn" (click)="back()">Back</button>
           <!-- [disabled]="manufacturersignupForm.invalid" -->
         </form>
       </mat-card>
