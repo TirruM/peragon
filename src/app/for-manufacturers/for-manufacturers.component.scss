@@ -1,6 +1,5 @@
 @import "../../custom_styles/variables";
 $primary-bg-color: #f40785;
-@import "../../custom_styles/variables";
 
 
 /*------------------------------------*\
@@ -17,7 +16,8 @@ $primary-bg-color: #f40785;
             @extend %h-styles;
         }
 
-
+    }
+}
 /*------------------------------------*\
   #FILTER-SECTION
 \*------------------------------------*/
@@ -49,7 +49,7 @@ $primary-bg-color: #f40785;
         box-shadow: $box-shadow;
         img {
             width: 150px;
-        } */
+        }
         .manufact_logo {
             height: 150px;
             img {
@@ -116,26 +116,17 @@ $primary-bg-color: #f40785;
                 padding-right: 14px;
             }
     }
+    }
 }
-
 /*------------------------------------*\
   #MANUFACTURERSLIST-SECTION
 \*------------------------------------*/
 
 .manufacturers_list {
     margin: 2rem 0;
-<<<<<<< HEAD
         .manufact_heading {
             @extend %h-styles;
         }
-=======
-    .title {
-        h2 {
-            @extend %h-styles;
-        }
-    }
-   
->>>>>>> 237794d35b04e68bfada18a9d5d8dfb308af4c6f
     .buyers_card {
         box-shadow: $box-shadow;
         .card-wrapper {
@@ -175,7 +166,6 @@ $primary-bg-color: #f40785;
     }
 }
 .become_a_member {
-<<<<<<< HEAD
     margin: 3rem 0;
     .become_heading {
         @extend %h-styles;
@@ -184,14 +174,6 @@ $primary-bg-color: #f40785;
         p {
             @extend %list-p-styles;
         }
-=======
-    margin: 2rem 0;
-    .title {
-        color: black;
-        letter-spacing: 1.5px;
-        font-size: 2rem;
-        margin-bottom: 1em;
->>>>>>> 237794d35b04e68bfada18a9d5d8dfb308af4c6f
     }
     .working_img {
         img {

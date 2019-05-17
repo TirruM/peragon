@@ -2,6 +2,7 @@
 
 .nav-bg {
     background-color: #152331;
+    // height: 63px;
 }
 .custom-nav-item .current::after {
     @extend %header-styles;       
