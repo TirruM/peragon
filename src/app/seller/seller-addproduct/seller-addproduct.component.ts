@@ -45,7 +45,7 @@ export class SellerAddproductComponent implements OnInit {
 
         reader.onload = (event) => {
           // console.log(event.target.result);
-          this.urls.push(event.target.result);
+          //this.urls.push(event.target.result);
         }
 
         reader.readAsDataURL(event.target.files[i]);
