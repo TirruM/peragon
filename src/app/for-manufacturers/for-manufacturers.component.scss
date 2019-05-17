@@ -1,57 +1,45 @@
 $primary-bg-color: #f40785;
+@import "../../custom_styles/variables";
+
 
 /*------------------------------------*\
-  #Main Image Section
+  #BANNER-SECTION
 \*------------------------------------*/
 
-.buyers-hero {
-    position: relative;
-    .banner-hero-image {
-        background-image: url('../../assets/img/tennis-manufacture.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-        padding-top: 50px;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        .image-text-box {
-            padding: 40px 0 0 60px;
-            h1 {
-                color:#ffffff;
-                padding-bottom: 15px;
-            }
-            p {
+.banner-image {
+    background-image: url('../../assets/img/tennis-manufacture.jpg');
+}
+
+
+/*------------------------------------*\
+  #FILTER-SECTION
+\*------------------------------------*/
+.buyer_search_filter {
+    margin: 60px 0;
+    .filter_header {
+        @extend %h-styles;
+    }
+        .filter_wrapper {
+            border: 1px solid #f2f2f2;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            .filter_search_btn {
+                text-align: end;
                 color: #fff;
-                font-size: 21px;
-                margin-bottom: 30px;
-            }
-            .signup-btn {
-                background-color: $primary-bg-color;
-                color: #fff;
-                padding-bottom: 13px;
             }
         }
-    }
 }
 
-.filter_wrapper {
-    border: 1px solid #f2f2f2;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    .filter_search_btn {
-        text-align: end;
-        color: #fff;
-    }
-}
-
+/*------------------------------------*\
+  #MANUFACTURERS-SECTION
+\*------------------------------------*/
 .about_manufacturers {
     margin-top: 3rem;
     .manu_header {
-        h3 {
-            color: $primary-bg-color;
-        }
+        @extend %h-styles;
     }
     .manufact_card {
+        box-shadow: $box-shadow;
         img {
             width: 150px;
         }
@@ -78,22 +66,24 @@ $primary-bg-color: #f40785;
     }
 }
 
+/*------------------------------------*\
+  #BUYERSEXP-SECTION
+\*------------------------------------*/
 .sport-source-info {
     margin-top: 3rem;
-    .title {
-        border-bottom:4px solid $primary-bg-color;
-        width: 485px;
-        margin: auto;
-        h3 {
-            text-align: center;
-        }
+    .buyers_exp {
+        @extend %h-styles;        
     }
     .info {
-        h5 {
-            color: $primary-bg-color;
+        box-shadow: $box-shadow;
+        h3 {
+            font-size: 22px;
+            color: $text-color;
+            min-height: 40px!important;
         }
         p {
             margin-bottom: 0;
+            @extend %list-p-styles;
             i {
                 padding-right: 7px;
             }
@@ -101,17 +91,21 @@ $primary-bg-color: #f40785;
     }
 }
 
+/*------------------------------------*\
+  #MANUFACTURERSLIST-SECTION
+\*------------------------------------*/
+
 .manufacturers_list {
     margin: 2rem 0;
-    .title {
-        color: $primary-bg-color;
-    }
+        .manufact_heading {
+            @extend %h-styles;
+        }
     .buyers_card {
-        border: 1px solid black;
+        box-shadow: $box-shadow;
         .card-wrapper {
             .rfqs {
                 label {
-                    background-color: $primary-bg-color;
+                    background-image: $gradient_bg_color;
                     color: #fff;
                     padding: 5px 10px;                
                 }
@@ -141,9 +135,14 @@ $primary-bg-color: #f40785;
     }
 }
 .become_a_member {
-    margin: 2rem 0;
-    .title {
-        color: $primary-bg-color;
+    margin: 3rem 0;
+    .become_heading {
+        @extend %h-styles;
+    }
+    .become_mem_list {
+        p {
+            @extend %list-p-styles;
+        }
     }
     .working_img {
         img {

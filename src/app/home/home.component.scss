@@ -17,42 +17,10 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
   #BANNER-SECTION
 \*------------------------------------*/
 
-.head-part {
-    position: relative;
-    .banner-image {
-        background-image: url('../../assets/Images/background.JPG');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-        padding-top: 50px;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        .image-text-box {
-            position: absolute;
-            left: 90px;
-            // width: 650px;
-            bottom: 140px;
-                h1
-                {
-                    padding-bottom: 15px;
-                    @extend %h1-styles;
-                }
-                h5 {
-                    color: #fff;
-                    letter-spacing: 1.5px;
-                    font-size: 2rem;
-                    margin-bottom: 1em;
-                }
-                .signup-btn {
-                    background-color: #152331;
-                    padding-bottom: 13px;
-                    @extend %btn-styles;
-                }
-        }
-    }
-    
-}
 
+.banner-image {
+            background-image: url('../../assets/Images/background.JPG');
+}
 /*------------------------------------*\
   #BUYER_MANUFACTURERS-SECTION
 \*------------------------------------*/
@@ -76,6 +44,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
         h2 {
             @extend %h-styles; 
         }
+        
         .list-para {
             margin-bottom: 30px;
             p {

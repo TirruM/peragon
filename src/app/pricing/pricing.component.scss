@@ -1,6 +1,8 @@
 @import "../../custom_styles/variables";
 
-
+.mar-padd {
+    margin-top: 70px;
+}
 .custom-btn {
     @extend %btn-styles;
     padding: 6px 26px;

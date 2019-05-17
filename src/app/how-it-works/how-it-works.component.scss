@@ -1,57 +1,51 @@
-$primary-bg-color: #f40785;
+// $primary-bg-color: #f40785;
+@import "../../custom_styles/variables";
 
-/* banner section */
-.banner-image {
-    background-image: url('../../assets/Images/background.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    padding-top: 50px;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-    h1, h5{
-        color:#ffffff;
-        padding-bottom: 15px;
-    }
-}
-
-.image-text-box{
-    width:650px;
-    padding: 40px 0 0 60px;
-        .signup-btn {
-            background-color: $primary-bg-color;
-            color: #fff;
-            padding-bottom: 13px;
-        }
-}
-
-.company-profile, .bookmarks, digital-supplier{
-    padding: 40px 0;
-    .top-mar{
-        margin-top:40px;
-    }
-}
-.digital-supplier{
-    padding-bottom: 40px;
-}
-
-.list-para p {
-    margin-bottom: 15px;
-    &::before {
-        content: f00c;
-    }
-    i {
-        padding-right: 3px;
-    }
-}
-
-.head-color{
-    color: $primary-bg-color;
+%h2-styles {
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 32px;
     margin-bottom: 20px;
 }
 
-.res-img{
-    width:540px;
-    height: 300px;
-    border: 1px solid #69616136;
+
+/*------------------------------------*\
+  #BANNER-SECTION
+\*------------------------------------*/
+
+.banner-image {
+        background-image: url('../../assets/Images/background.JPG');
 }
+
+
+/*------------------------------------*\
+  #COMPANY-SECTION,#BOOKMARKS-SECTION,#DIGITAL-SECTION
+\*------------------------------------*/
+
+.company-profile, .bookmarks, .digital-supplier {
+    margin: 60px 0;
+    .top-mar {
+                margin-top:60px;
+            }
+    h2 {
+        @extend %h2-styles;
+    }
+    .list-para {
+        margin-bottom: 30px;
+        p {
+            @extend %list-p-styles;
+            padding: 10px 70px 10px 46px;
+            line-height: 2;
+        }
+        i {
+            padding-right: 14px;
+        }
+    }
+    .res-img {
+        height: 654px;
+        width: 800px;
+        box-shadow: $box-shadow;
+    }
+
+}
+

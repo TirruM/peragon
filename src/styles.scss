@@ -7,6 +7,14 @@ a{
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif;padding-top: 60px; }
+
+hr {
+    border-top: 2px solid #f2581d !important;
+    width: 50px !important;
+    display: inline-block !important;
+    margin-bottom: 40px !important;
+    margin-top: 5px !important;
+}
 .input-form{
     margin: 15px;
 }
@@ -14,6 +22,43 @@ body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif;paddi
 .mat-elevation-z5{
     position: relative;
     z-index: 2;
+}
+/*------------------------------------*\
+  #BANNER-SECTION
+\*------------------------------------*/
+
+.head-part {
+    position: relative;
+    .banner-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        padding-top: 50px;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+        .image-text-box {
+            position: absolute;
+            left: 90px;
+            bottom: 140px;
+                h1
+                {
+                    padding-bottom: 15px;
+                    @extend %h1-styles;
+                }
+                h5 {
+                    color: #fff;
+                    letter-spacing: 1.5px;
+                    font-size: 2rem;
+                    margin-bottom: 1em;
+                }
+                .signup-btn {
+                    background-color: #152331;
+                    padding-bottom: 13px;
+                    @extend %btn-styles;
+                }
+        }
+    }
+    
 }
 
 
@@ -64,6 +109,7 @@ body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif;paddi
     background-color: #152331;
     border-radius: 30px;
     margin: 0 15px;
+    height: 45px;
     &:hover {
         box-shadow: 0px 4px 10px #f2581d;
     }

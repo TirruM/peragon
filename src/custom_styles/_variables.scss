@@ -12,6 +12,15 @@ $p-letter-spacing: 1px;
         -ms-border-radius: $radius;
             border-radius: $radius;
   }
+%header-styles {
+    content: '';
+    background-color: #e0090d;
+    color: #e0090d;
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin-top: 20px;
+}
 %h1-styles {
     font-size: 50px;
     color: #fff;
@@ -22,7 +31,6 @@ $p-letter-spacing: 1px;
     font-size: 34px;
     letter-spacing: 4.5px;
     line-height: 58.2px;
-    margin-bottom: 20px;
 }
 %btn-styles {
     color: #fff;
