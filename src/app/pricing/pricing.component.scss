@@ -5,3 +5,56 @@
     @extend %btn-styles;
     padding: 6px 26px;
 }
+h2{
+    @extend %h-styles;
+}
+.chooseyourtype{
+    p{
+        letter-spacing: 2px;
+    }
+    h5 {
+        color: black;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+}
+.buyer-pricing{
+h3{
+    letter-spacing: 2px;
+}
+.table-bordered{
+    th{
+        letter-spacing: 2px;
+    }
+    td{
+        letter-spacing: 2px;
+    }
+    
+}
+}
+
+.manufacturer-pricing{
+    h3{
+        letter-spacing: 2px;
+    }
+    .table-bordered{
+        th{
+            letter-spacing: 2px;
+        }
+        td{
+            letter-spacing: 2px;
+        }
+        
+    }
+}
+.member-info{
+    h5 {
+        color: black;
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
+   
+        
+    
+}

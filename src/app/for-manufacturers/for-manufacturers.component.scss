@@ -1,3 +1,4 @@
+@import "../../custom_styles/variables";
 $primary-bg-color: #f40785;
 
 /*------------------------------------*\
@@ -19,6 +20,13 @@ $primary-bg-color: #f40785;
             h1 {
                 color:#ffffff;
                 padding-bottom: 15px;
+                @extend %h1-styles;
+            }
+            h5 {
+                color: #fff;
+                letter-spacing: 1.5px;
+                font-size: 2rem;
+                margin-bottom: 1em;
             }
             p {
                 color: #fff;
@@ -29,36 +37,91 @@ $primary-bg-color: #f40785;
                 background-color: $primary-bg-color;
                 color: #fff;
                 padding-bottom: 13px;
+                @extend %btn-styles;
             }
         }
     }
 }
+.manufacture_search_filter{
+    .filter_header{
+        h2 {
+            color: black;
+            @extend %h-styles;
+        }
 
-.filter_wrapper {
+       
+    }
+    .filter_wrapper {       
+        border: 2px solid #f2f2f2;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        .filter_search_btn {
+            text-align: end;
+            color: #fff;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.85;
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: #262626;
+            margin-bottom: 30px;
+        }
+    }   
+}
+/* .filter_wrapper {
     border: 1px solid #f2f2f2;
     padding: 10px 20px;
     margin-bottom: 10px;
+    .filter_header{
+        h2 {
+            color: black;
+            @extend %h-styles;
+        }
+
+       
+    }
     .filter_search_btn {
         text-align: end;
         color: #fff;
     }
-}
+} */
 
 .about_manufacturers {
     margin-top: 3rem;
     .manu_header {
-        h3 {
-            color: $primary-bg-color;
+        h2 {
+            @extend %h-styles;
         }
     }
     .manufact_card {
-        img {
+        box-shadow: $box-shadow;
+       /*  img {
             width: 150px;
-        }
+        } */
+        .manufact_logo {
+            height: 150px;
+            img {
+                width: 150px;
+            }
+        }  
         .ratings {
             color: yellow;
             padding-right: 5px;
         }
+       
+        .reviews {
+            height: 80px;
+            small {
+                margin-bottom: 0.2rem;
+                font-size: 15px;
+                line-height: 1.85;
+                letter-spacing: 1.2px;
+                text-align: center;
+                color: #262626;
+                
+            }
+        }   
         .manufact_details {
             margin-top: 5px;
             img {
@@ -72,40 +135,58 @@ $primary-bg-color: #f40785;
                 margin-top: 7px;
                 p {
                     margin-bottom: 0;
+                    letter-spacing: 1px;
                 }
             }
+            
         }
     }
 }
 
 .sport-source-info {
     margin-top: 3rem;
-    .title {
+    /* .title {
         border-bottom:4px solid $primary-bg-color;
         width: 485px;
         margin: auto;
         h3 {
             text-align: center;
         }
+    } */
+
+    .title {
+        border-bottom:4px solid ;
+        width: 485px;
+        margin: auto;
+        h3 {
+        text-align: center;
+        }
     }
     .info {
         h5 {
-            color: $primary-bg-color;
+            color: black;
+            letter-spacing: 1.5px;
+            font-size: 2rem;
+            margin-bottom: 1em;
         }
-        p {
-            margin-bottom: 0;
-            i {
-                padding-right: 7px;
+        margin-bottom: 30px;
+            p {
+                @extend %list-p-styles;
             }
-        }
+            i {
+                padding-right: 14px;
+            }
     }
 }
 
 .manufacturers_list {
     margin: 2rem 0;
     .title {
-        color: $primary-bg-color;
+        h2 {
+            @extend %h-styles;
+        }
     }
+   
     .buyers_card {
         border: 1px solid black;
         .card-wrapper {
@@ -130,6 +211,10 @@ $primary-bg-color: #f40785;
                 }
                 p {
                     margin-bottom: 0.2rem;
+                    letter-spacing: 1px;
+                }
+                i {
+                    padding-right: 4px;
                 }
                 .units {
                     background-color: #939393;
@@ -143,11 +228,20 @@ $primary-bg-color: #f40785;
 .become_a_member {
     margin: 2rem 0;
     .title {
-        color: $primary-bg-color;
+        color: black;
+        letter-spacing: 1.5px;
+        font-size: 2rem;
+        margin-bottom: 1em;
     }
     .working_img {
         img {
             width: 276px;
         }
+    }
+    p {
+        @extend %list-p-styles;
+    }
+    i {
+        padding-right: 14px;
     }
 }
