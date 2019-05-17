@@ -1,3 +1,4 @@
+@import "../../custom_styles/variables";
 $primary-bg-color: #f40785;
 @import "../../custom_styles/variables";
 
@@ -9,6 +10,12 @@ $primary-bg-color: #f40785;
 .banner-image {
     background-image: url('../../assets/img/tennis-manufacture.jpg');
 }
+.manufacture_search_filter{
+    .filter_header{
+        h2 {
+            color: black;
+            @extend %h-styles;
+        }
 
 
 /*------------------------------------*\
@@ -42,11 +49,30 @@ $primary-bg-color: #f40785;
         box-shadow: $box-shadow;
         img {
             width: 150px;
-        }
+        } */
+        .manufact_logo {
+            height: 150px;
+            img {
+                width: 150px;
+            }
+        }  
         .ratings {
             color: yellow;
             padding-right: 5px;
         }
+       
+        .reviews {
+            height: 80px;
+            small {
+                margin-bottom: 0.2rem;
+                font-size: 15px;
+                line-height: 1.85;
+                letter-spacing: 1.2px;
+                text-align: center;
+                color: #262626;
+                
+            }
+        }   
         .manufact_details {
             margin-top: 5px;
             img {
@@ -60,8 +86,10 @@ $primary-bg-color: #f40785;
                 margin-top: 7px;
                 p {
                     margin-bottom: 0;
+                    letter-spacing: 1px;
                 }
             }
+            
         }
     }
 }
@@ -85,9 +113,8 @@ $primary-bg-color: #f40785;
             margin-bottom: 0;
             @extend %list-p-styles;
             i {
-                padding-right: 7px;
+                padding-right: 14px;
             }
-        }
     }
 }
 
@@ -97,9 +124,18 @@ $primary-bg-color: #f40785;
 
 .manufacturers_list {
     margin: 2rem 0;
+<<<<<<< HEAD
         .manufact_heading {
             @extend %h-styles;
         }
+=======
+    .title {
+        h2 {
+            @extend %h-styles;
+        }
+    }
+   
+>>>>>>> 237794d35b04e68bfada18a9d5d8dfb308af4c6f
     .buyers_card {
         box-shadow: $box-shadow;
         .card-wrapper {
@@ -124,6 +160,10 @@ $primary-bg-color: #f40785;
                 }
                 p {
                     margin-bottom: 0.2rem;
+                    letter-spacing: 1px;
+                }
+                i {
+                    padding-right: 4px;
                 }
                 .units {
                     background-color: #939393;
@@ -135,6 +175,7 @@ $primary-bg-color: #f40785;
     }
 }
 .become_a_member {
+<<<<<<< HEAD
     margin: 3rem 0;
     .become_heading {
         @extend %h-styles;
@@ -143,10 +184,24 @@ $primary-bg-color: #f40785;
         p {
             @extend %list-p-styles;
         }
+=======
+    margin: 2rem 0;
+    .title {
+        color: black;
+        letter-spacing: 1.5px;
+        font-size: 2rem;
+        margin-bottom: 1em;
+>>>>>>> 237794d35b04e68bfada18a9d5d8dfb308af4c6f
     }
     .working_img {
         img {
             width: 276px;
         }
+    }
+    p {
+        @extend %list-p-styles;
+    }
+    i {
+        padding-right: 14px;
     }
 }
