@@ -2,45 +2,18 @@
 
 $primary-bg-color: #f40785;
 
-
 /*------------------------------------*\
-  #Main Image Section
+  #BANNER-SECTION
 \*------------------------------------*/
 
-.buyers-hero {
-    position: relative;
-    overflow: hidden;
-    .banner-hero-image {
-        background-image: url('../../assets/img/women-shopping-online.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 90vh;
-        padding-top: 50px;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        .image-text-box {
-            position: absolute;
-            padding: 40px 0 0 60px;
-            h1 {
-                color:#ffffff;
-                padding-bottom: 15px;
-                @extend %h1-styles;
-            }
-            h5 {
-                color: #fff;
-                letter-spacing: 1.5px;
-                font-size: 2rem;
-                margin-bottom: 1em;
-            }
-            .signup-btn {
-                background-color: $primary-bg-color;
-                color: #fff;
-                padding-bottom: 13px;
-                @extend %btn-styles;
-            }
-        }
-    }
+
+.banner-image {
+    background-image: url('../../assets/img/women-shopping-online.jpg');
 }
+
+/*------------------------------------*\
+  #FILTER-SECTION
+\*------------------------------------*/
 
 .buyer_search_filter{
     .filter_header{
@@ -70,6 +43,9 @@ $primary-bg-color: #f40785;
     } 
 }
 
+/*------------------------------------*\
+  #ABOUTSUPPLIERS-SECTION
+\*------------------------------------*/
 
 .about_manufacturers {
     margin-top: 3rem;
@@ -78,7 +54,6 @@ $primary-bg-color: #f40785;
             @extend %h-styles;
         }
     }
-   
     .manufact_card {
         box-shadow: $box-shadow;
         .manufact_logo {
@@ -122,33 +97,35 @@ $primary-bg-color: #f40785;
     }
 }
 
+/*------------------------------------*\
+  #SPORTSSOURCE-SECTION
+\*------------------------------------*/
+
 .sport-source-info {
     margin-top: 3rem;
-    .title {
-        border-bottom:4px solid ;
+    .sports_source {
         width: 485px;
         margin: auto;
-        h3 {
         text-align: center;
-        }
     }
     .info {
-        h5 {
-            color: black;
-            letter-spacing: 1.5px;
-            font-size: 2rem;
-            margin-bottom: 1em;
+        box-shadow: $box-shadow;
+        h2 {          
+            font-size: 22px;
+            margin-bottom: 20px;   
+            text-align: center;       
         }
         margin-bottom: 30px;
             p {
                 @extend %list-p-styles;
-            }
-            i {
-                padding-right: 14px;
+                @extend %tick-img;
             }
     }
 }
 
+/*------------------------------------*\
+  #SUPPLIERSLIST-SECTION
+\*------------------------------------*/
 .manufacturers_list {    
         h2 {
             @extend %h-styles;
@@ -159,6 +136,10 @@ $primary-bg-color: #f40785;
         background-color: #d6e8eb59;
         .card-wrapper {
             padding: 1.5em;
+            small {
+                font-size: 85%;
+                letter-spacing: 1px;
+            }
             p {
                 font-size: 20px;
                 line-height: 1.25;
@@ -180,8 +161,8 @@ $primary-bg-color: #f40785;
             }
             .manufacturers_logos {
                 position: absolute;
-                right: 15px;
-                bottom: 8px;
+                right: 10px;
+                bottom: 20px;
                 img {
                     margin-right: 7px;
                 }

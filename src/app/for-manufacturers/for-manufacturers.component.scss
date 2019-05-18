@@ -104,6 +104,9 @@ $primary-bg-color: #f40785;
     }
     .info {
         box-shadow: $box-shadow;
+        // background-image: url("../../assets/img/icon4.png");
+        // background-repeat: no-repeat;
+        // background-position: top;
         h3 {
             font-size: 22px;
             color: $text-color;
@@ -112,10 +115,8 @@ $primary-bg-color: #f40785;
         p {
             margin-bottom: 0;
             @extend %list-p-styles;
-            i {
-                padding-right: 14px;
-            }
-    }
+            @extend %tick-img;
+        }
     }
 }
 /*------------------------------------*\
@@ -182,8 +183,6 @@ $primary-bg-color: #f40785;
     }
     p {
         @extend %list-p-styles;
-    }
-    i {
-        padding-right: 14px;
+        @extend %tick-img;
     }
 }

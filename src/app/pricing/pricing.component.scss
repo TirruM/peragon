@@ -1,62 +1,87 @@
 @import "../../custom_styles/variables";
 
+
 .mar-padd {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 .custom-btn {
     @extend %btn-styles;
     padding: 6px 26px;
 }
-h2{
-    @extend %h-styles;
+h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
 }
-.chooseyourtype{
-    p{
-        letter-spacing: 2px;
-    }
-    h5 {
-        color: black;
-        letter-spacing: 1px;
-        font-size: 2rem;
-        margin-bottom: 1em;
-    }
-}
-.buyer-pricing{
-h3{
-    letter-spacing: 2px;
-}
-.table-bordered{
-    th{
-        letter-spacing: 2px;
-    }
-    td{
-        letter-spacing: 2px;
+.chooseyourtype {
+    .type-card {
+        box-shadow: $box-shadow;
+        margin-bottom: 30px;
+        .member-info {
+            p{
+                letter-spacing: 0px;
+                line-height: 1.21;
+                font-size: 15px;
+                color: $text-color;
+            }
+            h5 {
+                color: black;
+                font-size: 20px;
+                margin-bottom: 1em;
+                letter-spacing: 0px !important;
+            }
+        }
     }
     
-}
+    
 }
 
-.manufacturer-pricing{
+.pricing-supplier-table {
     h3{
         letter-spacing: 2px;
     }
-    .table-bordered{
-        th{
-            letter-spacing: 2px;
+    .custom-table {
+        box-shadow: $box-shadow;
+        padding: 20px;
+        h2 {
+            font-size: 20px;
+            color: #262626;
+            margin-bottom: 10px;
         }
-        td{
-            letter-spacing: 2px;
+        thead {
+            .border_less {
+                border-left-color: #fff;
+                border-top-color: #fff;
+                background-color: #fff;
+            }
+            th {
+                text-align: center;
+                font-size: 2.14285714rem;
+                font-weight: 500;
+                padding: 18px;
+                background-color: #fafafa;
+            }
         }
-        
+        tbody {
+            tr:nth-child(even) {
+                background-color: #fafafa;
+            }
+            th {
+                font-weight: 500;
+                padding: 18px 12px !important;
+                background-color: #fff;
+            }
+            td {
+                padding: 18px 12px !important;
+                text-align: center;
+            }
+            .border_less {
+                border-left-color: #fff;
+                border-bottom-color: #fff;
+                background-color: #fff;
+            }
+            :not(tr:first-child) {
+                background-color: #fafafa;
+            }
+        }
     }
-}
-.member-info{
-    h5 {
-        color: black;
-        letter-spacing: 1px;
-        font-size: 2rem;
-    }
-   
-        
-    
 }

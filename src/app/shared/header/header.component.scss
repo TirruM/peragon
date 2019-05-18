@@ -1,20 +1,33 @@
 @import "../../../custom_styles/variables";
 
 .nav-bg {
-    background-color: #152331;
+    // background-color: #152331;
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     // height: 63px;
 }
-.custom-nav-item .current::after {
+.logo {
+    height: 60px;
+}
+.navbar-nav .custom-nav-item .current::after {
     @extend %header-styles;       
 }
-.nav-items ul li {
-    padding: 0 15px;
-    a {
-        font-family: "lato",sans-serif;
-        font-weight: 700;
-        color: #fff;
+.nav-items{
+    padding-top: 20px;
+    ul li {
+        padding: 0 15px;
+        a {
+            font-family: "lato",sans-serif;
+            font-weight: 700;
+            color: #fff;
+        }
     }
-}
+} 
 
 .join-btn {
     background-image: linear-gradient(45deg, #a2088e 0%, #ce354e 35%, #f2581d 100%);

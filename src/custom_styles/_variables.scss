@@ -12,6 +12,11 @@ $p-letter-spacing: 1px;
         -ms-border-radius: $radius;
             border-radius: $radius;
   }
+%tick-img {
+    background-image: url("../../assets/img/TICK.png");
+    background-repeat: no-repeat;
+    padding-left: 34px;
+}  
 %header-styles {
     content: '';
     background-color: #e0090d;
@@ -19,7 +24,7 @@ $p-letter-spacing: 1px;
     width: 50px;
     height: 3px;
     display: block;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 %h1-styles {
     font-size: 50px;
