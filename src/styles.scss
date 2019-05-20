@@ -6,7 +6,12 @@ a{
     cursor: pointer;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif; padding-top: 93px;}
+body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif; padding-top: 93px;
+    ::selection {
+        color: #fff;
+        background: #f2581d;
+    }
+}
 
 hr {
     border-top: 2px solid #f2581d !important;
