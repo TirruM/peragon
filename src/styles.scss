@@ -6,7 +6,7 @@ a{
     cursor: pointer;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'lato',Roboto, "Helvetica Neue", sans-serif; padding-top: 93px;}
 
 hr {
     border-top: 2px solid #f2581d !important;
@@ -33,18 +33,15 @@ hr {
         background-repeat: no-repeat;
         background-size: cover;
         height: 90vh;
-        padding-top: 50px;
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         .transparent-layer {
-            // position: absolute;
             bottom: 0;
             background: rgb(0, 0, 0); 
             background: rgba(0, 0, 0, 0.5);
             height: 90vh;
             -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-            // color: #f1f1f1;
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         }
         .image-text-box {
             position: absolute;

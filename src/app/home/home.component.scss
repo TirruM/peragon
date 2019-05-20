@@ -88,6 +88,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
                     margin: 0 auto;
                     width:160px;
                     height:160px;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
             .manfact_details_card {
