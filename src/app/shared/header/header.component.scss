@@ -1,21 +1,29 @@
 @import "../../../custom_styles/variables";
 
 .nav-bg {
-    // background-color: #152331;
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    padding-bottom: 20px;
+    background-color: #152331;
+    // border-width: 0px;
+    // -webkit-box-shadow: 0px 0px;
+    // box-shadow: 0px 0px;
+    // background-color: rgba(0,0,0,0.0);
+    // background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    // background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    // background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     // height: 63px;
 }
 .logo {
     height: 60px;
+    a {
+        padding: 20px 10px;
+    }
 }
-.navbar-nav .custom-nav-item .current::after {
-    @extend %header-styles;       
+.navbar-nav .current::after {
+    @extend %header-styles;      
+    @include tablet {
+        width: 0px;
+        height: 0px;
+    } 
 }
 .nav-items{
     padding-top: 20px;
@@ -30,13 +38,20 @@
 } 
 
 .join-btn {
-    background-image: linear-gradient(45deg, #a2088e 0%, #ce354e 35%, #f2581d 100%);
+    background-image: $gradient_bg_color;
     background-color: #152331;
     border-radius: 30px;
     margin: 0 15px;
     height: 45px;
     &:hover {
         box-shadow: 0px 4px 10px #f2581d;
+    }
+    @include tablet {
+        background: none;
+        margin: 0;
+        &:hover {
+            box-shadow: none;
+        }
     }
 }
 .login-btn {
@@ -49,6 +64,17 @@
         &:hover {
             color: #f2581d !important;
         }
+    }
+    @include tablet {
+        background: none;
+        
+        a {
+            color: #fff !important;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+        
     }
     
 }
