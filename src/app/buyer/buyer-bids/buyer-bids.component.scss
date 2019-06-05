@@ -1,0 +1,74 @@
+
+@import "../../../custom_styles/variables";
+
+$primary-bg-color: #f40785;
+
+.banner-image {
+    background-image: url('../../../assets/img/women-shopping-online.jpg');
+}
+
+.rfqs {
+    position: relative;
+    height: 200px;
+    width: 260px;
+    margin: 20px;
+
+    .rfq-btn {
+        position: absolute;
+        left: 20%;
+        top: 38%;
+        background-color: darkgreen;
+        color: #ffffff;
+        width: 151px;
+        border-radius: 25px;
+    }
+
+    .rfq-btn-star {
+        position: absolute;
+        
+    }
+}    
+
+
+.manufact_card {
+    box-shadow: $box-shadow;
+    .manufact_logo {
+        height: 150px;
+        img {
+            width: 150px;
+        }
+    }        
+    .ratings {
+        color: yellow;
+        padding-right: 5px;
+    }
+    .reviews {
+        height: 85px;
+        p {
+            margin-bottom: 0.2rem;
+            font-size: 15px;
+            line-height: 1.85;
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: #262626;
+            
+        }
+    }        
+    .manufact_details {
+        margin-top: 5px;
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: block;
+        }
+        .manufact_brand {
+            margin-left: 10px;
+            margin-top: 7px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

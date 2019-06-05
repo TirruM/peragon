@@ -16,7 +16,8 @@ const appRoutes: Routes = [
   { path: 'buyerDashboard', component: BuyerDashboardComponent, data: { title: 'Dashboard' } },
   { path: 'favourites', component: BuyerFavouritesComponent, data: { title: 'Favourites' } },
   { path: 'notifications', component: BuyerNotificationsComponent, data: { title: 'Notifications' } },
-  { path: 'rfqCreate', component: BuyerRfqCreateComponent}
+  { path: 'rfqCreate', component: BuyerRfqCreateComponent},
+  { path: 'rfq', component: BuyerBidsComponent}
 ];
 
 @NgModule({
