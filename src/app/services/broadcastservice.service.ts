@@ -10,4 +10,6 @@ export class BroadcastserviceService {
   // hide the signin and signup
   hideButtons = new EventEmitter<any>();
 
+  hideBuyerMenu = new EventEmitter<any>();
+
 }

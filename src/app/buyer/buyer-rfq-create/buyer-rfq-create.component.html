@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="col-sm-12">
+    <form [formGroup]="requestForQuoteFrom">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Enter the product you are looing for">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Product Group *">
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <textarea matInput placeholder="Product Details" cols="8"></textarea>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Define your order *">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+
+        <div class="col-sm-6">
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Orders *">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <mat-checkbox value="1">Per Year</mat-checkbox>
+          <mat-checkbox value="2">One-time</mat-checkbox>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="form-group">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Target price per unit">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <mat-form-field class="full-width">
+            <mat-label>Currency</mat-label>
+            <mat-select>
+              <mat-option value="200">200</mat-option>
+              <mat-option value="250">250</mat-option>
+              <mat-option value="300">300</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="col-sm-12">
+          <button class="btn btn-primary btn-xs">Cancle</button>
+          <button class="btn btn-primary btn-xs">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

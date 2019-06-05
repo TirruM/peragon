@@ -28,9 +28,17 @@
         <li class="nav-item login-btn" *ngIf="signInFlag">
           <a class="nav-link" (click)="signIn()">Login</a>
         </li>
+        <!-- testing for buyer -->
+        <li class="nav-item login-btn" *ngIf="!signInFlag">
+          <a class="nav-link" (click)="requestForQuatation();">Reuest For Quatation</a>
+        </li>
+
+         <!-- end for buyer -->
+
         <li class="nav-item login-btn" *ngIf="!signInFlag">
           <a class="nav-link" (click)="logout()">Logout</a>
         </li>
       </ul>
+
     </div>
   </nav>

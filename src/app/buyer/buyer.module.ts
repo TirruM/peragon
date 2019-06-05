@@ -9,16 +9,18 @@ import { BuyerSideNavbarComponent } from './buyer-side-navbar/buyer-side-navbar.
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
+import { BuyerRfqCreateComponent } from './buyer-rfq-create/buyer-rfq-create.component';
 
 const appRoutes: Routes = [
   { path: 'profile', component: BuyerProfileComponent, data: { title: 'Profile' } },
   { path: 'buyerDashboard', component: BuyerDashboardComponent, data: { title: 'Dashboard' } },
   { path: 'favourites', component: BuyerFavouritesComponent, data: { title: 'Favourites' } },
-  { path: 'notifications', component: BuyerNotificationsComponent, data: { title: 'Notifications' } }
+  { path: 'notifications', component: BuyerNotificationsComponent, data: { title: 'Notifications' } },
+  { path: 'rfqCreate', component: BuyerRfqCreateComponent}
 ];
 
 @NgModule({
-  declarations: [BuyerFavouritesComponent, BuyerProfileComponent, BuyerBidsComponent, BuyerNotificationsComponent, BuyerSideNavbarComponent, BuyerDashboardComponent],
+  declarations: [BuyerFavouritesComponent, BuyerProfileComponent, BuyerBidsComponent, BuyerNotificationsComponent, BuyerSideNavbarComponent, BuyerDashboardComponent, BuyerRfqCreateComponent],
   imports: [
     CommonModule,
     SharedModule,
