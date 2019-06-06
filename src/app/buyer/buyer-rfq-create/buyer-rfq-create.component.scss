@@ -61,6 +61,20 @@
                 margin-right: 8px;
            }
        }
+
+       .form-btns {
+            button {
+                background-image: $gradient_bg_color;
+                border-radius: 24px;
+            }    
+            .cancel-btn {
+                margin-right: 20px;
+            }
+        }
+
+       .form-checkbox {
+           margin-left: 90px;
+       }
     }
 }    
 

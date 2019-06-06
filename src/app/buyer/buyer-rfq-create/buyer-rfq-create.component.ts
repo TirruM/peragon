@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-buyer-rfq-create',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyerRfqCreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  back() {
+    this.router.navigate(['/rfq']);
+  }
 }

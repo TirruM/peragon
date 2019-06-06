@@ -17,7 +17,7 @@
       <div class="container">
         <div class="col-sm-12">
           <div class="form-main-heading">
-            <button type="button" class="btn btn-md back-btn"><i class="fa fa-long-arrow-left"></i>Back</button>
+            <button type="button" class="btn btn-md back-btn" (click)="back();"><i class="fa fa-long-arrow-left"></i>Back</button>
             <span><h4>Create a Request for Quotation</h4></span>
           </div>
           <div class="manufact_card">
@@ -51,7 +51,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <button type="button" class="btn btn-lg upload-file-btn"><i class="material-icons">attachment</i>Upload File</button>
+                    <button type="file" class="btn btn-lg upload-file-btn"><i class="material-icons">attachment</i>Upload File</button>
                   </div>
 
                   <div class="col-sm-6">
@@ -63,7 +63,7 @@
                   </div>
                   <div class="col-sm-6">
                     <mat-checkbox value="1">Per Year</mat-checkbox>
-                    <mat-checkbox value="2">One-time</mat-checkbox>
+                    <mat-checkbox value="2" class="form-checkbox">One-time</mat-checkbox>
                   </div>
 
                   <div class="col-sm-6">
@@ -85,7 +85,7 @@
                   </div>
 
                   <div class="col-sm-12 form-btns">
-                    <button class="btn btn-primary btn-xs">Cancel</button>
+                    <button class="btn btn-primary btn-xs cancel-btn">Cancel</button>
                     <button class="btn btn-primary btn-xs">Save</button>
                   </div>
                 </div>
