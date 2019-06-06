@@ -1,4 +1,3 @@
-
 @import "../../../custom_styles/variables";
 
 $primary-bg-color: #f40785;
@@ -7,11 +6,23 @@ $primary-bg-color: #f40785;
     background-image: url('../../../assets/img/women-shopping-online.jpg');
 }
 
+
+.main-img {
+    position: relative;
+}
+
+.container-on-img {
+    background-color: #ffffff;
+    position: absolute;
+    top: 480px;
+    left: 178px;
+}
+
 .rfqs {
     position: relative;
     height: 200px;
     width: 260px;
-    margin: 20px;
+    margin: 12px;
 
     .rfq-btn {
         position: absolute;
@@ -23,10 +34,36 @@ $primary-bg-color: #f40785;
         border-radius: 25px;
     }
 
-    .rfq-btn-star {
+    .rfq-text {
         position: absolute;
-        
+        top: 60px;
+        left: 25px;
+        font-size: 14px;
     }
+
+    .rfq-text-color {
+        color: #aaafaf;
+    }
+
+    .rfq-text-styles {
+        // word-spacing: 21px;
+        padding-right: 100px;
+    }
+
+    .rfq-icon {
+        font-size: 20px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #f53737;
+    }
+    .rfq-status-btn {
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        border-radius: 9px;
+    }
+    
 }    
 
 
@@ -72,3 +109,6 @@ $primary-bg-color: #f40785;
     }
 }
 
+.margin-styles {
+    margin-top: 140px;
+}

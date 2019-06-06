@@ -1,7 +1,73 @@
+@import "../../../custom_styles/variables";
+
+// $primary-bg-color: #f40785;
+
+.rfqCreate-body {
+    margin-bottom: 650px;
+}
+.banner-image {
+    background-image: url('../../../assets/img/women-shopping-online.jpg');
+}
+
+.main-img {
+    position: relative;
+}
+.container-on-img {
+    background-color: #ffffff;
+    position: absolute;
+    top: 480px;
+    left: 128px;
+    margin-right: 125px;
+    // margin-bottom: 20px;
+}
+
 .full-width{
     width: 100%;
 }
 
+.back-btn {
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    padding-left: 8px;
+
+    i {
+        padding-right: 8px;
+    }
+}
+.form-main-heading {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    h4 {
+        margin-left: 107px;
+        margin-top: -30px;
+    }
+}
+
+.manufact_card {
+    box-shadow: $box-shadow;
+
+    .rfq-form {
+       padding: 30px;
+
+       .upload-file-btn {
+           background-image: $gradient_bg_color;
+           border-radius: 40px;
+           background-color: #6fc76f;
+           width: 190px;
+           padding-bottom: 10px;
+
+           i {
+                margin-right: 8px;
+           }
+       }
+    }
+}    
+
 .mat-checkbox-layout {
     padding-right: 30px !important;
-  }
+}
+
+.form-btns {
+    text-align: right;
+}
