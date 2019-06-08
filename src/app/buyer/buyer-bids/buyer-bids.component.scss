@@ -1,67 +1,69 @@
 @import "../../../custom_styles/variables";
 
-$primary-bg-color: #f40785;
-
-.banner-image {
-    background-image: url('../../../assets/img/women-shopping-online.jpg');
-}
-
-
 .main-img {
     position: relative;
+    .banner-image {
+        background-image: url('../../../assets/img/women-shopping-online.jpg');
+        .image-text-box {
+            position: absolute;
+            left: 60px;
+            top: 140px;
+        }
+    }
+    .container-on-img {
+        background-color: #ffffff;
+        position: absolute;
+        top: 404px;
+        left: 116px;
+        padding: 20px;
+        h3 {
+            margin-bottom: 13px;
+        }
+        .create_rfqs {
+            height: 200px;
+            width: 260px;            
+                .rfq-btn {
+                    background-color: darkgreen;
+                    color: #ffffff;
+                    border-radius: 26px;
+                    padding: 7px 21px;
+                }
+        }
+    }
 }
 
-.container-on-img {
-    background-color: #ffffff;
-    position: absolute;
-    top: 480px;
-    left: 178px;
-}
+
 
 .rfqs {
-    position: relative;
     height: 200px;
     width: 260px;
-    margin: 12px;
-
-    .rfq-btn {
-        position: absolute;
-        left: 20%;
-        top: 38%;
-        background-color: darkgreen;
-        color: #ffffff;
-        width: 151px;
-        border-radius: 25px;
-    }
 
     .rfq-text {
-        position: absolute;
-        top: 60px;
-        left: 25px;
         font-size: 14px;
+        padding: 75px 16px 0;
+        p {
+            margin-bottom: 0;
+        }
     }
-
-    .rfq-text-color {
-        color: #aaafaf;
+    .rfq_footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 10px;
+    }
+    .rfq-timing {
+        font-weight: 700;
     }
 
     .rfq-text-styles {
-        // word-spacing: 21px;
-        padding-right: 100px;
+        padding-right: 90px;
     }
 
     .rfq-icon {
         font-size: 20px;
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
         color: #f53737;
     }
-    .rfq-status-btn {
-        position: absolute;
-        bottom: 3px;
-        right: 3px;
-        border-radius: 9px;
+    .rfq-status {
+        font-weight: 500;
     }
     
 }    
@@ -69,6 +71,7 @@ $primary-bg-color: #f40785;
 
 .manufact_card {
     box-shadow: $box-shadow;
+    margin-right: 20px;
     .manufact_logo {
         height: 150px;
         img {
@@ -110,5 +113,6 @@ $primary-bg-color: #f40785;
 }
 
 .margin-styles {
-    margin-top: 140px;
+    margin-top: 120px;
+    margin-bottom: 45px;
 }

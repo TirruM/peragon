@@ -1,12 +1,15 @@
 @import "../../../custom_styles/variables";
 
-// $primary-bg-color: #f40785;
-
 .rfqCreate-body {
     margin-bottom: 650px;
 }
 .banner-image {
     background-image: url('../../../assets/img/women-shopping-online.jpg');
+    .image-text-box {
+        position: absolute;
+        left: 60px;
+        top: 140px;
+    }
 }
 
 .main-img {
@@ -46,21 +49,59 @@
 
 .manufact_card {
     box-shadow: $box-shadow;
+    .form-group {
+        label {
+            font-size: 14px;
+        }
+    }
 
     .rfq-form {
        padding: 30px;
 
-       .upload-file-btn {
-           background-image: $gradient_bg_color;
-           border-radius: 40px;
-           background-color: #6fc76f;
-           width: 190px;
-           padding-bottom: 10px;
+    //    .upload-file-btn {
+    //        background-image: $gradient_bg_color;
+    //        border-radius: 40px;
+    //        background-color: #6fc76f;
+    //        width: 190px;
+    //        padding-bottom: 10px;
 
-           i {
-                margin-right: 8px;
-           }
-       }
+    //        i {
+    //             margin-right: 8px;
+    //        }
+    //    }
+    .file-container {
+        background-color: #f2f2f2;
+        height: 350px;
+        position: relative;
+        .upload_file {
+            position: absolute;
+            top: 36%;
+            left: 50px;
+            .btn {
+                color: #fff;
+                background-color: #28a745;
+                padding: 5px 15px;
+                border-radius: 33px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            input[type=file] {
+                font-size: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+              }
+            p {
+                margin-bottom: 0;
+                text-align: center;
+            }
+            label {
+                font-size: 13px;
+            }
+        }
+    }
+    
 
        .form-btns {
             button {

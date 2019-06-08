@@ -37,14 +37,16 @@ hr {
     .banner-image {
         background-repeat: no-repeat;
         background-size: cover;
-        height: 90vh;
+        min-height: 650px;
+        height: 650px;
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         .transparent-layer {
             bottom: 0;
             background: rgb(0, 0, 0); 
             background: rgba(0, 0, 0, 0.5);
-            height: 90vh;
+            min-height: 650px;
+            height: 650px;
             -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
             clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         }
