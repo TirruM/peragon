@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public requestForQuatation(){
-    this.router.navigateByUrl('/rfqCreate');
+    this.router.navigateByUrl('/rfq');
   }
 
 }

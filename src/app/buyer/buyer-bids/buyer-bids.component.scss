@@ -14,19 +14,35 @@
         background-color: #ffffff;
         position: absolute;
         top: 404px;
-        left: 23px;
+        left: 73px;
         padding: 20px;
+
+        .create-rfq {
+            margin-top: 30px;
+        }
+
         h3 {
             margin-bottom: 13px;
+        }
+
+        .view-all-btn {
+            float: right;
+            margin-top: -32px;
+            background-color: #57bf57;
+            color: #ffffff;
+            border-radius: 26px;
+            width: 106px;
+            letter-spacing: 1px;
         }
         .create_rfqs {
             height: 200px;
             width: 260px;            
                 .rfq-btn {
-                    background-color: darkgreen;
+                    background-color: #57bf57;
                     color: #ffffff;
                     border-radius: 26px;
                     padding: 7px 21px;
+                    font-weight: 600;
                 }
         }
     }

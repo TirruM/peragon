@@ -14,13 +14,16 @@
 
   <section class="container-on-img">
     <div class="container">
-      <h3>Requests for Quotations</h3>
-      <div class="row">
+      <div>
+        <h3>Requests for Quotations</h3>
+        <button class="btn btn-md view-all-btn">View All</button>
+      </div>  
+      <div class="row create-rfq">
         <div class="d-flex flex-wrap">
           <div class="col-md-3">
             <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
               <div>
-                <button class="btn rfq-btn">+ New RFQ</button>
+                <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
               </div>
             </div>
           </div>

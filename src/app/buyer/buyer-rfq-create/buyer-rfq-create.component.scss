@@ -31,8 +31,10 @@
 .back-btn {
     margin-top: 10px;
     border-radius: 20px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     padding-left: 8px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+    width: 93px;
 
     i {
         padding-right: 8px;
@@ -71,7 +73,7 @@
     //    }
     .file-container {
         background-color: #f2f2f2;
-        height: 350px;
+        height: 260px;
         position: relative;
         .upload_file {
             position: absolute;
@@ -84,9 +86,10 @@
                 border-radius: 33px;
                 font-size: 14px;
                 font-weight: 700;
+                margin-left: 128px;
             }
             input[type=file] {
-                font-size: 100px;
+                // font-size: 100px;
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -107,6 +110,9 @@
             button {
                 background-image: $gradient_bg_color;
                 border-radius: 24px;
+                width: 100px;
+                letter-spacing: 1px;
+                border: aliceblue;
             }    
             .cancel-btn {
                 margin-right: 20px;
@@ -114,8 +120,12 @@
         }
 
        .form-checkbox {
-           margin-left: 90px;
-       }
+            margin-top: 18px;
+
+            .one-time-checkbox {
+                margin-left: 90px;
+            }
+        }
     }
 }    
 

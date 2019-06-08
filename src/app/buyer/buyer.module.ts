@@ -10,6 +10,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { BuyerDashboardComponent } from './buyer-dashboard/buyer-dashboard.component';
 import { BuyerRfqCreateComponent } from './buyer-rfq-create/buyer-rfq-create.component';
+import { MatDatepickerModule } from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'profile', component: BuyerProfileComponent, data: { title: 'Profile' } },
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
     CommonModule,
     SharedModule,
     AppRoutingModule,
+    MatDatepickerModule,
     RouterModule.forChild(appRoutes)
   ],
   exports: [BuyerSideNavbarComponent]

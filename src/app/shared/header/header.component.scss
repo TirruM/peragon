@@ -78,3 +78,52 @@
     }
     
 }
+
+
+/* start  buyer dropdown */
+
+    .buyer-menu ul {
+        margin-left: 788px;
+        
+    }
+    .forBuyer-menu-items {
+        color: #000!important;
+
+        &:hover {
+            color: #f2581d !important;
+        }
+    }
+
+/* end buyer dropdown */    
+/* start header profile  */
+
+.dropdown {
+    position: relative;
+    
+    img {
+        width: 28px;
+        margin-right: 8px;
+        border-radius: 50%;
+    }
+
+    .header-profile-text {
+        margin: 6px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        right: 4px;
+    }
+
+    ul li {
+        padding-left: 10px;
+        height : 37px;
+    }
+    
+    // ul li:hover {
+    //     background-color:#e6e5e5;
+    // }
+
+}
+
+/* End profile   */
