@@ -1,0 +1,141 @@
+@import "../../../custom_styles/variables";
+
+.main-img {
+  position: relative;
+
+  .banner-image {
+    background-image: url('../../../assets/img/women-shopping-online.jpg');
+
+    .image-text-box {
+      position: absolute;
+      left: 60px;
+      top: 140px;
+    }
+  }
+}
+
+.container-on-img {
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+  bottom: 137px;
+
+  .form-main-heading {
+    .back-btn {
+      border-radius: 20px;
+      background-color: #ffffff;
+      padding: 8px 16px;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+      i {
+        padding-right: 8px;
+      }
+    }
+
+    .product_name {
+      display: inline-block;
+      padding-left: 16px;
+    }
+  }
+
+  .manufact_card {
+    box-shadow: $box-shadow;
+    margin: 30px 0;
+    padding: 25px;
+
+    .rfq-details-header {
+      margin: 10px 16px;
+
+      .edit_icon {
+        mat-slide-toggle {
+          margin: 0 25px;
+        }
+
+        i {
+          display: inline;
+        }
+      }
+    }
+
+    .attachments {
+      .attachment_files {
+        img {
+          width: 221px;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+.rfqs {
+  height: 200px;
+  width: 260px;
+
+  .rfq-text {
+    font-size: 14px;
+    padding: 75px 16px 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .rfq_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 10px;
+
+    i {
+      position: relative;
+      padding: 4px;
+
+      span {
+        position: absolute;
+        right: 1px;
+        top: 2px;
+        width: 7px;
+        height: 7px;
+        background-color: #f53737;
+        border-radius: 50%;
+      }
+    }
+
+    .inactive_icon {
+      visibility: hidden;
+    }
+  }
+
+  .rfq-timing {
+    font-weight: 700;
+  }
+
+  .rfq-text-styles {
+    padding-right: 90px;
+  }
+
+  .rfq-icon {
+    font-size: 20px;
+    color: #f53737;
+  }
+
+  .rfq-status {
+    font-weight: 500;
+  }
+
+}
+
+
+
+
+.margin-styles {
+  margin-top: 120px;
+  margin-bottom: 45px;
+}
+.rfq_response {
+  .chatbox {
+    mat-form-field {
+        width: 100%;
+    }
+    
+  }
+}

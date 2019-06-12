@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   { path: 'notifications', component: BuyerNotificationsComponent, data: { title: 'Notifications' } },
   { path: 'rfqCreate', component: BuyerRfqCreateComponent},
   { path: 'rfq', component: BuyerBidsComponent},
-  { path: 'rfqDetails', component: BuyerBidsComponent}
+  { path: 'rfqDetails', component: BuyerRfqDetailsComponent }
 ];
 
 @NgModule({
@@ -32,6 +32,6 @@ const appRoutes: Routes = [
     MatDatepickerModule,
     RouterModule.forChild(appRoutes)
   ],
-  exports: [BuyerSideNavbarComponent]
+  exports: [BuyerSideNavbarComponent,SharedModule]
 })
 export class BuyerModule { }

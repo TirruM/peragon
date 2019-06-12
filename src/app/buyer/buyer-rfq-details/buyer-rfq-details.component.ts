@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buyer-rfq-details',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buyer-rfq-details.component.scss']
 })
 export class BuyerRfqDetailsComponent implements OnInit {
+  color = 'warn';
+  step = 0;
 
-  constructor() { }
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  back() {
+    this.router.navigate(['/rfq']);
+  }
 }

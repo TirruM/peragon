@@ -1,134 +1,171 @@
 @import "../../../custom_styles/variables";
 
 .main-img {
-    position: relative;
-    .banner-image {
-        background-image: url('../../../assets/img/women-shopping-online.jpg');
-        .image-text-box {
-            position: absolute;
-            left: 60px;
-            top: 140px;
-        }
+  position: relative;
+
+  .banner-image {
+    background-image: url('../../../assets/img/women-shopping-online.jpg');
+
+    .image-text-box {
+      position: absolute;
+      left: 60px;
+      top: 140px;
     }
-    .container-on-img {
-        background-color: #ffffff;
-        position: absolute;
-        top: 404px;
-        left: 73px;
-        padding: 20px;
+  }
 
-        .create-rfq {
-            margin-top: 30px;
-        }
+  .container-on-img {
+    background-color: #ffffff;
+    position: absolute;
+    top: 404px;
+    left: 73px;
+    padding: 20px;
 
-        h3 {
-            margin-bottom: 13px;
-        }
-
-        .view-all-btn {
-            float: right;
-            margin-top: -32px;
-            background-color: #57bf57;
-            color: #ffffff;
-            border-radius: 26px;
-            width: 106px;
-            letter-spacing: 1px;
-        }
-        .create_rfqs {
-            height: 200px;
-            width: 260px;            
-                .rfq-btn {
-                    background-color: #57bf57;
-                    color: #ffffff;
-                    border-radius: 26px;
-                    padding: 7px 21px;
-                    font-weight: 600;
-                }
-        }
+    .create-rfq {
+      margin-top: 30px;
     }
+
+    h3 {
+      margin-bottom: 13px;
+    }
+
+    .view-all-btn {
+      float: right;
+      margin-top: -32px;
+      background-color: #57bf57;
+      color: #ffffff;
+      border-radius: 26px;
+      width: 106px;
+      letter-spacing: 1px;
+    }
+
+    .create_rfqs {
+      height: 200px;
+      width: 260px;
+
+      .rfq-btn {
+        background-color: #57bf57;
+        color: #ffffff;
+        border-radius: 26px;
+        padding: 7px 21px;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 
 
 .rfqs {
-    height: 200px;
-    width: 260px;
+  height: 200px;
+  width: 260px;
 
-    .rfq-text {
-        font-size: 14px;
-        padding: 75px 16px 0;
-        p {
-            margin-bottom: 0;
-        }
+  .rfq-text {
+    font-size: 14px;
+    padding: 75px 16px 0;
+
+    p {
+      margin-bottom: 0;
     }
-    .rfq_footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 17px 10px;
-    }
-    .rfq-timing {
-        font-weight: 700;
+  }
+
+  .rfq_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 10px;
+
+    i {
+      position: relative;
+      padding: 4px;
+
+      span {
+        position: absolute;
+        right: 1px;
+        top: 2px;
+        width: 7px;
+        height: 7px;
+        background-color: #f53737;
+        border-radius: 50%;
+      }
     }
 
-    .rfq-text-styles {
-        padding-right: 90px;
+    .inactive_icon {
+      visibility: hidden;
     }
+  }
 
-    .rfq-icon {
-        font-size: 20px;
-        color: #f53737;
-    }
-    .rfq-status {
-        font-weight: 500;
-    }
-    
-}    
+  .rfq-timing {
+    font-weight: 700;
+  }
+
+  .rfq-text-styles {
+    padding-right: 90px;
+  }
+
+  .rfq-icon {
+    font-size: 20px;
+    color: #f53737;
+  }
+
+  .rfq-status {
+    font-weight: 500;
+  }
+
+}
 
 
 .manufact_card {
-    box-shadow: $box-shadow;
-    margin-right: 20px;
-    .manufact_logo {
-        height: 150px;
-        img {
-            width: 150px;
-        }
-    }        
-    .ratings {
-        color: yellow;
-        padding-right: 5px;
+  box-shadow: $box-shadow;
+  margin-right: 20px;
+
+  .manufact_logo {
+    height: 150px;
+
+    img {
+      width: 150px;
     }
-    .reviews {
-        height: 85px;
-        p {
-            margin-bottom: 0.2rem;
-            font-size: 15px;
-            line-height: 1.85;
-            letter-spacing: 1.2px;
-            text-align: center;
-            color: #262626;
-            
-        }
-    }        
-    .manufact_details {
-        margin-top: 5px;
-        img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: block;
-        }
-        .manufact_brand {
-            margin-left: 10px;
-            margin-top: 7px;
-            p {
-                margin-bottom: 0;
-            }
-        }
+  }
+
+  .ratings {
+    color: yellow;
+    padding-right: 5px;
+  }
+
+  .reviews {
+    height: 85px;
+
+    p {
+      margin-bottom: 0.2rem;
+      font-size: 15px;
+      line-height: 1.85;
+      letter-spacing: 1.2px;
+      text-align: center;
+      color: #262626;
+
     }
+  }
+
+  .manufact_details {
+    margin-top: 5px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .manufact_brand {
+      margin-left: 10px;
+      margin-top: 7px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .margin-styles {
-    margin-top: 120px;
-    margin-bottom: 45px;
+  margin-top: 120px;
+  margin-bottom: 45px;
 }

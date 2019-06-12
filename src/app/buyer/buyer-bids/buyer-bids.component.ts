@@ -16,4 +16,8 @@ export class BuyerBidsComponent implements OnInit {
   createNewRFQ() {
     this.router.navigateByUrl('rfqCreate');    
   }
+
+  rfqDetails() {
+    this.router.navigateByUrl('rfqDetails');    
+  }
 }
