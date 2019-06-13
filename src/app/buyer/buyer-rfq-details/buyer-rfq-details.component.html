@@ -95,450 +95,297 @@
 
   </div>
 
-  <!-- <section>
+
+  <section>
     <div class="rfq_response">
       <div class="container">
         <div class="row">
           <div class="col-12">
+            <div>
+              <h5>RFQ Replies:</h5>
+            </div>
             <mat-accordion class="example-headers-align">
-              <table>
-                <tr>
-                  <td>
-                    <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
-                          <p>Best Blue Mode GmBH</p>
-                        </mat-panel-title>
-                        <mat-panel-description>
-                          <p>17:20</p>
-                          <p>2019-02-28</p>
-                        </mat-panel-description>
-                        <mat-panel-description>
-                          <strong>90% Match</strong>
-                        </mat-panel-description>
-                        <mat-panel-description>
-                          <mat-icon>account_circle</mat-icon>
-                        </mat-panel-description>
-                      </mat-expansion-panel-header>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-description class="justify-content-start">
+                    <p>Best Blue Mode GmBH</p>
+                  </mat-panel-description>
+                  <mat-panel-description class="rfq-response-timings">
+                    <p>2019-02-28</p>
+                    <p>17:20</p><br>
+                  </mat-panel-description>
+                  <mat-panel-description>
+                    <strong class="text-success">90% Match</strong>
+                  </mat-panel-description>
+                  <mat-panel-description>
+                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                      <mat-icon>account_circle</mat-icon>
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>
+                        <mat-icon>perm_identity</mat-icon>
+                        <span>View Profile</span>
+                      </button>
+                      <button mat-menu-item>
+                        <mat-icon>delete_outline</mat-icon>
+                        <span>Discard</span>
+                      </button>
+                    </mat-menu>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <div class="user_info">
+                    <mat-icon>account_circle</mat-icon>
+                    <p>Ganesh</p>
+                  </div>
+                  <div class="rfq_responselist">
+                    <div class="seller_response">
+                      <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
+                      <small>We are following the request quotation for Men's Polo Shirt</small>
+                    </div>
+                    <div class="seller_qna">
                       <div>
-                        <mat-icon>account_circle</mat-icon> Ganesh
-                        <div>
-                          <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                          <small>We are following the request quotation for Men's Polo Shirt</small>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
+                          <small>we produce on average 100000 pieces per year</small>
                         </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <p>Yes,we produce Product Men's Polo Shirt.</p>
-                                <small>we produce on average 100000 pieces per year</small>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>No,we cannot fulfill all specifications.</p>
-                                <small>Need to source correct fabrics</small>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we agree to the price.</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we can produce the requested quantity.</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we can make the delivery date.</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div>
-                          <div class="d-flex flex-nowrap chatbox">
-                            <i class="material-icons">attachment</i>
-                            <mat-form-field>
-                              <input matInput type="text">
-                            </mat-form-field>
-                            <button class="btn btn-sm">Send</button>
-
-                          </div>
-
+                      </div>
+                      <div>
+                        <i class="fa fa-times cross_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-danger">No</span>,we cannot fulfill all specifications.</p>
+                          <small>Need to source correct fabrics</small>
                         </div>
                       </div>
 
-
-                    </mat-expansion-panel>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
-                          <p>Eastman Exports Global Colthing Pvt Ltd</p>
-                        </mat-panel-title>
-                        <mat-panel-description>
-                          <p>17:20</p>
-                          <p>2019-02-28</p>
-                        </mat-panel-description>
-                        <mat-panel-description>
-                          <strong>60% Match</strong>
-                        </mat-panel-description>
-                        <mat-panel-description>
-                          <mat-icon>account_circle</mat-icon>
-                        </mat-panel-description>
-                      </mat-expansion-panel-header>
                       <div>
-                        <mat-icon>account_circle</mat-icon> Ganesh
-                        <div>
-                          <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                          <small>We are following the request quotation for Men's Polo Shirt</small>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we agree to the price.</p>
                         </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <p>Yes,we produce Product Men's Polo Shirt.</p>
-                                <small>we produce on average 100000 pieces per year</small>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>No,we cannot fulfill all specifications.</p>
-                                <small>Need to source correct fabrics</small>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we agree to the price.</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we can produce the requested quantity.</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we can make the delivery date.</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div>
-                          <div class="d-flex flex-nowrap chatbox">
-                            <i class="material-icons">attachment</i>
-                            <mat-form-field>
-                              <input matInput type="text">
-                            </mat-form-field>
-                            <button class="btn btn-sm">Send</button>
+                      </div>
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we can produce the requested quantity.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
+                        </div>
+                      </div>
+                    </div>
 
-                          </div>
+                  </div>
+                  <div>
+                    <div class="d-flex flex-nowrap align-items-center chatbox">
+                      <div class="attachment_icon">
+                        <i class="material-icons">attachment</i>
+                      </div>
+                      <mat-form-field>
+                        <input matInput type="text">
+                      </mat-form-field>
+                      <div class="send_btn">
+                        <button class="btn btn-md">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
 
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-description class="justify-content-start">
+                    <p>Eastman Exports Global Colthing Pvt Ltd</p>
+                  </mat-panel-description>
+                  <mat-panel-description class="rfq-response-timings">
+                    <p>2019-02-28</p>
+                    <p>17:20</p>
+                  </mat-panel-description>
+                  <mat-panel-description>
+                    <strong class="text-warning">60% Match</strong>
+                  </mat-panel-description>
+                  <mat-panel-description>
+                      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                          <mat-icon>account_circle</mat-icon>
+                        <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                          <button mat-menu-item>
+                            <mat-icon>perm_identity</mat-icon>
+                            <span>View Profile</span>
+                          </button>
+                          <button mat-menu-item>
+                            <mat-icon>delete_outline</mat-icon>
+                            <span>Discard</span>
+                          </button>                     
+                        </mat-menu>
+                      </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <div class="user_info">
+                    <mat-icon>account_circle</mat-icon>
+                    <p>Ganesh</p>
+                  </div>
+                  <div class="rfq_responselist">
+                    <div class="seller_response">
+                      <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
+                      <small>We are following the request quotation for Men's Polo Shirt</small>
+                    </div>
+                    <div class="seller_qna">
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
+                          <small>we produce on average 100000 pieces per year</small>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa fa-times cross_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-danger">No</span>,we cannot fulfill all specifications.</p>
+                          <small>Need to source correct fabrics</small>
                         </div>
                       </div>
 
-
-                    </mat-expansion-panel>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <mat-expansion-panel>
-                      <mat-expansion-panel-header>
-                        <mat-panel-title>
-                          <p>Best Blue Mode GmBH</p>
-                        </mat-panel-title>
-                        <mat-panel-description>
-                          <p>17:20</p>
-                          <p>2019-02-28</p>
-                        </mat-panel-description>
-                        <mat-panel-description>
-                          <strong>30% Match</strong>
-                        </mat-panel-description>
-                        <mat-panel-description>
-                          <mat-icon>account_circle</mat-icon>
-                        </mat-panel-description>
-                      </mat-expansion-panel-header>
                       <div>
-                        <mat-icon>account_circle</mat-icon> Ganesh
-                        <div>
-                          <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                          <small>We are following the request quotation for Men's Polo Shirt</small>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we agree to the price.</p>
                         </div>
-                        <table>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <p>Yes,we produce Product Men's Polo Shirt.</p>
-                                <small>we produce on average 100000 pieces per year</small>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>No,we cannot fulfill all specifications.</p>
-                                <small>Need to source correct fabrics</small>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we agree to the price.</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we can produce the requested quantity.</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>Yes,we can make the delivery date.</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div>
-                          <div class="d-flex flex-nowrap chatbox">
-                            <i class="material-icons">attachment</i>
-                            <mat-form-field>
-                              <input matInput type="text">
-                            </mat-form-field>
-                            <button class="btn btn-sm">Send</button>
+                      </div>
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we can produce the requested quantity.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
+                        </div>
+                      </div>
+                    </div>
 
-                          </div>
+                  </div>
+                  <div>
+                    <div class="d-flex flex-nowrap align-items-center chatbox">
+                      <div class="attachment_icon">
+                        <i class="material-icons">attachment</i>
+                      </div>
+                      <mat-form-field>
+                        <input matInput type="text">
+                      </mat-form-field>
+                      <div class="send_btn">
+                        <button class="btn btn-md">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
 
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-description class="justify-content-start">
+                    <p>Best Blue Mode GmBH</p>
+                  </mat-panel-description>
+
+                  <mat-panel-description class="rfq-response-timings">
+                    <p>2019-02-28</p>
+                    <p>17:20</p>
+                  </mat-panel-description>
+                  <mat-panel-description>
+                    <strong class="text-danger">30% Match</strong>
+                  </mat-panel-description>
+                  <mat-panel-description>
+                      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                          <mat-icon>account_circle</mat-icon>
+                        <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                          <button mat-menu-item>
+                            <mat-icon>perm_identity</mat-icon>
+                            <span>View Profile</span>
+                          </button>
+                          <button mat-menu-item>
+                            <mat-icon>delete_outline</mat-icon>
+                            <span>Discard</span>
+                          </button>                     
+                        </mat-menu>
+                      </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                  <div class="user_info">
+                    <mat-icon>account_circle</mat-icon>
+                    <p>Ganesh</p>
+                  </div>
+                  <div class="rfq_responselist">
+                    <div class="seller_response">
+                      <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
+                      <small>We are following the request quotation for Men's Polo Shirt</small>
+                    </div>
+                    <div class="seller_qna">
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
+                          <small>we produce on average 100000 pieces per year</small>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa fa-times cross_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-danger">No</span>,we cannot fulfill all specifications.</p>
+                          <small>Need to source correct fabrics</small>
                         </div>
                       </div>
 
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we agree to the price.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we can produce the requested quantity.</p>
+                        </div>
+                      </div>
+                      <div>
+                        <i class="fa fa-check right_icon"></i>
+                        <div class="response_options">
+                          <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
+                        </div>
+                      </div>
+                    </div>
 
-                    </mat-expansion-panel>
-                  </td>
-                </tr>
-              </table>
+                  </div>
+                  <div>
+                    <div class="d-flex flex-nowrap align-items-center chatbox">
+                      <div class="attachment_icon">
+                        <i class="material-icons">attachment</i>
+                      </div>
+                      <mat-form-field>
+                        <input matInput type="text">
+                      </mat-form-field>
+                      <div class="send_btn">
+                        <button class="btn btn-md">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+
             </mat-accordion>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-  <section>
-      <div class="rfq_response">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <mat-accordion class="example-headers-align">
-                      <mat-expansion-panel>
-                        <mat-expansion-panel-header>
-                          <mat-panel-title>
-                            <p>Best Blue Mode GmBH</p>
-                          </mat-panel-title>
-                          <mat-panel-description>
-                            <p>17:20</p>
-                            <p>2019-02-28</p>
-                          </mat-panel-description>
-                          <mat-panel-description>
-                            <strong>90% Match</strong>
-                          </mat-panel-description>
-                          <mat-panel-description>
-                            <mat-icon>account_circle</mat-icon>
-                          </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div>
-                          <mat-icon>account_circle</mat-icon> Ganesh
-                          <div>
-                            <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                            <small>We are following the request quotation for Men's Polo Shirt</small>
-                          </div>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p>Yes,we produce Product Men's Polo Shirt.</p>
-                                  <small>we produce on average 100000 pieces per year</small>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>No,we cannot fulfill all specifications.</p>
-                                  <small>Need to source correct fabrics</small>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we agree to the price.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we can produce the requested quantity.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we can make the delivery date.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <div>
-                            <div class="d-flex flex-nowrap chatbox">
-                              <i class="material-icons">attachment</i>
-                              <mat-form-field>
-                                <input matInput type="text">
-                              </mat-form-field>
-                              <button class="btn btn-sm">Send</button>
-  
-                            </div>
-  
-                          </div>
-                        </div>
-  
-  
-                      </mat-expansion-panel>
-                      <mat-expansion-panel>
-                        <mat-expansion-panel-header>
-                          <mat-panel-title>
-                            <p>Eastman Exports Global Colthing Pvt Ltd</p>
-                          </mat-panel-title>
-                          <mat-panel-description>
-                            <p>17:20</p>
-                            <p>2019-02-28</p>
-                          </mat-panel-description>
-                          <mat-panel-description>
-                            <strong>60% Match</strong>
-                          </mat-panel-description>
-                          <mat-panel-description>
-                            <mat-icon>account_circle</mat-icon>
-                          </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div>
-                          <mat-icon>account_circle</mat-icon> Ganesh
-                          <div>
-                            <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                            <small>We are following the request quotation for Men's Polo Shirt</small>
-                          </div>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p>Yes,we produce Product Men's Polo Shirt.</p>
-                                  <small>we produce on average 100000 pieces per year</small>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>No,we cannot fulfill all specifications.</p>
-                                  <small>Need to source correct fabrics</small>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we agree to the price.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we can produce the requested quantity.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we can make the delivery date.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <div>
-                            <div class="d-flex flex-nowrap chatbox">
-                              <i class="material-icons">attachment</i>
-                              <mat-form-field>
-                                <input matInput type="text">
-                              </mat-form-field>
-                              <button class="btn btn-sm">Send</button>
-  
-                            </div>
-  
-                          </div>
-                        </div>
-  
-  
-                      </mat-expansion-panel>
-                      <mat-expansion-panel>
-                        <mat-expansion-panel-header>
-                          <mat-panel-title>
-                            <p>Best Blue Mode GmBH</p>
-                          </mat-panel-title>
-                          <mat-panel-description>
-                            <p>17:20</p>
-                            <p>2019-02-28</p>
-                          </mat-panel-description>
-                          <mat-panel-description>
-                            <strong>30% Match</strong>
-                          </mat-panel-description>
-                          <mat-panel-description>
-                            <mat-icon>account_circle</mat-icon>
-                          </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div>
-                          <mat-icon>account_circle</mat-icon> Ganesh
-                          <div>
-                            <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                            <small>We are following the request quotation for Men's Polo Shirt</small>
-                          </div>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p>Yes,we produce Product Men's Polo Shirt.</p>
-                                  <small>we produce on average 100000 pieces per year</small>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>No,we cannot fulfill all specifications.</p>
-                                  <small>Need to source correct fabrics</small>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we agree to the price.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we can produce the requested quantity.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p>Yes,we can make the delivery date.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <div>
-                            <div class="d-flex flex-nowrap chatbox">
-                              <i class="material-icons">attachment</i>
-                              <mat-form-field>
-                                <input matInput type="text">
-                              </mat-form-field>
-                              <button class="btn btn-sm">Send</button>
-  
-                            </div>
-  
-                          </div>
-                        </div>
-  
-  
-                      </mat-expansion-panel>
-              </mat-accordion>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </section>
 </div>

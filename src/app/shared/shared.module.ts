@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import {
   MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule, MatCardModule, MatInputModule, MatCheckboxModule, MatSelectModule,
-  MatSlideToggleModule,MatExpansionModule
+  MatSlideToggleModule,MatExpansionModule,MatMenuModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatSlideToggleModule,
     MatExpansionModule,
+    MatMenuModule,
   ],
   declarations: [],
   exports: [
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule, 
     ReactiveFormsModule,
     MatButtonModule, MatToolbarModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, 
-    MatCardModule, MatButtonModule, MatCheckboxModule, MatSelectModule,MatSlideToggleModule,MatExpansionModule
+    MatCardModule, MatButtonModule, MatCheckboxModule, MatSelectModule,MatSlideToggleModule,MatExpansionModule,
+    MatMenuModule
   ]
 })
 export class SharedModule { }

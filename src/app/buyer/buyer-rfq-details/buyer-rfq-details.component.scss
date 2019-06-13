@@ -26,6 +26,7 @@
       background-color: #ffffff;
       padding: 8px 16px;
       box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+
       i {
         padding-right: 8px;
       }
@@ -131,11 +132,116 @@
   margin-top: 120px;
   margin-bottom: 45px;
 }
+
 .rfq_response {
-  .chatbox {
-    mat-form-field {
-        width: 100%;
+
+  .example-headers-align .mat-expansion-panel-header-title,
+  .example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+
+    p {
+      margin-bottom: 0;
+      color: rgba(0, 0, 0, .87);
     }
-    
   }
+
+  .example-headers-align .mat-expansion-panel-header-description {
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+      margin-bottom: 0;
+      padding-right: 14px;
+    }
+
+  }
+// .rfq-response-timings {
+//   flex-direction: column;
+//   margin-top: 21px;
+// }
+  mat-form-field {
+    margin-right: 12px;
+  }
+
+  .user_info {
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .rfq_responselist {
+    p {
+      margin-bottom: 0;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    small {
+      font-size: 90%;
+    }
+
+    margin-left: 24px;
+
+    .seller_response {
+      margin: 15px 0px;
+    }
+
+    .seller_qna>div {
+      margin: 5px 0;
+
+      i {
+        font-size: 18px;
+      }
+
+      .right_icon {
+        color: #05cb05;
+      }
+
+      .cross_icon {
+        color: red;
+      }
+
+      .response_options {
+        display: inline-block;
+        vertical-align: -webkit-baseline-middle;
+        margin: 0px 12px;
+      }
+    }
+  }
+
+  .chatbox {
+    margin-left: 30px;
+
+    .attachment_icon {
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      width: 35px;
+      height: 32px;
+      padding: 4px;
+    }
+
+    mat-form-field {
+      width: 100%;
+
+    }
+
+    .send_btn {
+      button {
+        border-radius: 25px;
+        padding: 7px 22px;
+        color: #fff;
+        background-color: #57bf57;
+      }
+    }
+
+
+  }
+}
+
+::ng-deep .mat-form-field-infix {
+  padding: 11px 14px !important;
+  font-size: 17px !important;
 }
