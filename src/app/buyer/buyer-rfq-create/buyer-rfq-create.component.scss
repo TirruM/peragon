@@ -1,8 +1,5 @@
 @import "../../../custom_styles/variables";
 
-.rfqCreate-body {
-    margin-bottom: 650px;
-}
 .banner-image {
     background-image: url('../../../assets/img/women-shopping-online.jpg');
     .image-text-box {
@@ -17,11 +14,8 @@
 }
 .container-on-img {
     background-color: #ffffff;
-    position: absolute;
-    top: 480px;
-    left: 128px;
-    margin-right: 125px;
-    // margin-bottom: 20px;
+    position: relative;
+    top: -178px;
 }
 
 .full-width{

@@ -13,12 +13,12 @@
       <!-- <li class="nav-item">
           <a class="nav-link">Our Members</a>
         </li> -->
-      <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="!signInFlag">
+      <li class="nav-item custom-nav-item buyer-menu dropdown" routerLinkActive="current" *ngIf="!signInFlag">
         <a class="nav-link nav-link dropdown-toggle" [routerLink]="['/forBuyer']" data-toggle="dropdown">For
           Buyers</a>
         <ul class="dropdown-menu">
-          <li><a class="nav-link forBuyer-menu-items">Why Perogon?</a></li>
-          <li><a class="nav-link forBuyer-menu-items" (click)="requestForQuatation();">Request For Quotations</a></li>
+          <li><a class="dropdown-item forBuyer-menu-items">Why Perogon?</a></li>
+          <li><a class="dropdown-item forBuyer-menu-items" (click)="requestForQuatation();">Request For Quotations</a></li>
         </ul>
       </li>
       <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="signInFlag">
