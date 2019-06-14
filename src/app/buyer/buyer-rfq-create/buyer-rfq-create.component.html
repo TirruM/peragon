@@ -19,13 +19,13 @@
         <div class="col-sm-12">
           <div class="form-main-heading">
             <button type="button" class="btn btn-md back-btn" (click)="back();">
-                <i class="fa fa-long-arrow-left"></i>Back</button>
+              <i class="fa fa-long-arrow-left"></i>Back</button>
             <span>
               <h4>Create a Request for Quotation</h4>
             </span>
           </div>
           <div class="manufact_card">
-            <form [formGroup]="requestForQuoteFrom" class="rfq-form">
+            <form class="rfq-form">
               <div class="row">
                 <div class="col-sm-12">
                   <h6>Define Product Title</h6>
@@ -58,7 +58,7 @@
                       <textarea matInput placeholder="Product Details*" cols="8" rows="7"></textarea>
                     </mat-form-field>
                   </div>
-                 
+
                 </div>
                 <div class="col-sm-6">
                   <div class="file-container">
@@ -77,7 +77,7 @@
                       <input matInput placeholder="Quantity">
                     </mat-form-field>
                   </div>
-                </div>  
+                </div>
                 <div class="col-sm-6 form-checkbox">
                   <mat-checkbox value="1">Per Year</mat-checkbox>
                   <mat-checkbox value="2" class="one-time-checkbox">One-time</mat-checkbox>
@@ -109,9 +109,9 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <mat-form-field class="full-width">
-                        <input matInput [matDatepicker]="date" placeholder="Delivery Date(YYYY-MM-DD)">
-                        <mat-datepicker-toggle matSuffix [for]="date"></mat-datepicker-toggle>
-                        <mat-datepicker #date></mat-datepicker>
+                      <input matInput [matDatepicker]="date" placeholder="Delivery Date(YYYY-MM-DD)">
+                      <mat-datepicker-toggle matSuffix [for]="date"></mat-datepicker-toggle>
+                      <mat-datepicker #date></mat-datepicker>
                     </mat-form-field>
                   </div>
                 </div>

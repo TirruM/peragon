@@ -1,3 +1,4 @@
+import { FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { from } from 'rxjs';
@@ -8,7 +9,7 @@ import { from } from 'rxjs';
   styleUrls: ['./buyer-rfq-create.component.scss']
 })
 export class BuyerRfqCreateComponent implements OnInit {
-
+  requestForQuoteFrom: FormGroup;
   constructor(private router: Router) { }
 
   ngOnInit() {

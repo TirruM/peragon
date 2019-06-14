@@ -10,10 +10,11 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   signInFlag: boolean = true;
   dropDownMenu: boolean = false;
+  buyerDropDown: boolean = false;
   constructor(private router: Router, private sharedService: BroadcastserviceService) { }
 
   ngOnInit() {
-    if(localStorage.getItem("buyer_flag") == "1"){
+    if (localStorage.getItem("buyer_flag") == "1") {
       this.signInFlag = false;
     }
   }
@@ -26,8 +27,9 @@ export class HeaderComponent implements OnInit {
         this.signInFlag = false;
       }
     });
-    
-    this.sharedService.hideBuyerMenu.subscribe( (buyerData) => {
+
+    this.sharedService.hideBuyerMenu.subscribe((buyerData) => {
+      this.buyerDropDown = buyerData;
       if (buyerData == true) {
         this.dropDownMenu = false;
       }
@@ -48,7 +50,7 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl('/');
   }
 
-  public requestForQuatation(){
+  public requestForQuatation() {
     this.router.navigateByUrl('/rfq');
   }
 
