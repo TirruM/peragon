@@ -5,10 +5,10 @@
       <form [formGroup]="loginForm" class="example-form">
 
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="E-mail" [formControl]="loginForm.controls['email']">
+          <input matInput placeholder="E-mail" [formControl]="loginForm.controls['email']" type="email">
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="E-mail" placeholder="Password" [formControl]="loginForm.controls['password']">
+          <input matInput placeholder="E-mail" placeholder="Password" [formControl]="loginForm.controls['password']" type="password">
         </mat-form-field>
         <!-- <mat-form-field class="example-full-width"> -->
         <button mat-raised-button class="join-btn" [disabled]="loginForm.invalid" (click)="login()">Login</button>
