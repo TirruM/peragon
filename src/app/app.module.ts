@@ -22,6 +22,7 @@ import { SellerDashboardComponent } from './seller/seller-dashboard/seller-dashb
 import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
 import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
 import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.component';
+import { RfqHomeComponent } from './sellerDashboard/rfq-home/rfq-home.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.comp
     SignupComponent,
     SearchComponent,
     ForBuyerComponent,
-    ForManufacturersComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent, RfqComponent, BookMarksComponent, ShowRoomsComponent
+    ForManufacturersComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent, RfqComponent, BookMarksComponent, ShowRoomsComponent, RfqHomeComponent
   ],
   imports: [
     BrowserModule,

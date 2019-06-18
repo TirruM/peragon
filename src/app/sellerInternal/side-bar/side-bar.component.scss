@@ -1,0 +1,17 @@
+#sidebar-wrapper {
+    margin-top: 37px;
+    .seller-info {
+        .seller-image {
+            img {
+                width: 60px;
+                height: 60px;
+                max-width: 60px;
+            }
+        }
+    }
+    .list-items-wrapper {
+        a {
+            color: #212529;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import { SellerDashboardModule } from './seller-dashboard.module';
 import { SellerModule } from 'src/app/seller/seller.module';
 import { SellerProfileComponentt } from '../seller-profile/seller-profile.component';
 import { SellerMessagesComponent } from '../seller-messages/seller-messages.component';
+import { RfqHomeComponent } from '../rfq-home/rfq-home.component';
 export const SellerLayoutRoutes: Routes = [
     {
         path: 'sellerdashboard', component: SellerDashboardComponentNew,
@@ -16,7 +17,8 @@ export const SellerLayoutRoutes: Routes = [
                 path: 'messages', component: SellerMessagesComponent
             },
             {
-                path: 'rfq', component: RfqComponent
+                path: 'rfq', component: RfqComponent,
+                
             },
             {
                 path: 'profile1', component: SellerProfileComponentt
