@@ -1,4 +1,3 @@
-import { BuyerSideNavbarComponent } from './buyer/buyer-side-navbar/buyer-side-navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './shared/signin/signin.component';
 import { NgModule } from '@angular/core';
@@ -14,11 +13,12 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'search', component: SearchComponent},
-  { path: 'forBuyer', component: ForBuyerComponent},
-  { path: 'forManufacturers', component: ForManufacturersComponent},
-  { path: 'howitworks', component: HowItWorksComponent},
-  { path: 'pricing', component: PricingComponent }
+  { path: 'search', component: SearchComponent },
+  { path: 'forBuyer', component: ForBuyerComponent },
+  { path: 'forManufacturers', component: ForManufacturersComponent },
+  { path: 'howitworks', component: HowItWorksComponent },
+  { path: 'pricing', component: PricingComponent },
+
 ];
 
 @NgModule({

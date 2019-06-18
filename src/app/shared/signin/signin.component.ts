@@ -32,19 +32,19 @@ export class SigninComponent implements OnInit {
       this.sharedService.hideBuyerMenu.emit(true);
       localStorage.setItem("buyer_flag", "1");
       console.log("hello");
-      this.router.navigateByUrl("/buyerDashboard");
+      // this.router.navigateByUrl("/buyerDashboard");
+      this.router.navigateByUrl("/buyerdashboardd");
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
       if (localStorage.getItem("manufacturelogin_flag") == "0") {
-        this.router.navigateByUrl("/addProduct");
+        // this.router.navigateByUrl("/addProduct");
+        this.router.navigateByUrl("/sellerdashboard");
       } if (localStorage.getItem("manufacturelogin_flag") == "1") {
-        this.router.navigateByUrl("/seDashboard");
+        this.router.navigateByUrl("/sellerdashboard");
       } else {
         localStorage.setItem("manufacturelogin_flag", "0");
-        this.router.navigateByUrl("/addProduct");
+        // this.router.navigateByUrl("/addProduct");
+        this.router.navigateByUrl("/sellerdashboard");
       }
-
-
-      // this.router.navigateByUrl("/seDashboard")
     }
 
   }

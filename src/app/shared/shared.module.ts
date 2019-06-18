@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import {
   MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule, MatCardModule, MatInputModule, MatCheckboxModule, MatSelectModule,
-  MatSlideToggleModule,MatExpansionModule,MatMenuModule
+  MatSlideToggleModule, MatExpansionModule, MatMenuModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SideBarComponent } from '../sellerInternal/side-bar/side-bar.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     MatButtonModule, MatToolbarModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule,
     MatInputModule,
-    MatCardModule, 
+    MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
     MatSelectModule,
@@ -26,10 +27,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   exports: [
     CommonModule,
     FormsModule,
-    MatInputModule, 
+    MatInputModule,
     ReactiveFormsModule,
-    MatButtonModule, MatToolbarModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, 
-    MatCardModule, MatButtonModule, MatCheckboxModule, MatSelectModule,MatSlideToggleModule,MatExpansionModule,
+    MatButtonModule, MatToolbarModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule,
+    MatCardModule, MatButtonModule, MatCheckboxModule, MatSelectModule, MatSlideToggleModule, MatExpansionModule,
     MatMenuModule
   ]
 })

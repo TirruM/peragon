@@ -16,7 +16,7 @@ import { SellerProspectsComponent } from './seller-prospects/seller-prospects.co
 import { SellerSearchesComponent } from './seller-searches/seller-searches.component';
 
 const sellerRoutes: Routes = [
-  { path: 'seDashboard', component: SellerDashboardComponent, data: { title: 'Dashboard' } },
+  // { path: 'seDashboard', component: SellerDashboardComponent, data: { title: 'Dashboard' } },
   { path: 'preformance', component: SellerBidsComponent, data: { title: 'Bids' } },
   { path: 'seMyproducts', component: SellerMyproductsComponent, data: { title: 'Myproducts' } },
   { path: 'seProfile', component: SellerProfileComponent, data: { title: 'Profile' } },
@@ -31,14 +31,16 @@ const sellerRoutes: Routes = [
 
 
 @NgModule({
-  declarations: [SellerDashboardComponent, SellerSidebarComponent, SellerProfileComponent, SellerBidsComponent, SellerQuotationsComponent, SellerMyproductsComponent, SellerAddproductComponent, SellerCustomersComponent, SellerHistoryComponent, SellerOpportunitiesComponent, SellerProspectsComponent, SellerSearchesComponent],
+  declarations: [SellerSidebarComponent,
+    SellerDashboardComponent, SellerProfileComponent, SellerBidsComponent, SellerQuotationsComponent, SellerMyproductsComponent, SellerAddproductComponent, SellerCustomersComponent, SellerHistoryComponent, SellerOpportunitiesComponent, SellerProspectsComponent, SellerSearchesComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(sellerRoutes),
     SharedModule
   ],
   exports: [
-    SharedModule
+    SharedModule,
+    SellerDashboardComponent,
   ]
 })
 export class SellerModule { }
