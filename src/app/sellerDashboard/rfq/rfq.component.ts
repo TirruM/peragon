@@ -8,10 +8,12 @@ import { Router } from '@angular/router';
 })
 export class RfqComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private routes: Router) { }
 
   ngOnInit() {
-    this.router.navigateByUrl('/rfqhome')
+  }
+  onNavigateToRfqResponse() {
+    this.routes.navigateByUrl('sellerdashboard/rfqHome')
   }
 
 }

@@ -18,7 +18,7 @@ export const SellerLayoutRoutes: Routes = [
             },
             {
                 path: 'rfq', component: RfqComponent,
-                
+
             },
             {
                 path: 'profile1', component: SellerProfileComponentt
@@ -31,7 +31,11 @@ export const SellerLayoutRoutes: Routes = [
             },
             {
                 path: 'showrooms', component: ShowRoomsComponent
+            },
+            {
+                path: 'rfqHome', component: RfqHomeComponent
             }
+
 
         ]
     },

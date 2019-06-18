@@ -12,7 +12,7 @@ export class RfqHomeComponent implements OnInit {
 
   ngOnInit() {
   }
-  onNavigateToRfqResponse() {
-    this.routes.navigateByUrl('/rfqresponses')
+  onBackToRfq() {
+    this.routes.navigateByUrl('sellerdashboard/rfq')
   }
 }
