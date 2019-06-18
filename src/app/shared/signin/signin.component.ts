@@ -36,13 +36,13 @@ export class SigninComponent implements OnInit {
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
       if (localStorage.getItem("manufacturelogin_flag") == "0") {
         // this.router.navigateByUrl("/addProduct");
-        this.router.navigateByUrl("/sellerdashboard");
+        this.router.navigateByUrl("/sellerdashboard/profile1");
       } if (localStorage.getItem("manufacturelogin_flag") == "1") {
-        this.router.navigateByUrl("/sellerdashboard");
+        this.router.navigateByUrl("/sellerdashboard/profile1");
       } else {
         localStorage.setItem("manufacturelogin_flag", "0");
         // this.router.navigateByUrl("/addProduct");
-        this.router.navigateByUrl("/sellerdashboard");
+        this.router.navigateByUrl("/sellerdashboard/profile1");
       }
     }
 

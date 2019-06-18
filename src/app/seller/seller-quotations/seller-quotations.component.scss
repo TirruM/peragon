@@ -1,0 +1,62 @@
+.box-header {
+    background-color: rgb(117, 117, 117);
+    height: 80px;   
+    position: relative;
+}
+
+.box-body-logo{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    background-color: rgb(158, 149, 149);
+    color: #ffffff;
+    width: 90px;
+    height: 90px;
+    padding: 26px;
+    font-weight: 500;
+    font-size: 18px;
+    // display: inline-flex;
+}
+
+.box-body-main-content {
+    display: inline-flex;
+    float: right;
+
+}
+
+.add-btns {
+
+    .rmi-btn {
+        float: right;
+    }
+    .bookmark-btn {
+        margin-right: 1px;
+        margin-top: 6px;
+        float: right;
+    }
+}
+
+button {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
+    // border-color: #ecf0f5;
+}
+
+.box-body-sub-content {
+    display: inline-flex;
+    .sub-content {
+        p {
+            font-size: 17px;
+            color: #c3c0c0;
+        }
+    }
+}
+
+.form-control-plaintext {
+    display: block;
+}
+
+.product-btns {
+    margin: 10px
+}
