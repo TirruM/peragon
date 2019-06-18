@@ -32,8 +32,7 @@ export class SigninComponent implements OnInit {
       this.sharedService.hideBuyerMenu.emit(true);
       localStorage.setItem("buyer_flag", "1");
       console.log("hello");
-      // this.router.navigateByUrl("/buyerDashboard");
-      this.router.navigateByUrl("/buyerdashboardd");
+      this.router.navigateByUrl("/buyerDashboard");
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
       if (localStorage.getItem("manufacturelogin_flag") == "0") {
         // this.router.navigateByUrl("/addProduct");

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-for-buyer',
-  templateUrl: './for-buyer.component.html',
-  styleUrls: ['./for-buyer.component.scss']
+  selector: 'app-for-seller',
+  templateUrl: './for-seller.component.html',
+  styleUrls: ['./for-seller.component.scss']
 })
-export class ForBuyerComponent implements OnInit {
+export class ForSellerComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -15,4 +15,5 @@ export class ForBuyerComponent implements OnInit {
   signup() {
     this.router.navigateByUrl("signup");
   }
+
 }

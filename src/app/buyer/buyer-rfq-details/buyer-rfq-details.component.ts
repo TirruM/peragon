@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 export class BuyerRfqDetailsComponent implements OnInit {
   color = 'warn';
   step = 0;
+  sendMsg: String = "";
+  sendMsg1: String = "";
 
   setStep(index: number) {
     this.step = index;
@@ -20,5 +22,8 @@ export class BuyerRfqDetailsComponent implements OnInit {
   }
   back() {
     this.router.navigate(['/rfq']);
+  }
+  onSendMsg() {
+    this.sendMsg1 = this.sendMsg;
   }
 }

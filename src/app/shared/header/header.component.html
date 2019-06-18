@@ -14,11 +14,12 @@
           <a class="nav-link">Our Members</a>
         </li> -->
       <li class="nav-item custom-nav-item buyer-menu dropdown" routerLinkActive="current" *ngIf="!signInFlag">
-        <a class="nav-link nav-link dropdown-toggle" [routerLink]="['/forBuyer']" data-toggle="dropdown">For
+        <a class="nav-link nav-link dropdown-toggle" data-toggle="dropdown">For
           Buyers</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item forBuyer-menu-items">Why Perogon?</a></li>
-          <li><a class="dropdown-item forBuyer-menu-items" (click)="requestForQuatation();">Request For Quotations</a></li>
+          <li><a class="dropdown-item forBuyer-menu-items" (click)="requestForQuatation();">Request For Quotations</a>
+          </li>
         </ul>
       </li>
       <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="signInFlag">
@@ -26,7 +27,7 @@
 
       </li>
       <li class="nav-item custom-nav-item" routerLinkActive="current">
-        <a class="nav-link" [routerLink]="['/forManufacturers']">For Suppliers</a>
+        <a class="nav-link" [routerLink]="['/forSeller']">For Suppliers</a>
       </li>
       <li class="nav-item custom-nav-item" routerLinkActive="current">
         <a class="nav-link" [routerLink]="['/pricing']">Pricing</a>
@@ -37,10 +38,7 @@
       <li class="nav-item login-btn" *ngIf="signInFlag">
         <a class="nav-link" (click)="signIn()">Login</a>
       </li>
-      <!-- testing for buyer -->
-      <!-- <li class="nav-item login-btn" *ngIf="!signInFlag">
-          <a class="nav-link">Request For Quotation</a>
-        </li> -->
+
 
       <!-- end for buyer -->
 

@@ -14,8 +14,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  showListitems(){
+  showListitems() {
     this.router.navigateByUrl('/search');
+  }
+
+  signup() {
+    this.router.navigateByUrl("signup");
   }
 
 }

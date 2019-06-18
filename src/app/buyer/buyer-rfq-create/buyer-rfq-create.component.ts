@@ -18,4 +18,8 @@ export class BuyerRfqCreateComponent implements OnInit {
   back() {
     this.router.navigate(['/rfq']);
   }
+  createRfq() {
+    alert("create Rfq successfully!!!!");
+    this.router.navigate(['/rfq']);
+  }
 }

@@ -14,7 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
 import { SellerModule } from './seller/seller.module';
 import { ForBuyerComponent } from './for-buyer/for-buyer.component';
-import { ForManufacturersComponent } from './for-manufacturers/for-manufacturers.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { SellerDashboardModule } from './sellerDashboard/seller-dashboard/seller-dashboard.module';
@@ -22,6 +21,7 @@ import { SellerDashboardComponent } from './seller/seller-dashboard/seller-dashb
 import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
 import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
 import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.component';
+import { ForSellerComponent } from './for-seller/for-seller.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.comp
     SignupComponent,
     SearchComponent,
     ForBuyerComponent,
-    ForManufacturersComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent, RfqComponent, BookMarksComponent, ShowRoomsComponent
+    ForSellerComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent, RfqComponent, BookMarksComponent, ShowRoomsComponent
   ],
   imports: [
     BrowserModule,
