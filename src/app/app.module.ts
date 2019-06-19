@@ -23,7 +23,7 @@ import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.comp
 import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.component';
 import { ForSellerComponent } from './for-seller/for-seller.component';
 import { RfqHomeComponent } from './sellerDashboard/rfq-home/rfq-home.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +42,8 @@ import { RfqHomeComponent } from './sellerDashboard/rfq-home/rfq-home.component'
     SharedModule,
     BrowserAnimationsModule,
     BuyerModule,
-    SellerDashboardModule
+    SellerDashboardModule,
+    HttpClientModule,
   ],
   exports: [BuyerModule,],
   providers: [],

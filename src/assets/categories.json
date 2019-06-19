@@ -1,0 +1,214 @@
+{
+    "status": 200,
+    "message": "success",
+    "data": [
+        {
+            "categoryName": "APPAREL",
+            "categoryId": "1",
+            "subCategory": [
+                {
+                    "subCategoryName": "SHIRTS",
+                    "subCategoryId": "1"
+                },
+                {
+                    "subCategoryName": "POLOS",
+                    "subCategoryId": "2"
+                },
+                {
+                    "subCategoryName": "JACKETS",
+                    "subCategoryId": "3"
+                },
+                {
+                    "subCategoryName": "JERSEYS",
+                    "subCategoryId": "4"
+                },
+                {
+                    "subCategoryName": "COMPRESSION GEAR",
+                    "subCategoryId": "5"
+                },
+                {
+                    "subCategoryName": "PANTS",
+                    "subCategoryId": "6"
+                },
+                {
+                    "subCategoryName": "SHORTS",
+                    "subCategoryId": "7"
+                },
+                {
+                    "subCategoryName": "SKIRTS",
+                    "subCategoryId": "8"
+                }
+            ]
+        },
+        {
+            "categoryName": "MERCHANDISE",
+            "categoryId": "2",
+            "subCategory": [
+                {
+                    "subCategoryName": "AWARDS & TROPHIES",
+                    "subCategoryId": "1"
+                },
+                {
+                    "subCategoryName": "GIFTS",
+                    "subCategoryId": "2"
+                },
+                {
+                    "subCategoryName": "BAGS",
+                    "subCategoryId": "3"
+                },
+                {
+                    "subCategoryName": "BALLS",
+                    "subCategoryId": "4"
+                },
+                {
+                    "subCategoryName": "BOTTLES",
+                    "subCategoryId": "5"
+                }
+            ]
+        },
+        {
+            "categoryName": "EQUIPMENT",
+            "categoryId": "3",
+            "subCategory": [
+                {
+                    "subCategoryName": "RACE TIMING",
+                    "subCategoryId": "1"
+                },
+                {
+                    "subCategoryName": "PITCH MARKING",
+                    "subCategoryId": "2"
+                },
+                {
+                    "subCategoryName": "AUTOMATED CAMERAS",
+                    "subCategoryId": "3"
+                },
+                {
+                    "subCategoryName": "SMART BATS",
+                    "subCategoryId": "4"
+                },
+                {
+                    "subCategoryName": "SMART HELMETS",
+                    "subCategoryId": "5"
+                },
+                {
+                    "subCategoryName": "SHOT CLOCKS",
+                    "subCategoryId": "6"
+                },
+                {
+                    "subCategoryName": "MONITORING & TESTING",
+                    "subCategoryId": "7"
+                },
+                {
+                    "subCategoryName": "DISABILITY & MOBILITY",
+                    "subCategoryId": "8"
+                },
+                {
+                    "subCategoryName": "SNOW SPORTS",
+                    "subCategoryId": "9"
+                },
+                {
+                    "subCategoryName": "LOCKERS",
+                    "subCategoryId": "10"
+                }
+            ]
+        },
+        {
+            "categoryName": "WEARABLES",
+            "categoryId": "4",
+            "subCategory": [
+                {
+                    "subCategoryName": "SMART WATCHES",
+                    "subCategoryId": "1"
+                },
+                {
+                    "subCategoryName": "FITNESS TRACKERS",
+                    "subCategoryId": "2"
+                },
+                {
+                    "subCategoryName": "SMART CLOTHING",
+                    "subCategoryId": "3"
+                },
+                {
+                    "subCategoryName": "JUMPING DEVICES",
+                    "subCategoryId": "4"
+                },
+                {
+                    "subCategoryName": "HEALTH WEARABLES",
+                    "subCategoryId": "5"
+                },
+                {
+                    "subCategoryName": "SMART JERSEYS",
+                    "subCategoryId": "6"
+                },
+                {
+                    "subCategoryName": "SWIM SUITS",
+                    "subCategoryId": "7"
+                }
+            ]
+        },
+        {
+            "categoryName": "STADIUMS",
+            "categoryId": "5",
+            "subCategory": [
+                {
+                    "subCategoryName": "AUDIO SYSTEMS",
+                    "subCategoryId": "1"
+                },
+                {
+                    "subCategoryName": "VIDEO SYSTEMS",
+                    "subCategoryId": "2"
+                },
+                {
+                    "subCategoryName": "DRONES",
+                    "subCategoryId": "3"
+                },
+                {
+                    "subCategoryName": "TICKETING",
+                    "subCategoryId": "4"
+                },
+                {
+                    "subCategoryName": "SECURITY & SAFETY",
+                    "subCategoryId": "5"
+                },
+                {
+                    "subCategoryName": "INTERNET OF THINGS (IoT)",
+                    "subCategoryId": "6"
+                }
+            ]
+        },
+        {
+            "categoryName": "SPORTS TECHNOLOGY",
+            "categoryId": "6",
+            "subCategory": [
+                {
+                    "subCategoryName": "ATHLETE MANAGEMENT",
+                    "subCategoryId": "1"
+                },
+                {
+                    "subCategoryName": "SPORTS ANALYTICS",
+                    "subCategoryId": "2"
+                },
+                {
+                    "subCategoryName": "COACHING & TRAINING",
+                    "subCategoryId": "3"
+                },
+                {
+                    "subCategoryName": "FITNESS & COMPANION",
+                    "subCategoryId": "4"
+                },
+                {
+                    "subCategoryName": "VIRTUAL REALITY",
+                    "subCategoryId": "5"
+                },
+                {
+                    "subCategoryName": "SPORTS MANAGEMENT",
+                    "subCategoryId": "6"
+                },
+                {
+                    "subCategoryName": "SOCIAL & FAN ENGAGEMENT",
+                    "subCategoryId": "7"
+                }
+            ]
+        }
+    ]
+}
