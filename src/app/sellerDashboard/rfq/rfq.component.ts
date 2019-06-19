@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,10 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./rfq.component.scss']
 })
 export class RfqComponent implements OnInit {
-
+  @ViewChild('dataTable') table;
+  dataTable: any;
   constructor(private routes: Router) { }
 
   ngOnInit() {
+    this.dataTable = $(this.table.nativeElement);
+    this.dataTable.DataTable(
+      {
+        responsive: true
+      }
+    );
   }
   onNavigateToRfqResponse() {
     this.routes.navigateByUrl('sellerdashboard/rfqHome')
