@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerMessagesComponent implements OnInit {
 
+  isShowUser: boolean = false;
   constructor() { }
 
   ngOnInit() {
-  }
+
+    
+
+  } 
 
 }
