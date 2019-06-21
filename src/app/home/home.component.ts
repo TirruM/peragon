@@ -10,6 +10,10 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   categories: any;
+  selectedTab: any;
+
+  mainCategory:any;
+
 
   constructor(private router: Router, private services: PerogonServices) { }
 
@@ -17,6 +21,7 @@ export class HomeComponent implements OnInit {
     this.services.getJSON().subscribe((response: any) => {
       this.categories = response.data;
       console.log("perogon categories----->" + JSON.stringify(this.categories));
+      
     });
   }
 
@@ -26,6 +31,10 @@ export class HomeComponent implements OnInit {
 
   signup() {
     this.router.navigateByUrl("signup");
+  }
+
+  onCollapsible(val) {
+    this.selectedTab = val;
   }
 
 }
