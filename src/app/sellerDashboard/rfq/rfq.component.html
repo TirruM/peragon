@@ -1,3 +1,54 @@
-<p>rfq</p>
+<div class="container-fluid">
 
-<button class="btn" (click)="onNavigateToRfqResponse()">rfq res</button>
+    <section>
+        trsiiii
+    </section>
+    <section>
+
+        <table #dataTable class="display responsive no-wrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>RFQ ID</th>
+                    <th>RFQ Name</th>
+                    <th>RFQ Value</th>
+                    <th>Status</th>
+                    <th>Customer</th>
+                    <th>Due Date</th>
+                    <th>Time Remaining</th>
+                </tr>
+            </thead>
+            <tbody (click)="onNavigateToRfqResponse()">
+                <tr>
+                    <td>1</td>
+                    <td>BasketBalls</td>
+                    <td>70000</td>
+                    <td>Win</td>
+                    <td> thriveni </td>
+                    <td> 20/05/2019 </td>
+                    <td> 2 days </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cricket balls</td>
+                    <td>2000</td>
+                    <td>Submitted</td>
+                    <td> rajesh </td>
+                    <td> 20/05/2019 </td>
+                    <td> 20days </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Need shoes</td>
+                    <td>50000</td>
+                    <td>Win</td>
+                    <td> Anil </td>
+                    <td> 04/10/2019 </td>
+                    <td> 42 days </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+</div>
