@@ -34,16 +34,7 @@ export class SigninComponent implements OnInit {
       console.log("hello");
       this.router.navigateByUrl("/buyerDashboard");
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
-      if (localStorage.getItem("manufacturelogin_flag") == "0") {
-        // this.router.navigateByUrl("/addProduct");
-        this.router.navigateByUrl("/sellerdashboard/profile1");
-      } if (localStorage.getItem("manufacturelogin_flag") == "1") {
-        this.router.navigateByUrl("/sellerdashboard/profile1");
-      } else {
-        localStorage.setItem("manufacturelogin_flag", "0");
-        // this.router.navigateByUrl("/addProduct");
-        this.router.navigateByUrl("/sellerdashboard/profile1");
-      }
+      this.router.navigateByUrl("/sellerdashboard/profile1");
     }
 
   }
