@@ -10,7 +10,7 @@
   <div class="list-group list-items-wrapper">
     <nav class="navbar">
     <ul class="navbar-nav">
-      <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item">
+      <li *ngFor="let menuItem of menuItems" class="nav-item">
         <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
           <div (click)="menuClick(menuItem)">
             <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
