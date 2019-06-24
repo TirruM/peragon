@@ -1,0 +1,86 @@
+// @import "../../custom_styles/variables";
+@import "../../../custom_styles/variables";
+
+.rfqs-results {
+  .opportunities {
+    margin: 50px auto;
+  
+    .buyers_card {
+      box-shadow: $box-shadow;
+      margin: 16px;
+  
+      // transition: 0.3s all ease;
+      .card-wrapper {
+        .rfqs {
+          img {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 160px;
+  
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+  
+        .manfact_details_card {
+          margin: auto;
+  
+          .ratings {
+            color: yellow;
+          }
+  
+          p {
+            margin-bottom: 0.2rem;
+          }
+  
+          .units {
+            background-color: #939393;
+            color: #fff;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  
+    //   }
+    .carousel-control-prev {
+      left: -73px;
+    }
+  
+    .carousel-control-next {
+      right: -73px;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      outline: black;
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      // border: 1px solid black;
+      background-image: none;
+    }
+  
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 55px;
+      color: red;
+    }
+  
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: red;
+    }
+  
+    
+  }
+  /*RFQ Tables*/
+  .rfq-table {
+    margin: 50px auto;
+  }
+}
+

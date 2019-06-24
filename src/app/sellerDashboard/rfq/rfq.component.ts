@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
+import 'datatables.net';
 
 @Component({
   selector: 'app-rfq',
