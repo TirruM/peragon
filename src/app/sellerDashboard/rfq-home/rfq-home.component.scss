@@ -244,3 +244,62 @@
   padding: 11px 14px !important;
   font-size: 17px !important;
 }
+
+.box {
+  margin-bottom: 0px;
+  box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
+  padding: 10px;
+
+  h6 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 10px;
+  }
+  .radio-btns {
+    
+    .margin {
+      margin-left: 100px;
+    }
+  }
+  .textarea-box {
+    box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 8px;
+    // textarea {
+    //   width: 333px;
+    // }
+  }
+
+  .margin-top {
+    margin-top: 20px;
+  }
+
+  .product-content {
+    margin-bottom: -18px;
+  }
+
+  /* Specifications starts.....*/
+  .specifications {
+
+    .spec-text {
+      margin-bottom: -4px;
+    }
+    .spec-sub-text {
+      margin-top: 30px;
+    }
+    .spec-content {
+      display: flex;
+    }
+  }   
+    .req-margin {
+      margin-left: 70px;
+    }
+   
+     .req-content {
+        margin-top: 20px;
+        h6 {
+          margin-top: -17px;        
+        }
+     }
+}

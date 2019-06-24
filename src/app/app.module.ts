@@ -12,7 +12,6 @@ import { SigninComponent } from './shared/signin/signin.component';
 import { SignupComponent } from './shared/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
-import { SellerModule } from './seller/seller.module';
 import { ForBuyerComponent } from './for-buyer/for-buyer.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PricingComponent } from './pricing/pricing.component';
@@ -22,8 +21,8 @@ import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
 import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
 import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.component';
 import { ForSellerComponent } from './for-seller/for-seller.component';
-import { RfqHomeComponent } from './sellerDashboard/rfq-home/rfq-home.component';
 import { HttpClientModule } from '@angular/common/http';
+import * as $ from 'jquery';
 @NgModule({
   declarations: [
     AppComponent,
