@@ -14,11 +14,10 @@
   }
 }
 .reponse_details {
-  position: relative;
-    top: -112px;
+  margin: 45px 0;
     .container-on-img {
       background-color: #ffffff;
-      padding: 20px;
+      // padding: 20px;
     
       .form-main-heading {
         .back-btn {
@@ -41,19 +40,20 @@
       .manufact_card {
         box-shadow: $box-shadow;
         margin: 30px 0;
-        padding: 25px;
+        padding: 10px;
     
         .rfq-details-header {
           margin: 10px 16px;
     
-          .edit_icon {
-            mat-slide-toggle {
-              margin: 0 25px;
+          .rfq-reply-btn {
+            button {
+              background-color: #57bf57;
+              color: #ffffff;
+              border-radius: 26px;
+              padding: 4px 21px 7px 21px;
+              font-weight: 600;
             }
-    
-            i {
-              display: inline;
-            }
+            
           }
         }
     
@@ -149,6 +149,7 @@
         p {
           margin-bottom: 0;
           padding-right: 14px;
+          font-size: 14px;
         }
     
       }
@@ -247,8 +248,7 @@
 
 .box {
   margin-bottom: 0px;
-  box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
-  padding: 10px;
+  padding: 20px;
 
   h6 {
     font-size: 14px;

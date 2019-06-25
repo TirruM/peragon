@@ -2,12 +2,12 @@
   <section>
     <div class="container">
       <div class="container-on-img">
-        <div class="col-sm-12">
+        <div class="">
           <div class="form-main-heading">
             <button type="button" class="btn btn-md back-btn" (click)="onBackToRfq();">
               <i class="fa fa-long-arrow-left"></i>Back</button>
             <div class="product_name">
-              <h4>Volley Ball - Medium (Bulk)</h4>
+              <h4>Men's Polo T-Shirt</h4>
             </div>
           </div>
           <div class="manufact_card">
@@ -16,11 +16,11 @@
                 <div class="rfq-details-header">
                   <div class="row justify-content-between">
                     <div>
-                      <h5>Volley Ball - Medium(Bulk)</h5>
+                      <h5>Men's Polo T-Shirt</h5>
+                      <p>Best Blue</p>
                     </div>
-                    <div class="edit_icon">
-                      <mat-slide-toggle [color]="color">Active</mat-slide-toggle>
-                      <i class="fa fa-pencil"></i>
+                    <div class="rfq-reply-btn">
+                      <button class="btn btn-sm">Reply</button>
                     </div>
                   </div>
                 </div>
@@ -28,7 +28,7 @@
                   <div class="col-md-6">
                     <div>
                       <label for="">Product Group</label>
-                      <p><strong>Balls</strong></p>
+                      <p><strong>Shirts</strong></p>
                     </div>
                     <div>
                       <label for="">Product Details</label>
@@ -58,11 +58,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row justify-content-end">
-                  <p>RFQ is visible to all suppliers who produce <strong>Tops & Shirts</strong> in
-                    <strong>India</strong>
-                  </p>
-                </div>
                 <div class="col">
                   <div class="attachments">
                     <div class="">
@@ -91,100 +86,17 @@
               <mat-expansion-panel>
                 <mat-expansion-panel-header [expandedHeight]="'60px'" [collapsedHeight]="'50px'">
                   <mat-panel-description class="justify-content-start">
-                    <p>Reply To RFQ</p>
-                  </mat-panel-description>
-
-                  <mat-panel-description>
-                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                      <mat-icon>account_circle</mat-icon>
-                      <mat-icon>more_vert</mat-icon>
-                    </button>
-                    <mat-menu #menu="matMenu">
-                      <button mat-menu-item>
-                        <mat-icon>perm_identity</mat-icon>
-                        <span>View Profile</span>
-                      </button>
-                      <button mat-menu-item>
-                        <mat-icon>delete_outline</mat-icon>
-                        <span>Discard</span>
-                      </button>
-                    </mat-menu>
-                  </mat-panel-description>
+                    <p>Reply to RFQ</p>
+                  </mat-panel-description>                  
                 </mat-expansion-panel-header>
-                <!-- <div>
-                  <div class="user_info">
-                    <mat-icon>account_circle</mat-icon>
-                    <p>Ganesh</p>
-                  </div>
-                  <div class="rfq_responselist">
-                    <div class="seller_response">
-                      <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                      <small>We are following the request quotation for Men's Polo Shirt</small>
-                    </div>
-                    <div class="seller_qna">
-                      <div>
-                        <i class="fa fa-check right_icon"></i>
-                        <div class="response_options">
-                          <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
-                          <small>we produce on average 100000 pieces per year</small>
-                        </div>
-                      </div>
-                      <div>
-                        <i class="fa fa-times cross_icon"></i>
-                        <div class="response_options">
-                          <p><span class="text-danger">No</span>,we cannot fulfill all specifications.</p>
-                          <small>Need to source correct fabrics</small>
-                        </div>
-                      </div>
-
-                      <div>
-                        <i class="fa fa-check right_icon"></i>
-                        <div class="response_options">
-                          <p><span class="text-success">Yes</span>,we agree to the price.</p>
-                        </div>
-                      </div>
-                      <div>
-                        <i class="fa fa-check right_icon"></i>
-                        <div class="response_options">
-                          <p><span class="text-success">Yes</span>,we can produce the requested quantity.</p>
-                        </div>
-                      </div>
-                      <div>
-                        <i class="fa fa-check right_icon"></i>
-                        <div class="response_options">
-                          <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <i class="fa fa-check right_icon"></i>
-                      <div class="response_options">
-                        <p>{{sendMsg1}}</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div>
-                    <div class="d-flex flex-nowrap align-items-center chatbox">
-                      <div class="attachment_icon">
-                        <i class="material-icons">attachment</i>
-                      </div>
-                      <mat-form-field>
-                        <input matInput type="text" [(ngModel)]='sendMsg'>
-                      </mat-form-field>
-                      <div class="send_btn">
-                        <button class="btn btn-md" (click)="onSendMsg()">Send</button>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <div class="container">
+               
+                <div class="">
                   <div class="box">
                     <div class="row">
                       <div class="col-md-6">
                         <h6>Product</h6>
                         <div class="product-content">
-                          <p>Lorem ipsum dolor.</p>
+                          <p>Product keyword</p>
                         </div> 
                         <div>
                           <h6>Men's Polo shirt</h6>
@@ -192,14 +104,13 @@
                       </div>
                       <div class="col-md-6">
                         <form>
-                          <h6>Do you Product produce "Men's polo shirt"?</h6>
+                          <h6>Do you produce Product  "Men's polo shirt"?</h6>
                           <div class="radio-btns margin-top">
                             <input type="radio" name="radio-btn">Yes
                             <input class="margin" type="radio" name="radio-btn">No
                           </div> 
                           <div class="margin-top">
-                            <textarea class="col-md-12">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <textarea class="col-md-12" rows="4" cols="5">
                               Polo shirts is in our top 3 rpoducts
                             </textarea>
                           </div>
@@ -213,8 +124,8 @@
                         <div class="specifications">
                           <h6>Specifications</h6>
                           <div>
-                            <p class="spec-text">loren dckd jsodc</p>
-                            <h6>jojdmsi ujdjsmx ygdn</h6>
+                            <p class="spec-text">Product details</p>
+                            <h6>Organic cotton See techpack attached</h6>
                           </div>
                           <div class="spec-sub-text">
                             <div class="spec-content">
@@ -240,8 +151,7 @@
                             <input class="margin" type="radio" name="radio-btn">No
                           </div> 
                           <div class="margin-top">
-                            <textarea class="col-md-12">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <textarea class="col-md-12" rows="4" cols="5">                              
                               Polo shirts is in our top 3 rpoducts
                             </textarea>
                           </div>
@@ -254,34 +164,34 @@
                       <div class="col-md-6">
                         <h6>Requirements</h6>
                         <div class="req-content">
-                          <p class="spec-text">Quality</p>
+                          <p class="spec-text">Quantity</p>
                           <h6>1000 pieces</h6>
                         </div>  
                         <div class="req-content">
-                          <p class="spec-text">Quality</p>
-                          <h6>1000 selectors</h6>
+                          <p class="spec-text">Target per price unit</p>
+                          <h6>7 USD</h6>
                         </div>  
                         <div class="req-content">
-                          <p class="spec-text">Quality</p>
-                          <h6>1000 selectors</h6>
+                          <p class="spec-text">Delivery date(YYYY-MM-DD)</p>
+                          <h6>2019-06-25</h6>
                         </div>  
                       </div>
                       <div class="col-md-6">
-                        <h6>Doyou meet the byuers requirements?</h6>
+                        <h6>Do you meet the buyer's requirements?</h6>
                         <form>  
                           <div>
                             <div class="margin-top">
-                              <label>Quality</label>
+                              <label>Quantity</label>
                               <input class="req-margin" type="radio" name="radio1">Yes
                               <input class="req-margin" type="radio" name="radio1">No
                             </div>
                             <div class="margin-top">
-                              <label>Quality</label>
+                              <label>Target per price unit</label>
                               <input class="req-margin" type="radio" name="radio2">Yes
                               <input class="req-margin" type="radio" name="radio2">No
                             </div>
                             <div class="margin-top">
-                              <label>Quality</label>
+                              <label>Delivery date</label>
                               <input class="req-margin" type="radio" name="radio3">Yes
                               <input class="req-margin" type="radio" name="radio3">No
                             </div>
