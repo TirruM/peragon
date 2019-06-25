@@ -12,9 +12,9 @@
     <ul class="navbar-nav">
       <li *ngFor="let menuItem of menuItems" class="nav-item">
         <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
-          <div (click)="menuClick(menuItem)">
+          <div (click)="menuClick(menuItem)" class="sidebar-links">
             <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
-            <span class="d-inline sidebar-link-names">{{menuItem.title}}</span>
+            <p class="d-inline">{{menuItem.title}}</p>
           </div>
         </a>
       </li>

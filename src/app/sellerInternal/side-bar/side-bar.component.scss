@@ -12,15 +12,21 @@
     .list-items-wrapper {
         a {
             color: #212529;
+            margin: 5px 0px 5px 0px;
         }
         .isActive {
+            color: rgb(233, 50, 50);
             border-left: 3px solid rgb(233, 50, 50);
+            padding-top: 0px;
+            padding-bottom: 0px;
+            background-color: #fbfbfb;
         }
         mat-icon {
             font-size: 1.4rem;
+            vertical-align: middle;
         }
-        .sidebar-link-names {
-            padding: 10px;
+        .sidebar-links {
+            padding: 2px 2px 2px 12px;
             font-size: 15px;
         }
     }
