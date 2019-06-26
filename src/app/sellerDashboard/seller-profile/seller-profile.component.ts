@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerProfileComponentt implements OnInit {
   selectedTab: any;
+  profileStrength: String = 'Starter';
 
   constructor() {
     this.selectedTab = '0';

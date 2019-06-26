@@ -84,6 +84,40 @@
     </div>
   </div>
 </section>
+<section>
+  <div class="box">
+    <p>Profile Strength:{{profileStrength}}</p>
+    <div>
+      <mat-accordion class="example-headers-align">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [expandedHeight]="'60px'" [collapsedHeight]="'50px'">
+            <mat-panel-description class="justify-content-start">
+              <p>Steps to reach the next level</p>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div>
+            <div class="row">
+              <div class="col-md-3">
+                <p>---Showroom</p>
+              </div>
+              <div class="col-md-3">
+                <p>---Companu logo</p>
+              </div>
+              <div class="col-md-3">
+                <p>---Compliance</p>
+              </div>
+              <div class="col-md-3">
+                <p>---Export countries</p>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+    </div>
+
+  </div>
+</section>
 
 <section>
   <div id="summary" class="tab-pane fade active show" *ngIf="selectedTab === '0' ">
