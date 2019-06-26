@@ -14,11 +14,11 @@
           <p>Logo</p>
         </div>
         <!-- <div class="box-body-main-content row"> -->
-          <div class="col-sm-6 box-body-main-content">
-            <h3>Best Way Fashion</h3>
-            <p>India<br>Ready-made garment manufacturer</p>
-          </div>
-          <!-- <div class="add-btns col-sm-6">
+        <div class="col-sm-6 box-body-main-content">
+          <h3>Best Way Fashion</h3>
+          <p>India<br>Ready-made garment manufacturer</p>
+        </div>
+        <!-- <div class="add-btns col-sm-6">
             <button class="btn btn-md rmi-btn">+ Request more info</button>
             <button class="btn btn-md bookmark-btn">+ Bookmarks</button>
           </div> -->
@@ -55,56 +55,56 @@
 
 <section>
   <div class="box">
-    <div class="row">   
-      <nav class="navbar">            
+    <div class="row">
+      <nav class="navbar">
         <ul class="nav nav-pills custom-navbar">
           <li class="nav-item">
-            <a class="nav-link isActive" href="#summary">Summary</a>
+            <a class="nav-link isActive" href="#summary" (click)="onTabClick('0')" data-toggle="pill">Summary</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" (click)="onTabClick('1')" data-toggle="pill">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#products">Products</a>
+            <a class="nav-link" href="#products" (click)="onTabClick('2')" data-toggle="pill">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#services" (click)="onTabClick('3')" data-toggle="pill">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#compliance">Compliance</a>
+            <a class="nav-link" href="#compliance" (click)="onTabClick('4')" data-toggle="pill">Compliance</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#locations">Locations</a>
+            <a class="nav-link" href="#locations" (click)="onTabClick('5')" data-toggle="pill">Locations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#showroom">Showroom</a>
+            <a class="nav-link" href="#showroom" (click)="onTabClick('6')" data-toggle="pill">Showroom</a>
           </li>
         </ul>
-      </nav>  
+      </nav>
     </div>
   </div>
 </section>
 
 <section>
-  <div id="summary" class="active show">
+  <div id="summary" class="tab-pane fade active show" *ngIf="selectedTab === '0' ">
     <p>summary works</p>
   </div>
-  <div id="about">
+  <div id="about" *ngIf="selectedTab === '1' " class="tab-pane fade ">
     <p>about works</p>
   </div>
-  <div id="products">
+  <div id="products" *ngIf="selectedTab === '2' " class="tab-pane fade ">
     <p>products works</p>
   </div>
-  <div id="services">
+  <div id="services" *ngIf="selectedTab === '3' " class="tab-pane fade ">
     <p>services works</p>
   </div>
-  <div id="compliance">
+  <div id="compliance" *ngIf="selectedTab === '4' " class="tab-pane fade ">
     <p>Compliance works</p>
   </div>
-  <div id="locations">
+  <div id="locations" *ngIf="selectedTab === '5' " class="tab-pane fade ">
     <p>locations works</p>
   </div>
-  <div id="showroom">
+  <div id="showroom" *ngIf="selectedTab === '6' " class="tab-pane fade ">
     <p>showroom works</p>
   </div>
 </section>

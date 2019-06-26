@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./seller-profile.component.scss']
 })
 export class SellerProfileComponentt implements OnInit {
+  selectedTab: any;
 
-  constructor() { }
+  constructor() {
+    this.selectedTab = '0';
+  }
 
   ngOnInit() {
+  }
+
+  onTabClick(currentTab) {
+    this.selectedTab = currentTab;
   }
 
 }
