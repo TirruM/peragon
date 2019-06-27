@@ -1,67 +1,81 @@
 $gradient_bg_color: linear-gradient(45deg, #a2088e 0%, #ce354e 35%, #f2581d 100%);
 
-$box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+$box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 
 $text-color: #262626;
 
 $p-letter-spacing: 1px;
 
 @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-       -moz-border-radius: $radius;
-        -ms-border-radius: $radius;
-            border-radius: $radius;
-  }
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
 %tick-img {
-    background-image: url("../../assets/img/TICK.png");
-    background-repeat: no-repeat;
-    padding-left: 34px;
-}  
+  background-image: url("../../assets/img/TICK.png");
+  background-repeat: no-repeat;
+  padding-left: 34px;
+}
+
 %header-styles {
-    content: '';
-    background-color: #e0090d;
-    color: #e0090d;
-    width: 50px;
-    height: 3px;
-    display: block;
-    // padding: 20px;
-    margin: auto;
+  content: '';
+  background-color: #e0090d;
+  color: #e0090d;
+  width: 50px;
+  height: 3px;
+  display: block;
+  // padding: 20px;
+  margin: auto;
 }
+
 %h1-styles {
-    font-size: 50px;
-    color: #fff;
-    letter-spacing: 3.3px;
-    font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 3.3px;
+  font-weight: 700;
 }
+
 %h-styles {
-    font-size: 34px;
-    letter-spacing: 4.5px;
-    line-height: 58.2px;
+  font-size: 34px;
+  letter-spacing: 4.5px;
+  line-height: 58.2px;
 }
+
 %btn-styles {
-    color: #fff;
-    background-image: $gradient_bg_color;
-    @include border-radius(30px);
+  color: #fff;
+  background-image: $gradient_bg_color;
+  @include border-radius(30px);
 }
+
 %p-styles {
-    color: $text-color;
-    font-size: 20px;
-    letter-spacing: $p-letter-spacing;
+  color: $text-color;
+  font-size: 20px;
+  letter-spacing: $p-letter-spacing;
 }
+
 %list-p-styles {
-    color: $text-color;
-    font-size: 17px;
-    letter-spacing: $p-letter-spacing;
-    font-weight: 400;
-    padding-bottom: 10px;
+  color: $text-color;
+  font-size: 17px;
+  letter-spacing: $p-letter-spacing;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+%colored-btn {
+  background-color: #57bf57;
+  color: #ffffff;
+  border-radius: 26px;
+  padding: 4px 21px 7px 21px;
+  font-weight: 600;
 }
 
 // Media Queries
- $for-tab: 768px;
+$for-tab: 768px;
 
- @mixin tablet {
-    @media screen and (max-width: #{$for-tab}) {
-        @content;
-    }
+@mixin tablet {
+  @media screen and (max-width: #{$for-tab}) {
+    @content;
+  }
 }
-
