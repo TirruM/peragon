@@ -98,7 +98,7 @@
           <div>
             <div class="row">
               <div class="col-md-3">
-                <p>---Showroom</p>
+                <p (click)="onNavigateShowroom('6')">---Showroom</p>
               </div>
               <div class="col-md-3">
                 <p>---Company logo</p>
@@ -117,10 +117,7 @@
   </div>
 </section>
 
-
-
 <section>
-<<<<<<< HEAD
   <div class="tab-content">
     <div id="summary" class="tab-pane fade active show">
       <!-- <p>summary works</p> -->
@@ -131,8 +128,8 @@
               <i class="fab fa-buffer"></i><p>Product Groups</p>
               <button class="btn btn-md view-btn">View More</button>
             </div>
-            <div>
-
+            <div class="product-group-body">
+              <div class="loader"></div>
             </div>  
           </div>
         </div>
@@ -207,7 +204,7 @@
             <p class="col-md-3 body-text"><b>Monter International</b></p>
           </div>
         </div>
-      </div>
+      </div>      
     </div>
     <div id="products" class="tab-pane fade ">
       <p>products works</p>
@@ -221,38 +218,8 @@
     <div id="locations" class="tab-pane fade ">
       <p>locations works</p>
     </div>
-    <div id="showroom" class="tab-pane fade ">
+    <div id="showroom" class="tab-pane fade " *ngIf="selectedTab=='6'">
       <p>showroom works</p>
     </div>
   </div>  
-=======
-  <div id="summary" class="tab-pane fade active show" *ngIf="selectedTab === '0' ">
-    <p>summary works</p>
-  </div>
-  <div id="about" *ngIf="selectedTab === '1' " class="tab-pane fade ">
-    <p>about works</p>
-  </div>
-  <div id="products" *ngIf="selectedTab === '2' " class="tab-pane fade ">
-    <p>products works</p>
-  </div>
-  <div id="services" *ngIf="selectedTab === '3' " class="tab-pane fade ">
-    <p>services works</p>
-  </div>
-  <div id="compliance" *ngIf="selectedTab === '4' " class="tab-pane fade ">
-    <p>Compliance works</p>
-  </div>
-  <div id="locations" *ngIf="selectedTab === '5' " class="tab-pane fade ">
-    <p>locations works</p>
-  </div>
-  <div id="showroom" *ngIf="selectedTab === '6' " class="tab-pane fade ">
-    <p>Increase your business, Isobel Macphee</p>
-    <small>Choose type of product</small>
-    <div class="box">
-      <div class="d-flex justify-content-between add-product">
-        <p>Add products to your showroom</p>
-        <button class="btn add-product-btn btn-sm">Add Product</button>
-      </div>
-    </div>
-  </div>
->>>>>>> 0bc2b370916ece1cdc0da472ca62b8713ed3a55c
 </section>
