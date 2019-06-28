@@ -1,4 +1,3 @@
-
 <section class="p-3" id="dashboard">
   <div class="container-fluid">
     <div class="box">
@@ -59,25 +58,32 @@
       <nav class="navbar">
         <ul class="nav nav-pills custom-navbar">
           <li class="nav-item">
-            <a class="nav-link isActive" href="#summary" (click)="onTabClick('0')" data-toggle="pill">Summary</a>
+            <a class="nav-link " href="#summary" [ngClass]="{'isActive':selectedTab =='0'}" (click)="onTabClick('0')"
+              data-toggle="pill">Summary</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" (click)="onTabClick('1')" data-toggle="pill">About</a>
+            <a class="nav-link" href="#about" [ngClass]="{'isActive':selectedTab =='1'}" (click)="onTabClick('1')"
+              data-toggle="pill">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#products" (click)="onTabClick('2')" data-toggle="pill">Products</a>
+            <a class="nav-link" href="#products" [ngClass]="{'isActive':selectedTab =='2'}" (click)="onTabClick('2')"
+              data-toggle="pill">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services" (click)="onTabClick('3')" data-toggle="pill">Services</a>
+            <a class="nav-link" href="#services" [ngClass]="{'isActive':selectedTab =='3'}" (click)="onTabClick('3')"
+              data-toggle="pill">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#compliance" (click)="onTabClick('4')" data-toggle="pill">Compliance</a>
+            <a class="nav-link" href="#compliance" [ngClass]="{'isActive':selectedTab =='4'}" (click)="onTabClick('4')"
+              data-toggle="pill">Compliance</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#locations" (click)="onTabClick('5')" data-toggle="pill">Locations</a>
+            <a class="nav-link" href="#locations" [ngClass]="{'isActive':selectedTab =='5'}" (click)="onTabClick('5')"
+              data-toggle="pill">Locations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#showroom" (click)="onTabClick('6')" data-toggle="pill">Showroom</a>
+            <a class="nav-link" href="#showroom" (click)="onTabClick('6')" [ngClass]="{'isActive':selectedTab =='6'}"
+              data-toggle="pill">Showroom</a>
           </li>
         </ul>
       </nav>
@@ -98,16 +104,16 @@
           <div>
             <div class="row">
               <div class="col-md-3">
-                <p>---Showroom</p>
+                <button (click)="onTabClick('6')">---Showroom</button>
               </div>
               <div class="col-md-3">
-                <p>---Company logo</p>
+                <button (click)="onTabClick('6')">---Company logo</button>
               </div>
               <div class="col-md-3">
-                <p>---Compliance</p>
+                <button (click)="onTabClick('6')">---Compliance</button>
               </div>
               <div class="col-md-3">
-                <p>---Export countries</p>
+                <button (click)="onTabClick('6')">---Export countries</button>
               </div>
             </div>
           </div>
@@ -120,39 +126,41 @@
 
 
 <section>
-<<<<<<< HEAD
   <div class="tab-content">
-    <div id="summary" class="tab-pane fade active show">
+    <div id="summary" class="tab-pane fade " [ngClass]="{'show':selectedTab =='0','active':selectedTab =='0'}">
       <!-- <p>summary works</p> -->
       <div class="row">
         <div class="col-md-6">
           <div class="product-box-style">
             <div class="product-group">
-              <i class="fab fa-buffer"></i><p>Product Groups</p>
+              <i class="fab fa-buffer"></i>
+              <p>Product Groups</p>
               <button class="btn btn-md view-btn">View More</button>
             </div>
             <div>
 
-            </div>  
+            </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="box-style">
             <div class="showroom-content">
               <div class="showroom-text">
-                <i class="fal fa-camera-alt"></i><p>Showroom</p>
-              </div> 
+                <i class="fal fa-camera-alt"></i>
+                <p>Showroom</p>
+              </div>
               <div class="fill-showroom">
                 <button class="btn btn-md btn-success">Fill Showroom</button>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="box-style">
             <div class="order-size-content">
               <div class="order-size-text">
-                <i class="fal fa-tshirt"></i><p>Order size</p>
+                <i class="fal fa-tshirt"></i>
+                <p>Order size</p>
                 <button class="btn btn-md view-btn">View More</button>
-              </div> 
+              </div>
               <div class="order-size-body">
                 <p><b>501-1000</b></p>
                 <p>Minimum order quantity</p>
@@ -162,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div id="about" class="tab-pane fade ">
+    <div id="about" class="tab-pane fade " [ngClass]="{'show':selectedTab =='1','active':selectedTab =='1'}">
       <!-- <p>about works</p> -->
       <div class="about">
         <div class="about-description">
@@ -183,7 +191,7 @@
             <div class="col-md-4 keyfacts-body-text">
               <p><b>N/A</b></p>
               <p>Employees</p>
-            </div>   
+            </div>
             <div class="col-md-4 keyfacts-body-text">
               <p><b>N/A</b></p>
               <p>Revenue / Year</p>
@@ -191,15 +199,15 @@
             <div class="col-md-4 keyfacts-body-text">
               <p><b>N/A</b></p>
               <p>Pieces / Year</p>
-            </div>        
-          </div>        
+            </div>
+          </div>
         </div>
         <div class="ref-customers">
           <div class="ref-customers-content">
             <p><b>Reference Customers</b></p>
             <p>This section is visible to buyers</p>
             <div class="edit-btn">
-                <mat-icon>edit</mat-icon>
+              <mat-icon>edit</mat-icon>
             </div>
           </div>
           <div class="row ref-customers-body">
@@ -209,50 +217,21 @@
         </div>
       </div>
     </div>
-    <div id="products" class="tab-pane fade ">
+    <div id="products" class="tab-pane fade " [ngClass]="{'show':selectedTab =='2','active':selectedTab =='2'}">
       <p>products works</p>
     </div>
-    <div id="services" class="tab-pane fade ">
+    <div id="services" class="tab-pane fade " [ngClass]="{'show':selectedTab =='3','active':selectedTab =='3'}">
       <p>services works</p>
     </div>
-    <div id="compliance" class="tab-pane fade ">
+    <div id="compliance" class="tab-pane fade " [ngClass]="{'show':selectedTab =='4','active':selectedTab =='4'}">
       <p>Compliance works</p>
     </div>
-    <div id="locations" class="tab-pane fade ">
+    <div id="locations" class="tab-pane fade " [ngClass]="{'show':selectedTab =='5','active':selectedTab =='5'}">
       <p>locations works</p>
     </div>
-    <div id="showroom" class="tab-pane fade ">
+    <div id="showroom" class="tab-pane fade " [ngClass]="{'show':selectedTab =='6','active':selectedTab =='6'}">
       <p>showroom works</p>
     </div>
-  </div>  
-=======
-  <div id="summary" class="tab-pane fade active show" *ngIf="selectedTab === '0' ">
-    <p>summary works</p>
   </div>
-  <div id="about" *ngIf="selectedTab === '1' " class="tab-pane fade ">
-    <p>about works</p>
-  </div>
-  <div id="products" *ngIf="selectedTab === '2' " class="tab-pane fade ">
-    <p>products works</p>
-  </div>
-  <div id="services" *ngIf="selectedTab === '3' " class="tab-pane fade ">
-    <p>services works</p>
-  </div>
-  <div id="compliance" *ngIf="selectedTab === '4' " class="tab-pane fade ">
-    <p>Compliance works</p>
-  </div>
-  <div id="locations" *ngIf="selectedTab === '5' " class="tab-pane fade ">
-    <p>locations works</p>
-  </div>
-  <div id="showroom" *ngIf="selectedTab === '6' " class="tab-pane fade ">
-    <p>Increase your business, Isobel Macphee</p>
-    <small>Choose type of product</small>
-    <div class="box">
-      <div class="d-flex justify-content-between add-product">
-        <p>Add products to your showroom</p>
-        <button class="btn add-product-btn btn-sm">Add Product</button>
-      </div>
-    </div>
-  </div>
->>>>>>> 0bc2b370916ece1cdc0da472ca62b8713ed3a55c
+
 </section>
