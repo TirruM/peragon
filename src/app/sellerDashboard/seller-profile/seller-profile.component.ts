@@ -17,6 +17,7 @@ export class SellerProfileComponentt implements OnInit {
   }
 
   onTabClick(currentTab) {
+    console.log("currentTab" + currentTab);
     this.selectedTab = currentTab;
   }
 
