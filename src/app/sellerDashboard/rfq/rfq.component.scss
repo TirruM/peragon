@@ -3,8 +3,7 @@
 
 .rfqs-results {
   .opportunities {
-    margin: 50px auto;
-  
+    margin: 40px auto;    
     .buyers_card {
       box-shadow: $box-shadow;
       margin: 16px;
@@ -45,13 +44,12 @@
     }
   
     //   }
-    .carousel-control-prev {
-      left: -73px;
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 0%;
     }
   
-    .carousel-control-next {
-      right: -73px;
-    }
+    
   
     .carousel-control-prev-icon,
     .carousel-control-next-icon {

@@ -15,4 +15,8 @@ export class RfqHomeComponent implements OnInit {
   onBackToRfq() {
     this.routes.navigateByUrl('sellerdashboard/rfq')
   }
+  onReplyRfq() {
+    alert("Your are successfully sent to Buyer");
+    this.routes.navigateByUrl('sellerdashboard/rfq');
+  }
 }

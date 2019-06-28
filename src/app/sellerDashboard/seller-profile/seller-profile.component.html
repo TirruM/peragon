@@ -117,7 +117,10 @@
   </div>
 </section>
 
+
+
 <section>
+<<<<<<< HEAD
   <div class="tab-content">
     <div id="summary" class="tab-pane fade active show">
       <!-- <p>summary works</p> -->
@@ -222,4 +225,34 @@
       <p>showroom works</p>
     </div>
   </div>  
+=======
+  <div id="summary" class="tab-pane fade active show" *ngIf="selectedTab === '0' ">
+    <p>summary works</p>
+  </div>
+  <div id="about" *ngIf="selectedTab === '1' " class="tab-pane fade ">
+    <p>about works</p>
+  </div>
+  <div id="products" *ngIf="selectedTab === '2' " class="tab-pane fade ">
+    <p>products works</p>
+  </div>
+  <div id="services" *ngIf="selectedTab === '3' " class="tab-pane fade ">
+    <p>services works</p>
+  </div>
+  <div id="compliance" *ngIf="selectedTab === '4' " class="tab-pane fade ">
+    <p>Compliance works</p>
+  </div>
+  <div id="locations" *ngIf="selectedTab === '5' " class="tab-pane fade ">
+    <p>locations works</p>
+  </div>
+  <div id="showroom" *ngIf="selectedTab === '6' " class="tab-pane fade ">
+    <p>Increase your business, Isobel Macphee</p>
+    <small>Choose type of product</small>
+    <div class="box">
+      <div class="d-flex justify-content-between add-product">
+        <p>Add products to your showroom</p>
+        <button class="btn add-product-btn btn-sm">Add Product</button>
+      </div>
+    </div>
+  </div>
+>>>>>>> 0bc2b370916ece1cdc0da472ca62b8713ed3a55c
 </section>
