@@ -1,73 +1,259 @@
-.messages {
-    
-    margin: 40px 40px 40px 20px;
-}
-.messages-sidebar {
-    padding: 4px;
-    border-right: 0.4px solid #efefef;
-    box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
-    .sidebar-title {
-        display: flex;
-        select {
-            width: 100%;
-            border: 0px;
-        }
-    }
+@import "../../../custom_styles/variables";
 
-    .sidebar-body {
+%dotted-icon {
+  box-shadow: $box-shadow;
+  border-radius: 50%;
+}
+.messages {
+  margin: 40px 40px 40px 20px;
+
+  .seller_name {
+    margin-bottom: 20px;
+  }
+
+  .messages-container {
+    box-shadow: $box-shadow;
+
+    .messages-sidebar {
+      padding: 4px;
+      border-right: 0.4px solid #efefef;
+      // box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
+
+      .sidebar-title {
+        display: flex;
+        padding: 8px;
+        select {
+          width: 100%;
+          border: 0px;
+        }
+      }
+
+      .sidebar-body {
         ul {
-            padding-inline-start: 0px !important;
-            .isActive {
-                border-left: 3px solid rgb(221, 50, 50);
-            }  
-            li{
-                list-style: none;
-                
-            } 
-        }      
+          padding-inline-start: 0px !important;
+
+          .isActive {
+            border-left: 3px solid rgb(221, 50, 50);
+          }
+
+          li {
+            list-style: none;
+
+          }
+        }
+
         img {
-            width: 47px;
-            margin-right: 8px;
-            border-radius: 50%;
-            padding-top: 20px;
-            position: relative;
+          width: 47px;
+          margin-right: 8px;
+          border-radius: 50%;
+          padding-top: 20px;
+          position: relative;
         }
 
         .notification {
-            color: #ffffff;
-            width: 14px;
-            height: 14px;
-            background-color: rgb(221, 50, 50);
-            position: absolute;
-            top: 51px;
-            left: 50px;
-            border-radius: 7px;
-            font-size: 11px;
-            text-align: center;
+          color: #ffffff;
+          width: 14px;
+          height: 14px;
+          background-color: rgb(221, 50, 50);
+          position: absolute;
+          top: 51px;
+          left: 50px;
+          border-radius: 7px;
+          font-size: 11px;
+          text-align: center;
         }
-        
-        .sidebar-body-content {
-            display: flex;
-            margin: 0px;
-            
-            .sidebar-body-text {
-                color: #000000;
-                .paragraph {
-                    margin-top: -8px;
-                }
-                .sub-paragraph {
-                    margin-top: -14px;
-                }
-                p {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-}
 
-.messages-body {
-    box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
-    // display: none;
-    // margin-left: -30px;
+        .sidebar-body-content {
+          display: flex;
+          margin: 0px;
+
+          .sidebar-body-text {
+            color: #000000;
+
+            .paragraph {
+              margin-top: -8px;
+            }
+
+            .sub-paragraph {
+              margin-top: -14px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+          }
+          .dotted-icon {
+            .dotted {
+              @extend %dotted-icon;
+              padding: 5px 6px 1px 6px;
+              mat-icon {                
+                color: #000;
+              }
+            }            
+          }
+        }
+      }
+    }
+
+    .messages-body {
+      .rfq_response {
+
+        .message-header {
+          border-bottom: 1px solid black;
+          padding: 15px;
+
+          .buyer_title {
+            a {
+              color: #000;
+              text-decoration: underline;
+              font-size: 13px;
+
+            }
+          }
+        }
+
+        .example-headers-align .mat-expansion-panel-header-title,
+        .example-headers-align .mat-expansion-panel-header-description {
+          flex-basis: 0;
+
+          p {
+            margin-bottom: 0;
+            color: rgba(0, 0, 0, .87);
+          }
+        }
+
+        .example-headers-align .mat-expansion-panel-header-description {
+          justify-content: flex-end;
+          align-items: center;
+
+          p {
+            margin-bottom: 0;
+            padding-right: 14px;
+          }
+
+        }
+
+        .mat-expansion-panel-header.mat-expanded {
+          background-image: $gradient_bg_color !important;
+          color: #fff !important;
+        }
+
+        mat-form-field {
+          margin-right: 12px;
+        }
+
+        .user_info {
+          p {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 5px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .rfq_responselist {
+          border-radius: 20px;
+          border: 1px solid;
+          max-width: 412px;
+          width: 412px;
+          float: right;
+          margin-top: 58px;
+          margin-right: 15px;
+          padding: 4px 17px;
+
+          p {
+            margin-bottom: 0;
+            font-size: 13px;
+            font-weight: 600;
+          }
+
+          small {
+            font-size: 90%;
+          }
+
+          .seller_response {
+            margin: 15px 0px;
+          }
+
+          .seller_qna>div {
+            margin: 5px 0;
+
+            i {
+              font-size: 18px;
+            }
+
+            .right_icon {
+              color: #05cb05;
+            }
+
+            .cross_icon {
+              color: red;
+            }
+
+            .response_options {
+              display: inline-block;
+              vertical-align: -webkit-baseline-middle;
+              margin: 0px 12px;
+            }
+          }
+        }
+
+        .buyer-reply-container {
+          margin: 20px 0;
+          padding: 15px;
+
+          p {
+            display: inline;
+            vertical-align: super;
+            font-size: 13px;
+            margin-left: 5px;
+          }
+
+          .buyer-reply-message {
+            margin: 0 25px;
+            width: 490px;
+
+            p {
+              background-color: #f8fcfd;
+              color: #000;
+              display: inline-block;
+              line-height: 17px;
+              padding: 5px 8px;
+              display: block;
+            }
+          }
+
+        }
+
+        .chatbox {
+          padding: 15px;
+
+          .attachment_icon {
+            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 35px;
+            height: 32px;
+            padding: 4px;
+          }
+
+          mat-form-field {
+            width: 100%;
+
+          }
+
+          .send_btn {
+            button {
+              border-radius: 25px;
+              padding: 7px 22px;
+              color: #fff;
+              background-color: #57bf57;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+
 }
