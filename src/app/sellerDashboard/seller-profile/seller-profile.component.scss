@@ -7,7 +7,7 @@
 .box-body-logo{
     position: absolute;
     top: 40px;
-    left: 120px;
+    left: 110px;
     background-color: rgb(158, 149, 149);
     color: #ffffff;
     width: 90px;
@@ -29,13 +29,24 @@
     display: inline-flex;
     .sub-content {
         font-size: 12px;
-        p {
-            
-            color: #c3c0c0;
-        }
-        .form-content {
-            text-align: right;
-        }
+        table {
+            margin-left: 105px;
+            th {
+                text-align: justify;
+                text-align-last: right;
+            }
+            tr {
+                .left {
+                    text-align: justify;
+                    text-align-last: right;
+                }
+                .right {
+                    text-align: justify;
+                    text-align-last: left;
+                }
+            }
+        }        
+        
         .product-label {
             background-color: #ffffff;
             border-radius: 20px;
@@ -53,10 +64,9 @@
 
     
     ul {
-        padding-left: 10px;    
+           
         li {
-            padding: 4px;
-            // margin-left: 20px;
+            
             a {
                 color: #000000;
             }    
@@ -64,5 +74,139 @@
     }    
     .isActive {
         border-bottom: 3px solid rgb(233, 55, 55);
-        color: rgb(233, 55, 55);
+        // color: rgb(233, 55, 55);
+        background-color: #ffffff;
     }
+
+    /*......summary tab starts.......*/
+
+    .product-box-style {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        padding: 10px;
+        margin-top: 16px;
+        font-size: 13px;
+        .view-btn {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            background-color: #ffffff;
+            border-radius: 25px;
+            margin-top: -40px;
+            float: right;
+        }
+    }
+
+    .box-style {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        padding: 10px;
+        margin: 16px;
+        .view-btn {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            background-color: #ffffff;
+            border-radius: 25px;
+            margin-top: -40px;
+            float: right;
+        }
+        
+        .showroom-content {
+            font-size: 13px;
+           .fill-showroom {
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+                margin: 20px;
+                background-color: #c6e0c6;
+                padding: 9px;
+                text-align: center;
+                button {
+                    border-radius: 25px;
+                }
+           }
+        }
+
+        .order-size-content {
+            font-size: 13px;
+            .order-size-body {
+                text-align: center;
+                p {
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+        
+    }
+
+    /*--------end summary tab styles-------*/
+
+
+    /*---------about tab styles-------*/
+
+    .about {
+        margin: 10px;
+        .about-description {
+            padding: 10px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            margin: 7px;
+            .description-content {
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+                margin: 20px;
+                background-color: #fff1f8;
+                padding: 9px;
+                text-align: center;
+                p {
+                    margin-bottom: 0px;
+                }
+                button {
+                    border-radius: 25px;
+                    background-color: #ff5544;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .about-keyfacts {
+            padding: 10px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            margin: 10px 7px 7px 7px;
+            .keyfacts-content {
+                .edit-btn {
+                    background-color: #ff5544;
+                    color: #ffffff;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    float: right;
+                    margin-top: -43px;
+                    text-align: center;
+                }
+            }
+            .keyfacts-body-text {
+                text-align: center;
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+
+        }
+
+        .ref-customers {
+            padding: 10px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            margin: 10px 7px 7px 7px;
+            .ref-customers-content {
+                p {
+                    margin-bottom: 0px;
+                }
+               
+                .edit-btn {
+                    background-color: #ff5544;
+                    color: #ffffff;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    float: right;
+                    margin-top: -43px;
+                    text-align: center;
+                }
+            }
+            .ref-customers-body {
+                margin-top: 15px;            }
+        }
+    }    

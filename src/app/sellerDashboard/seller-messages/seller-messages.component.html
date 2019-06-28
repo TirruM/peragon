@@ -1,7 +1,5 @@
-<p>
-    seller-messages works!
-  </p>
-<div class="container d-none">
+
+<div class="container">
   <div class="messages">
     <div class="row">
       <div class="col-md-4">
@@ -16,9 +14,10 @@
             </select>  
           </div>
           <div class="sidebar-body">
-            <ul class="">
-              <li  class="isActive">
-                <a href="#user1">
+           <nav class="navbar">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link isActive custom-nav-styles" href="#user1" data-toggle="pill">
                   <div class="sidebar-body-content">
                     <div><img src="../../../assets/img/header-profile-img.jpg"></div>
                     <div class="notification">2</div>
@@ -30,8 +29,8 @@
                   </div> 
                 </a>  
               </li> 
-              <li> 
-                <a href="#user2">
+              <li class="nav-item"> 
+                <a class="nav-link isActive custom-nav-styles" href="#user2" data-toggle="pill">
                   <div class="sidebar-body-content">
                     <div><img src="../../../assets/img/header-profile-img.jpg"></div>
                     <div class="notification">2</div>
@@ -43,8 +42,8 @@
                   </div> 
                 </a>  
               </li>   
-              <li>
-                <a href="#user3">
+              <li class="nav-item">
+                <a class="nav-link isActive custom-nav-styles" href="#user3" data-toggle="pill">
                   <div class="sidebar-body-content">
                     <div><img src="../../../assets/img/header-profile-img.jpg"></div>
                     <div class="sidebar-body-text">
@@ -55,31 +54,35 @@
                   </div> 
                 </a>   
               </li>  
-            </ul>   
+            </ul> 
+          </nav>    
           </div>
         </div>
       </div>
-      <div class="col-md-8" id="user1">
-        <div class="messages-body">
-          <div>
-            <h2>You have a new messages User1</h2>
+       
+      <div class="tab-content">
+        <div class="col-md-8 tab-pane" id="user1">
+          <div class="messages-body">
+            <div>
+              <h2>You have a new messages User1</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-8"  id="user2"> 
-        <div class="messages-body"> 
-          <div>
-            <h2>You have a new messages User2</h2>
-          </div>
-        </div> 
-      </div>
-      <div class="col-md-8" id="user3">     
-        <div class="messages-body"> 
-          <div>
-            <h2>You have a new messages User3</h2>
+        <div class="col-md-8 tab-pane"  id="user2"> 
+          <div class="messages-body"> 
+            <div>
+              <h2>You have a new messages User2</h2>
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-8 tab-pane" id="user3"> 
+          <div class="messages-body"> 
+            <div>
+              <h2>You have a new messages User3</h2>
+            </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   </div>  
 </div>

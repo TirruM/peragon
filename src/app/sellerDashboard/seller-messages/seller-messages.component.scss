@@ -19,7 +19,12 @@
             padding-inline-start: 0px !important;
             .isActive {
                 border-left: 3px solid rgb(221, 50, 50);
+               
             }  
+            .custom-nav-styles {
+                background-color: #ffffff;
+                padding: 0px!important;
+            }
             li{
                 list-style: none;
                 
@@ -39,7 +44,7 @@
             height: 14px;
             background-color: rgb(221, 50, 50);
             position: absolute;
-            top: 51px;
+            top: 20px;
             left: 50px;
             border-radius: 7px;
             font-size: 11px;

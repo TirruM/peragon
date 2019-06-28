@@ -1,7 +1,5 @@
-<p>
-  seller-profile works!
-</p>
-<section class="p-3 d-none" id="dashboard">
+
+<section class="p-3" id="dashboard">
   <div class="container-fluid">
     <div class="box">
       <div class="box-header">
@@ -25,21 +23,23 @@
         <!-- </div> -->
         <div class="box-body-sub-content">
           <div class="sub-content">
-            <p>Key Facts</p>
-            <form>
-              <div class="form-content">
-                <label>Target Group</label>
-                <span>Men,Women</span>
-              </div>
-              <div class="form-content">
-                <label>Product Group</label>
-                <span>Jackets & Coats, Pullover & Sweatshirts, Tops & Shirts</span>
-              </div>
-              <div class="form-content">
-                <label>Segment Group</label>
-                <span>Casual</span>
-              </div>
-            </form>
+            <table>
+              <th>Key Facts</th>
+              <tbody>
+                <tr>
+                  <td class="left">Target Group</td>
+                  <td class="right">Men,Women</td>
+                </tr>
+                <tr>
+                  <td class="left">Product Group</td>
+                  <td class="right">Jackets & Coats, Pullover & Sweatshirts, Tops & Shirts</td>
+                </tr>
+                <tr>
+                  <td class="left">Segment Group</td>
+                  <td class="right">Casual</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="sub-content">
             <p>Top 3 Products</p>
@@ -54,7 +54,7 @@
 </section>
 
 <section>
-  <div class="box">
+  <div class="box-style">
     <div class="row">
       <nav class="navbar">
         <ul class="nav nav-pills custom-navbar">
@@ -85,7 +85,7 @@
   </div>
 </section>
 <section>
-  <div class="box">
+  <div class="box-style">
     <p>Profile Strength:{{profileStrength}}</p>
     <div>
       <mat-accordion class="example-headers-align">
@@ -101,7 +101,7 @@
                 <p>---Showroom</p>
               </div>
               <div class="col-md-3">
-                <p>---Companu logo</p>
+                <p>---Company logo</p>
               </div>
               <div class="col-md-3">
                 <p>---Compliance</p>
@@ -112,33 +112,114 @@
             </div>
           </div>
         </mat-expansion-panel>
-
       </mat-accordion>
     </div>
-
   </div>
 </section>
 
 <section>
-  <div id="summary" class="tab-pane fade active show" *ngIf="selectedTab === '0' ">
-    <p>summary works</p>
-  </div>
-  <div id="about" *ngIf="selectedTab === '1' " class="tab-pane fade ">
-    <p>about works</p>
-  </div>
-  <div id="products" *ngIf="selectedTab === '2' " class="tab-pane fade ">
-    <p>products works</p>
-  </div>
-  <div id="services" *ngIf="selectedTab === '3' " class="tab-pane fade ">
-    <p>services works</p>
-  </div>
-  <div id="compliance" *ngIf="selectedTab === '4' " class="tab-pane fade ">
-    <p>Compliance works</p>
-  </div>
-  <div id="locations" *ngIf="selectedTab === '5' " class="tab-pane fade ">
-    <p>locations works</p>
-  </div>
-  <div id="showroom" *ngIf="selectedTab === '6' " class="tab-pane fade ">
-    <p>showroom works</p>
-  </div>
+  <div class="tab-content">
+    <div id="summary" class="tab-pane fade active show">
+      <!-- <p>summary works</p> -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="product-box-style">
+            <div class="product-group">
+              <i class="fab fa-buffer"></i><p>Product Groups</p>
+              <button class="btn btn-md view-btn">View More</button>
+            </div>
+            <div>
+
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box-style">
+            <div class="showroom-content">
+              <div class="showroom-text">
+                <i class="fal fa-camera-alt"></i><p>Showroom</p>
+              </div> 
+              <div class="fill-showroom">
+                <button class="btn btn-md btn-success">Fill Showroom</button>
+              </div> 
+            </div>
+          </div>
+          <div class="box-style">
+            <div class="order-size-content">
+              <div class="order-size-text">
+                <i class="fal fa-tshirt"></i><p>Order size</p>
+                <button class="btn btn-md view-btn">View More</button>
+              </div> 
+              <div class="order-size-body">
+                <p><b>501-1000</b></p>
+                <p>Minimum order quantity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="tab-pane fade ">
+      <!-- <p>about works</p> -->
+      <div class="about">
+        <div class="about-description">
+          <p>Description</p>
+          <div class="description-content">
+            <p>Describe your entity to prospective brands</p>
+            <button class="btn btn-md">+ Add description</button>
+          </div>
+        </div>
+        <div class="about-keyfacts">
+          <div class="keyfacts-content">
+            <p>Key Facts</p>
+            <div class="edit-btn">
+              <mat-icon>edit</mat-icon>
+            </div>
+          </div>
+          <div class="row keyfacts-body">
+            <div class="col-md-4 keyfacts-body-text">
+              <p><b>N/A</b></p>
+              <p>Employees</p>
+            </div>   
+            <div class="col-md-4 keyfacts-body-text">
+              <p><b>N/A</b></p>
+              <p>Revenue / Year</p>
+            </div>
+            <div class="col-md-4 keyfacts-body-text">
+              <p><b>N/A</b></p>
+              <p>Pieces / Year</p>
+            </div>        
+          </div>        
+        </div>
+        <div class="ref-customers">
+          <div class="ref-customers-content">
+            <p><b>Reference Customers</b></p>
+            <p>This section is visible to buyers</p>
+            <div class="edit-btn">
+                <mat-icon>edit</mat-icon>
+            </div>
+          </div>
+          <div class="row ref-customers-body">
+            <p class="col-md-3 body-text"><b>Cater Industries</b></p>
+            <p class="col-md-3 body-text"><b>Monter International</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="products" class="tab-pane fade ">
+      <p>products works</p>
+    </div>
+    <div id="services" class="tab-pane fade ">
+      <p>services works</p>
+    </div>
+    <div id="compliance" class="tab-pane fade ">
+      <p>Compliance works</p>
+    </div>
+    <div id="locations" class="tab-pane fade ">
+      <p>locations works</p>
+    </div>
+    <div id="showroom" class="tab-pane fade ">
+      <p>showroom works</p>
+    </div>
+  </div>  
 </section>
