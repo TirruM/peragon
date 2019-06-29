@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SellerProfileComponentt implements OnInit {
   selectedTab: any;
   profileStrength: String = 'Starter';
+  isShowData: boolean = false;
+  isShowExportCountries: boolean = false;
 
   constructor() {
     this.selectedTab = '0';
@@ -21,4 +23,8 @@ export class SellerProfileComponentt implements OnInit {
     this.selectedTab = currentTab;
   }
 
+  addExportCountries() {
+    this.isShowExportCountries = true;
+  }
 }
+
