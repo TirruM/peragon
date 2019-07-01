@@ -6,6 +6,10 @@ $text-color: #262626;
 
 $p-letter-spacing: 1px;
 
+$red-btn: #ff5544;
+
+$green-btn: #57bf57;
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -67,8 +71,9 @@ $p-letter-spacing: 1px;
   background-color: #57bf57;
   color: #ffffff;
   border-radius: 26px;
-  padding: 4px 21px 7px 21px;
+  //padding: 4px 21px 7px 21px;
   font-weight: 600;
+  font-size:11px;
 }
 
 // Media Queries

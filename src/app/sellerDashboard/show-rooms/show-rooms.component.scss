@@ -1,17 +1,8 @@
-.add-product-btn{
-    background-color: #ff5544;
-    border-radius: 30px;
-    color: #ffffff;
-    font-size:10px;
+@import '../../../custom_styles/variables';
+
+.add-product-btn {
+    @extend %colored-btn;
+    background-color: $red-btn;
+
 }
-/* 
-.modal.fade {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-.modal-dialog {
-    vertical-align:middle;
-    height:18em;
-    background-color: rgba(0,0,0,0.5); 
-} */
+ 
