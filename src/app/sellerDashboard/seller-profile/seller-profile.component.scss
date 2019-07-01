@@ -348,3 +348,22 @@
     .nav-link.active{
         background-color:#ffffff;
     }
+
+    
+    .add-product-btn{
+        background-color: #ff5544;
+        border-radius: 30px;
+        color: #ffffff;
+        font-size:10px;
+    }
+
+    .modal.fade {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-dialog {
+        vertical-align:middle;
+        height:18em;
+        background-color: rgba(0,0,0,0.5); 
+    }

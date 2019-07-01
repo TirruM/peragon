@@ -33,7 +33,8 @@ import * as $ from 'jquery';
     SignupComponent,
     SearchComponent,
     ForBuyerComponent,
-    ForSellerComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent, RfqComponent, BookMarksComponent, ShowRoomsComponent
+    ForSellerComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent,
+    RfqComponent, BookMarksComponent, ShowRoomsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,63 @@
+<!-- <div class="alert-box">
+  <div class="modal-header">
+    <h4 class="modal-title">Confirm</h4>
+    <button type="button" class="close" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Are you sure want to delete this node?
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="onConfirm()">Yes</button>
+    <button type="button" class="btn btn-secondary" (click)="onCancel()">No</button>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h6>Add Product to your Showroom</h6>
+      <p>Visible in your profile, news feeds of your followers, and inspiration boards for buyers worldwide.</p>
+      <div class="d-flex justify-content-between">
+        <a href="">Great Showroom guide</a>
+        <a href="">Great Picture guide</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div>
+        <h6>Showroom Post</h6>
+        <input type="text" placeholder="Product Title" />
+        <input type="text" placeholder="Description of the Product" />
+      </div>
+      <div>
+        <h6>Target Group</h6>
+        <ul class="list-unstyled">
+          <li>
+            <input type="radio">Children (all ages)
+          </li>
+          <li>
+            <input type="radio">Adults (all ages)
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h6>Segment <sup>*</sup></h6>
+        <ul class="list-unstyled">
+          <li *ngFor="let segment of segmentedGroups">
+            <input type="radio" (change)="onCheckSegmentGroup(segment)">{{segment.categoryName}}
+          </li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h6>Product Group <sup>*</sup></h6>
+        <select>
+          <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>

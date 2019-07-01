@@ -62,7 +62,7 @@
         <div id="accordion">
           <div class="row">
 
-            <div class="col-md-4" *ngFor="let category of categories">
+            <div class="col-md-4" *ngFor="let category of segmentedGroups">
               <a class="card-link" data-toggle="collapse" href="#{{category.categoryId}}">
                 <div>
                   <div class="buyers_card mb-3 p-3">
@@ -312,127 +312,127 @@
         </div>
         <div class="col py-2 order-md-last collapse fade" id="detail2" *ngIf="selectedTab === '1'">
           <div class="card card-body">
-              <div class="d-flex flex-nowrap justify-content-space sub-category-items">
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>AWARDS & TROPHIES</p>
-                      </div>
-                    </div>
+            <div class="d-flex flex-nowrap justify-content-space sub-category-items">
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
                   </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>GIFTS</p>
-                      </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
                     </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>BAGS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>BALLS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>BOTTLES</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>BOTTLES</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>BOTTLES</p>
-                      </div>
-                    </div>
+                    <p>AWARDS & TROPHIES</p>
                   </div>
                 </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>GIFTS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>BAGS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>BALLS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>BOTTLES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>BOTTLES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>BOTTLES</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-4 py-2">
@@ -460,127 +460,127 @@
         </div>
         <div class="col py-2 order-md-last collapse fade" id="detail3" *ngIf="selectedTab === '2'">
           <div class="card card-body">
-              <div class="d-flex flex-nowrap justify-content-space sub-category-items">
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>RACE TIMING</p>
-                      </div>
-                    </div>
+            <div class="d-flex flex-nowrap justify-content-space sub-category-items">
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
                   </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>PITCH MARKING</p>
-                      </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
                     </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>AUTOMATED CAMERAS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SMART BATS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SMART HELMETS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SHOT CLOCKS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>LOCKERS</p>
-                      </div>
-                    </div>
+                    <p>RACE TIMING</p>
                   </div>
                 </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>PITCH MARKING</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>AUTOMATED CAMERAS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SMART BATS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SMART HELMETS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SHOT CLOCKS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>LOCKERS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -610,127 +610,127 @@
         </div>
         <div class="col py-2 order-md-last collapse fade" id="detail4" *ngIf="selectedTab === '3'">
           <div class="card card-body border-success">
-              <div class="d-flex flex-nowrap justify-content-space sub-category-items">
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SMART WATCHES</p>
-                      </div>
-                    </div>
+            <div class="d-flex flex-nowrap justify-content-space sub-category-items">
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
                   </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>FITNESS TRACKERS</p>
-                      </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
                     </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SMART CLOTHING</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>JUMPING DEVICES</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>HEALTH WEARABLES</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SMART JERSEYS</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SWIM SUITS</p>
-                      </div>
-                    </div>
+                    <p>SMART WATCHES</p>
                   </div>
                 </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>FITNESS TRACKERS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SMART CLOTHING</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>JUMPING DEVICES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>HEALTH WEARABLES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SMART JERSEYS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SWIM SUITS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-4 py-2">
@@ -758,110 +758,110 @@
         </div>
         <div class="col py-2 order-md-last collapse fade" id="detail5" *ngIf="selectedTab === '4'">
           <div class="card card-body border-danger">
-              <div class="d-flex flex-nowrap justify-content-space sub-category-items">
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>AUDIO SYSTEMS</p>
-                      </div>
-                    </div>
+            <div class="d-flex flex-nowrap justify-content-space sub-category-items">
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
                   </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>VIDEO SYSTEMS</p>
-                      </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
                     </div>
+                    <p>AUDIO SYSTEMS</p>
                   </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>DRONES</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>TICKETING</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SECURITY AND SAFETY</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>IOT</p>
-                      </div>
-                    </div>
-                  </div>                  
                 </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>VIDEO SYSTEMS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>DRONES</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>TICKETING</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SECURITY AND SAFETY</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>IOT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-4 py-2">
@@ -889,127 +889,127 @@
         </div>
         <div class="col py-2 order-md-last collapse fade" id="detail6" *ngIf="selectedTab === '5'">
           <div class="card card-body border-info">
-              <div class="d-flex flex-nowrap justify-content-space sub-category-items">
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>ATHLETE MANAGEMENT</p>
-                      </div>
-                    </div>
+            <div class="d-flex flex-nowrap justify-content-space sub-category-items">
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
                   </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SPORTS ANALYTICS</p>
-                      </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
                     </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>COACHING & TRAINING</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>VIRTUAL REALITY</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>SPORTS MANAGEMENT</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>FTINESS & COMPANION</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>COACHING AND TRANING</p>
-                      </div>
-                    </div>
+                    <p>ATHLETE MANAGEMENT</p>
                   </div>
                 </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SPORTS ANALYTICS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>COACHING & TRAINING</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>VIRTUAL REALITY</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>SPORTS MANAGEMENT</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>FTINESS & COMPANION</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buyers_card mb-3 p-3">
+                <div class="card-wrapper">
+                  <div class="rfqs">
+                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
+                  </div>
+                  <div class="text-center manfact_details_card">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>COACHING AND TRANING</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -9,19 +9,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  categories: any;
+  segmentedGroups: any;
   selectedTab: any;
 
-  mainCategory:any;
+  productGroups: any;
 
 
   constructor(private router: Router, private services: PerogonServices) { }
 
   ngOnInit() {
     this.services.getJSON().subscribe((response: any) => {
-      this.categories = response.data;
-      console.log("perogon categories----->" + JSON.stringify(this.categories));
-      
+      this.segmentedGroups = response.data;
+
     });
   }
 

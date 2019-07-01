@@ -22,6 +22,7 @@ import { SideBarComponent } from '../sellerInternal/side-bar/side-bar.component'
     MatSlideToggleModule,
     MatExpansionModule,
     MatMenuModule,
+
   ],
   declarations: [],
   exports: [

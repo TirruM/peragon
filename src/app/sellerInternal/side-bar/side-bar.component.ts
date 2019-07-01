@@ -7,7 +7,7 @@ declare interface RouteInfo {
   class: string;
 }
 export const ROUTES: RouteInfo[] = [
-  { path: './profile1', title: 'Company Profile', icon: 'person', class: ''},
+  { path: './profile1', title: 'Company Profile', icon: 'person', class: '' },
   { path: './messages', title: 'Messaging', icon: 'sms', class: '' },
   { path: './rfq', title: 'RFQ', icon: 'help', class: '' },
   { path: './search', title: 'Search', icon: 'search', class: '' },
@@ -36,12 +36,10 @@ export class SideBarComponent implements OnInit {
     return true;
   }; */
   public navigateToLogin() {
-    console.log("navigation");
     this.router.navigate(['/login']);
   }
 
   public menuClick(menuItem) {
-    console.log("menuItem-->" + JSON.stringify(menuItem));
 
   }
 
