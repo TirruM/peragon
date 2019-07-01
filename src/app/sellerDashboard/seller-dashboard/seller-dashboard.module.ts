@@ -1,3 +1,4 @@
+import { CertificatesComponent } from './../certificates/certificates.component';
 import { ShowRoomsComponent } from './../show-rooms/show-rooms.component';
 import { AboutComponent } from './../about/about.component';
 import { AddProductModelComponent } from './../add-product-model/add-product-model.component';
@@ -25,7 +26,8 @@ import { ModalModule } from 'ngx-bootstrap';
         RfqHomeComponent,
         AddProductModelComponent,
         AboutComponent,
-        ShowRoomsComponent
+        ShowRoomsComponent,
+        CertificatesComponent
     ],
     entryComponents: [AddProductModelComponent],
     exports: [RfqHomeComponent, AddProductModelComponent, AboutComponent,
