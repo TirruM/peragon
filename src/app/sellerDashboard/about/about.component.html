@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="about">
+    <div class="about-description" *ngIf="!isShowData">
+      <p>Description</p>
+      <div class="description-content">
+        <p>Describe your entity to prospective brands</p>
+        <button class="btn btn-md">+ Add description</button>
+      </div>
+    </div>
+    <div *ngIf="isShowData">
+      <p>description data</p>
+    </div>
+    <div class="about-keyfacts" *ngIf="!isShowData">
+      <div class="keyfacts-content">
+        <p>Key Facts</p>
+        <div class="edit-btn">
+          <mat-icon>edit</mat-icon>
+        </div>
+      </div>
+      <div class="row keyfacts-body">
+        <div class="col-md-4 keyfacts-body-text">
+          <p><b>N/A</b></p>
+          <p>Employees</p>
+        </div>
+        <div class="col-md-4 keyfacts-body-text">
+          <p><b>N/A</b></p>
+          <p>Revenue / Year</p>
+        </div>
+        <div class="col-md-4 keyfacts-body-text">
+          <p><b>N/A</b></p>
+          <p>Pieces / Year</p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isShowData">
+      <p>key Facts data</p>
+    </div>
+    <div class="about-ref-customers" *ngIf="!isShowData">
+      <div class="ref-customers-content">
+        <p><b>Reference Customers</b></p>
+        <p>This section is visible to buyers</p>
+        <div class="edit-btn">
+          <mat-icon>edit</mat-icon>
+        </div>
+      </div>
+      <div class="row ref-customers-body">
+        <p class="col-md-3 body-text"><b>Cater Industries</b></p>
+        <p class="col-md-3 body-text"><b>Monter International</b></p>
+      </div>
+    </div>
+    <div *ngIf="isShowData">
+      <p>Reference customers data</p>
+    </div>
+    <div class="about-headquarter" *ngIf="!isShowData">
+      <p>Headquarter</p>
+      <div class="headquarter-content">
+        <p>This section will be filled automatically with informaton from the locations tab</p>
+      </div>
+      <p class="text">Not filled</p>
+    </div>
+    <div *ngIf="isShowData">
+      <p>Headquarter data</p>
+    </div>
+    <div class="about-contact" *ngIf="!isShowData">
+      <div class="contact-content">
+        <p><b>Contacts</b></p>
+        <div class="contact-edit-btn">
+          <button class="btn btn-md">
+            <mat-icon>visibility</mat-icon>Edit Visibility
+          </button>
+        </div>
+        <div>
+          <div class="contact-img">
+            <img src="../../../assets/img/user2-160x160.jpg">
+            <p>Isobel Macphee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isShowData">
+      <p>contact data</p>
+    </div>
+    <div class="about-description" *ngIf="!isShowExportCountries">
+      <p>Main Export Countries</p>
+      <div class="description-content">
+        <p>Select countries that you regularly export to</p>
+        <button class="btn btn-md" (click)="addExportCountries()">+ Add Main export countries</button>
+      </div>
+    </div>
+    <div class="about-description export-countries" *ngIf="isShowExportCountries">
+      <p>Edit "Main Export Countries"</p>
+      <div class="search">
+        <div>
+          <input type="" placeholder="search">
+        </div>
+        <div class="countries-list">
+          <div class="row">
+            <mat-checkbox class="col-md-3 mat-checkbox-checked">Afghanistan</mat-checkbox>
+            <mat-checkbox class="col-md-3">Argentina</mat-checkbox>
+            <mat-checkbox class="col-md-3">America</mat-checkbox>
+            <mat-checkbox class="col-md-3">America</mat-checkbox>
+          </div>
+          <div class="row">
+            <mat-checkbox class="col-md-3">Bhutan</mat-checkbox>
+            <mat-checkbox class="col-md-3">Brazil</mat-checkbox>
+            <mat-checkbox class="col-md-3">Brunei</mat-checkbox>
+            <mat-checkbox class="col-md-3">Brunei</mat-checkbox>
+          </div>
+          <div class="row">
+            <mat-checkbox class="col-md-3">Cameroon</mat-checkbox>
+            <mat-checkbox class="col-md-3">Canada</mat-checkbox>
+            <mat-checkbox class="col-md-3">China</mat-checkbox>
+            <mat-checkbox class="col-md-3">China</mat-checkbox>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="status-btns">
+          <button class="btn btn-md btn-primary">Cancel</button>
+          <button class="btn btn-md btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="about-description" *ngIf="!isShowData">
+      <p>Links and Websites</p>
+      <div class="description-content">
+        <p>Add links to your websites, videos and media channels that showcase your company</p>
+        <button class="btn btn-md">+ Add Links</button>
+      </div>
+    </div>
+    <div *ngIf="isShowData">
+      <p>Add Links data</p>
+    </div>
+  </div>
+</div>

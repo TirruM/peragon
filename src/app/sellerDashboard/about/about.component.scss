@@ -1,0 +1,161 @@
+ /*---------about tab styles-------*/
+
+ .about {
+    margin: 10px;
+    .about-description {
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        margin: 7px;
+        .description-content {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            margin: 20px;
+            background-color: #fff1f8;
+            padding: 9px;
+            text-align: center;
+            p {
+                margin-bottom: 0px;
+            }
+            button {
+                border-radius: 25px;
+                background-color: #ff5544;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .about-keyfacts {
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        margin: 10px 7px 7px 7px;
+        .keyfacts-content {
+            .edit-btn {
+                background-color: #ff5544;
+                color: #ffffff;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                float: right;
+                margin-top: -43px;
+                text-align: center;
+            }
+        }
+        .keyfacts-body-text {
+            text-align: center;
+            p {
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+
+    .about-ref-customers {
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        margin: 10px 7px 7px 7px;
+        .ref-customers-content {
+            p {
+                margin-bottom: 0px;
+                font-size: 13px;
+            }
+           
+            .edit-btn {
+                background-color: #ff5544;
+                color: #ffffff;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                float: right;
+                margin-top: -43px;
+                text-align: center;
+            }
+        }
+        .ref-customers-body {
+            margin-top: 15px;  
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .about-headquarter {
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        margin: 10px 7px 7px 7px;
+
+        .text {
+            text-align: center;
+        }
+        .headquarter-content {
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+            margin: 20px;
+            background-color: #fff1f8;
+            padding: 9px;
+            text-align: center;
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    } 
+
+    .about-contact {
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+        margin: 10px 7px 7px 7px;
+
+        .contact-edit-btn {
+            button {
+                background-color: #ff5544;
+                color: #ffffff;
+                border-radius: 25px;
+                border: none;
+                float: right;
+                margin-top: -43px;
+                text-align: center;
+                mat-icon {
+                    vertical-align: middle;
+                }
+            }    
+        }
+
+        .contact-img {
+            display: flex;
+           img {
+            width: 60px;
+            height: 60px;
+            border-radius: 25px;
+           }
+        }
+    }
+
+    .export-countries {
+        .search {
+            border: 1px solid #eaeaea;
+            padding: 20px;
+
+            input {
+                width: 100%;
+                border-radius: 25px;
+                padding: 8px;
+                border-color: #eae8e8!important;
+            }
+            mat-checkbox {
+                &.mat-checkbox-checked .mat-checkbox-background {
+                    background: rgb(247, 39, 39);
+                }
+            }
+            .countries-list {
+                margin: 14px;
+            }
+            .status-btns {
+                text-align: right;
+                button {
+                    border-radius: 25px;
+                    margin: 12px;
+                }
+            }
+
+        }
+    }
+
+}    

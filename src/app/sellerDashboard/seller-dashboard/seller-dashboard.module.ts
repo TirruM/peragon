@@ -1,3 +1,4 @@
+import { AboutComponent } from './../about/about.component';
 import { AddProductModelComponent } from './../add-product-model/add-product-model.component';
 import { SharedModule } from './../../shared/shared.module';
 import { RfqHomeComponent } from './../rfq-home/rfq-home.component';
@@ -21,10 +22,11 @@ import { ModalModule } from 'ngx-bootstrap';
         SellerProfileComponentt,
         SellerMessagesComponent,
         RfqHomeComponent,
-        AddProductModelComponent
+        AddProductModelComponent,
+        AboutComponent
     ],
     entryComponents: [AddProductModelComponent],
-    exports: [RfqHomeComponent, AddProductModelComponent]
+    exports: [RfqHomeComponent, AddProductModelComponent, AboutComponent]
 })
 
 export class SellerDashboardModule { }

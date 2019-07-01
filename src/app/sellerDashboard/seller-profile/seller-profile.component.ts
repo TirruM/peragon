@@ -33,8 +33,6 @@ export class SellerProfileComponentt implements OnInit {
     })
   }
 
-  addExportCountries() {
-    this.isShowExportCountries = true;
-  }
+
 }
 
