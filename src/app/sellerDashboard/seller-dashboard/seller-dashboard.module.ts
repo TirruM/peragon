@@ -1,3 +1,4 @@
+import { ShowRoomsComponent } from './../show-rooms/show-rooms.component';
 import { AboutComponent } from './../about/about.component';
 import { AddProductModelComponent } from './../add-product-model/add-product-model.component';
 import { SharedModule } from './../../shared/shared.module';
@@ -23,10 +24,13 @@ import { ModalModule } from 'ngx-bootstrap';
         SellerMessagesComponent,
         RfqHomeComponent,
         AddProductModelComponent,
-        AboutComponent
+        AboutComponent,
+        ShowRoomsComponent
     ],
     entryComponents: [AddProductModelComponent],
-    exports: [RfqHomeComponent, AddProductModelComponent, AboutComponent]
+    exports: [RfqHomeComponent, AddProductModelComponent, AboutComponent,
+        SellerProfileComponentt,
+        ShowRoomsComponent]
 })
 
 export class SellerDashboardModule { }

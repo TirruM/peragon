@@ -19,7 +19,6 @@ import { SellerDashboardModule } from './sellerDashboard/seller-dashboard/seller
 import { SellerDashboardComponent } from './seller/seller-dashboard/seller-dashboard.component';
 import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
 import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
-import { ShowRoomsComponent } from './sellerDashboard/show-rooms/show-rooms.component';
 import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
@@ -34,7 +33,7 @@ import * as $ from 'jquery';
     SearchComponent,
     ForBuyerComponent,
     ForSellerComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent,
-    RfqComponent, BookMarksComponent, ShowRoomsComponent
+    RfqComponent, BookMarksComponent
   ],
   imports: [
     BrowserModule,
