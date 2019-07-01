@@ -1,0 +1,20 @@
+@import "../../../custom_styles/variables";
+
+.no-certificates-content {
+  padding: 5px 5px 0px 2px;
+  h6 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .add-certificates {
+    text-align: center;
+  }
+  .add-certificates-btn {
+    @extend %colored-btn;
+    background-color: $red-btn;
+  }
+}
