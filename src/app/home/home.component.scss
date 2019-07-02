@@ -83,45 +83,51 @@ h3.h3 {
     @extend %h-styles;
     margin-bottom: 24px;
   }
-
-  .buyers_card {
-    box-shadow: $box-shadow;
-    margin-right: 16px;
-
-    // transition: 0.3s all ease;
-    .card-wrapper {
-      .rfqs {
-        img {
-          display: block;
-          margin: 0 auto;
-          width: 160px;
-          height: 160px;
-
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
+  .category_box {
+    a {
+      
+      &:hover {
+        text-decoration: none;
       }
-
-      .manfact_details_card {
-        margin: auto;
-
-        .ratings {
-          color: yellow;
-        }
-
-        p {
-          margin-bottom: 0.2rem;
-        }
-
-        .units {
-          background-color: #939393;
-          color: #fff;
-          padding: 5px 10px;
+      .buyers_card {
+        box-shadow: $box-shadow;
+        margin-right: 16px;
+    
+        // transition: 0.3s all ease;
+        .card-wrapper {
+          .rfqs {
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 160px;
+              height: 160px;
+    
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+    
+          .manfact_details_card {
+            margin: auto;
+            margin-top: 1rem;
+            p {
+              margin-bottom: 0.2rem;
+              color: #212529;
+              
+            }
+    
+            .units {
+              background-color: #939393;
+              color: #fff;
+              padding: 5px 10px;
+            }
+          }
         }
       }
     }
   }
+  
 
   .sub-category-items {
     display: flex !important;

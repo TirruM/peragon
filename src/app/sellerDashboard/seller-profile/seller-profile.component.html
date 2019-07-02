@@ -1,6 +1,6 @@
 <section class="p-3" id="dashboard">
   <div class="container-fluid">
-    <div class="box">
+    <div class="my-box">
       <div class="box-header">
         <div class="header-body">
 
@@ -53,72 +53,76 @@
 </section>
 
 <section>
-  <div class="box-style">
-    <div class="row">
-      <nav class="navbar">
-        <ul class="nav nav-pills custom-navbar">
-          <li class="nav-item">
-            <a class="nav-link " href="#summary" [ngClass]="{'isActive':selectedTab =='0'}" (click)="onTabClick('0')"
-              data-toggle="pill">Summary</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" [ngClass]="{'isActive':selectedTab =='1'}" (click)="onTabClick('1')"
-              data-toggle="pill">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#products" [ngClass]="{'isActive':selectedTab =='2'}" (click)="onTabClick('2')"
-              data-toggle="pill">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services" [ngClass]="{'isActive':selectedTab =='3'}" (click)="onTabClick('3')"
-              data-toggle="pill">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#compliance" [ngClass]="{'isActive':selectedTab =='4'}" (click)="onTabClick('4')"
-              data-toggle="pill">Compliance</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#locations" [ngClass]="{'isActive':selectedTab =='5'}" (click)="onTabClick('5')"
-              data-toggle="pill">Locations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#showroom" (click)="onTabClick('6')" [ngClass]="{'isActive':selectedTab =='6'}"
-              data-toggle="pill">Showroom</a>
-          </li>
-        </ul>
-      </nav>
+  <div class="container-fluid">
+    <div class="box-style">
+      <div class="row">
+        <nav class="navbar">
+          <ul class="nav nav-pills custom-navbar">
+            <li class="nav-item">
+              <a class="nav-link " href="#summary" [ngClass]="{'isActive':selectedTab =='0'}" (click)="onTabClick('0')"
+                data-toggle="pill">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" [ngClass]="{'isActive':selectedTab =='1'}" (click)="onTabClick('1')"
+                data-toggle="pill">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products" [ngClass]="{'isActive':selectedTab =='2'}" (click)="onTabClick('2')"
+                data-toggle="pill">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" [ngClass]="{'isActive':selectedTab =='3'}" (click)="onTabClick('3')"
+                data-toggle="pill">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#compliance" [ngClass]="{'isActive':selectedTab =='4'}"
+                (click)="onTabClick('4')" data-toggle="pill">Compliance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#locations" [ngClass]="{'isActive':selectedTab =='5'}" (click)="onTabClick('5')"
+                data-toggle="pill">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#showroom" (click)="onTabClick('6')" [ngClass]="{'isActive':selectedTab =='6'}"
+                data-toggle="pill">Showroom</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="box-style">
-    <p>Profile Strength:{{profileStrength}}</p>
-    <div>
-      <mat-accordion class="example-headers-align">
-        <mat-expansion-panel>
-          <mat-expansion-panel-header [expandedHeight]="'60px'" [collapsedHeight]="'50px'">
-            <mat-panel-description class="justify-content-start">
-              <p>Steps to reach the next level</p>
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <div>
-            <div class="row">
-              <div class="col-md-3">
-                <button (click)="onTabClick('6')">---Showroom</button>
-              </div>
-              <div class="col-md-3">
-                <button (click)="onTabClick('6')">---Company logo</button>
-              </div>
-              <div class="col-md-3">
-                <button (click)="onTabClick('6')">---Compliance</button>
-              </div>
-              <div class="col-md-3">
-                <button (click)="onTabClick('6')">---Export countries</button>
+  <div class="container-fluid">
+    <div class="box-style">
+      <p>Profile Strength:{{profileStrength}}</p>
+      <div>
+        <mat-accordion class="example-headers-align">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header [expandedHeight]="'60px'" [collapsedHeight]="'50px'">
+              <mat-panel-description class="justify-content-start">
+                <p>Steps to reach the next level</p>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <div>
+              <div class="row">
+                <div class="col-md-3">
+                  <button (click)="onTabClick('6')">---Showroom</button>
+                </div>
+                <div class="col-md-3">
+                  <button (click)="onTabClick('6')">---Company logo</button>
+                </div>
+                <div class="col-md-3">
+                  <button (click)="onTabClick('6')">---Compliance</button>
+                </div>
+                <div class="col-md-3">
+                  <button (click)="onTabClick('6')">---Export countries</button>
+                </div>
               </div>
             </div>
-          </div>
-        </mat-expansion-panel>
-      </mat-accordion>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
     </div>
   </div>
 </section>
@@ -127,54 +131,87 @@
   <div class="tab-content">
     <div id="summary" class="tab-pane fade " [ngClass]="{'show':selectedTab =='0','active':selectedTab =='0'}">
       <!-- <p>summary works</p> -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="product-box-style">
-            <div class="product-group">
-              <i class="fab fa-buffer"></i>
-              <p>Product Groups</p>
-              <button class="btn btn-md view-btn">View More</button>
-            </div>
-            <div class="product-group-body">
-              <div class="loader"></div>
-              <div class="lists">
-                <ul>
-                  <li><span>
-                      <div class="list-type1"></div>
-                    </span>Tops & T-shirts</li>
-                  <li><span>
-                      <div class="list-type2"></div>
-                    </span>Pullover & Sweatshirts</li>
-                  <li><span>
-                      <div class="list-type3"></div>
-                    </span>Jackets & Coats</li>
-                </ul>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box-styles">
+              <div class="products-group-container">
+                <div class="box-styles-header">
+                  <i class="fab fa-buffer"></i>
+                  <p>Product groups</p>
+                  <button class="btn btn-md view-btn">View more</button>
+                </div>
+                <div class="box-styles-body products-group-body">
+                  <div class="loader"></div>
+                  <div class="lists">
+                    <ul>
+                      <li><span>
+                          <div class="list-type1"></div>
+                        </span>Tops & T-shirts</li>
+                      <li><span>
+                          <div class="list-type2"></div>
+                        </span>Pullover & Sweatshirts</li>
+                      <li><span>
+                          <div class="list-type3"></div>
+                        </span>Jackets & Coats</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="box-style">
-            <div class="showroom-content">
-              <div class="showroom-text">
-                <i class="fal fa-camera-alt"></i>
-                <p>Showroom</p>
-              </div>
-              <div class="fill-showroom">
-                <button class="btn btn-md btn-success">Fill Showroom</button>
+          <div class="col-md-6">
+            <div class="box-styles">
+              <div class="showroom-container">
+                <div class="box-styles-header">
+                  <i class="fal fa-camera-alt"></i>
+                  <p>Showroom</p>
+                  <button class="btn btn-md view-btn">View more</button>
+                </div>
+                <div class="box-styles-body showroom-body">
+                  <button class="btn btn-md btn-success">Fill Showroom</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="box-style">
-            <div class="order-size-content">
-              <div class="order-size-text">
-                <i class="fal fa-tshirt"></i>
-                <p>Order size</p>
-                <button class="btn btn-md view-btn">View More</button>
-              </div>
-              <div class="order-size-body">
-                <p><b>501-1000</b></p>
-                <p>Minimum order quantity</p>
+            <div class="box-styles">
+              <div class="order-size-container">
+                <div class="box-styles-header">
+                  <i class="fal fa-tshirt"></i>
+                  <p>Order size</p>
+                  <button class="btn btn-md view-btn">View More</button>
+                </div>
+                <div class="box-styles-body order-size-body">
+                  <div class="order-size-wrapper">
+                    <div class="order-category">
+                      <p><label>Segment:</label>Mens-L-42 inches</p>
+                      <p><label>Product group:</label>Smart Jersey</p>
+                    </div>
+                    <div class="order-quantity">
+                      <p><label>Min Order Qty:</label><b>501-1000</b></p>
+                      <!-- <p>Minimum order quantity</p> -->
+                    </div>
+                  </div>
+                  <div class="order-size-wrapper">
+                    <div class="order-category1">
+                      <p>Kids</p>
+                      <p>Football SmartSole</p>
+                    </div>
+                    <div class="order-quantity1">
+                      <p><b>30-3000</b></p>
+                      <p>Minimum order quantity</p>
+                    </div>
+                  </div>
+                  <div class="order-size-wrapper">
+                    <div class="order-category">
+                      <p>Mens-M-42 inches</p>
+                      <p>Smartwatch Elite</p>
+                    </div>
+                    <div class="order-quantity">
+                      <p class="mb-0"><b>20-200</b></p>
+                      <p>Minimum order quantity</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -201,5 +238,4 @@
       <app-show-rooms></app-show-rooms>
     </div>
   </div>
-
 </section>

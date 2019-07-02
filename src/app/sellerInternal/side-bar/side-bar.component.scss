@@ -3,16 +3,21 @@
     .seller-info {
         .seller-image {
             img {
-                width: 60px;
-                height: 60px;
-                max-width: 60px;
+                width: 50px;
+                height: 50px;
+                max-width: 50px;
             }
+        }
+        .info {
+            font-size: 13px;
+            font-weight: bold;
         }
     }
     .list-items-wrapper {
         a {
             color: #212529;
-            margin: 5px 0px 5px 0px;
+            padding: 3px 0;
+            // margin: 5px 0px 5px 0px;
         }
         .isActive {
             color: rgb(233, 50, 50);
@@ -20,6 +25,7 @@
             padding-top: 0px;
             padding-bottom: 0px;
             background-color: #fbfbfb;
+            font-weight: bold;
         }
         mat-icon {
             font-size: 1.4rem;
@@ -30,6 +36,7 @@
             font-size: 15px;
             p {
                 margin-left: 0.25rem;
+                font-size: 13px;
             }
         }
     }

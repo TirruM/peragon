@@ -4,21 +4,21 @@
       <img src="assets/img/user2-160x160.jpg" class="rounded-circle" alt="User Image">
     </div>
     <div class="info px-3">
-      <p>Eastman Exports Global clothing Pvt ltd</p>
+      <p>Best Way Fashion</p>
     </div>
   </div>
   <div class="list-group list-items-wrapper">
     <nav class="navbar">
-    <ul class="navbar-nav">
-      <li *ngFor="let menuItem of menuItems" class="nav-item">
-        <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
-          <div (click)="menuClick(menuItem)" class="sidebar-links">
-            <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
-            <p class="d-inline">{{menuItem.title}}</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </nav>
+      <ul class="navbar-nav">
+        <li *ngFor="let menuItem of menuItems" class="nav-item">
+          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
+            <div (click)="menuClick(menuItem)" class="sidebar-links">
+              <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
+              <p class="d-inline">{{menuItem.title}}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
