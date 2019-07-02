@@ -34,7 +34,7 @@ export class SigninComponent implements OnInit {
       console.log("hello");
       this.router.navigateByUrl("/buyerDashboard");
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
-      this.router.navigateByUrl("/sellerdashboard/rfq");
+      this.router.navigateByUrl("/sellerdashboard/profile1");
     }
 
   }
