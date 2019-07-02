@@ -1,20 +1,27 @@
 @import "../../../custom_styles/variables";
 
-.no-certificates-content {
+.no-certificates-content1 {
   padding: 5px 5px 0px 2px;
-  h6 {
-    font-weight: 600;
-    font-size: 15px;
-  }
-  p {
-    text-align: center;
-    font-size: 12px;
-  }
   .add-certificates {
     text-align: center;
+    .select-certificates {
+      margin-top: 10px;
+    }
+    .add-certificates-btn {
+      @extend %colored-btn;
+      background-color: $red-btn;
+      i {
+        padding-right: 8px;
+      }
+    }
   }
-  .add-certificates-btn {
-    @extend %colored-btn;
-    background-color: $red-btn;
+
+  .certificates-select {
+    .certificate-btn-content {
+      text-align: right;
+      .btn-next {
+        @extend %colored-btn;
+      }
+    }
   }
 }
