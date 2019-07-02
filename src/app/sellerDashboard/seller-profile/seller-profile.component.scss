@@ -151,6 +151,7 @@ ul {
   }
 }
 .order-size-body {
+  
     .order-size-wrapper {
         display: flex;
         justify-content: center;
@@ -202,6 +203,13 @@ ul {
                 margin-bottom: 0;
             }
         }
+    }
+    .testing-wrapper {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+    margin: 15px 94px;
     }
     
 }
