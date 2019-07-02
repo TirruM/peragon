@@ -1,13 +1,47 @@
 <div class="box-style">
-  <div class="no-certificates-content">
-    <h6>Certificates </h6>
-    <p>Not filled</p>
-    <div class="add-certificates pink-box-style">
-      <p>Add certificates to your profile to increase matching relevance</p>
-      <div>
-        <button class="btn add-certificates-btn">Add certificate</button>
+
+  <div class="no-certificates-content1">
+    <h6>{{header}} </h6>
+    <div [ngSwitch]="certificateAddSwitch">
+      <div *ngSwitchCase="'not-filled'">
+        <p>Not filled</p>
       </div>
-      <p>If your company don't have a certificate select: <input type="checkbox"> don't have certificates.</p>
+      <div *ngSwitchCase="'add-certificates'" class="add-certificates pink-box-style">
+
+        <p>Add certificates to your profile to increase matching relevance</p>
+        <div>
+          <button class="btn add-certificates-btn" (click)="addCertificates()">
+            <i class="fa fa-plus"></i>Add certificate
+          </button>
+        </div>
+        <p class="select-certificates">If your company don't have a certificate select: <input type="checkbox"> don't
+          have
+          certificates.</p>
+
+      </div>
+      <div *ngSwitchCase="'certificates-select'">
+        <div class="certificates-select">
+          <div>
+            <select>
+              <option>Choose Certificate Type</option>
+              <option>BCI</option>
+              <option>Eco Cart</option>
+            </select>
+          </div>
+          <div class="certificate-btn-content">
+            <button class="btn btn-cancel">cancel</button>
+            <button class="btn btn-next">Next</button>
+          </div>
+        </div>
+      </div>
+      <div *ngSwitchDefault>
+        <h6>Certificates </h6>
+        <p>Not filled</p>
+      </div>
+    </div>
+    <div>
+
     </div>
   </div>
+
 </div>
