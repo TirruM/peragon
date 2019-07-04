@@ -2,6 +2,18 @@
 
 .product-modal {
   padding: 0.8rem 1.1rem;
+  position: relative;
+  .modal-close-btn {
+    position: absolute;
+    top: -15px;
+    right: -16px;
+    height: 27px;
+    width: 27px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0px 6px;
+  }
+
   .product-images {
     p {
       font-size: 12px;
@@ -33,10 +45,13 @@
         position: relative;
         overflow: hidden;
         display: inline-block;
+        padding: 5px 0;
+        margin-right: 15px;
         .product-add-btn {
           border: 1px dotted gray;
           background-color: white;
-          padding: 50px 35px;
+          height: 180px;
+          width: 162px;
           .add-icon {
             color: red;
             font-size: 11px;
@@ -50,8 +65,15 @@
       }
       .main-picture {
         border-bottom: 3px solid $green-btn;
-        padding: 5px 0;
       }
+      div[class$="box"] {
+        color: #f2f2f2;
+      }
+      //   .front-view-box {
+      //       i {
+      //           color: #f2f2f2;
+      //       }
+      //   }
 
       .upload-img input[type="file"] {
         font-size: 100px;
@@ -64,29 +86,49 @@
   }
   .product-form {
     margin-left: 6px;
+    p {
+        margin-bottom: 0;
+    }
     form {
       font-size: 13px;
-      input[type=text] {
+      input[type="text"] {
         margin: 0px 0px 10px 0px;
         width: 100%;
       }
-      [type="radio"]:checked+label:after,
-      [type="radio"]:not(:checked)+label:after {
-        content: '';
+      [type="radio"]:checked + label:after,
+      [type="radio"]:not(:checked) + label:after {
+        content: "";
         background: #ed5324;
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
-      }  
+      }
       .target-group {
         .radio-margin {
           margin-left: 88px;
         }
       }
+    //   .list-unstyled {
+    //       li {
+    //           display: inline-flex;
+    //       }
+    //   }
       .product-group {
         select {
           width: 100%;
         }
       }
-    }  
+      .modal-btns {
+          margin-top: 20px;
+          .btn-cancel {
+            padding: 2px 30px;
+            margin-right: 22px;
+          }
+        .btn-publish {
+            @extend %colored-btn;
+            padding: 2px 30px;
+        }
+      }
+      
+    }
   }
 }

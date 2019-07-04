@@ -105,7 +105,11 @@
   <div class="container-fluid">
     <div class="box-style">
       <p>Profile Strength:{{profileStrength}}</p>
-      <div>
+      <div class="progress">
+          <div class="one success-color"></div><div class="two no-color"></div><div class="three no-color"></div>
+          <div class="progress-bar progress-bar-success" style="width: 25%;"></div>
+      </div>
+      <div class="mt-4">
         <mat-accordion class="example-headers-align">
           <mat-expansion-panel>
             <mat-expansion-panel-header [expandedHeight]="'60px'" [collapsedHeight]="'50px'">
@@ -113,11 +117,8 @@
                 <p>Steps to reach the next level</p>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <div class="progress">
-                <div class="one success-color"></div><div class="two no-color"></div><div class="three no-color"></div>
-                <div class="progress-bar progress-bar-success" style="width: 25%;"></div>
-            </div>
-            <!-- <div>
+            
+            <div class="expansion-panel-btns">
               <div class="row">
                 <div class="col-md-3">
                   <button (click)="onTabClick('6')">---Showroom</button>
@@ -126,13 +127,13 @@
                   <button (click)="onTabClick('6')">---Company logo</button>
                 </div>
                 <div class="col-md-3">
-                  <button (click)="onTabClick('6')">---Compliance</button>
+                  <button (click)="onTabClick('4')">---Compliance</button>
                 </div>
                 <div class="col-md-3">
                   <button (click)="onTabClick('6')">---Export countries</button>
                 </div>
               </div>
-            </div> -->
+            </div>
           </mat-expansion-panel>
         </mat-accordion>
       </div>
@@ -182,7 +183,7 @@
                   <button class="btn btn-md view-btn">View more</button>
                 </div>
                 <div class="box-styles-body showroom-body">
-                  <button class="btn btn-md btn-success">Fill Showroom</button>
+                  <button class="btn btn-md btn-success" (click)="onTabClick('6')">Fill Showroom</button>
                 </div>
               </div>
             </div>
