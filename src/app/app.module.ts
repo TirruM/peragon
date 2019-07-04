@@ -23,6 +23,9 @@ import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
 import { CertificatesComponent } from './sellerDashboard/certificates/certificates.component';
+import { ProductsComponent } from './sellerDashboard/products/products.component';
+import { LocationsComponent } from './sellerDashboard/locations/locations.component';
+import { ServicesComponent } from './sellerDashboard/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,7 @@ import { CertificatesComponent } from './sellerDashboard/certificates/certificat
     SearchComponent,
     ForBuyerComponent,
     ForSellerComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent,
-    RfqComponent, BookMarksComponent
+    RfqComponent, BookMarksComponent, ProductsComponent, LocationsComponent, ServicesComponent
   ],
   imports: [
     BrowserModule,
