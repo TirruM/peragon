@@ -23,6 +23,7 @@ import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
 import { CertificatesComponent } from './sellerDashboard/certificates/certificates.component';
+
 @NgModule({
   declarations: [
     AppComponent,

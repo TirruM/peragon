@@ -13,6 +13,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { SellerLayoutRoutes } from './seller-dashboard-routing';
 import { SellerMessagesComponent } from '../seller-messages/seller-messages.component';
 import { ModalModule } from 'ngx-bootstrap';
+import { ProductsComponent } from '../products/products.component';
+import { LocationsComponent } from '../locations/locations.component';
+import { ServicesComponent } from '../services/services.component';
 
 @NgModule({
     imports: [SideBarModule,
@@ -27,12 +30,22 @@ import { ModalModule } from 'ngx-bootstrap';
         AddProductModelComponent,
         AboutComponent,
         ShowRoomsComponent,
-        CertificatesComponent
+        CertificatesComponent,
+        ProductsComponent,
+        LocationsComponent,
+        ServicesComponent
     ],
     entryComponents: [AddProductModelComponent],
-    exports: [RfqHomeComponent, AddProductModelComponent, AboutComponent,
+    exports: [
+        RfqHomeComponent, 
+        AddProductModelComponent, 
+        AboutComponent,
+        ProductsComponent,
+        LocationsComponent,
+        ServicesComponent, 
         SellerProfileComponentt,
-        ShowRoomsComponent]
+        ShowRoomsComponent
+    ]
 })
 
 export class SellerDashboardModule { }
