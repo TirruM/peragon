@@ -62,4 +62,31 @@
       }
     }
   }
+  .product-form {
+    margin-left: 6px;
+    form {
+      font-size: 13px;
+      input[type=text] {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+      }
+      [type="radio"]:checked+label:after,
+      [type="radio"]:not(:checked)+label:after {
+        content: '';
+        background: #ed5324;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }  
+      .target-group {
+        .radio-margin {
+          margin-left: 88px;
+        }
+      }
+      .product-group {
+        select {
+          width: 100%;
+        }
+      }
+    }  
+  }
 }
