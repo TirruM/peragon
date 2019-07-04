@@ -2,6 +2,18 @@
 
 .product-modal {
   padding: 0.8rem 1.1rem;
+  position: relative;
+  .modal-close-btn {   
+    position: absolute;
+    top: -15px;
+    right: -16px;
+    height: 27px;
+    width: 27px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0px 6px;
+  } 
+  
   .product-images {
     p {
       font-size: 12px;
@@ -33,10 +45,13 @@
         position: relative;
         overflow: hidden;
         display: inline-block;
+        padding: 5px 0;
+        margin-right: 15px;
         .product-add-btn {
           border: 1px dotted gray;
           background-color: white;
-          padding: 50px 35px;
+          height: 180px;
+          width: 162px;
           .add-icon {
             color: red;
             font-size: 11px;
@@ -50,8 +65,16 @@
       }
       .main-picture {
         border-bottom: 3px solid $green-btn;
-        padding: 5px 0;
+        
       }
+      div[class$=box] {
+        color: #f2f2f2;
+      }
+    //   .front-view-box {
+    //       i {
+    //           color: #f2f2f2;
+    //       }
+    //   }
 
       .upload-img input[type="file"] {
         font-size: 100px;

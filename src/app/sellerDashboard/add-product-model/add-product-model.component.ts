@@ -33,6 +33,9 @@ export class AddProductModelComponent implements OnInit {
     this.onClose.next(false);
     this._bsModalRef.hide();
   }
+  public onCloseBtn(): void {
+    this._bsModalRef.hide();
+  }
 
   onCheckSegmentGroup(segment) {
     /* if (this.segmentedGroups.length > 0) {

@@ -13,7 +13,11 @@
     <button type="button" class="btn btn-secondary" (click)="onCancel()">No</button>
   </div>
 </div> -->
-<div class="product-modal">
+<div class="product-modal">  
+  <div class="modal-close-btn">
+    <!-- <button type="button" class="close" data-dismiss="modal" (click)="bsModalRef.hide()">&times;</button> -->
+    <button type="button" class="close" (click)="onCloseBtn()">&times;</button>
+  </div>
   <div class="product-wrapper">
     <div class="d-flex">
       <div class="product-images">
@@ -42,6 +46,20 @@
               </button>
               <input type="file" name="myfile" />
             </div>        
+            <div class="upload-img side-view-box">
+                <button class="btn product-add-btn">
+                    <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                    <small>Side View</small>
+                </button>
+                <input type="file" name="myfile" />
+              </div>
+            <div class="upload-img detailed-view-box">
+                <button class="btn product-add-btn">
+                    <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                    <small>Detail View</small>
+                </button>
+                <input type="file" name="myfile" />
+              </div>
           </div>
         </div>
        
