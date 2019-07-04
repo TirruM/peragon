@@ -183,7 +183,7 @@
                   <button class="btn btn-md view-btn">View more</button>
                 </div>
                 <div class="box-styles-body showroom-body">
-                  <button class="btn btn-md btn-success" (click)="onTabClick('6')">Fill Showroom</button>
+                  <button class="btn btn-md btn-success" [ngClass]="{'isActive':selectedTab =='6'}" (click)="onTabClick('6')">Fill Showroom</button>
                 </div>
               </div>
             </div>
