@@ -3,12 +3,17 @@
     <div class="my-box">
       <div class="box-header">
         <div class="header-body">
-
+          <img class="" [src]="imageSrc"  id="imagePreview" alt="Banner Logo"/>
+          <button class="btn btn-pirmary banner-edit"><input type="file" id="imageUpload" name="imageUrl" accept="image/*" (change)="handleInputChange($event)" /><i class="fa fa-pencil"></i></button>
+        </div>
+        <div class="company-logo">
+          <img class="" [src]="bannerImg" alt="Company Logo"/>
+          <button class="btn btn-pirmary logo-edit"><input type="file" id="imageUpload" name="imageUrl" accept="image/*" (change)="handleInputChange2($event)" /><i class="fa fa-pencil"></i></button>
         </div>
       </div>
       <div class="box-body">
-        <div class="col-sm-6 box-body-logo">
-          <p>Logo</p>
+        <div class="col-sm-6"><!-- box-body-logo -->
+          
         </div>
         <!-- <div class="box-body-main-content row"> -->
         <div class="col-sm-6 box-body-main-content">
@@ -67,27 +72,27 @@
                 data-toggle="pill">Summary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" [ngClass]="{'isActive':selectedTab =='1'}" (click)="onTabClick('0')"
+              <a class="nav-link" href="#about" [ngClass]="{'isActive':selectedTab =='1'}" (click)="onTabClick('1')"
                 data-toggle="pill">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#products" [ngClass]="{'isActive':selectedTab =='2'}" (click)="onTabClick('0')"
+              <a class="nav-link" href="#products" [ngClass]="{'isActive':selectedTab =='2'}" (click)="onTabClick('2')"
                 data-toggle="pill">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services" [ngClass]="{'isActive':selectedTab =='3'}" (click)="onTabClick('0')"
+              <a class="nav-link" href="#services" [ngClass]="{'isActive':selectedTab =='3'}" (click)="onTabClick('3')"
                 data-toggle="pill">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#compliance" [ngClass]="{'isActive':selectedTab =='4'}"
-                (click)="onTabClick('0')" data-toggle="pill">Compliance</a>
+                (click)="onTabClick('4')" data-toggle="pill">Compliance</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#locations" [ngClass]="{'isActive':selectedTab =='5'}" (click)="onTabClick('0')"
+              <a class="nav-link" href="#locations" [ngClass]="{'isActive':selectedTab =='5'}" (click)="onTabClick('5')"
                 data-toggle="pill">Locations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#showroom" (click)="onTabClick('6')" [ngClass]="{'isActive':selectedTab =='0'}"
+              <a class="nav-link" href="#showroom" (click)="onTabClick('6')" [ngClass]="{'isActive':selectedTab =='6'}"
                 data-toggle="pill">Showroom</a>
             </li>
           </ul>
