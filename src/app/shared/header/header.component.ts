@@ -58,5 +58,8 @@ export class HeaderComponent implements OnInit {
   public requestForQuatation() {
     this.router.navigateByUrl('/rfq');
   }
+  onDashboardPage() {
+    this.router.navigateByUrl('/sellerdashboard/profile1');
+  }
 
 }
