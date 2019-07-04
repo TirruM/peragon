@@ -13,9 +13,7 @@
     <div class="about-keyfacts" *ngIf="!isShowData">
       <div class="keyfacts-content">
         <p>Key Facts</p>
-        <div class="edit-btn">
-          <mat-icon>edit</mat-icon>
-        </div>
+        <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
       </div>
       <div class="row keyfacts-body">
         <div class="col-md-4 keyfacts-body-text">
@@ -39,9 +37,7 @@
       <div class="ref-customers-content">
         <p><b>Reference Customers</b></p>
         <p>This section is visible to buyers</p>
-        <div class="edit-btn">
-          <mat-icon>edit</mat-icon>
-        </div>
+        <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
       </div>
       <div class="row ref-customers-body">
         <p class="col-md-3 body-text"><b>Cater Industries</b></p>
@@ -66,7 +62,7 @@
         <p><b>Contacts</b></p>
         <div class="contact-edit-btn">
           <button class="btn btn-md">
-            <mat-icon>visibility</mat-icon>Edit Visibility
+            <i class="fas fa-eye"></i>Edit Visibility
           </button>
         </div>
         <div>
@@ -80,48 +76,68 @@
     <div *ngIf="isShowData">
       <p>contact data</p>
     </div>
-    <div class="about-description" *ngIf="!isShowExportCountries">
-      <p>Main Export Countries</p>
-      <div class="description-content">
-        <p>Select countries that you regularly export to</p>
-        <button class="btn btn-md" (click)="addExportCountries()">+ Add Main export countries</button>
+    <div  [ngSwitch]="addExportCountriesSwitch">
+      <div *ngSwitchCase="'not-filled'">
+        <p>Not filled</p>
       </div>
-    </div>
-    <div class="about-description export-countries" *ngIf="isShowExportCountries">
-      <p>Edit "Main Export Countries"</p>
-      <div class="search">
-        <div>
-          <input type="" placeholder="search">
+      <div class="about-description" *ngSwitchCase="'addExportCountries'">
+        <p>Main Export Countries</p>
+        <div class="description-content">
+          <p>Select countries that you regularly export to</p>
+          <button class="btn btn-md" (click)="addExportCountries()">+ Add Main export countries</button>
         </div>
-        <div class="countries-list">
-          <div class="row">
-            <mat-checkbox class="col-md-3 mat-checkbox-checked">Afghanistan</mat-checkbox>
-            <mat-checkbox class="col-md-3">Argentina</mat-checkbox>
-            <mat-checkbox class="col-md-3">America</mat-checkbox>
-            <mat-checkbox class="col-md-3">America</mat-checkbox>
+      </div>
+      <div class="about-description export-countries" *ngSwitchCase="'editEC'">
+        <p>Edit "Main Export Countries"</p>
+        <div class="search">
+          <div>
+            <input type="" placeholder="search">
           </div>
-          <div class="row">
-            <mat-checkbox class="col-md-3">Bhutan</mat-checkbox>
-            <mat-checkbox class="col-md-3">Brazil</mat-checkbox>
-            <mat-checkbox class="col-md-3">Brunei</mat-checkbox>
-            <mat-checkbox class="col-md-3">Brunei</mat-checkbox>
+          <div class="countries-list">
+            <div class="row">
+              <mat-checkbox class="col-md-3">Afghanistan</mat-checkbox>
+              <mat-checkbox class="col-md-3">Argentina</mat-checkbox>
+              <mat-checkbox class="col-md-3">America</mat-checkbox>
+              <mat-checkbox class="col-md-3">America</mat-checkbox> 
+            </div>
+            <div class="row">
+              <mat-checkbox class="col-md-3">Bhutan</mat-checkbox>
+              <mat-checkbox class="col-md-3">Brazil</mat-checkbox>
+              <mat-checkbox class="col-md-3">Brunei</mat-checkbox>
+              <mat-checkbox class="col-md-3">Brunei</mat-checkbox>
+            </div>
+            <div class="row">
+              <mat-checkbox class="col-md-3">Cameroon</mat-checkbox>
+              <mat-checkbox class="col-md-3">Canada</mat-checkbox>
+              <mat-checkbox class="col-md-3">China</mat-checkbox>
+              <mat-checkbox class="col-md-3">China</mat-checkbox>
+            </div>
           </div>
-          <div class="row">
-            <mat-checkbox class="col-md-3">Cameroon</mat-checkbox>
-            <mat-checkbox class="col-md-3">Canada</mat-checkbox>
-            <mat-checkbox class="col-md-3">China</mat-checkbox>
-            <mat-checkbox class="col-md-3">China</mat-checkbox>
-          </div>
-        </div>
-        <div>
+          <div>
 
-        </div>
-        <div class="status-btns">
-          <button class="btn btn-md btn-primary">Cancel</button>
-          <button class="btn btn-md btn-success">Save</button>
+          </div>
+          <div class="status-btns">
+            <button class="btn btn-md btn-cancel">Cancel</button>
+            <button class="btn btn-md btn-success" (click)="displayCountries()">Save</button>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div [ngSwitch]="countriesList" class="selected-countries">
+        <div class="about-ref-customers" *ngSwitchCase="'countries-list'">
+          <div class="ref-customers-content">
+            <p>Main Export countries</p>
+            <button class="btn btn-sm edit-btn"><i class="fa fa-pencil"></i></button>
+          </div>  
+          <div>
+            <p>Export countries list</p>
+          </div>
+        </div>
+        <div *ngSwitchCase="'no_list'">
+          <p>No Countries List</p>
+        </div>
+      </div>
+    </div>  
     <div class="about-description" *ngIf="!isShowData">
       <p>Links and Websites</p>
       <div class="description-content">

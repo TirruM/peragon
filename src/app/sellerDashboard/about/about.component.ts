@@ -6,12 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  isShowExportCountries: boolean = false;
+  addExportCountriesSwitch: String = "addExportCountries";
+  // addExportCountriesSwitch: String = "not-filled";
+
+  countriesList : String = "editEC";
+  
+  
   constructor() { }
 
   ngOnInit() {
   }
+
   addExportCountries() {
-    this.isShowExportCountries = true;
+    this.addExportCountriesSwitch = "editEC";
+  }
+
+  displayCountries() {
+    this.addExportCountriesSwitch = "";
+    this.countriesList = "countries-list";
   }
 }

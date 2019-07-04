@@ -12,7 +12,7 @@
 .box-body-logo {
   position: absolute;
   top: 65px;
-  left: 110px;
+  left: 143px;
   background-color: rgb(158, 149, 149);
   color: #ffffff;
   width: 90px;
@@ -47,8 +47,14 @@
         .right {
           text-align: justify;
           text-align-last: left;
+          span {
+            margin-left: 27px;
+          }
         }
       }
+    }
+    .sub-content-margin {
+      margin-left: 70px;
     }
 
     .product-label {
