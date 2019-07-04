@@ -22,7 +22,7 @@
       <div *ngSwitchCase="'certificates-select'">
         <div class="certificates-select">
           <div>
-            <select>
+            <select class="form-control">
               <option>Choose Certificate Type</option>
               <option>BCI</option>
               <option>Eco Cart</option>
@@ -30,18 +30,100 @@
           </div>
           <div class="certificate-btn-content">
             <button class="btn btn-cancel">cancel</button>
-            <button class="btn btn-next">Next</button>
+            <button class="btn btn-next" (click)="addGots()">Next</button>
           </div>
         </div>
       </div>
+
+      <div *ngSwitchCase="'gots-select'">
+        <div class="gots-select">
+          <div class="form-group">
+            <input type="text" class="form-control" id="certifiedEntity" placeholder="Certified Entity*">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="certifiedEntity" placeholder="License Number*">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="certifiedEntity" placeholder="Valid until (YYYY-MM-DD)*">
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option>Choose Factory this certificate applies to</option>
+              <option>Yellow Tex</option>
+              <option>Dhana Tex</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="upload_file">
+              <button class="btn btn-primary">Upload Certificqates</button>
+              <input type="file" name="file" />
+            </div>
+            <div class="certificate-btn-content">
+              <button class="btn btn-cancel">cancel</button>
+              <button class="btn btn-next" (click)="viewCertificates()">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <div *ngSwitchDefault>
         <h6>Certificates </h6>
         <p>Not filled</p>
       </div>
-    </div>
-    <div>
+      <div>
 
+      </div>
     </div>
   </div>
-
 </div>
+
+<div class="box-style">
+  <div class="no-certificates-content1">
+    <div [ngSwitch]="viewCertificateSwitch">
+      <div *ngSwitchCase="'view-certificate'">
+        <div class="view-certificate">
+          <h3>GOTS - Global Organic Textile Standard</h3>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-2">
+                <div class="certificate-img">
+                  <img class="img img-responsive" src="assets/img/user2-160x160.jpg">
+                </div>
+              </div>
+              <div class="col-sm-8 sub-content">
+                <table>
+                  <tr>
+                    <td>Certificate entity</td>
+                    <td class="marg-left"><strong>EASTMAN EXPORTS GLOBAL (P)LTD</strong></td>
+                  </tr>
+                  <tr>
+                    <td>License number</td>
+                    <td class="marg-left"><strong>CU 8855666</strong></td>
+                  </tr>
+                  <tr class="mar-top">
+                    <td>Valid until</td>
+                    <td class="marg-left">2019-02-20</td>
+                  </tr>
+                  <tr>
+                    <td>Factories</td>
+                    <td class="marg-left">Eastman Exports Global Pvt Ltd</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-sm-2">
+                <div class="pull-right">
+                  <div class="edit-btn">
+                    <i class="fa fa-pencil"></i>
+                  </div>
+                  <div class="edit-btn">
+                    <i class="fa fa-trash"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

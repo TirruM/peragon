@@ -16,12 +16,67 @@
     }
   }
 
-  .certificates-select {
+  .certificates-select,
+  .gots-select {
     .certificate-btn-content {
       text-align: right;
+      margin-top: 10px;
       .btn-next {
         @extend %colored-btn;
       }
     }
   }
+
+  .upload_file {
+    position: absolute;
+    //top: 36%;
+    left: 50px;
+    .btn {
+      color: #fff;
+      @extend %colored-btn;
+      padding: 5px 15px;
+      border-radius: 33px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+    input[type="file"] {
+      // font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+  }
+
+  .view-certificate{
+    .certificate-img img{
+      border-radius: 50%;
+      width: 75%;
+      margin-left: 20px;
+    }
+
+    .sub-content{
+      font-size: 14px;
+      .marg-left{
+        margin-left: 8px;
+      }
+    }
+
+    .mar-top{
+      margin-top:12px;
+    }
+  }
+
+  .edit-btn {
+    background-color: #ff5544;
+    color: #ffffff;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 5px;
+    display: inline-block;
+}
 }

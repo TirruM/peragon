@@ -85,140 +85,143 @@ ul {
 }
 
 /*......summary tab styles.......*/
-
-.box-styles {
-  box-shadow: $box-shadow;
-  padding: 12px 14px 13px 14px;
-  margin-top: 16px;
-  .box-styles-header {
-    margin-bottom: 13px;
-    p {
-      font-size: 13px;
-      font-weight: 600;
-      display: inline;
-    }
-    .view-btn {
-      box-shadow: $box-shadow;
-      background-color: #ffffff;
-      border-radius: 25px;
-      float: right;
-      font-size: 11px;
-      font-weight: bold;
-    }
-  }  
-}
-.products-group-body {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    .loader {
-      border: 18px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 18px solid #9ae6a0;
-      border-right: 18px solid #12803c;
-      border-bottom: 18px solid #12803c;
-      border-left: 18px solid #429c65;
-      width: 120px;
-      height: 120px;
-    }
-    .lists {
-      font-size: 12px;
-      ul {
-        list-style-type: none;
-        span {
-          display: inline-block;
-          padding-right: 8px;
-        }
-        div[class^="list"] {
-          width: 10px;
-          height: 10px;
-        }
-        .list-type1 {
-          background-color: rgb(18, 128, 60);
-        }
-        .list-type2 {
-          background-color: rgb(66, 156, 101);
-        }
-        .list-type3 {
-          background-color: rgb(154, 230, 160);
+.tab-content {
+  margin: 0 17px;
+  .box-styles {
+    box-shadow: $box-shadow;
+    padding: 12px 14px 13px 14px;
+    margin-top: 16px;
+    .box-styles-header {
+      margin-bottom: 13px;
+      p {
+        font-size: 13px;
+        font-weight: 600;
+        display: inline;
+      }
+      .view-btn {
+        box-shadow: $box-shadow;
+        background-color: #ffffff;
+        border-radius: 25px;
+        float: right;
+        font-size: 11px;
+        font-weight: bold;
+      }
+    }  
+  }
+  .products-group-body {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .loader {
+        border: 18px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 18px solid #9ae6a0;
+        border-right: 18px solid #12803c;
+        border-bottom: 18px solid #12803c;
+        border-left: 18px solid #429c65;
+        width: 120px;
+        height: 120px;
+      }
+      .lists {
+        font-size: 12px;
+        ul {
+          list-style-type: none;
+          span {
+            display: inline-block;
+            padding-right: 8px;
+          }
+          div[class^="list"] {
+            width: 10px;
+            height: 10px;
+          }
+          .list-type1 {
+            background-color: rgb(18, 128, 60);
+          }
+          .list-type2 {
+            background-color: rgb(66, 156, 101);
+          }
+          .list-type3 {
+            background-color: rgb(154, 230, 160);
+          }
         }
       }
     }
-  }
-.showroom-body {
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-  margin: 20px;
-  background-color: #c6e0c6;
-  padding: 9px;
-  text-align: center;
-  button {
-    border-radius: 25px;
-    font-size: 13px;
-  }
-}
-.order-size-body {
-  
-    .order-size-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .order-category {
-            padding: 9px;
-            // box-shadow: $box-shadow;
-            margin-bottom: 15px;
-            margin-right: 15px;
-            // text-align: center;
-            // flex-basis: 130px;
-            p {
-                font-size: 13px;
-                // font-weight: bolder;
-                margin-bottom: 0;
-                label {
-                    font-weight: bold;
-                    margin-bottom: 0;
-                }
-            }
-        }
-        .order-quantity {
-            font-size: 12px;
-            // p {
-            //     margin-bottom: 0;
-            // }
-        }
-        .order-category1 {
-            padding: 9px;
-            box-shadow: $box-shadow;
-            margin-bottom: 15px;
-            margin-right: 15px;
-            text-align: center;
-            flex-basis: 130px;
-            p {
-                font-size: 13px;
-                font-weight: bolder;
-                margin-bottom: 0;
-                label {
-                    font-weight: bold;
-                    margin-bottom: 0;
-                }
-            }
-        }
-        .order-quantity1 {
-            font-size: 12px;
-            text-align: center;
-            p {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .testing-wrapper {
-      display: flex;
-    justify-content: center;
-    align-items: center;
+  .showroom-body {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-    margin: 15px 94px;
+    margin: 20px;
+    background-color: #c6e0c6;
+    padding: 9px;
+    text-align: center;
+    button {
+      border-radius: 25px;
+      font-size: 13px;
     }
+  }
+  .order-size-body {
     
+      .order-size-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .order-category {
+              padding: 9px;
+              // box-shadow: $box-shadow;
+              margin-bottom: 15px;
+              margin-right: 15px;
+              // text-align: center;
+              // flex-basis: 130px;
+              p {
+                  font-size: 13px;
+                  // font-weight: bolder;
+                  margin-bottom: 0;
+                  label {
+                      font-weight: bold;
+                      margin-bottom: 0;
+                  }
+              }
+          }
+          .order-quantity {
+              font-size: 12px;
+              // p {
+              //     margin-bottom: 0;
+              // }
+          }
+          .order-category1 {
+              padding: 9px;
+              box-shadow: $box-shadow;
+              margin-bottom: 15px;
+              margin-right: 15px;
+              text-align: center;
+              flex-basis: 130px;
+              p {
+                  font-size: 13px;
+                  font-weight: bolder;
+                  margin-bottom: 0;
+                  label {
+                      font-weight: bold;
+                      margin-bottom: 0;
+                  }
+              }
+          }
+          .order-quantity1 {
+              font-size: 12px;
+              text-align: center;
+              p {
+                  margin-bottom: 0;
+              }
+          }
+      }
+      .testing-wrapper {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+      margin: 15px 94px;
+      }
+      
+  }
 }
+
 
 /*--------end summary tab styles-------*/
 

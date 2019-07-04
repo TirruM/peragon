@@ -10,6 +10,8 @@ export class CertificatesComponent implements OnInit {
   // certificateAddSwitch: String = "not-filled";
   header: String = "Certificates";
 
+  viewCertificateSwitch: String = "add-certificates";
+
   constructor() { }
 
   ngOnInit() {
@@ -19,4 +21,14 @@ export class CertificatesComponent implements OnInit {
     this.header = "Add 'Certificates' ";
   }
 
+  addGots(){
+    this.certificateAddSwitch = "gots-select";
+    this.header = 'Add "GOTS"- Global Organic Textile Standard';
+  }
+
+  viewCertificates(){
+    this.header = 'Certificates';
+    this.certificateAddSwitch = "add-certificates";
+    this.viewCertificateSwitch = "view-certificate" ;
+  }
 }
