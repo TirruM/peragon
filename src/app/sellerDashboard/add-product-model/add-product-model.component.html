@@ -13,50 +13,73 @@
     <button type="button" class="btn btn-secondary" (click)="onCancel()">No</button>
   </div>
 </div> -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <h6>Add Product to your Showroom</h6>
-      <p>Visible in your profile, news feeds of your followers, and inspiration boards for buyers worldwide.</p>
-      <div class="d-flex justify-content-between">
-        <a href="">Great Showroom guide</a>
-        <a href="">Great Picture guide</a>
+<div class="product-modal">
+  <div class="product-wrapper">
+    <div class="d-flex">
+      <div class="product-images">
+        <p class="products-heading">Add Product to your Showroom</p>
+        <small>Visible in your profile, news feeds of your followers, and inspiration boards for buyers
+          worldwide.</small>
+        <div class="guide-section">
+          <a href="">
+            <i class="material-icons">remove_red_eye</i><span>Great Showroom Guide</span>
+          </a>
+          <a href=""><i class="material-icons">remove_red_eye</i><span>Great Picture Guide</span></a>
+        </div>
+        <div class="product-images-upload">
+          <div class="d-flex flex-wrap">
+            <div class="upload-img main-picture">
+              <button class="btn product-add-btn">
+                  <p class="add-icon"><i class="fa fa-plus"></i>Add Picture</p>
+                  <small>up to 12 pictures</small>
+              </button>
+              <input type="file" name="myfile" />
+            </div>        
+            <div class="upload-img front-view-box">
+              <button class="btn product-add-btn">
+                  <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                  <small>Front View</small>
+              </button>
+              <input type="file" name="myfile" />
+            </div>        
+          </div>
+        </div>
+       
       </div>
-    </div>
-    <div class="col-md-4">
-      <div>
-        <h6>Showroom Post</h6>
-        <input type="text" placeholder="Product Title" />
-        <input type="text" placeholder="Description of the Product" />
-      </div>
-      <div>
-        <h6>Target Group</h6>
-        <ul class="list-unstyled">
-          <li>
-            <input type="radio">Children (all ages)
-          </li>
-          <li>
-            <input type="radio">Adults (all ages)
-          </li>
-        </ul>
-      </div>
+      <div class="">
+        <div>
+          <h6>Showroom Post</h6>
+          <input type="text" placeholder="Product Title" />
+          <input type="text" placeholder="Description of the Product" />
+        </div>
+        <div>
+          <h6>Target Group</h6>
+          <ul class="list-unstyled">
+            <li>
+              <input type="radio">Children (all ages)
+            </li>
+            <li>
+              <input type="radio">Adults (all ages)
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <h6>Segment <sup>*</sup></h6>
-        <ul class="list-unstyled">
-          <li *ngFor="let segment of segmentedGroups">
-            <input type="radio" (change)="onCheckSegmentGroup(segment)">{{segment.categoryName}}
-          </li>
+        <div>
+          <h6>Segment <sup>*</sup></h6>
+          <ul class="list-unstyled">
+            <li *ngFor="let segment of segmentedGroups">
+              <input type="radio" (change)="onCheckSegmentGroup(segment)">{{segment.categoryName}}
+            </li>
 
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      <div>
-        <h6>Product Group <sup>*</sup></h6>
-        <select>
-          <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
-        </select>
+        <div>
+          <h6>Product Group <sup>*</sup></h6>
+          <select>
+            <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
