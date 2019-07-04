@@ -1,8 +1,33 @@
 @import '../../../custom_styles/variables';
 
-.add-product-btn {
-    @extend %colored-btn;
-    background-color: $red-btn;
-
+.showroom-container {
+    h5 {
+        font-weight: bold;
+    }
+    .box-style {
+        margin: 10px 0;
+        font-size: 12px;
+        font-weight: 600;
+        .add-product-btn {
+            @extend %colored-btn;
+            background-color: $red-btn;    
+        }
+    }  
+    .pre-filled-view {
+        .pre-filled-content {
+            margin-top: 0.25rem;
+            margin-bottom: 1rem;
+            i {
+                font-size: 70px;
+                display: block;
+            }
+            small {
+                font-size: 70%;
+                font-weight: 600;
+            }
+        }
+        
+    }  
+    
 }
- 
+
