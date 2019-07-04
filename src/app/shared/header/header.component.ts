@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
     //this.sharedService.cartData.emit("ngAfterContentInit: " + this.data);
 
     this.sharedService.hideButtons.subscribe((data: any) => {
+      console.log("seller login Dat111a--->",data);
       if (data == true) {
         this.signInFlag = false;
       }
@@ -30,7 +31,10 @@ export class HeaderComponent implements OnInit {
 
     this.sharedService.hideBuyerMenu.subscribe((buyerData) => {
       this.buyerDropDown = buyerData;
+      console.log("seller login Data--->",this.buyerDropDown);
       if (buyerData == true) {
+        this.dropDownMenu = true;
+      }else{
         this.dropDownMenu = false;
       }
     })
@@ -46,6 +50,7 @@ export class HeaderComponent implements OnInit {
 
   public logout() {
     this.signInFlag = true;
+    this.dropDownMenu = false;
     //localStorage.setItem("manufacturelogin_flag", "0");
     this.router.navigateByUrl('/');
   }

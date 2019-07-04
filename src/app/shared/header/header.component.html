@@ -13,7 +13,7 @@
       <!-- <li class="nav-item">
           <a class="nav-link">Our Members</a>
         </li> -->
-      <li class="nav-item custom-nav-item buyer-menu dropdown" routerLinkActive="current" *ngIf="!signInFlag">
+      <li class="nav-item custom-nav-item buyer-menu dropdown" routerLinkActive="current" *ngIf="dropDownMenu">
         <a class="nav-link nav-link dropdown-toggle" data-toggle="dropdown">For
           Buyers</a>
         <ul class="dropdown-menu">
@@ -22,7 +22,7 @@
           </li>
         </ul>
       </li>
-      <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="signInFlag">
+      <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="!dropDownMenu">
         <a class="nav-link nav-link " [routerLink]="['/forBuyer']">For Buyers</a>
 
       </li>
