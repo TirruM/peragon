@@ -13,7 +13,7 @@
     <button type="button" class="btn btn-secondary" (click)="onCancel()">No</button>
   </div>
 </div> -->
-<div class="product-modal">  
+<div class="product-modal">
   <div class="modal-close-btn">
     <!-- <button type="button" class="close" data-dismiss="modal" (click)="bsModalRef.hide()">&times;</button> -->
     <button type="button" class="close" (click)="onCloseBtn()">&times;</button>
@@ -34,35 +34,35 @@
           <div class="d-flex flex-wrap">
             <div class="upload-img main-picture">
               <button class="btn product-add-btn">
-                  <p class="add-icon"><i class="fa fa-plus"></i>Add Picture</p>
-                  <small>up to 12 pictures</small>
+                <p class="add-icon"><i class="fa fa-plus"></i>Add Picture</p>
+                <small>up to 12 pictures</small>
               </button>
               <input type="file" name="myfile" />
-            </div>        
+            </div>
             <div class="upload-img front-view-box">
               <button class="btn product-add-btn">
-                  <p class="add-icon"><i class="fa fa-tshirt"></i></p>
-                  <small>Front View</small>
+                <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                <small>Front View</small>
               </button>
               <input type="file" name="myfile" />
-            </div>        
+            </div>
             <div class="upload-img side-view-box">
-                <button class="btn product-add-btn">
-                    <p class="add-icon"><i class="fa fa-tshirt"></i></p>
-                    <small>Side View</small>
-                </button>
-                <input type="file" name="myfile" />
-              </div>
+              <button class="btn product-add-btn">
+                <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                <small>Side View</small>
+              </button>
+              <input type="file" name="myfile" />
+            </div>
             <div class="upload-img detailed-view-box">
-                <button class="btn product-add-btn">
-                    <p class="add-icon"><i class="fa fa-tshirt"></i></p>
-                    <small>Detail View</small>
-                </button>
-                <input type="file" name="myfile" />
-              </div>
+              <button class="btn product-add-btn">
+                <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                <small>Detail View</small>
+              </button>
+              <input type="file" name="myfile" />
+            </div>
           </div>
         </div>
-       
+
       </div>
       <div class="product-form">
         <form>
@@ -83,7 +83,7 @@
                   <input type="radio" name="radio-btn1" id="2" value="">
                   <label for="2">Men</label>
                 </div>
-              </div>  
+              </div>
               <div class="radio-margin">
                 <div>
                   <input type="radio" name="radio-btn1" id="3" value="">
@@ -93,7 +93,7 @@
                   <input type="radio" name="radio-btn1" id="4" value="">
                   <label for="4">Women</label>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
           <div>
@@ -110,7 +110,11 @@
               <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
             </select>
           </div>
-        </form>  
+          <div class="modal-btns">
+            <button class="btn btn-cancel">Cancel</button>
+            <button class="btn btn-publish">Publish</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
