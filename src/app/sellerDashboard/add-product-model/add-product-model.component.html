@@ -64,40 +64,53 @@
         </div>
        
       </div>
-      <div class="">
-        <div>
-          <h6>Showroom Post</h6>
-          <input type="text" placeholder="Product Title" />
-          <input type="text" placeholder="Description of the Product" />
-        </div>
-        <div>
-          <h6>Target Group</h6>
-          <ul class="list-unstyled">
-            <li>
-              <input type="radio">Children (all ages)
-            </li>
-            <li>
-              <input type="radio">Adults (all ages)
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6>Segment <sup>*</sup></h6>
-          <ul class="list-unstyled">
-            <li *ngFor="let segment of segmentedGroups">
-              <input type="radio" (change)="onCheckSegmentGroup(segment)">{{segment.categoryName}}
-            </li>
-
-          </ul>
-        </div>
-
-        <div>
-          <h6>Product Group <sup>*</sup></h6>
-          <select>
-            <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
-          </select>
-        </div>
+      <div class="product-form">
+        <form>
+          <div>
+            <p><b>Showroom Post</b></p>
+            <input type="text" placeholder="Product Title" />
+            <input type="text" placeholder="Description of the Product" />
+          </div>
+          <div class="target-group">
+            <p><b>Target Group<sup>*</sup></b></p>
+            <div class="radio-btns margin-top d-flex">
+              <div>
+                <div class="radio">
+                  <input type="radio" name="radio-btn1" id="1" value="">
+                  <label for="1">Baby</label>
+                </div>
+                <div>
+                  <input type="radio" name="radio-btn1" id="2" value="">
+                  <label for="2">Men</label>
+                </div>
+              </div>  
+              <div class="radio-margin">
+                <div>
+                  <input type="radio" name="radio-btn1" id="3" value="">
+                  <label for="3">Kids</label>
+                </div>
+                <div>
+                  <input type="radio" name="radio-btn1" id="4" value="">
+                  <label for="4">Women</label>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <div>
+            <p><b>Segment <sup>*</sup></b></p>
+            <ul class="list-unstyled">
+              <li *ngFor="let segment of segmentedGroups">
+                <input type="radio" name="radio-btn" (change)="onCheckSegmentGroup(segment)">{{segment.categoryName}}
+              </li>
+            </ul>
+          </div>
+          <div class="product-group">
+            <p><b>Product Group <sup>*</sup></b></p>
+            <select>
+              <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
+            </select>
+          </div>
+        </form>  
       </div>
     </div>
   </div>
