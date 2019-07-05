@@ -117,9 +117,10 @@ ul {
   }
 }
 .isActive {
-  border-bottom: 3px solid rgb(233, 55, 55);
+  border-bottom: 2px solid rgb(233, 55, 55);
   // color: rgb(233, 55, 55);
   background-color: #ffffff!important;
+  border-radius: 0;
 }
 .expansion-panel-btns {
   button {
