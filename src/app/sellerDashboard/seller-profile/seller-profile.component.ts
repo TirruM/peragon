@@ -10,7 +10,8 @@ export class SellerProfileComponentt implements OnInit {
   profileStrength: String = 'Starter';
   isShowData: boolean = false;
   isShowExportCountries: boolean = false;
-
+  tabsObjArray = [];
+  currentTabObj: any;
   public imageSrc: string = 'assets/Images/sports/introductoin image.jpg';
   public bannerImg: string = 'assets/img/tennis-manufacture.jpg';
 
@@ -20,14 +21,86 @@ export class SellerProfileComponentt implements OnInit {
   }
 
   ngOnInit() {
+    this.onPrepareTabsObj();
+  }
+  onPrepareTabsObj() {
+    for (var i = 0; i < 3; i++) {
+      var currentTab = [];
+      if (i == 0) {
+        var summaryTabObj = {
+          tabName: "ShowRoom",
+          tabClick: '6'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Company Logo",
+          tabClick: ''
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Compliance",
+          tabClick: '4'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Export Countries",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+        this.tabsObjArray.push(currentTab);
+
+      } else if (i == 1) {
+        var summaryTabObj = {
+          tabName: "Materials",
+          tabClick: '2'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Fabric Types",
+          tabClick: '2'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Treatments",
+          tabClick: '3'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Lead time",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+
+        var summaryTabObj = {
+          tabName: "Minimum order quanity",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+
+        var summaryTabObj = {
+          tabName: "Location pictures",
+          tabClick: '5'
+        }
+        currentTab.push(summaryTabObj);
+
+        this.tabsObjArray.push(currentTab);
+      } else if (i == 2) {
+
+      }
+    }
+    this.currentTabObj = this.tabsObjArray[0];
+
+  }
+  onProgressBarClick(val) {
+    this.currentTabObj = this.tabsObjArray[val];
   }
 
   onTabClick(currentTab) {
     this.selectedTab = currentTab;
   }
 
-  handleInputChange(e) {  
-    console.log("upload Image-->",e);
+  handleInputChange(e) {
+    console.log("upload Image-->", e);
     var file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
     var pattern = /image-*/;
     var reader = new FileReader();
@@ -44,8 +117,8 @@ export class SellerProfileComponentt implements OnInit {
     this.imageSrc = reader.result;
   }
 
-  handleInputChange2(e) {  
-    console.log("upload Image-->",e);
+  handleInputChange2(e) {
+    console.log("upload Image-->", e);
     var file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
     var pattern = /image-*/;
     var reader = new FileReader();
