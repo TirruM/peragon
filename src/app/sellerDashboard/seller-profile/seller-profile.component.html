@@ -3,17 +3,20 @@
     <div class="my-box">
       <div class="box-header">
         <div class="header-body">
-          <img class="" [src]="imageSrc"  id="imagePreview" alt="Banner Logo"/>
-          <button class="btn btn-pirmary banner-edit"><input type="file" id="imageUpload" name="imageUrl" accept="image/*" (change)="handleInputChange($event)" /><i class="fa fa-pencil"></i></button>
+          <img class="" [src]="imageSrc" id="imagePreview" alt="Banner Logo" />
+          <button class="btn btn-pirmary banner-edit"><input type="file" id="imageUpload" name="imageUrl"
+              accept="image/*" (change)="handleInputChange($event)" /><i class="fa fa-pencil"></i></button>
         </div>
         <div class="company-logo">
-          <img class="" [src]="bannerImg" alt="Company Logo"/>
-          <button class="btn btn-pirmary logo-edit"><input type="file" id="imageUpload" name="imageUrl" accept="image/*" (change)="handleInputChange2($event)" /><i class="fa fa-pencil"></i></button>
+          <img class="" [src]="bannerImg" alt="Company Logo" />
+          <button class="btn btn-pirmary logo-edit"><input type="file" id="imageUpload" name="imageUrl" accept="image/*"
+              (change)="handleInputChange2($event)" /><i class="fa fa-pencil"></i></button>
         </div>
       </div>
       <div class="box-body">
-        <div class="col-sm-6"><!-- box-body-logo -->
-          
+        <div class="col-sm-6">
+          <!-- box-body-logo -->
+
         </div>
         <!-- <div class="box-body-main-content row"> -->
         <div class="col-sm-6 box-body-main-content">
@@ -30,7 +33,7 @@
             <table>
               <tr>
                 <td class="left"><b>Key Facts</b></td>
-                </tr>
+              </tr>
               <tbody>
                 <tr>
                   <td class="left">Target Group</td>
@@ -53,7 +56,7 @@
               <label class="product-label">polo</label>
               <label class="product-label">T-shirt</label>
               <label class="product-label">Sweatshirt</label>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -106,8 +109,10 @@
     <div class="box-style">
       <p>Profile Strength:{{profileStrength}}</p>
       <div class="progress">
-          <div class="one success-color"></div><div class="two no-color"></div><div class="three no-color"></div>
-          <div class="progress-bar progress-bar-success" style="width: 25%;"></div>
+        <div class="one success-color"></div>
+        <div class="two no-color"></div>
+        <div class="three no-color"></div>
+        <div class="progress-bar progress-bar-success" style="width: 25%;"></div>
       </div>
       <div class="mt-4">
         <mat-accordion class="example-headers-align">
@@ -117,7 +122,7 @@
                 <p>Steps to reach the next level</p>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            
+
             <div class="expansion-panel-btns">
               <div class="row">
                 <div class="col-md-3">
@@ -130,7 +135,7 @@
                   <button (click)="onTabClick('4')">---Compliance</button>
                 </div>
                 <div class="col-md-3">
-                  <button (click)="onTabClick('6')">---Export countries</button>
+                  <button (click)="onTabClick('1')">---Export countries</button>
                 </div>
               </div>
             </div>
@@ -183,7 +188,8 @@
                   <button class="btn btn-md view-btn">View more</button>
                 </div>
                 <div class="box-styles-body showroom-body">
-                  <button class="btn btn-md btn-success" [ngClass]="{'isActive':selectedTab =='6'}" (click)="onTabClick('6')">Fill Showroom</button>
+                  <button class="btn btn-md btn-success" [ngClass]="{'isActive':selectedTab =='6'}"
+                    (click)="onTabClick('6')">Fill Showroom</button>
                 </div>
               </div>
             </div>
