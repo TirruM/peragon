@@ -124,7 +124,7 @@
                   <button (click)="onTabClick('6')">---Showroom</button>
                 </div>
                 <div class="col-md-3">
-                  <button (click)="onTabClick('6')">---Company logo</button>
+                  <button>---Company logo</button>
                 </div>
                 <div class="col-md-3">
                   <button (click)="onTabClick('4')">---Compliance</button>
@@ -233,8 +233,8 @@
       </div>
     </div>
     <div id="about" class="tab-pane fade " [ngClass]="{'show':selectedTab =='1','active':selectedTab =='1'}">
-      <p>about works</p>
-      <!-- <app-about></app-about> -->
+      <!-- <p>about works</p> -->
+      <app-about></app-about>
     </div>
     <div id="products" class="tab-pane fade " [ngClass]="{'show':selectedTab =='2','active':selectedTab =='2'}">
       <!-- <p>products works</p> -->
