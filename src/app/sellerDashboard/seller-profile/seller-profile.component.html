@@ -109,9 +109,17 @@
     <div class="box-style">
       <p>Profile Strength:{{profileStrength}}</p>
       <div class="progress">
-        <div class="one success-color"></div>
-        <div class="two no-color"></div>
-        <div class="three no-color"></div>
+        <div class="one success-color">
+          <button class=" btn-tab-progress"><i class="fa fa-check-circle-o "
+              (click)="onProgressBarClick(0)"></i></button>
+        </div>
+        <div class="two no-color">
+          <button class=" btn-tab-progress"><i class="fa fa-check-circle-o"
+              (click)="onProgressBarClick(1)"></i></button></div>
+        <div class="three no-color">
+          <button class=" btn-tab-progress"><i class="fa fa-check-circle-o"
+              (click)="onProgressBarClick(1)"></i></button>
+        </div>
         <div class="progress-bar progress-bar-success" style="width: 25%;"></div>
       </div>
       <div class="mt-4">
@@ -125,7 +133,10 @@
 
             <div class="expansion-panel-btns">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" *ngFor="let tabs of currentTabObj">
+                  <button (click)="onTabClick(tabs.tabClick)">{{tabs.tabName}}</button>
+                </div>
+                <!--  <div class="col-md-3">
                   <button (click)="onTabClick('6')">---Showroom</button>
                 </div>
                 <div class="col-md-3">
@@ -136,7 +147,7 @@
                 </div>
                 <div class="col-md-3">
                   <button (click)="onTabClick('1')">---Export countries</button>
-                </div>
+                </div> -->
               </div>
             </div>
           </mat-expansion-panel>

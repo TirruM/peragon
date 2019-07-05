@@ -119,7 +119,7 @@ ul {
 .isActive {
   border-bottom: 2px solid rgb(233, 55, 55);
   // color: rgb(233, 55, 55);
-  background-color: #ffffff!important;
+  background-color: #ffffff !important;
   border-radius: 0;
 }
 .expansion-panel-btns {
@@ -261,9 +261,8 @@ ul {
         box-shadow: $box-shadow;
         margin: 15px 94px;
       }
-      
+    }
   }
-}
 }
 
 /* Progress bar colors */
@@ -291,6 +290,10 @@ ul {
 }
 .success-color {
   background-color: #5cb85c;
+  i {
+    color: #fff;
+    font-size: 25px;
+  }
 }
 .danger-color {
   background-color: #d9534f;
@@ -303,9 +306,18 @@ ul {
 }
 .no-color {
   background-color: inherit;
+  i {
+    color: #fff;
+    font-size: 25px;
+  }
 }
-.progress-bar-success{
+.progress-bar-success {
   background-color: #5cb85c !important;
 }
 
+.btn-tab-progress {
+  margin: 7px;
+  background-color: #5cb85c;
+  border: none;
+}
 /* end Progress bar colors */
