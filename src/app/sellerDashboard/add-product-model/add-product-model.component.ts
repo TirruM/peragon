@@ -11,6 +11,7 @@ export class AddProductModelComponent implements OnInit {
   public onClose: Subject<boolean>;
   segmentedGroups: any;
   productGroups: any;
+  imageUpload: any;
 
   constructor(private _bsModalRef: BsModalRef, private services: PerogonServices) {
   }
@@ -38,14 +39,24 @@ export class AddProductModelComponent implements OnInit {
   }
 
   onCheckSegmentGroup(segment) {
-    /* if (this.segmentedGroups.length > 0) {
-      for (var i = 0; i < this.segmentedGroups.length; i++){
-        if (this.segmentedGroups[i].categoryId === segment.categoryId) {
-          this.productGroups = segment.
-        }
-      }
-} */
+    
 
     this.productGroups = segment.subCategory;
+  }
+
+  public onImageUpload(e) {
+    console.log("files", e);
+    if(e.target.files && e.target.files[0]) {
+      let fileReader = new FileReader();
+      fileReader.readAsDataURL(e.target.files[0]);
+      fileReader.onload = (event) => {
+        console.log("reader image", event);
+        // this.imageUpload = event.target.result;
+      }
+    }
+  }
+
+  onCheck() {
+    alert("checking");
   }
 }

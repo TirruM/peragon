@@ -14,7 +14,6 @@ export class SellerProfileComponentt implements OnInit {
   public imageSrc: string = 'assets/Images/sports/introductoin image.jpg';
   public bannerImg: string = 'assets/img/tennis-manufacture.jpg';
 
-
   constructor() {
     this.selectedTab = '0';
   }
