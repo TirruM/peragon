@@ -15,9 +15,12 @@ export class ShowRoomsComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  // class: 'modal-lg modal-size modal-dialog-centered',
   onShowAddProduct() {
-    this.modalRef = this.modalService.show(AddProductModelComponent, { class: 'modal-lg modal-dialog-centered', ignoreBackdropClick: true, keyboard: false });
+    this.modalRef = this.modalService.show(AddProductModelComponent, 
+      {  ignoreBackdropClick: true, keyboard: false });
+      this.modalRef.setClass('custom');
+    
     this.modalRef.content.onClose.subscribe(result => {
       console.log('results', result);
     })

@@ -91,37 +91,51 @@
     }
     form {
       font-size: 13px;
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
       input[type="text"] {
         margin: 0px 0px 10px 0px;
         width: 100%;
       }
-      [type="radio"]:checked + label:after,
-      [type="radio"]:not(:checked) + label:after {
-        content: "";
-        background: #ed5324;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+      .product-descr {
+       
+        input:focus {
+         @extend %custom-input-types;
+        }
+        ::-webkit-input-placeholder {
+          font-size: 11px !important;
+        }
+    
+        :-moz-placeholder {
+          font-size: 11px !important;
+        }
+    
       }
       .target-group {
-        .radio-margin {
-          margin-left: 88px;
+        .radio-btns {
+          div:first-child {
+            margin-right: 0px;
+          }
+        }
+       
+      }
+      .product-category {
+        label {
+          text-transform: capitalize;
         }
       }
-    //   .list-unstyled {
-    //       li {
-    //           display: inline-flex;
-    //       }
-    //   }
       .product-group {
-        select {
-          width: 100%;
+        .form-control {
+          font-size: 0.7rem;
         }
       }
       .modal-btns {
           margin-top: 20px;
           .btn-cancel {
             padding: 2px 30px;
-            margin-right: 22px;
           }
         .btn-publish {
             @extend %colored-btn;

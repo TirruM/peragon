@@ -20,101 +20,113 @@
   </div>
   <div class="product-wrapper">
     <div class="d-flex">
-      <div class="product-images">
-        <p class="products-heading">Add Product to your Showroom</p>
-        <small>Visible in your profile, news feeds of your followers, and inspiration boards for buyers
-          worldwide.</small>
-        <div class="guide-section">
-          <a href="">
-            <i class="material-icons">remove_red_eye</i><span>Great Showroom Guide</span>
-          </a>
-          <a href=""><i class="material-icons">remove_red_eye</i><span>Great Picture Guide</span></a>
-        </div>
-        <div class="product-images-upload">
-          <div class="d-flex flex-wrap">
-            <div class="upload-img main-picture">
-              <button class="btn product-add-btn">
-                <p class="add-icon"><i class="fa fa-plus"></i>Add Picture</p>
-                <small>up to 12 pictures</small>
-              </button>
-              <input type="file" name="myfile" />
-            </div>
-            <div class="upload-img front-view-box">
-              <button class="btn product-add-btn">
-                <p class="add-icon"><i class="fa fa-tshirt"></i></p>
-                <small>Front View</small>
-              </button>
-              <input type="file" name="myfile" />
-            </div>
-            <div class="upload-img side-view-box">
-              <button class="btn product-add-btn">
-                <p class="add-icon"><i class="fa fa-tshirt"></i></p>
-                <small>Side View</small>
-              </button>
-              <input type="file" name="myfile" />
-            </div>
-            <div class="upload-img detailed-view-box">
-              <button class="btn product-add-btn">
-                <p class="add-icon"><i class="fa fa-tshirt"></i></p>
-                <small>Detail View</small>
-              </button>
-              <input type="file" name="myfile" />
+      <div class="col-8">
+        <div class="product-images">
+          <p class="products-heading">Add Product to your Showroom</p>
+          <small>Visible in your profile, news feeds of your followers, and inspiration boards for buyers
+            worldwide.</small>
+          <div class="guide-section">
+            <a href="">
+              <i class="material-icons">remove_red_eye</i><span>Great Showroom Guide</span>
+            </a>
+            <a href=""><i class="material-icons">remove_red_eye</i><span>Great Picture Guide</span></a>
+          </div>
+          <div class="product-images-upload">
+            <div class="d-flex flex-wrap">
+              <div class="upload-img main-picture">
+                <img [src]="imageUpload" alt="">
+                <button class="btn product-add-btn" (change)="onImageUpload($event)" (click)="onCheck()">
+                  <p class="add-icon"><i class="fa fa-plus"></i>Add Picture</p>
+                  <small>up to 12 pictures</small>
+                </button>
+                <input type="file" name="myfile" />
+              </div>
+              <div class="upload-img front-view-box">
+                <button class="btn product-add-btn">
+                  <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                  <small>Front View</small>
+                </button>
+                <input type="file" name="myfile" />
+              </div>
+              <div class="upload-img side-view-box">
+                <button class="btn product-add-btn">
+                  <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                  <small>Side View</small>
+                </button>
+                <input type="file" name="myfile" />
+              </div>
+              <div class="upload-img detailed-view-box">
+                <button class="btn product-add-btn">
+                  <p class="add-icon"><i class="fa fa-tshirt"></i></p>
+                  <small>Detail View</small>
+                </button>
+                <input type="file" name="myfile" />
+              </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
-      <div class="product-form">
-        <form>
-          <div>
-            <p><b>Showroom Post</b></p>
-            <input type="text" placeholder="Product Title" />
-            <input type="text" placeholder="Description of the Product" />
-          </div>
-          <div class="target-group">
-            <p><b>Target Group<sup>*</sup></b></p>
-            <div class="radio-btns margin-top d-flex">
-              <div>
-                <div class="radio">
-                  <input type="radio" name="radio-btn1" id="1" value="">
-                  <label for="1">Baby</label>
+      <div class="col-4">
+        <div class="product-form">
+          <form>
+            <div class="product-descr">
+              <p>Showroom Post</p>
+              <input type="text" class="form-control" placeholder="Product Title" />
+              <input type="text" class="form-control" placeholder="Description of the Product" />
+            </div>
+            <div class="target-group">
+              <p>Target Group<sup>*</sup></p>
+              <div class="radio-btns margin-top d-flex">
+                <div class="flex-fill">
+                  <div class="radio">
+                    <input type="radio" name="radio-btn1" id="baby" value="">
+                    <label for="baby">Baby</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio-btn1" id="men" value="">
+                    <label for="men">Men</label>
+                  </div>
                 </div>
-                <div>
-                  <input type="radio" name="radio-btn1" id="2" value="">
-                  <label for="2">Men</label>
-                </div>
-              </div>
-              <div class="radio-margin">
-                <div>
-                  <input type="radio" name="radio-btn1" id="3" value="">
-                  <label for="3">Kids</label>
-                </div>
-                <div>
-                  <input type="radio" name="radio-btn1" id="4" value="">
-                  <label for="4">Women</label>
+                <div class="flex-fill">
+                  <div>
+                    <input type="radio" name="radio-btn1" id="kids" value="">
+                    <label for="kids">Kids</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="radio-btn1" id="women" value="">
+                    <label for="women">Women</label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div>
-            <p><b>Segment <sup>*</sup></b></p>
-            <ul class="list-unstyled">
-              <li *ngFor="let segment of segmentedGroups">
-                <input type="radio" name="radio-btn" (change)="onCheckSegmentGroup(segment)">{{segment.categoryName}}
-              </li>
-            </ul>
-          </div>
-          <div class="product-group">
-            <p><b>Product Group <sup>*</sup></b></p>
-            <select>
-              <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
-            </select>
-          </div>
-          <div class="modal-btns">
-            <button class="btn btn-cancel" (click)="onCloseBtn()">Cancel</button>
-            <button class="btn btn-publish" (click)="onCloseBtn()">Publish</button>
-          </div>
-        </form>
+            <div class="product-category">
+              <p>Segment <sup>*</sup></p>
+              <ul class="list-unstyled radio-btns d-flex flex-wrap">
+                <li *ngFor="let segment of segmentedGroups" class="justify-content-between">
+                  <input type="radio" name="radio-btn" (change)="onCheckSegmentGroup(segment)"
+                    id="{{segment.categoryId}}">
+                  <label for="{{segment.categoryId}}">{{segment.categoryName}}</label>
+                </li>
+              </ul>
+            </div>
+            <div class="product-group form-group">
+              <p>Product Group <sup>*</sup></p>
+              <select class="form-control">
+                <option *ngFor="let productGroup of productGroups">{{productGroup.subCategoryName}}</option>
+              </select>
+            </div>
+            <div class="modal-btns">
+              <div class="col-12 d-flex px-0">
+                <button class="btn btn-cancel flex-grow-1" (click)="onCloseBtn()">Preview</button>
+              </div>
+              <div class="d-flex my-3">
+                <button class="btn btn-cancel flex-fill mr-1" (click)="onCloseBtn()">Cancel</button>
+                <button class="btn btn-publish flex-fill ml-1" (click)="onCloseBtn()">Publish</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
