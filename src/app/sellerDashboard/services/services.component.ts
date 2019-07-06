@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
+  addTreatmentsSwitch : String = "noTreatments";
+  treatmentDetailsSwitch : String = "addTreatments";
   constructor() { }
 
   ngOnInit() {
   }
 
+  addTreatments() {
+    this.addTreatmentsSwitch = "addTreatments";
+  }
+  saveTreatments() {
+    this.addTreatmentsSwitch = "";
+    this.treatmentDetailsSwitch = "treatmentsDetail";
+  }
 }

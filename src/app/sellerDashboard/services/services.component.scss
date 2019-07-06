@@ -1,0 +1,101 @@
+@import "../../../custom_styles/variables";
+
+
+button {
+    background-color: #f55140;
+    color: #ffffff;
+    border-radius: 50%;
+    float: right;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 0px;
+    i {
+        font-size: 17px;
+    }
+}
+.main-text {
+    box-shadow: $box-shadow;
+    margin: 16px 0px 16px 0px;
+    background-color: #fff1f8;
+    padding: 9px;
+    text-align: center;
+    .add-btn {
+        @extend %colored-btn;
+        background-color: #f55140;
+        border: none;
+        margin-top: 0px;
+        float: none;
+        font-size: 13px;
+    }
+}
+
+    .sub-text {
+        p {
+            font-size: 13px;
+            margin-bottom: 0PX;
+        }
+        .margin {
+            margin: 0px 0px 12px 0px;
+        }
+    }
+
+    .file-upload {
+        position: relative;
+        p {
+            margin-bottom: 0px;
+        }
+        .upload-file {
+            box-shadow: $box-shadow;
+            margin: 16px 0px 16px 0px;
+            background-color: #f9f9f9;
+            padding: 9px;
+            text-align: center;
+            p {
+                margin: 0px 0px 36px 0px;
+            }
+            .upload-file-btn {
+                position: absolute;
+                left: 450px;
+                top:  143px;
+                .btn {
+                    color: #fff;
+                    @extend %colored-btn;
+                    padding: 5px 15px;
+                    border-radius: 33px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-left: 10px;
+                    background-color: #f55140;
+                    border: none;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                input[type="file"] {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                }
+            }
+        }
+    }    
+
+.treatments {   
+    .status-btns {
+        text-align: right;
+        button {
+            border-radius: 25px;
+            margin: 6px;
+            font-size: 13px;
+            background-color: rgb(17, 148, 17);
+            float: none;
+            color: #fff;
+        }
+        .btn-cancel {
+            background-color: #fff!important;
+            border: 2px solid gray;
+            color: #000;
+        }
+    }
+}     
