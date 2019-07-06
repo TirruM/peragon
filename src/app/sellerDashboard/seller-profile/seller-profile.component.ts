@@ -85,11 +85,35 @@ export class SellerProfileComponentt implements OnInit {
 
         this.tabsObjArray.push(currentTab);
       } else if (i == 2) {
-
+        var summaryTabObj = {
+          tabName: "Description",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Links and websites",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Key facts",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Production countries",
+          tabClick: '1'
+        }
+        currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+          tabName: "Machinery",
+          tabClick: '3'
+        }
+        currentTab.push(summaryTabObj);
+        this.tabsObjArray.push(currentTab);
       }
     }
     this.currentTabObj = this.tabsObjArray[0];
-
   }
   onProgressBarClick(val) {
     this.currentTabObj = this.tabsObjArray[val];
