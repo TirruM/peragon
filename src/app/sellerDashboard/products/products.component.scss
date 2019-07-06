@@ -1,5 +1,94 @@
 @import "../../../custom_styles/variables";
 
-.sub-title {
-    margin: 16px;
+.overview-text {
+    p {
+        margin-bottom: 0px;
+    }
+    .products {
+        font-size: 12px;
+    }
+    button {
+        background-color: #f55140;
+        color: #ffffff;
+        border-radius: 50%;
+        float: right;
+        margin-top: -30px;
+        text-align: center;
+        font-size: 0px;
+        i {
+            font-size: 17px;
+        }
+    }
+    
+}
+.main-text {
+    box-shadow: $box-shadow;
+    margin: 16px 0px 16px 0px;
+    background-color: #fff1f8;
+    padding: 9px;
+    text-align: center;
+    p { 
+        margin-bottom: 0px;
+    }
+    .add-btn {
+        background-color: #f55140;
+        border-radius: 25px;
+        color: #fff;
+    }
+}
+
+.overview-body {
+
+    .box-style {
+        padding: 0px!important;
+        .bg-color {
+            background-color: #f9f9f9;
+        }
+        .margin {
+            p {
+                margin: 8px;
+            }
+        }
+    }
+}
+ 
+.product-details {
+    margin-top: 23px;
+    p {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+    .top-products {
+        margin: 9px 0px 11px 0px;
+        background-color: #f9f9f9;
+    }
+    .sub-text {
+        // font-size: 13px;
+        color: #b1b1b1;
+    }
+    .text {
+        color: #f32020;
+    }
+}
+.order-quantity {
+    margin-top: 14px;
+    border: 0.8px solid gainsboro;
+    border-radius: 26px;
+    width: fit-content;
+    padding: 4px;
+}
+.edit-details {
+    .status-btns {
+        text-align: right;
+        button {
+            border-radius: 25px;
+            margin: 6px;
+            font-size: 13px;
+        }
+        .btn-cancel {
+            background-color: #fff;
+            border: 2px solid gray
+        }
+    }
+    
 }

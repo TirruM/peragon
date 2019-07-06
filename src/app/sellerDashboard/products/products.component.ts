@@ -7,9 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  addMaterialsSwitch : String = "noMaterials";
+  materialListSwitch : String = "addMaterials";
+
+  addFabricTypesSwitch : String = "noFabricTypes";
+  fabricTypeListSwitch : String = "addFabricTypes";
   constructor() { }
 
   ngOnInit() {
   }
 
+  addMaterials() {
+    this.addMaterialsSwitch = "addMaterials";
+  }
+
+  saveMaterials() {
+    this.addMaterialsSwitch = "";
+    this.materialListSwitch = "materialsDetails";
+  }
+
+  addFabricTypes() {
+    this.addFabricTypesSwitch = "addFabricTypes";
+  }
+
+  saveFabricTypes() {
+    this.addFabricTypesSwitch = "";
+    this.materialListSwitch = "materialsDetails";
+    this.fabricTypeListSwitch = "fabricTypeDetails";
+  }
 }

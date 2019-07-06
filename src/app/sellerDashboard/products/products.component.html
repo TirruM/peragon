@@ -1,41 +1,234 @@
-<div class="container">
+<div>
   <div class="box-style">
-    <div>
+    <div class="overview-text">
       <p><b>Overview</b></p>
       <p>An overview of all products and their production percentage</p>
+      <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
     </div>
-    <div class="row">
+    <div class="main-text">
+      <p>Please fill in the percentages for each group</p>
+    </div>
+    <div class="row overview-body">
       <div class="col-md-4">
-        <p class="sub-title"><b>Target Group</b></p>
+        <p><b>Target Group</b></p>
         <div class="box-style">
-          <p>Children (all ages)</p>
-          <p>Adult (24 to 60)</p>
+          <div class="margin">
+            <div class="bg-color"><p>Men</p></div>
+            <div><p>Women</p></div>
+          </div>  
         </div>
       </div>
       <div class="col-md-4">
-        <p class="sub-title"><b>Segment</b></p>
+        <p><b>Segment</b></p>
         <div class="box-style">
-          
+          <div class="margin">
+            <div class="bg-color"><p>Casual</p></div>
+          </div>  
+          <!-- <div><p>Wearables</p></div>
+          <div><p>Equipment</p></div> -->
         </div>
       </div>
       <div class="col-md-4">
-        <p class="sub-title"><b>Product Group</b></p>
+        <p><b>Product Group</b></p>
         <div class="box-style">
-          
+          <div class="margin">
+            <div class="d-flex bg-color">
+              <div class="flex-grow-1"><p>Jackets & Coats</p></div> 
+              <div class="flex-grow-0"><p>15%</p></div>
+            </div>
+            <div class="d-flex">
+              <div class="flex-grow-1"><p>Pullover & Sweatshirts</p></div> 
+              <div class="flex-grow-0"><p>25%</p></div>
+            </div>
+            <div class="d-flex bg-color">
+              <div class="flex-grow-1"><p>Tops & shirts</p></div> 
+              <div class="flex-grow-0"><p>60%</p></div>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
+<div>
   <div class="box-style">
-    <div>
-      <p>Product Details</p>
-      <p>Top 3 Products</p>
-      <button class="btn btn-md">View More</button>
+    <div class="overview-text">
+      <p><b>Product Details</b></p>
+      <p class="products"><b>Top 3 Products</b></p>
+      <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
     </div>  
-    <div>
-
+    <div class="product-details">
+      <div class="row top-products">
+        <div class="col-md-4">
+          <p class="sub-text">Product</p>
+          <p class="text">Polo</p>
+        </div>
+        <div class="col-md-4">
+          <p class="sub-text">Minimum order quantity</p>
+          <p>501-1000</p>
+        </div>
+        <div class="col-md-4">
+          <p class="sub-text">Lead time</p>
+          <p>60 Days</p>
+        </div>
+      </div>
+      <div class="row top-products">
+        <div class="col-md-4">
+          <p class="sub-text">Product</p>
+          <p class="text">T-shirt</p>
+        </div>
+        <div class="col-md-4">
+          <p class="sub-text">Minimum order quantity</p>
+          <p>501-1000</p>
+        </div>
+        <div class="col-md-4">
+          <p class="sub-text">Lead time</p>
+          <p>60 Days</p>
+        </div>
+      </div>
+      <div class="row top-products">
+        <div class="col-md-4">
+          <p class="sub-text">Product</p>
+          <p class="text">Sweatshirt</p>
+        </div>
+        <div class="col-md-4">
+          <p class="sub-text">Minimum order quantity</p>
+          <p>501-1000</p>
+        </div>
+        <div class="col-md-4">
+          <p class="sub-text">Lead time</p>
+          <p>60 Days</p>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+<div>
+  <div class="box-style">
+    <div class="overview-text">
+      <p><b>Minimum Order Quantity</b></p>
+      <p class="products"><b>Units per order</b></p>
+      <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
+    </div>
+    <div>
+      <p class="order-quantity">501-1000</p>
+    </div>
+  </div>
+</div>
+<div [ngSwitch]="addMaterialsSwitch"> 
+  <div *ngSwitchCase="'noMaterials'">
+    <div class="box-style">
+      <p><b>Materials</b></p>
+      <div class="main-text">
+        <button class="btn btn-md add-btn" (click)="addMaterials()">+ Add "Materials"</button>
+      </div>
+    </div>
+  </div>  
+    <div *ngSwitchCase="'addMaterials'">
+      <div class="box-style">
+        <p><b>Edit "Materials"</b></p>
+        <div class="edit-details">
+          <div class="form-group">
+            <label>Faux Leather</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="form-group">
+            <label>Faux Leather</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="form-group">
+            <label>Fiber</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="form-group">
+            <label>Fur</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="form-group">
+            <label>Insulation</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="form-group">
+            <label>Leather</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="status-btns">
+            <button class="btn btn-md btn-cancel">Cancel</button>
+            <button class="btn btn-md btn-success" (click)="saveMaterials()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+  <div [ngSwitch]=" materialListSwitch">  
+    <div *ngSwitchCase="'materialsDetails'">
+      <div class="box-style">
+        <div class="overview-text">
+          <p><b>Materials</b></p>
+          <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
+        </div>
+        <div>
+          <p>Fiber</p>
+        </div>
+        <div>
+          <p>Insulation</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+<div [ngSwitch]="addFabricTypesSwitch">
+  <div *ngSwitchCase="'noFabricTypes'">
+    <div class="box-style">
+      <p><b>Fabric Types</b></p>
+      <div class="main-text">
+        <button class="btn btn-md add-btn" (click)="addFabricTypes()">+ Add "Fabric Types"</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'addFabricTypes'"> 
+    <div class="box-style">
+      <p><b>Edit "Fabric Types"</b></p>
+      <div class="edit-details">
+        <div class="form-group">
+          <label>Knit (Circular)</label>
+          <input type="text" class="form-control" placeholder="Specify fabric">
+        </div>
+        <div class="form-group">
+          <label>Knit (flat)</label>
+          <input type="text" class="form-control" placeholder="Specify fabric">
+        </div>
+        <div class="form-group">
+          <label>Lace / Crochet</label>
+          <input type="text" class="form-control" placeholder="Specify fabric">
+        </div>
+        <div class="form-group">
+          <label>Nonwomen</label>
+          <input type="text" class="form-control" placeholder="Specify fabric">
+        </div>
+        <div class="form-group">
+          <label>Women</label>
+          <input type="text" class="form-control" placeholder="Specify fabric">
+        </div>
+        <div class="form-group">
+          <label>Leather</label>
+          <input type="text" class="form-control" placeholder="Specify fabric">
+        </div>
+        <div class="status-btns">
+          <button class="btn btn-md btn-cancel">Cancel</button>
+          <button class="btn btn-md btn-success" (click)="saveFabricTypes()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <div [ngSwitch]="fabricTypeListSwitch">
+    <div *ngSwitchCase="'fabricTypeDetails'">
+      <div class="box-style">
+        <div class="overview-text">
+          <p><b>Fabric types</b></p>
+          <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
+        </div>
+        <p>Updated Data</p>
+      </div>
+    </div>  
   </div>
 </div>
