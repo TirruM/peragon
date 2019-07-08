@@ -21,8 +21,8 @@
       color: #fff;
     }
     input[type="file"] {
-      // position: absolute;
-      // left: -6;
+      position: absolute;
+      left: -6;
       opacity: 0;
     }
   }
@@ -294,6 +294,14 @@ ul {
     color: #fff;
     font-size: 25px;
   }
+  .btn-tab-progress {
+    margin-right: 3px;
+    margin-top: 6px;
+    margin-left: 2px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 34px;
+  }
 }
 .danger-color {
   background-color: #d9534f;
@@ -307,17 +315,20 @@ ul {
 .no-color {
   background-color: inherit;
   i {
-    color: #fff;
+    color: #000;
     font-size: 25px;
+  }
+  .btn-tab-progress {
+    margin-right: 3px;
+    margin-top: 6px;
+    margin-left: 2px;
+    background-color: inherit;
+    border: none;
+    border-radius: 34px;
   }
 }
 .progress-bar-success {
   background-color: #5cb85c !important;
 }
 
-.btn-tab-progress {
-  margin: 7px;
-  background-color: #5cb85c;
-  border: none;
-}
 /* end Progress bar colors */

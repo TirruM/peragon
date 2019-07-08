@@ -72,7 +72,7 @@ export class SellerProfileComponentt implements OnInit {
 
         var summaryTabObj = {
           tabName: "Minimum order quanity",
-          tabClick: '1'
+          tabClick: '2'
         }
         currentTab.push(summaryTabObj);
 
