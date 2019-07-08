@@ -9,6 +9,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 export class ShowRoomsComponent implements OnInit {
   closeResult: string;
   modalReference: any;
+  productObj: any = {};
+  isNotFilled: boolean = true;
   public modalRef: BsModalRef;
   constructor(private modalService: BsModalService) { }
 
@@ -17,13 +19,18 @@ export class ShowRoomsComponent implements OnInit {
 
   // class: 'modal-lg modal-size modal-dialog-centered',
   onShowAddProduct() {
-    this.modalRef = this.modalService.show(AddProductModelComponent, 
-      {  ignoreBackdropClick: true, keyboard: false });
-      this.modalRef.setClass('custom');
-    
+    this.modalRef = this.modalService.show(AddProductModelComponent,
+      { ignoreBackdropClick: true, keyboard: false });
+    this.modalRef.setClass('custom');
+
     this.modalRef.content.onClose.subscribe(result => {
       console.log('results', result);
     })
+    this.modalService.onHide.subscribe(() => {
+      this.productObj = this.modalRef.content.modalObject;
+      this.isNotFilled = false;
+    })
+
   }
 
 }
