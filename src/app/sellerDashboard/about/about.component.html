@@ -1,6 +1,6 @@
 
   <div class="about">
-    <div class="about-description" *ngIf="!isShowData">
+    <div class="about-description" *ngIf="!isShowData" [hidden]=true>
       <p>Description</p>
       <div class="description-content">
         <p>Describe your entity to prospective brands</p>
@@ -10,7 +10,7 @@
     <div *ngIf="isShowData">
       <p>description data</p>
     </div>
-    <div class="about-keyfacts" *ngIf="!isShowData">
+    <div class="about-keyfacts" *ngIf="!isShowData" [hidden]=true>
       <div class="keyfacts-content">
         <p>Key Facts</p>
         <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
@@ -130,7 +130,7 @@
             <button class="btn btn-sm edit-btn"><i class="fa fa-pencil"></i></button>
           </div>  
           <div>
-            <p>Export countries list</p>
+            <p>Afghanistan , Argentina, Brazil, Canada</p>
           </div>
         </div>
         <div *ngSwitchCase="'no_list'">
@@ -138,7 +138,7 @@
         </div>
       </div>
     </div>  
-    <div class="about-description" *ngIf="!isShowData">
+    <div class="about-description" *ngIf="!isShowData" [hidden]=true>
       <p>Links and Websites</p>
       <div class="description-content">
         <p>Add links to your websites, videos and media channels that showcase your company</p>

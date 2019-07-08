@@ -77,11 +77,15 @@
     </div>
   </div>
   <div [ngSwitch]="treatmentDetailsSwitch">
-    <div class="box-style" *ngSwitchCase="'treatmentsDetail'">
+    <div class="box-style" *ngSwitchCase="'treatmentsDetail'" >
       <p><b>Treatments</b></p>
       <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
-      <div>
-        <p>Treatment Details</p>
+      <div class="material-items">
+        <p>Fabric</p>
+        <ul>
+          <li>Garment-Dye</li>
+          <li>Mercerisation</li>
+        </ul>
       </div>
     </div>
   </div>
