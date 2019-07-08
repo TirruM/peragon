@@ -1,12 +1,12 @@
  /*---------about tab styles-------*/
 
  .about {
-    margin: 10px;
+    // margin: 10px;
     font-size: 13px;
     .about-description {
         padding: 10px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-        margin: 7px;
+        // margin: 7px;
         .description-content {
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
             margin: 20px;
@@ -20,7 +20,8 @@
                 border-radius: 25px;
                 background-color: #ff5544;
                 color: #ffffff;
-                font-size: 13px;
+                font-weight: 600;
+                font-size: 11px;
             }
         }
     }
@@ -28,7 +29,7 @@
     .about-keyfacts {
         padding: 10px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-        margin: 10px 7px 7px 7px;
+        // margin: 10px 7px 7px 7px;
         .keyfacts-content {
             button {
                 background-color: #ff5544;
@@ -41,7 +42,7 @@
                 text-align: center;
                 font-size: 0px;
                 i {
-                    font-size: 17px;
+                    font-size: 13px;
                 }
             }
         }
@@ -57,7 +58,7 @@
     .about-ref-customers {
         padding: 10px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-        margin: 10px 7px 7px 7px;
+        // margin: 10px 7px 7px 7px;
         .ref-customers-content {
             p {
                 margin-bottom: 0px;
@@ -75,7 +76,7 @@
                 text-align: center;
                 font-size: 0px;
                 i {
-                    font-size: 17px;
+                    font-size: 13px;
                 }
             }
         }
@@ -91,7 +92,7 @@
     .about-headquarter {
         padding: 10px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-        margin: 10px 7px 7px 7px;
+        // margin: 10px 7px 7px 7px;
 
         .text {
             text-align: center;
@@ -111,7 +112,7 @@
     .about-contact {
         padding: 10px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-        margin: 10px 7px 7px 7px;
+        // margin: 10px 7px 7px 7px;
 
         .contact-edit-btn {
             button {
@@ -122,10 +123,11 @@
                 float: right;
                 margin-top: -35px;
                 text-align: center;
-                font-size: 13px;
+                font-weight: 600;
+                font-size: 11px;
                 i {
                     vertical-align: middle;
-                    font-size: 17px;
+                    font-size: 13px;
                     padding-right: 8px;
                     margin-bottom: 4px;
                 }
