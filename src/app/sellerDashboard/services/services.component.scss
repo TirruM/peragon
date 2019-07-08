@@ -10,7 +10,7 @@ button {
     text-align: center;
     font-size: 0px;
     i {
-        font-size: 17px;
+        font-size: 13px;
     }
 }
 .main-text {
@@ -55,15 +55,15 @@ button {
             }
             .upload-file-btn {
                 position: absolute;
-                left: 450px;
+                left: 472px;
                 top:  143px;
                 .btn {
                     color: #fff;
                     @extend %colored-btn;
                     padding: 5px 15px;
                     border-radius: 33px;
-                    font-size: 14px;
-                    font-weight: 700;
+                    font-weight: 600;
+                    font-size: 11px;
                     margin-left: 10px;
                     background-color: #f55140;
                     border: none;
@@ -87,7 +87,8 @@ button {
         button {
             border-radius: 25px;
             margin: 6px;
-            font-size: 13px;
+            font-weight: 600;
+            font-size: 11px;
             background-color: rgb(17, 148, 17);
             float: none;
             color: #fff;
@@ -96,6 +97,8 @@ button {
             background-color: #fff!important;
             border: 2px solid gray;
             color: #000;
+            font-weight: 600;
+            font-size: 11px;
         }
     }
 }     
