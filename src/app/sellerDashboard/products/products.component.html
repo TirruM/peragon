@@ -117,7 +117,7 @@
 </div>
 <div [ngSwitch]="addMaterialsSwitch"> 
   <div *ngSwitchCase="'noMaterials'">
-    <div class="box-style">
+    <div class="box-style" [hidden]=true>
       <p><b>Materials</b></p>
       <div class="main-text">
         <button class="btn btn-md add-btn" (click)="addMaterials()">+ Add "Materials"</button>
@@ -161,7 +161,7 @@
     </div>  
   <div [ngSwitch]=" materialListSwitch">  
     <div *ngSwitchCase="'materialsDetails'">
-      <div class="box-style">
+      <div class="box-style" [hidden]=true>
         <div class="overview-text">
           <p><b>Materials</b></p>
           <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
@@ -178,7 +178,7 @@
 </div>
 <div [ngSwitch]="addFabricTypesSwitch">
   <div *ngSwitchCase="'noFabricTypes'">
-    <div class="box-style">
+    <div class="box-style" [hidden]=true>
       <p><b>Fabric Types</b></p>
       <div class="main-text">
         <button class="btn btn-md add-btn" (click)="addFabricTypes()">+ Add "Fabric Types"</button>
