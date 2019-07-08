@@ -32,7 +32,6 @@ export class ProductsComponent implements OnInit {
 
   saveFabricTypes() {
     this.addFabricTypesSwitch = "";
-    this.materialListSwitch = "materialsDetails";
     this.fabricTypeListSwitch = "fabricTypeDetails";
   }
 }

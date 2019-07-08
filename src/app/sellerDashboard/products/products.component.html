@@ -13,17 +13,23 @@
         <p><b>Target Group</b></p>
         <div class="box-style">
           <div class="margin">
-            <div class="bg-color"><p>Men</p></div>
-            <div><p>Women</p></div>
-          </div>  
+            <div class="bg-color">
+              <p>Men</p>
+            </div>
+            <div>
+              <p>Women</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-4">
         <p><b>Segment</b></p>
         <div class="box-style">
           <div class="margin">
-            <div class="bg-color"><p>Casual</p></div>
-          </div>  
+            <div class="bg-color">
+              <p>Casual</p>
+            </div>
+          </div>
           <!-- <div><p>Wearables</p></div>
           <div><p>Equipment</p></div> -->
         </div>
@@ -33,18 +39,30 @@
         <div class="box-style">
           <div class="margin">
             <div class="d-flex bg-color">
-              <div class="flex-grow-1"><p>Jackets & Coats</p></div> 
-              <div class="flex-grow-0"><p>15%</p></div>
+              <div class="flex-grow-1">
+                <p>Jackets & Coats</p>
+              </div>
+              <div class="flex-grow-0">
+                <p>15%</p>
+              </div>
             </div>
             <div class="d-flex">
-              <div class="flex-grow-1"><p>Pullover & Sweatshirts</p></div> 
-              <div class="flex-grow-0"><p>25%</p></div>
+              <div class="flex-grow-1">
+                <p>Pullover & Sweatshirts</p>
+              </div>
+              <div class="flex-grow-0">
+                <p>25%</p>
+              </div>
             </div>
             <div class="d-flex bg-color">
-              <div class="flex-grow-1"><p>Tops & shirts</p></div> 
-              <div class="flex-grow-0"><p>60%</p></div>
+              <div class="flex-grow-1">
+                <p>Tops & shirts</p>
+              </div>
+              <div class="flex-grow-0">
+                <p>60%</p>
+              </div>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +74,7 @@
       <p><b>Product Details</b></p>
       <p class="products"><b>Top 3 Products</b></p>
       <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
-    </div>  
+    </div>
     <div class="product-details">
       <div class="row top-products">
         <div class="col-md-4">
@@ -115,77 +133,86 @@
     </div>
   </div>
 </div>
-<div [ngSwitch]="addMaterialsSwitch"> 
+<div [ngSwitch]="addMaterialsSwitch">
   <div *ngSwitchCase="'noMaterials'">
-    <div class="box-style" [hidden]=true>
+    <div class="box-style">
       <p><b>Materials</b></p>
       <div class="main-text">
         <button class="btn btn-md add-btn" (click)="addMaterials()">+ Add "Materials"</button>
       </div>
     </div>
-  </div>  
-    <div *ngSwitchCase="'addMaterials'">
-      <div class="box-style">
-        <p><b>Edit "Materials"</b></p>
-        <div class="edit-details">
-          <div class="form-group">
-            <label>Faux Leather</label>
-            <input type="text" class="form-control" placeholder="Specify Material">
-          </div>
-          <div class="form-group">
-            <label>Faux Leather</label>
-            <input type="text" class="form-control" placeholder="Specify Material">
-          </div>
-          <div class="form-group">
-            <label>Fiber</label>
-            <input type="text" class="form-control" placeholder="Specify Material">
-          </div>
-          <div class="form-group">
-            <label>Fur</label>
-            <input type="text" class="form-control" placeholder="Specify Material">
-          </div>
-          <div class="form-group">
-            <label>Insulation</label>
-            <input type="text" class="form-control" placeholder="Specify Material">
-          </div>
-          <div class="form-group">
-            <label>Leather</label>
-            <input type="text" class="form-control" placeholder="Specify Material">
-          </div>
-          <div class="status-btns">
-            <button class="btn btn-md btn-cancel">Cancel</button>
-            <button class="btn btn-md btn-success" (click)="saveMaterials()">Save</button>
-          </div>
+  </div>
+  <div *ngSwitchCase="'addMaterials'">
+    <div class="box-style">
+      <p><b>Edit "Materials"</b></p>
+      <div class="edit-details">
+        <div class="form-group">
+          <label>Faux Leather</label>
+          <input type="text" class="form-control" placeholder="Specify Material">
+        </div>
+        <div class="form-group">
+          <label>Faux Leather</label>
+          <input type="text" class="form-control" placeholder="Specify Material">
+        </div>
+        <div class="form-group">
+          <label>Fiber</label>
+          <input type="text" class="form-control" placeholder="Specify Material">
+        </div>
+        <div class="form-group">
+          <label>Fur</label>
+          <input type="text" class="form-control" placeholder="Specify Material">
+        </div>
+        <div class="form-group">
+          <label>Insulation</label>
+          <input type="text" class="form-control" placeholder="Specify Material">
+        </div>
+        <div class="form-group">
+          <label>Leather</label>
+          <input type="text" class="form-control" placeholder="Specify Material">
+        </div>
+        <div class="status-btns">
+          <button class="btn btn-md btn-cancel">Cancel</button>
+          <button class="btn btn-md btn-success" (click)="saveMaterials()">Save</button>
         </div>
       </div>
-    </div>  
-  <div [ngSwitch]=" materialListSwitch">  
+    </div>
+  </div>
+  <div [ngSwitch]=" materialListSwitch">
     <div *ngSwitchCase="'materialsDetails'">
-      <div class="box-style" [hidden]=true>
+      <div class="box-style">
         <div class="overview-text">
           <p><b>Materials</b></p>
           <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
         </div>
-        <div>
+        <div class="material-items">
           <p>Fiber</p>
+          <ul>
+            <li>Acrylic</li>
+            <li>Cotton</li>
+            <li>Cotton Organic</li>
+            <li>Polyester</li>
+          </ul>
         </div>
-        <div>
+        <div class="material-items">
           <p>Insulation</p>
+          <ul>
+            <li>Duck Down</li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
 <div [ngSwitch]="addFabricTypesSwitch">
   <div *ngSwitchCase="'noFabricTypes'">
-    <div class="box-style" [hidden]=true>
+    <div class="box-style">
       <p><b>Fabric Types</b></p>
       <div class="main-text">
         <button class="btn btn-md add-btn" (click)="addFabricTypes()">+ Add "Fabric Types"</button>
       </div>
     </div>
   </div>
-  <div *ngSwitchCase="'addFabricTypes'"> 
+  <div *ngSwitchCase="'addFabricTypes'">
     <div class="box-style">
       <p><b>Edit "Fabric Types"</b></p>
       <div class="edit-details">
@@ -219,7 +246,7 @@
         </div>
       </div>
     </div>
-  </div>   
+  </div>
   <div [ngSwitch]="fabricTypeListSwitch">
     <div *ngSwitchCase="'fabricTypeDetails'">
       <div class="box-style">
@@ -227,8 +254,21 @@
           <p><b>Fabric types</b></p>
           <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
         </div>
-        <p>Updated Data</p>
+        <div class="material-items">
+          <p>Knit(Circular)</p>
+          <ul>
+            <li>Jersey - Double</li>
+            <li>Polar Fleece</li>
+          </ul>
+        </div>
+        <div class="material-items">
+          <p>Women</p>
+          <ul>
+            <li>Gabardine</li>
+            <li>Tweed</li>
+          </ul>
+        </div>
       </div>
-    </div>  
+    </div>
   </div>
 </div>

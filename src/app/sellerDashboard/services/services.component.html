@@ -51,7 +51,7 @@
   </div>
 </div>
 <div [ngSwitch]="addTreatmentsSwitch">
-  <div class="box-style" *ngSwitchCase="'noTreatments'" [hidden]=true>
+  <div class="box-style" *ngSwitchCase="'noTreatments'">
     <p><b>Treatments</b></p>
     <div class="main-text">
       <button class="btn btn-md add-btn" (click)="addTreatments()">+ Add "Treatments"</button>
@@ -80,8 +80,12 @@
     <div class="box-style" *ngSwitchCase="'treatmentsDetail'" >
       <p><b>Treatments</b></p>
       <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
-      <div>
-        <p>Treatment Details</p>
+      <div class="material-items">
+        <p>Fabric</p>
+        <ul>
+          <li>Garment-Dye</li>
+          <li>Mercerisation</li>
+        </ul>
       </div>
     </div>
   </div>
