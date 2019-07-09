@@ -170,7 +170,7 @@
 
 
 
-<div [ngSwitch]="addMaterialsSwitch">
+<div [ngSwitch]="addMaterialsSwitch" [hidden]=true>
   <div *ngSwitchCase="'noMaterials'">
     <div class="box-style">
       <p><b>Materials</b></p>
@@ -240,7 +240,7 @@
     </div>
   </div>
 </div>
-<div [ngSwitch]="addFabricTypesSwitch">
+<div [ngSwitch]="addFabricTypesSwitch" [hidden]=true>
   <div *ngSwitchCase="'noFabricTypes'">
     <div class="box-style">
       <p><b>Fabric Types</b></p>
