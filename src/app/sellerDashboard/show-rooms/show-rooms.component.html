@@ -8,11 +8,51 @@
     </div>
     <div class="my-2 pre-filled-view">
       <h5>Our published updates</h5>
-      <div class="pre-filled-content text-center">
-          <i class="material-icons">
-              library_books
-              </i>
+      <div class="pre-filled-content text-center" *ngIf="isNotFilled">
+        <i class="material-icons">
+          library_books
+        </i>
         <small>No showroom update posts. yet!</small>
+      </div>
+      <div class="showroom-images-container" *ngIf="!isNotFilled">
+        <div class="showroom-wrapper">
+          <div class="showroom-images-header">
+            <div class="seller-info d-flex">
+              <div class="seller-image">
+                <img src="assets/img/user2-160x160.jpg" class="rounded-circle" alt="User Image">
+              </div>
+              <div class="info px-3">
+                <p class="mb-0">Best Way Fashion</p>
+                <small>1 hour ago</small>
+              </div>
+            </div>
+            <div class="labels">
+              <i class="fas fa-tags"></i>
+              <p>New Product</p>
+            </div>
+          </div>
+          <div class="showroom-product-heading">
+            <p>{{productObj.title}}</p>
+            <p>{{productObj.description}}</p>
+          </div>
+          <div class="showroom-images">
+            <div class="d-flex flex-wrap justify-content-around">
+              <div class="product-image">
+                <img [src]="productObj.imageUpload_0" alt="" class="img-fluid">
+              </div>
+              <div class="product-image">
+                <img [src]="productObj.imageUpload_1" alt="" class="img-fluid">
+              </div>
+              <div class="product-image">
+                <img [src]="productObj.imageUpload_2" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="more-btn">
+            <button class="btn btn-cancel">...More</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

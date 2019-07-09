@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+export interface AutoCompleteModel {
+  value: any;
+  display: string;
+}
 
 @Component({
   selector: 'app-seller-profile',
@@ -14,11 +18,20 @@ export class SellerProfileComponentt implements OnInit {
   currentTabObj: any;
   public imageSrc: string = 'assets/Images/sports/introductoin image.jpg';
   public bannerImg: string = 'assets/img/tennis-manufacture.jpg';
+  dropdownvalues: string;
+
+  public items = [
+    { display: 'Pizza', value: 1 },
+    { display: 'Pasta', value: 2 },
+    { display: 'Parmesan', value: 3 },
+  ];
 
   constructor() {
     this.selectedTab = '0';
   }
-
+  selectedChips() {
+    console.log("selected chips model--->" + JSON.stringify(this.items));
+  }
   ngOnInit() {
     this.onPrepareTabsObj();
   }
@@ -50,37 +63,38 @@ export class SellerProfileComponentt implements OnInit {
 
       } else if (i == 1) {
         var summaryTabObj = {
-          tabName: "Materials",
+          tabName: "Product Features",
           tabClick: '2'
         }
         currentTab.push(summaryTabObj);
-        var summaryTabObj = {
-          tabName: "Fabric Types",
-          tabClick: '2'
-        }
-        currentTab.push(summaryTabObj);
-        var summaryTabObj = {
-          tabName: "Treatments",
-          tabClick: '3'
-        }
-        currentTab.push(summaryTabObj);
-        var summaryTabObj = {
-          tabName: "Lead time",
-          tabClick: '1'
-        }
-        currentTab.push(summaryTabObj);
-
-        var summaryTabObj = {
-          tabName: "Minimum order quanity",
-          tabClick: '2'
-        }
-        currentTab.push(summaryTabObj);
-
         var summaryTabObj = {
           tabName: "Location pictures",
           tabClick: '5'
         }
         currentTab.push(summaryTabObj);
+
+        /*   var summaryTabObj = {
+           tabName: "Treatments",
+           tabClick: '3'
+         }
+         currentTab.push(summaryTabObj);
+        var summaryTabObj = {
+           tabName: "Lead time",
+           tabClick: '1'
+         }
+         currentTab.push(summaryTabObj);
+ 
+         var summaryTabObj = {
+           tabName: "Minimum order quanity",
+           tabClick: '2'
+         }
+         currentTab.push(summaryTabObj);
+ 
+         var summaryTabObj = {
+           tabName: "Location pictures",
+           tabClick: '5'
+         }
+         currentTab.push(summaryTabObj); */
 
         this.tabsObjArray.push(currentTab);
       } else if (i == 2) {

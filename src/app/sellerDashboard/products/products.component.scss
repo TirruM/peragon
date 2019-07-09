@@ -1,111 +1,112 @@
 @import "../../../custom_styles/variables";
 
 .overview-text {
-    p {
-        margin-bottom: 0px;
+  p {
+    margin-bottom: 0px;
+  }
+  .products {
+    font-size: 12px;
+  }
+  button {
+    background-color: #f55140;
+    color: #ffffff;
+    border-radius: 50%;
+    float: right;
+    margin-top: -30px;
+    text-align: center;
+    // font-size: 0px;
+    i {
+      font-size: 13px;
     }
-    .products {
-        font-size: 12px;
-    }
-    button {
-        background-color: #f55140;
-        color: #ffffff;
-        border-radius: 50%;
-        float: right;
-        margin-top: -30px;
-        text-align: center;
-        font-size: 0px;
-        i {
-            font-size: 13px;
-        }
-    }
-    
+  }
 }
 
-.material-items ul{
-    list-style: none;
-    padding-left: 5px !important;
-    li{
-        display: inline;
-        background-color: #ffffff;
-        border-radius: 20px;
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
-        padding: 5px 16px 5px 16px;
-        margin-right: 3px;
-        text-align: center;
-        border: 1px solid #dddddd;
-    }
+.material-items ul {
+  list-style: none;
+  padding-left: 5px !important;
+  li {
+    display: inline;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+    padding: 5px 16px 5px 16px;
+    margin-right: 3px;
+    text-align: center;
+    border: 1px solid #dddddd;
+  }
 }
 .main-text {
-    box-shadow: $box-shadow;
-    margin: 16px 0px 16px 0px;
-    background-color: #fff1f8;
-    padding: 9px;
-    text-align: center;
-    p { 
-        margin-bottom: 0px;
-    }
-    .add-btn {
-        background-color: #f55140;
-        border-radius: 25px;
-        color: #fff;
-        font-weight: 600;
-        font-size: 11px;
-    }
+  box-shadow: $box-shadow;
+  margin: 16px 0px 16px 0px;
+  background-color: #fff1f8;
+  padding: 9px;
+  text-align: center;
+  p {
+    margin-bottom: 0px;
+  }
+  .add-btn {
+    background-color: #f55140;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+  }
 }
 
 .overview-body {
-
-    .box-style {
-        padding: 0px!important;
-        .bg-color {
-            background-color: #f9f9f9;
-        }
-        .margin {
-            p {
-                margin: 8px;
-            }
-        }
+  .box-style {
+    padding: 0px !important;
+    .bg-color {
+      background-color: #f9f9f9;
     }
+    .margin {
+      p {
+        margin: 8px;
+      }
+    }
+  }
 }
- 
+
 .product-details {
-    margin-top: 23px;
-    p {
-        margin-bottom: 0px;
-        font-size: 13px;
-    }
-    .top-products {
-        margin: 9px 0px 11px 0px;
-        background-color: #f9f9f9;
-    }
-    .sub-text {
-        // font-size: 13px;
-        color: #b1b1b1;
-    }
-    .text {
-        color: #f32020;
-    }
+  margin-top: 23px;
+  p {
+    margin-bottom: 0px;
+    font-size: 13px;
+  }
+  .top-products {
+    margin: 9px 0px 11px 0px;
+    background-color: #f9f9f9;
+  }
+  .sub-text {
+    // font-size: 13px;
+    color: #b1b1b1;
+  }
+  .text {
+    color: #f32020;
+  }
 }
 .order-quantity {
-    margin-top: 14px;
-    border: 0.8px solid gainsboro;
-    border-radius: 26px;
-    width: fit-content;
-    padding: 4px;
+  margin-top: 14px;
+  border: 0.8px solid gainsboro;
+  border-radius: 26px;
+  width: fit-content;
+  padding: 4px;
 }
 .edit-details {
-    .status-btns {
-        text-align: right;
-        button {
-            border-radius: 25px;
-            margin: 6px;
-            font-size: 13px;
-        }
-        .btn-cancel {
-            background-color: #fff;
-            border: 2px solid gray
-        }
+  .status-btns {
+    text-align: right;
+    button {
+      border-radius: 25px;
+      margin: 6px;
+      font-size: 13px;
     }
-    
+    .btn-cancel {
+      background-color: #fff;
+      border: 2px solid gray;
+    }
+  }
+}
+
+.example-chip-list {
+  width: 100%;
 }

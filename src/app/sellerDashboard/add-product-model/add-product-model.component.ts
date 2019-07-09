@@ -11,7 +11,14 @@ export class AddProductModelComponent implements OnInit {
   public onClose: Subject<boolean>;
   segmentedGroups: any;
   productGroups: any;
-  imageUpload: any;
+  imageUpload_0: string | ArrayBuffer="";
+  imageUpload_1: string | ArrayBuffer;
+  imageUpload_2: string | ArrayBuffer;
+  imageUpload_3: string | ArrayBuffer;
+
+  modalObject = {};
+  productTitle: string;
+  productDesc: string;
 
   constructor(private _bsModalRef: BsModalRef, private services: PerogonServices) {
   }
@@ -19,8 +26,6 @@ export class AddProductModelComponent implements OnInit {
   public ngOnInit(): void {
     this.services.getJSON().subscribe((response: any) => {
       this.segmentedGroups = response.data;
-      console.log("perogon categories----->" + JSON.stringify(this.segmentedGroups));
-
     });
     this.onClose = new Subject();
   }
@@ -35,28 +40,42 @@ export class AddProductModelComponent implements OnInit {
     this._bsModalRef.hide();
   }
   public onCloseBtn(): void {
-    this._bsModalRef.hide();
+    this.modalObject = {
+      imageUpload_0 : this.imageUpload_0,
+      imageUpload_1: this.imageUpload_1,
+      imageUpload_2: this.imageUpload_2,
+      title: this.productTitle,
+      description: this.productDesc
+    }
+    this._bsModalRef.hide();    
   }
 
   onCheckSegmentGroup(segment) {
-    
+
 
     this.productGroups = segment.subCategory;
   }
 
-  public onImageUpload(e) {
-    console.log("files", e);
-    if(e.target.files && e.target.files[0]) {
+  public onImageUpload(eve, val) {
+    console.log("files", eve);
+    if (eve.target.files && eve.target.files[0]) {
       let fileReader = new FileReader();
-      fileReader.readAsDataURL(e.target.files[0]);
+      fileReader.readAsDataURL(eve.target.files[0]);
       fileReader.onload = (event) => {
-        console.log("reader image", event);
-        // this.imageUpload = event.target.result;
+        // console.log("reader image", event);
+        if (val === 0) {
+        
+          this.imageUpload_0 = fileReader.result;
+        } else if (val === 1) {
+          this.imageUpload_1 = fileReader.result;
+        } else if (val === 2) {
+          this.imageUpload_2 = fileReader.result;
+        } else if (val === 3) {
+          this.imageUpload_3 = fileReader.result;
+        }
+
       }
     }
   }
 
-  onCheck() {
-    alert("checking");
-  }
 }
