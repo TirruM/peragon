@@ -12,6 +12,7 @@ export class ProductsComponent implements OnInit {
 
   addFabricTypesSwitch : String = "noFabricTypes";
   fabricTypeListSwitch : String = "addFabricTypes";
+  addProductFeatureSwitch : String = "addFeature";
   constructor() { }
 
   ngOnInit() {
@@ -33,5 +34,9 @@ export class ProductsComponent implements OnInit {
   saveFabricTypes() {
     this.addFabricTypesSwitch = "";
     this.fabricTypeListSwitch = "fabricTypeDetails";
+  }
+  
+  addProductFeature(){
+    this.addProductFeatureSwitch = "addNewProductFeature";
   }
 }

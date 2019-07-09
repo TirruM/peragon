@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   addExportCountriesSwitch: String = "addExportCountries";
-  // addExportCountriesSwitch: String = "not-filled";
+  addDescriptionData: String = "no-discription";
 
   countriesList : String = "editEC";
   
@@ -24,5 +24,9 @@ export class AboutComponent implements OnInit {
   displayCountries() {
     this.addExportCountriesSwitch = "";
     this.countriesList = "countries-list";
+  }
+
+  addDiscription(){
+    this.addDescriptionData = "show-discription";
   }
 }

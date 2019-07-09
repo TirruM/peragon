@@ -121,6 +121,28 @@
     </div>
   </div>
 </div>
+<div [ngSwitch]="addProductFeatureSwitch">
+  <div *ngSwitchCase="'addFeature'">
+    <div class="box-style">
+      <p><b>Product Features</b></p>
+      <div class="main-text">
+        <button class="btn btn-md add-btn" (click)="addProductFeature()">+ Add "Features"</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'addNewProductFeature'">
+    <div class="box-style">
+      <p><b>Edit "Product Features"</b></p>
+      <form>
+        <div class="form-group">
+          <label>Features</label>
+          <!--  -->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <div>
   <div class="box-style">
     <div class="overview-text">
