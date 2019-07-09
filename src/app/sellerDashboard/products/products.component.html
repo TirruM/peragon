@@ -76,10 +76,11 @@
       <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
     </div>
     <div class="product-details">
-      <div class="row top-products" *ngFor="let prod of productDetails" >
-         <div class="col-md-4">
+      <div class="row top-products" *ngFor="let prod of productDetails">
+        <div class="col-md-4">
           <p class="sub-text">Product</p>
-          <p class="text"><button class="btn btn-primary btn-xs" (click)="clikcProdcutFeature(prod)">{{prod.name}}</button></p>
+          <p class="text"><button class="btn btn-primary btn-xs"
+              (click)="clikcProdcutFeature(prod)">{{prod.name}}</button></p>
         </div>
         <div class="col-md-4">
           <p class="sub-text">Minimum order quantity</p>
@@ -88,7 +89,7 @@
         <div class="col-md-4">
           <p class="sub-text">Lead time</p>
           <p>{{prod.leadTime}}</p>
-        </div> 
+        </div>
       </div>
     </div>
   </div>
@@ -121,31 +122,37 @@
   <div *ngSwitchCase="'addNewProductFeature'">
     <div class="box-style">
       <p><b>Edit "Product Features"</b></p>
-      <form>
-        <div class="form-group">
-          <mat-form-field class="demo-chip-list">
-            <mat-chip-list #chipList>
-              <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" [removable]="removable"
-                (removed)="remove(fruit)">
-                {{fruit}}
-                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
-              </mat-chip>
-              <input placeholder="New Feature" #fruitInput [formControl]="fruitCtrl" [matAutocomplete]="auto"
-                [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)" />
-            </mat-chip-list>
-            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-              <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
-                {{ fruit }}
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
-          <!-- <ng-select [items]="cities2" bindLabel="name" bindValue="id" [multiple]="true" placeholder="Select cities"
+      <div class="edit-details">
+        <form>
+          <div class="form-group">
+            <mat-form-field class="demo-chip-list">
+              <mat-chip-list #chipList>
+                <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" [removable]="removable"
+                  (removed)="remove(fruit)">
+                  {{fruit}}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <input placeholder="New Feature" #fruitInput [formControl]="fruitCtrl" [matAutocomplete]="auto"
+                  [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                  [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)" />
+              </mat-chip-list>
+              <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+                  {{ fruit }}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+            <!-- <ng-select [items]="cities2" bindLabel="name" bindValue="id" [multiple]="true" placeholder="Select cities"
             [(ngModel)]="selectedCityIds">
           </ng-select>
           {{selectedCityIds}} -->
-        </div>
-      </form>
+            <div class="status-btns">
+              <button class="btn btn-md btn-cancel">Cancel</button>
+              <button class="btn btn-md btn-success" (click)="saveFabricTypes()">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
@@ -164,7 +171,7 @@
 </div>
 
 <div>
-  
+
 </div>
 
 
