@@ -18,13 +18,15 @@ import { LocationsComponent } from '../locations/locations.component';
 import { ServicesComponent } from '../services/services.component';
 import { TagInputModule } from 'ngx-chips';
 import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
+import { NgSelectModule } from '@ng-select/ng-select'
 @NgModule({
     imports: [SideBarModule,
         RouterModule.forChild(SellerLayoutRoutes),
         SharedModule,
         ModalModule.forRoot(),
         TagInputModule,
-        MatChipsModule, MatAutocompleteModule
+        MatChipsModule, MatAutocompleteModule,
+        NgSelectModule
     ],
     declarations: [SellerDashboardComponentNew,
         SellerProfileComponentt,
@@ -47,7 +49,8 @@ import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
         LocationsComponent,
         ServicesComponent,
         SellerProfileComponentt,
-        ShowRoomsComponent
+        ShowRoomsComponent,
+        NgSelectModule
     ]
 })
 
