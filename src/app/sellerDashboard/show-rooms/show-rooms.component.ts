@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AddProductModelComponent } from './../add-product-model/add-product-model.component';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { isEmpty } from "lodash";
 @Component({
   selector: 'app-show-rooms',
   templateUrl: './show-rooms.component.html',
@@ -23,14 +24,15 @@ export class ShowRoomsComponent implements OnInit {
       { ignoreBackdropClick: true, keyboard: false });
     this.modalRef.setClass('custom');
 
-    this.modalRef.content.onClose.subscribe(result => {
-      console.log('results', result);
-    })
     this.modalService.onHide.subscribe(() => {
-      this.productObj = this.modalRef.content.modalObject;
-      this.isNotFilled = false;
+      if (!isEmpty(this.modalRef.content.modalObject)) {
+        this.productObj = this.modalRef.content.modalObject;
+        this.isNotFilled = false;
+      } else {
+        this.productObj = {};
+        this.isNotFilled = true;
+      }
     })
-
   }
 
 }
