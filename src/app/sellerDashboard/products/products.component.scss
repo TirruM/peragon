@@ -1,22 +1,23 @@
 @import "../../../custom_styles/variables";
 
 .overview-text {
-  p {
-    margin-bottom: 0px;
-  }
-  .products {
-    font-size: 12px;
-  }
-  button {
-    background-color: #f55140;
-    color: #ffffff;
-    border-radius: 50%;
-    float: right;
-    margin-top: -30px;
-    text-align: center;
-    font-size: 0px;
-    i {
-      font-size: 13px;
+    p {
+        margin-bottom: 0px;
+    }
+    .products {
+        font-size: 12px;
+    }
+    button {
+        background-color: #f55140;
+        color: #ffffff;
+        border-radius: 50%;
+        float: right;
+        margin-top: -30px;
+        text-align: center;
+        // font-size: 0px;
+        i {
+            font-size: 13px;
+        }
     }
   }
 }

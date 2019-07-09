@@ -1,32 +1,91 @@
-@import '../../../custom_styles/variables';
+@import "../../../custom_styles/variables";
 
 .showroom-container {
-    h5 {
-        font-weight: bold;
+  h5 {
+    font-weight: bold;
+  }
+  .box-style {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    .add-product-btn {
+      @extend %colored-btn;
+      background-color: $red-btn;
     }
-    .box-style {
-        margin: 10px 0;
-        font-size: 12px;
+  }
+  .pre-filled-view {
+    .pre-filled-content {
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      i {
+        font-size: 70px;
+        display: block;
+      }
+      small {
+        font-size: 70%;
         font-weight: 600;
-        .add-product-btn {
-            @extend %colored-btn;
-            background-color: $red-btn;    
-        }
-    }  
-    .pre-filled-view {
-        .pre-filled-content {
-            margin-top: 0.25rem;
-            margin-bottom: 1rem;
-            i {
-                font-size: 70px;
-                display: block;
+      }
+    }
+  }
+  .showroom-images-container {
+    box-shadow: $box-shadow;
+    margin: 15px 0;
+    .showroom-wrapper {
+      padding: 0.5rem;
+      .showroom-images-header {
+        display: flex;
+        justify-content: space-between;
+        .seller-info {
+          .seller-image {
+            img {
+              width: 50px;
+              height: 50px;
+              max-width: 50px;
             }
-            small {
-                font-size: 70%;
-                font-weight: 600;
-            }
+          }
+          .info {
+            font-size: 13px;
+            font-weight: bold;
+          }
         }
-        
-    }  
-    
+        .labels {
+          p {
+            font-size: 11px;
+            font-weight: bold;
+            display: inline;
+            vertical-align: top;
+            margin-left: 6px;
+          }
+        }
+      }
+      .showroom-product-heading {
+        margin: 7px 0;
+        p {
+          margin-bottom: 0;
+          font-size: 12px;
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+      .showroom-images {
+        margin: 20px 0;
+        .product-image {
+          box-shadow: $box-shadow;
+          img {
+            width: 300px;
+          }
+        }
+      }
+      .more-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 6px;
+        .btn-cancel {
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.19);
+          border: none;
+        }
+      }
+    }
+  }
 }
