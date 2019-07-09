@@ -156,6 +156,14 @@
     </div>
   </div>
 </section>
+<div [hidden]=true>
+  <tag-input [ngModel]="dropdownvalues">
+    <tag-input-dropdown [autocompleteItems]="items" [showDropdownIfEmpty]="true" [dynamicUpdate]="true">
+    </tag-input-dropdown>
+  </tag-input>
+  {{items | json}}
+  <button class="btn" (click)="selectedChips()">saveTags</button>
+</div>
 
 <section>
   <div class="tab-content">

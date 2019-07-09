@@ -16,12 +16,15 @@ import { ModalModule } from 'ngx-bootstrap';
 import { ProductsComponent } from '../products/products.component';
 import { LocationsComponent } from '../locations/locations.component';
 import { ServicesComponent } from '../services/services.component';
-
+import { TagInputModule } from 'ngx-chips';
+import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
 @NgModule({
     imports: [SideBarModule,
         RouterModule.forChild(SellerLayoutRoutes),
         SharedModule,
         ModalModule.forRoot(),
+        TagInputModule,
+        MatChipsModule, MatAutocompleteModule
     ],
     declarations: [SellerDashboardComponentNew,
         SellerProfileComponentt,
@@ -37,12 +40,12 @@ import { ServicesComponent } from '../services/services.component';
     ],
     entryComponents: [AddProductModelComponent],
     exports: [
-        RfqHomeComponent, 
-        AddProductModelComponent, 
+        RfqHomeComponent,
+        AddProductModelComponent,
         AboutComponent,
         ProductsComponent,
         LocationsComponent,
-        ServicesComponent, 
+        ServicesComponent,
         SellerProfileComponentt,
         ShowRoomsComponent
     ]

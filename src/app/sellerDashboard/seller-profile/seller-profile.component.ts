@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+export interface AutoCompleteModel {
+  value: any;
+  display: string;
+}
 
 @Component({
   selector: 'app-seller-profile',
@@ -14,11 +18,20 @@ export class SellerProfileComponentt implements OnInit {
   currentTabObj: any;
   public imageSrc: string = 'assets/Images/sports/introductoin image.jpg';
   public bannerImg: string = 'assets/img/tennis-manufacture.jpg';
+  dropdownvalues: string;
+
+  public items = [
+    { display: 'Pizza', value: 1 },
+    { display: 'Pasta', value: 2 },
+    { display: 'Parmesan', value: 3 },
+  ];
 
   constructor() {
     this.selectedTab = '0';
   }
-
+  selectedChips() {
+    console.log("selected chips model--->" + JSON.stringify(this.items));
+  }
   ngOnInit() {
     this.onPrepareTabsObj();
   }
