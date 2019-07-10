@@ -61,34 +61,39 @@
           </div>
         </div>
       </div>
+
       <div class="location-images">
-        <div class="d-flex flex-wrap">
-          <div class="location-img">
-            <div class="upload-img">
+        <div class="location-img">
+          <div class="d-flex flex-wrap">
+            <div class="img-uploaded-container d-flex flex-wrap">
+              <div class="uploaded-img" *ngFor="let locationImg of locationImagesArr">
+                <div >
+                  <img [src]="locationImg" alt="" class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-end align-items-center crud-icons">
+                    <div>
+                      <i class="material-icons">
+                        delete
+                      </i>
+                    </div>
+                  </div>
+              </div>
+             
+            </div>
+            <div class="upload-img" >
               <button class="btn product-add-btn">
                 <div>
                   <p class="add-icon"><i class="fa fa-plus"></i>Add Picture</p>
-                  <input type="file" name="myfile">
+                  <input type="file" name="myfile" (change)="onLocationImgUpload($event)">
                 </div>
               </button>
             </div>
-            <div class="img-uploaded-container d-none">
-              <div class="uploaded-img">
-                <div>
-                  <img src="assets/img/process-logo.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <div class="d-flex justify-content-end align-items-center crud-icons">
-                <div>
-                  <i class="material-icons">
-                    delete
-                  </i>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
+
+
     </div>
   </div>
 </div>
