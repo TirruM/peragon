@@ -129,6 +129,7 @@ export class ProductsComponent implements OnInit {
 
   clikcProdcutFeature(prod){
     this.allFruits = [];
+    this.fruits = [];
      if(prod.feature.length > 0){
        for (let i = 0; i < prod.feature.length; i++) {
           this.allFruits.push(prod.feature[i]['feateureName']);
