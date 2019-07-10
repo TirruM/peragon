@@ -30,15 +30,6 @@ export class AddProductModelComponent implements OnInit {
     this.onClose = new Subject();
   }
 
-  public onConfirm(): void {
-    this.onClose.next(true);
-    this._bsModalRef.hide();
-  }
-
-  public onCancel(): void {
-    this.onClose.next(false);
-    this._bsModalRef.hide();
-  }
   public onCloseBtn(): void {
     this.modalObject = {
       imageUpload_0 : this.imageUpload_0,
@@ -76,6 +67,10 @@ export class AddProductModelComponent implements OnInit {
 
       }
     }
+  }
+
+  public onCancel() {
+    this._bsModalRef.hide();
   }
 
 }

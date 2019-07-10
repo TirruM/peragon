@@ -1,0 +1,141 @@
+@import "../../../custom_styles/variables";
+.locations-container {
+  .box-style {
+    padding: 14px;
+    .main-text {
+      box-shadow: $box-shadow;
+      background-color: #fff1f8;
+      padding: 9px;
+      text-align: center;
+      p {
+        margin-bottom: 0;
+        font-size: 13px;
+        padding: 12px;
+        span {
+          font-weight: bold;
+        }
+      }
+      .padd {
+        padding: 12px;
+        .add-btn {
+          @extend %colored-btn;
+          background-color: #f55140;
+          border: none;
+          margin-top: 0px;
+          font-size: 11px;
+          font-weight: 500;
+          &:focus {
+            @extend %custom-input-types;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .heading {
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .factory-details {
+    .location-address {
+      .factory {
+        font-size: 13px;
+        font-weight: 400;
+        & > div {
+          display: flex;
+        }
+        label {
+          margin-bottom: 0;
+          flex-basis: 150px;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+      #map {
+        width: 100%;
+        height: 150px;
+      }
+      .icons-wrapper {
+        float: right;
+        .icons {
+          background-color: #f55140;
+          border-radius: 50%;
+          color: #fff;
+          padding: 2px 9px 5px;
+          margin: 0 4px;
+
+          i {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .location-images {
+      .location-img {
+        margin-right: 15px;
+        width: 110px;
+        height: 115px;
+        .upload-img {
+          position: relative;
+          overflow: hidden;
+          display: inline-block;
+          padding: 5px 0;
+          margin-right: 15px;
+          position: relative;
+          .product-add-btn {
+            border: 1px dotted gray;
+            background-color: white;
+            width: 110px;
+            height: 110px;
+            padding: 0;
+            img {
+              width: 110px;
+              height: 110px;
+            }
+            .add-icon {
+              color: red;
+              font-size: 11px;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+              i {
+                display: block;
+                font-size: 30px;
+              }
+            }
+          }
+        }
+        .upload-img input[type="file"] {
+          font-size: 100px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+        .img-uploaded-container {
+            width: 110px;
+            height: 85px;   
+            margin: 7px 15px 0px 0;
+            
+            .uploaded-img {
+                height: 85px;
+              width: 110px;
+              box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.12);
+            }
+            img {
+                height: 80px;
+              width: 110px;
+            }
+            .crud-icons {
+              padding: 0 5px;
+              box-shadow: $box-shadow;
+              i {
+                font-size: 16px;
+              }
+            }
+          }
+      }
+    }
+  }
+}

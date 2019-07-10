@@ -23,6 +23,7 @@
     "@angular/router": "~7.2.0",
     "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.0",
     "@ng-select/ng-select": "^2.20.0",
+    "@types/googlemaps": "^3.36.6",
     "bootstrap": "^4.1.0",
     "core-js": "^2.5.4",
     "datatables.net": "^1.10.19",
