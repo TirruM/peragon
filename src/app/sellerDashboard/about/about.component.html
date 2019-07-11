@@ -2,7 +2,7 @@
   <div [ngSwitch]="addDescriptionData">
     <div *ngSwitchCase="'no-discription'">
       <div class="about-description">
-        <p>Description</p>
+        <p><b>Description</b></p>
         <div class="description-content">
           <p>Describe your entity to prospective brands</p>
           <button class="btn btn-md" (click)="addDiscription()">+ Add description</button>
@@ -14,39 +14,101 @@
         <p><b>Edit "Description"</b></p>
         <div class="edit-details">
           <div class="form-group">
-            <label>Faux Leather</label>
-            <textarea class="form-control" rows="20" placeholder="Your Discription should give the reader a clear understanding your company"></textarea>
+            <textarea class="form-control" rows="4"
+              placeholder="Your Discription should give the reader a clear understanding your company"></textarea>
+            <div class="status-btns">
+              <button class="btn btn-md btn-cancel">Cancel</button>
+              <button class="btn btn-md btn-success" (click)="displayDiscription()">Save</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div *ngSwitchCase="'show-discription'">
-      <p>description data</p>
-    </div>
-  </div>
-  <div class="about-keyfacts" *ngIf="!isShowData">
-    <div class="keyfacts-content">
-      <p>Key Facts</p>
-      <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
-    </div>
-    <div class="row keyfacts-body">
-      <div class="col-md-4 keyfacts-body-text">
-        <p><b>N/A</b></p>
-        <p>Employees</p>
-      </div>
-      <div class="col-md-4 keyfacts-body-text">
-        <p><b>N/A</b></p>
-        <p>Revenue / Year</p>
-      </div>
-      <div class="col-md-4 keyfacts-body-text">
-        <p><b>N/A</b></p>
-        <p>Pieces / Year</p>
+      <div class="about-description">
+        <p><b>Description</b></p>
+        <div class="show-content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book
+        </div>
       </div>
     </div>
   </div>
-  <div *ngIf="isShowData">
-    <p>key Facts data</p>
+
+  <div [ngSwitch]="keyfactsSwitch">
+    <div *ngSwitchCase="'add-keyfacts'">
+      <div *ngSwitchCase="'add-keyfacts'">
+        <div class="about-keyfacts">
+          <div class="keyfacts-content">
+            <p><b>Key Facts</b></p>
+            <button class="btn btn-sm" (click)="editKeyFacts()"><i class="fa fa-pencil"></i></button>
+          </div>
+          <div class="row keyfacts-body">
+            <div class="col-md-4 keyfacts-body-text">
+              <p><b>N/A</b></p>
+              <p>Employees</p>
+            </div>
+            <div class="col-md-4 keyfacts-body-text">
+              <p><b>N/A</b></p>
+              <p>Revenue / Year</p>
+            </div>
+            <div class="col-md-4 keyfacts-body-text">
+              <p><b>N/A</b></p>
+              <p>Pieces / Year</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'edit-keyfacts'">
+      <div class="about-description">
+        <p><b>Edit "Links and Websites"</b></p>
+        <div class="form-group">
+          <label>Employees</label>
+          <input type="text" class="form-control" placeholder="Number of people working for the entaire organization">
+        </div>
+        <div class="form-group">
+          <label>Revenue / Year</label>
+          <input type="text" class="form-control" placeholder="in $">
+        </div>
+        <div class="form-group">
+          <label>Price / Year</label>
+          <input type="text" class="form-control" placeholder="Units produced per year">
+        </div>
+        <div class="status-btns">
+          <button class="btn btn-md btn-cancel">Cancel</button>
+          <button class="btn btn-md btn-success" (click)="displayKeyFacts()">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'display-keyfacts'">
+      <div class="about-keyfacts">
+        <div class="keyfacts-content">
+          <p><b>Key Facts</b></p>
+          <button class="btn btn-sm" (click)="editKeyFacts()"><i class="fa fa-pencil"></i></button>
+        </div>
+        <div class="row keyfacts-body">
+          <div class="col-md-4 keyfacts-body-text">
+            <p><b>50</b></p>
+            <p>Employees</p>
+          </div>
+          <div class="col-md-4 keyfacts-body-text">
+            <p><b>50</b></p>
+            <p>Revenue / Year</p>
+          </div>
+          <div class="col-md-4 keyfacts-body-text">
+            <p><b>50</b></p>
+            <p>Pieces / Year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
   <div class="about-ref-customers" *ngIf="!isShowData">
     <div class="ref-customers-content">
       <p><b>Reference Customers</b></p>
@@ -152,14 +214,32 @@
       </div>
     </div>
   </div>
-  <div class="about-description" *ngIf="!isShowData" [hidden]=true>
-    <p>Links and Websites</p>
-    <div class="description-content">
-      <p>Add links to your websites, videos and media channels that showcase your company</p>
-      <button class="btn btn-md">+ Add Links</button>
+  <div [ngSwitch]="addLinksandwebsiteSwitch">
+    <div *ngSwitchCase="'linksandwebsite'">
+      <div class="about-description">
+        <p><b>Links and Websites</b></p>
+        <div class="description-content">
+          <p>Add links to your websites, videos and media channels that showcase your company</p>
+          <button class="btn btn-md" (click)="addLinksAndWebsite()">+ Add Links</button>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'add-Linksandweb'">
+      <div class="about-description">
+        <p><b>Add "Links and Websites"</b></p>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Link Discription">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="URL (http://www.example.com)">
+        </div>
+        <div class="status-btns">
+          <button class="btn btn-md btn-cancel">Cancel</button>
+          <button class="btn btn-md btn-success" (click)="displayLinksandWebsite()">Save</button>
+        </div>
+      </div>
     </div>
   </div>
-  <div *ngIf="isShowData">
-    <p>Add Links data</p>
-  </div>
+
+
 </div>
