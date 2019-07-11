@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   addExportCountriesSwitch: String = "addExportCountries";
+  addLinksandwebsiteSwitch: String = "linksandwebsite";
+  keyfactsSwitch: String = "add-keyfacts";
   addDescriptionData: String = "no-discription";
 
   countriesList : String = "editEC";
@@ -27,6 +29,26 @@ export class AboutComponent implements OnInit {
   }
 
   addDiscription(){
+    this.addDescriptionData = "add-discription";
+  }
+
+  displayDiscription(){
     this.addDescriptionData = "show-discription";
+  }
+
+  addLinksAndWebsite(){
+    this.addLinksandwebsiteSwitch = "add-Linksandweb";
+  }
+
+  displayLinksandWebsite(){
+    this.addLinksandwebsiteSwitch = "linksandwebsite";
+  }
+
+  editKeyFacts(){
+    this.keyfactsSwitch = "edit-keyfacts";
+  }
+
+  displayKeyFacts(){
+    this.keyfactsSwitch = "display-keyfacts";
   }
 }
