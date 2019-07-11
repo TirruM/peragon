@@ -32,14 +32,13 @@ export class LocationsComponent implements OnInit {
   }
 
   public onLocationImgUpload(event) {
-    console.log("locations img", event);
     if(event.target.files && event.target.files[0]) {
       let fileReader = new FileReader();
       fileReader.readAsDataURL(event.target.files[0]);
       fileReader.onload = (e) => {
         // this.LocationImage = fileReader.result;
         this.locationImagesArr.push(fileReader.result);
-        console.log("array", this.locationImagesArr);
+        // console.log("array", this.locationImagesArr);
       }
     }
   }
