@@ -30,15 +30,6 @@ export class AddProductModelComponent implements OnInit {
     this.onClose = new Subject();
   }
 
-  public onConfirm(): void {
-    this.onClose.next(true);
-    this._bsModalRef.hide();
-  }
-
-  public onCancel(): void {
-    this.onClose.next(false);
-    this._bsModalRef.hide();
-  }
   public onCloseBtn(): void {
     this.modalObject = {
       imageUpload_0 : this.imageUpload_0,
@@ -61,10 +52,9 @@ export class AddProductModelComponent implements OnInit {
     if (eve.target.files && eve.target.files[0]) {
       let fileReader = new FileReader();
       fileReader.readAsDataURL(eve.target.files[0]);
-      fileReader.onload = (event) => {
+      fileReader.onload = () => {
         // console.log("reader image", event);
-        if (val === 0) {
-        
+        if (val === 0) {        
           this.imageUpload_0 = fileReader.result;
         } else if (val === 1) {
           this.imageUpload_1 = fileReader.result;
@@ -73,9 +63,12 @@ export class AddProductModelComponent implements OnInit {
         } else if (val === 3) {
           this.imageUpload_3 = fileReader.result;
         }
-
       }
     }
+  }
+
+  public onCancel() {
+    this._bsModalRef.hide();
   }
 
 }
