@@ -15,14 +15,14 @@ import { SearchComponent } from './search/search.component';
 import { ForBuyerComponent } from './for-buyer/for-buyer.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PricingComponent } from './pricing/pricing.component';
-import { SellerDashboardModule } from './sellerDashboard/seller-dashboard/seller-dashboard.module';
-import { SellerDashboardComponent } from './seller/seller-dashboard/seller-dashboard.component';
-import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
-import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
+//import { SellerDashboardModule } from './sellerDashboard/seller-dashboard/seller-dashboard.module';
+//import { SellerDashboardComponent } from './seller/seller-dashboard/seller-dashboard.component';
+//import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
+//import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
 import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
-import { CertificatesComponent } from './sellerDashboard/certificates/certificates.component';
+//import { CertificatesComponent } from './sellerDashboard/certificates/certificates.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +34,12 @@ import { CertificatesComponent } from './sellerDashboard/certificates/certificat
     SignupComponent,
     SearchComponent,
     ForBuyerComponent,
-    ForSellerComponent, HowItWorksComponent, PricingComponent, SellerDashboardComponent,
-    RfqComponent, BookMarksComponent
+    ForSellerComponent, 
+    HowItWorksComponent,
+    PricingComponent, 
+    //SellerDashboardComponent,
+    //RfqComponent,
+    //BookMarksComponent
   ],
   imports: [
     BrowserModule,
@@ -43,8 +47,8 @@ import { CertificatesComponent } from './sellerDashboard/certificates/certificat
     SharedModule,
     BrowserAnimationsModule,
     BuyerModule,
-    SellerDashboardModule,
-    HttpClientModule,
+    //SellerDashboardModule,
+    HttpClientModule
   ],
   exports: [BuyerModule,],
   providers: [],

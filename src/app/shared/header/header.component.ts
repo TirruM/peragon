@@ -59,7 +59,7 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl('/rfq');
   }
   onDashboardPage() {
-    this.router.navigateByUrl('/sellerdashboard/profile1');
+    this.router.navigateByUrl('/seller/profile1');
   }
 
 }

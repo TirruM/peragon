@@ -6,7 +6,7 @@ import {
   MatSlideToggleModule, MatExpansionModule, MatMenuModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SideBarComponent } from '../sellerInternal/side-bar/side-bar.component';
+//import { SideBarComponent } from '../sellerInternal/side-bar/side-bar.component';
 
 @NgModule({
   imports: [
