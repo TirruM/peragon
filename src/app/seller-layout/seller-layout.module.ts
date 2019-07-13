@@ -16,6 +16,8 @@ import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { LocationsComponent } from './locations/locations.component';
+import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
+import { ModalModule } from 'ngx-bootstrap';
 
 
 @NgModule({
@@ -30,7 +32,7 @@ import { LocationsComponent } from './locations/locations.component';
     ShowRoomsComponent,
     RfqHomeComponent,
     AboutComponent,
-    //ProductsComponent,
+    ProductsComponent,
     ServicesComponent,
     CertificatesComponent,
     LocationsComponent
@@ -38,11 +40,14 @@ import { LocationsComponent } from './locations/locations.component';
   imports: [
     CommonModule,
     SellerLayoutRoutingModule,
-    SharedModule
+    SharedModule,
+    MatChipsModule,
+    MatAutocompleteModule,
+    ModalModule.forRoot()
   ],
   exports: [
     AboutComponent,
-    //ProductsComponent,
+    ProductsComponent,
     ServicesComponent,
     CertificatesComponent,
     LocationsComponent,
