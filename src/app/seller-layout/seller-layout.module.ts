@@ -18,6 +18,7 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { LocationsComponent } from './locations/locations.component';
 import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
 import { ModalModule } from 'ngx-bootstrap';
+import { AddProductModelComponent } from './add-product-model/add-product-model.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ModalModule } from 'ngx-bootstrap';
     ProductsComponent,
     ServicesComponent,
     CertificatesComponent,
-    LocationsComponent
+    LocationsComponent,
+    AddProductModelComponent
   ],
   imports: [
     CommonModule,
@@ -45,13 +47,15 @@ import { ModalModule } from 'ngx-bootstrap';
     MatAutocompleteModule,
     ModalModule.forRoot()
   ],
+  entryComponents: [ AddProductModelComponent ],
   exports: [
     AboutComponent,
     ProductsComponent,
     ServicesComponent,
     CertificatesComponent,
     LocationsComponent,
-    ShowRoomsComponent
+    ShowRoomsComponent,
+    AddProductModelComponent
   ]
 })
 export class SellerLayoutModule { }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { Subject } from 'rxjs';
-import { PerogonServices } from 'src/app/services/perogon-services.service';
+// import { PerogonServices } from 'src/app/services/perogon-services.service';
+import { PerogonServices } from '../../services/perogon-services.service';
 @Component({
   selector: 'app-add-product-model',
   templateUrl: './add-product-model.component.html',
