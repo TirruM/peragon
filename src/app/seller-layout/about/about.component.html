@@ -5,7 +5,9 @@
         <p><b>Description</b></p>
         <div class="description-content">
           <p>Describe your entity to prospective brands</p>
-          <button class="btn btn-md" (click)="addDiscription()">+ Add description</button>
+          <button class="btn btn-md" (click)="addDiscription()">
+            + Add description
+          </button>
         </div>
       </div>
     </div>
@@ -14,11 +16,19 @@
         <p><b>Edit "Description"</b></p>
         <div class="edit-details">
           <div class="form-group">
-            <textarea class="form-control" rows="4"
-              placeholder="Your Discription should give the reader a clear understanding your company"></textarea>
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Your Discription should give the reader a clear understanding your company"
+            ></textarea>
             <div class="status-btns">
               <button class="btn btn-md btn-cancel">Cancel</button>
-              <button class="btn btn-md btn-success" (click)="displayDiscription()">Save</button>
+              <button
+                class="btn btn-md btn-success"
+                (click)="displayDiscription()"
+              >
+                Save
+              </button>
             </div>
           </div>
         </div>
@@ -28,9 +38,10 @@
       <div class="about-description">
         <p><b>Description</b></p>
         <div class="show-content">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book
         </div>
       </div>
     </div>
@@ -42,7 +53,9 @@
         <div class="about-keyfacts">
           <div class="keyfacts-content">
             <p><b>Key Facts</b></p>
-            <button class="btn btn-sm" (click)="editKeyFacts()"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-sm" (click)="editKeyFacts()">
+              <i class="fa fa-pencil"></i>
+            </button>
           </div>
           <div class="row keyfacts-body">
             <div class="col-md-4 keyfacts-body-text">
@@ -67,19 +80,29 @@
         <p><b>Edit "Links and Websites"</b></p>
         <div class="form-group">
           <label>Employees</label>
-          <input type="text" class="form-control" placeholder="Number of people working for the entaire organization">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Number of people working for the entaire organization"
+          />
         </div>
         <div class="form-group">
           <label>Revenue / Year</label>
-          <input type="text" class="form-control" placeholder="in $">
+          <input type="text" class="form-control" placeholder="in $" />
         </div>
         <div class="form-group">
           <label>Price / Year</label>
-          <input type="text" class="form-control" placeholder="Units produced per year">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Units produced per year"
+          />
         </div>
         <div class="status-btns">
           <button class="btn btn-md btn-cancel">Cancel</button>
-          <button class="btn btn-md btn-success" (click)="displayKeyFacts()">Save</button>
+          <button class="btn btn-md btn-success" (click)="displayKeyFacts()">
+            Save
+          </button>
         </div>
       </div>
     </div>
@@ -88,7 +111,9 @@
       <div class="about-keyfacts">
         <div class="keyfacts-content">
           <p><b>Key Facts</b></p>
-          <button class="btn btn-sm" (click)="editKeyFacts()"><i class="fa fa-pencil"></i></button>
+          <button class="btn btn-sm" (click)="editKeyFacts()">
+            <i class="fa fa-pencil"></i>
+          </button>
         </div>
         <div class="row keyfacts-body">
           <div class="col-md-4 keyfacts-body-text">
@@ -106,7 +131,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="about-ref-customers" *ngIf="!isShowData">
@@ -126,7 +150,10 @@
   <div class="about-headquarter" *ngIf="!isShowData">
     <p>Headquarter</p>
     <div class="headquarter-content">
-      <p>This section will be filled automatically with informaton from the locations tab</p>
+      <p>
+        This section will be filled automatically with informaton from the
+        locations tab
+      </p>
     </div>
     <p class="text">Not filled</p>
   </div>
@@ -143,7 +170,7 @@
       </div>
       <div>
         <div class="contact-img">
-          <img src="../../../assets/img/user2-160x160.jpg">
+          <img src="../../../assets/img/user2-160x160.jpg" />
           <p>Isobel Macphee</p>
         </div>
       </div>
@@ -157,17 +184,19 @@
       <p>Not filled</p>
     </div>
     <div class="about-description" *ngSwitchCase="'addExportCountries'">
-      <p>Main Export Countries</p>
+      <p><b>Main Export Countries</b></p>
       <div class="description-content">
         <p>Select countries that you regularly export to</p>
-        <button class="btn btn-md" (click)="addExportCountries()">+ Add Main export countries</button>
+        <button class="btn btn-md" (click)="addExportCountries()">
+          + Add Main export countries
+        </button>
       </div>
     </div>
     <div class="about-description export-countries" *ngSwitchCase="'editEC'">
       <p>Edit "Main Export Countries"</p>
       <div class="search">
         <div>
-          <input type="" placeholder="search">
+          <input type="" placeholder="search" />
         </div>
         <div class="countries-list">
           <div class="row">
@@ -189,12 +218,12 @@
             <mat-checkbox class="col-md-3">China</mat-checkbox>
           </div>
         </div>
-        <div>
-
-        </div>
+        <div></div>
         <div class="status-btns">
           <button class="btn btn-md btn-cancel">Cancel</button>
-          <button class="btn btn-md btn-success" (click)="displayCountries()">Save</button>
+          <button class="btn btn-md btn-success" (click)="displayCountries()">
+            Save
+          </button>
         </div>
       </div>
     </div>
@@ -203,7 +232,9 @@
       <div class="about-ref-customers" *ngSwitchCase="'countries-list'">
         <div class="ref-customers-content">
           <p>Main Export countries</p>
-          <button class="btn btn-sm edit-btn"><i class="fa fa-pencil"></i></button>
+          <button class="btn btn-sm edit-btn">
+            <i class="fa fa-pencil"></i>
+          </button>
         </div>
         <div>
           <p>Afghanistan , Argentina, Brazil, Canada</p>
@@ -218,28 +249,62 @@
     <div *ngSwitchCase="'linksandwebsite'">
       <div class="about-description">
         <p><b>Links and Websites</b></p>
+        <div>
+          Link Description:
+          <p *ngIf="'link ==null' ? '' : link"></p>
+          {{ link }}<br />
+          Website URL :
+          <p *ngIf="'link ==null' ? '' : link"></p>
+          {{ url }}
+        </div>
         <div class="description-content">
-          <p>Add links to your websites, videos and media channels that showcase your company</p>
-          <button class="btn btn-md" (click)="addLinksAndWebsite()">+ Add Links</button>
+          <p>
+            Add links to your websites, videos and media channels that showcase
+            your company
+          </p>
+          <button class="btn btn-md" (click)="addLinksAndWebsite()">
+            + Add Links
+          </button>
         </div>
       </div>
     </div>
     <div *ngSwitchCase="'add-Linksandweb'">
       <div class="about-description">
         <p><b>Add "Links and Websites"</b></p>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Link Discription">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="URL (http://www.example.com)">
-        </div>
-        <div class="status-btns">
-          <button class="btn btn-md btn-cancel">Cancel</button>
-          <button class="btn btn-md btn-success" (click)="displayLinksandWebsite()">Save</button>
-        </div>
+        <form [formGroup]="aboutLinksForm">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="linkDescription"
+              placeholder="Link Description"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="url"
+              placeholder="URL(http://www.example.com)"
+            />
+          </div>
+          <div class="status-btns">
+            <button
+              class="btn btn-md btn-cancel"
+              (click)="displayLinksandWebsite()"
+            >
+              Cancel
+            </button>
+            <button
+              class="btn btn-md btn-success"
+              type="button"
+              (click)="onDisplayLinks()"
+            >
+              Save
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
-
 </div>

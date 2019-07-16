@@ -1,23 +1,39 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { FormGroup, FormControl } from "@angular/forms";
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: "app-about",
+  templateUrl: "./about.component.html",
+  styleUrls: ["./about.component.scss"]
 })
 export class AboutComponent implements OnInit {
+  aboutLinksForm: FormGroup;
+
   addExportCountriesSwitch: String = "addExportCountries";
   addLinksandwebsiteSwitch: String = "linksandwebsite";
   keyfactsSwitch: String = "add-keyfacts";
   addDescriptionData: String = "no-discription";
 
-  countriesList : String = "editEC";
+  countriesList: String = "editEC";
   isShowData: boolean = true;
-  
-  constructor() { }
+  link: string;
+  url: string;
+
+  constructor() {}
 
   ngOnInit() {
+    this.aboutLinksForm = new FormGroup({
+      linkDescription: new FormControl(""),
+      url: new FormControl("")
+    });
+
+    this.link = localStorage.getItem("link");
+    this.url = localStorage.getItem("url");
   }
+
+  // onlinksFormSubmit(linksForm: FormGroup) {
+  //   console.log("links Form", linksForm);
+  // }
 
   addExportCountries() {
     this.addExportCountriesSwitch = "editEC";
@@ -28,27 +44,36 @@ export class AboutComponent implements OnInit {
     this.countriesList = "countries-list";
   }
 
-  addDiscription(){
+  addDiscription() {
     this.addDescriptionData = "add-discription";
   }
 
-  displayDiscription(){
+  displayDiscription() {
     this.addDescriptionData = "show-discription";
   }
 
-  addLinksAndWebsite(){
+  addLinksAndWebsite() {
     this.addLinksandwebsiteSwitch = "add-Linksandweb";
   }
 
-  displayLinksandWebsite(){
+  displayLinksandWebsite() {
+    this.aboutLinksForm.reset();
     this.addLinksandwebsiteSwitch = "linksandwebsite";
   }
+  public onDisplayLinks() {
+    this.addLinksandwebsiteSwitch = "linksandwebsite";
+    localStorage.setItem("link", this.aboutLinksForm.value.linkDescription);
+    localStorage.setItem("url", this.aboutLinksForm.value.url);
+    this.link = this.aboutLinksForm.value.linkDescription;
+    this.url = this.aboutLinksForm.value.url;
+    this.aboutLinksForm.reset();
+  }
 
-  editKeyFacts(){
+  editKeyFacts() {
     this.keyfactsSwitch = "edit-keyfacts";
   }
 
-  displayKeyFacts(){
+  displayKeyFacts() {
     this.keyfactsSwitch = "display-keyfacts";
   }
 }

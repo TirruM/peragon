@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SellerLayoutRoutingModule } from './seller-layout-routing.module';
 import { SellerLayoutComponent } from './seller-layout.component';
 import { DashboardTestComponent } from './dashboard-test/dashboard-test.component';
@@ -47,6 +48,7 @@ import { SearchComponent } from './search/search.component';
     SharedModule,
     MatChipsModule,
     MatAutocompleteModule,
+    ReactiveFormsModule,
     ModalModule.forRoot()
   ],
   entryComponents: [ AddProductModelComponent ],
