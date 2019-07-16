@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   addDescriptionData: String = "no-discription";
 
   countriesList : String = "editEC";
-  
+  isShowData: boolean = true;
   
   constructor() { }
 

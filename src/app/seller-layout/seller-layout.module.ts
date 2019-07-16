@@ -19,6 +19,7 @@ import { LocationsComponent } from './locations/locations.component';
 import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
 import { ModalModule } from 'ngx-bootstrap';
 import { AddProductModelComponent } from './add-product-model/add-product-model.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { AddProductModelComponent } from './add-product-model/add-product-model.
     ServicesComponent,
     CertificatesComponent,
     LocationsComponent,
-    AddProductModelComponent
+    AddProductModelComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

@@ -43,5 +43,9 @@ export class LocationsComponent implements OnInit {
     }
   }
 
+  addTreatments(){
+    
+  }
+
 
 }
