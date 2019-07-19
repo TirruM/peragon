@@ -19,14 +19,12 @@ h3.h3 {
   margin-bottom: 30px;
 }
 
-
 /*------------------------------------*\
   #BANNER-SECTION
 \*------------------------------------*/
 
-
 .banner-image {
-  background-image: url('../../assets/Images/background.JPG');
+  background-image: url("../../assets/Images/background.JPG");
 }
 
 /*------------------------------------*\
@@ -85,49 +83,46 @@ h3.h3 {
   }
   .category_box {
     a {
-      
       &:hover {
         text-decoration: none;
       }
-      .buyers_card {
-        box-shadow: $box-shadow;
-        margin-right: 16px;
-    
-        // transition: 0.3s all ease;
-        .card-wrapper {
-          .rfqs {
-            img {
-              display: block;
-              margin: 0 auto;
-              width: 160px;
-              height: 160px;
-    
-              &:hover {
-                transform: scale(1.1);
-              }
+    }
+    .buyers_card {
+      box-shadow: $box-shadow;
+      margin: 0 8px;
+
+      // transition: 0.3s all ease;
+      .card-wrapper {
+        .rfqs {
+          img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+
+            &:hover {
+              transform: scale(1.1);
             }
           }
-    
-          .manfact_details_card {
-            margin: auto;
-            margin-top: 1rem;
-            p {
-              margin-bottom: 0.2rem;
-              color: #212529;
-              
-            }
-    
-            .units {
-              background-color: #939393;
-              color: #fff;
-              padding: 5px 10px;
-            }
+        }
+
+        .manfact_details_card {
+          margin: auto;
+          margin-top: 1rem;
+          p {
+            margin-bottom: 0.2rem;
+            color: #212529;
+          }
+
+          .units {
+            background-color: #939393;
+            color: #fff;
+            padding: 5px 10px;
           }
         }
       }
     }
   }
-  
 
   .sub-category-items {
     display: flex !important;
@@ -136,5 +131,87 @@ h3.h3 {
     width: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    .buyers_card {
+      box-shadow: $box-shadow;
+      margin: 0 8px;
+
+      // transition: 0.3s all ease;
+      .card-wrapper {
+        .rfqs {
+          img {
+            display: block;
+            margin: 0 auto;
+            width: 120px;
+            height: 120px;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .manfact_details_card {
+          margin: auto;
+          margin-top: 1rem;
+          p {
+            margin-bottom: 0.2rem;
+            color: #212529;
+          }
+
+          .units {
+            background-color: #939393;
+            color: #fff;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
   }
+}
+
+.testing {
+  img {
+    width: 140px;
+    height: 140px;
+  }
+}
+.sub-category-container {
+  width: 100%;
+}
+.slick-slider {
+  width: 90%;
+  margin: auto;
+  background: #000;
+}
+
+.nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 100px !important;
+}
+
+.prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.prev-slide {
+  background: url("../../assets/img/categoryicons.png") no-repeat scroll 0 0 !important;
+  left: -33px;
+}
+
+.next-slide {
+  background: url("../../assets/img/categoryicons.png") no-repeat scroll -24px 0px !important;
+  right: -33px;
+}
+
+.prev-slide:hover {
+  background-position: 0px -53px;
+}
+
+.next-slide:hover {
+  background-position: -24px -53px;
 }

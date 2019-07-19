@@ -1,214 +1,268 @@
 {
-    "status": 200,
-    "message": "success",
-    "data": [
+  "status": 200,
+  "message": "success",
+  "data": [
+    {
+      "categoryName": "APPAREL",
+      "categoryImage": "assets/img/Categories/APPAREL.svg",
+      "categoryId": "1",
+      "subCategory": [
         {
-            "categoryName": "APPAREL",
-            "categoryId": "1",
-            "subCategory": [
-                {
-                    "subCategoryName": "SHIRTS",
-                    "subCategoryId": "1"
-                },
-                {
-                    "subCategoryName": "POLOS",
-                    "subCategoryId": "2"
-                },
-                {
-                    "subCategoryName": "JACKETS",
-                    "subCategoryId": "3"
-                },
-                {
-                    "subCategoryName": "JERSEYS",
-                    "subCategoryId": "4"
-                },
-                {
-                    "subCategoryName": "COMPRESSION GEAR",
-                    "subCategoryId": "5"
-                },
-                {
-                    "subCategoryName": "PANTS",
-                    "subCategoryId": "6"
-                },
-                {
-                    "subCategoryName": "SHORTS",
-                    "subCategoryId": "7"
-                },
-                {
-                    "subCategoryName": "SKIRTS",
-                    "subCategoryId": "8"
-                }
-            ]
+          "subCategoryName": "Compression Gear",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/COMPRESSION-GEAR.svg",
+          "subCategoryId": "1"
         },
         {
-            "categoryName": "MERCHANDISE",
-            "categoryId": "2",
-            "subCategory": [
-                {
-                    "subCategoryName": "AWARDS & TROPHIES",
-                    "subCategoryId": "1"
-                },
-                {
-                    "subCategoryName": "GIFTS",
-                    "subCategoryId": "2"
-                },
-                {
-                    "subCategoryName": "BAGS",
-                    "subCategoryId": "3"
-                },
-                {
-                    "subCategoryName": "BALLS",
-                    "subCategoryId": "4"
-                },
-                {
-                    "subCategoryName": "BOTTLES",
-                    "subCategoryId": "5"
-                }
-            ]
+          "subCategoryName": "Jackets",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/JACKETS.svg",
+          "subCategoryId": "2"
         },
         {
-            "categoryName": "EQUIPMENT",
-            "categoryId": "3",
-            "subCategory": [
-                {
-                    "subCategoryName": "RACE TIMING",
-                    "subCategoryId": "1"
-                },
-                {
-                    "subCategoryName": "PITCH MARKING",
-                    "subCategoryId": "2"
-                },
-                {
-                    "subCategoryName": "AUTOMATED CAMERAS",
-                    "subCategoryId": "3"
-                },
-                {
-                    "subCategoryName": "SMART BATS",
-                    "subCategoryId": "4"
-                },
-                {
-                    "subCategoryName": "SMART HELMETS",
-                    "subCategoryId": "5"
-                },
-                {
-                    "subCategoryName": "SHOT CLOCKS",
-                    "subCategoryId": "6"
-                },
-                {
-                    "subCategoryName": "MONITORING & TESTING",
-                    "subCategoryId": "7"
-                },
-                {
-                    "subCategoryName": "DISABILITY & MOBILITY",
-                    "subCategoryId": "8"
-                },
-                {
-                    "subCategoryName": "SNOW SPORTS",
-                    "subCategoryId": "9"
-                },
-                {
-                    "subCategoryName": "LOCKERS",
-                    "subCategoryId": "10"
-                }
-            ]
+          "subCategoryName": "Jerseys",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/JERSEYS.svg",
+          "subCategoryId": "3"
         },
         {
-            "categoryName": "WEARABLES",
-            "categoryId": "4",
-            "subCategory": [
-                {
-                    "subCategoryName": "SMART WATCHES",
-                    "subCategoryId": "1"
-                },
-                {
-                    "subCategoryName": "FITNESS TRACKERS",
-                    "subCategoryId": "2"
-                },
-                {
-                    "subCategoryName": "SMART CLOTHING",
-                    "subCategoryId": "3"
-                },
-                {
-                    "subCategoryName": "JUMPING DEVICES",
-                    "subCategoryId": "4"
-                },
-                {
-                    "subCategoryName": "HEALTH WEARABLES",
-                    "subCategoryId": "5"
-                },
-                {
-                    "subCategoryName": "SMART JERSEYS",
-                    "subCategoryId": "6"
-                },
-                {
-                    "subCategoryName": "SWIM SUITS",
-                    "subCategoryId": "7"
-                }
-            ]
+          "subCategoryName": "Pants",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/PANTS.svg",
+          "subCategoryId": "4"
         },
         {
-            "categoryName": "STADIUMS",
-            "categoryId": "5",
-            "subCategory": [
-                {
-                    "subCategoryName": "AUDIO SYSTEMS",
-                    "subCategoryId": "1"
-                },
-                {
-                    "subCategoryName": "VIDEO SYSTEMS",
-                    "subCategoryId": "2"
-                },
-                {
-                    "subCategoryName": "DRONES",
-                    "subCategoryId": "3"
-                },
-                {
-                    "subCategoryName": "TICKETING",
-                    "subCategoryId": "4"
-                },
-                {
-                    "subCategoryName": "SECURITY & SAFETY",
-                    "subCategoryId": "5"
-                },
-                {
-                    "subCategoryName": "INTERNET OF THINGS (IoT)",
-                    "subCategoryId": "6"
-                }
-            ]
+          "subCategoryName": "Polos",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/polos.svg",
+          "subCategoryId": "5"
         },
         {
-            "categoryName": "SPORTS TECHNOLOGY",
-            "categoryId": "6",
-            "subCategory": [
-                {
-                    "subCategoryName": "ATHLETE MANAGEMENT",
-                    "subCategoryId": "1"
-                },
-                {
-                    "subCategoryName": "SPORTS ANALYTICS",
-                    "subCategoryId": "2"
-                },
-                {
-                    "subCategoryName": "COACHING & TRAINING",
-                    "subCategoryId": "3"
-                },
-                {
-                    "subCategoryName": "FITNESS & COMPANION",
-                    "subCategoryId": "4"
-                },
-                {
-                    "subCategoryName": "VIRTUAL REALITY",
-                    "subCategoryId": "5"
-                },
-                {
-                    "subCategoryName": "SPORTS MANAGEMENT",
-                    "subCategoryId": "6"
-                },
-                {
-                    "subCategoryName": "SOCIAL & FAN ENGAGEMENT",
-                    "subCategoryId": "7"
-                }
-            ]
+          "subCategoryName": "Shirts",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/shirt.svg",
+          "subCategoryId": "6"
+        },
+        {
+          "subCategoryName": "Shorts",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/shorts.svg",
+          "subCategoryId": "7"
+        },
+        {
+          "subCategoryName": "SKIRTS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Apparel/SKIRTS.svg",
+          "subCategoryId": "8"
         }
-    ]
+      ]
+    },
+    {
+      "categoryName": "MERCHANDISE",
+      "categoryImage": "assets/img/Categories/MERCHANDISE.svg",
+      "categoryId": "2",
+      "subCategory": [
+        {
+          "subCategoryName": "AWARDS & TROPHIES",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/MERCHANDISE/AWARDS&TROPHIES.svg",
+          "subCategoryId": "1"
+        },
+        {
+          "subCategoryName": "BAGS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/MERCHANDISE/BAGS.svg",
+          "subCategoryId": "2"
+        },
+        {
+          "subCategoryName": "BALLS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/MERCHANDISE/BALLS.svg",
+          "subCategoryId": "3"
+        },
+        {
+          "subCategoryName": "BOTTLES",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/MERCHANDISE/BOTTLES.svg",
+          "subCategoryId": "4"
+        },
+        {
+          "subCategoryName": "GIFTS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/MERCHANDISE/GIFTS.svg",
+          "subCategoryId": "5"
+        }
+      ]
+    },
+    {
+      "categoryName": "EQUIPMENT",
+      "categoryImage": "assets/img/Categories/EQUIPMENT.svg",
+      "categoryId": "3",
+      "subCategory": [
+        {
+          "subCategoryName": "AUTOMATED CAMERAS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/AUTOMATED_CAMERAS.svg",
+          "subCategoryId": "1"
+        },
+        {
+          "subCategoryName": "SMART BATS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/cricket-bat.svg",
+          "subCategoryId": "2"
+        },
+        {
+          "subCategoryName": "SMART HELMETS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/cricket-helmet.svg",
+          "subCategoryId": "3"
+        },
+        {
+          "subCategoryName": "DISABILITY & MOBILITY",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/DISABILITY&MOBILITY.svg",
+          "subCategoryId": "4"
+        },
+        {
+          "subCategoryName": "LOCKERS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/LOCKERS.svg",
+          "subCategoryId": "5"
+        },
+        {
+          "subCategoryName": "MONITORING & TESTING",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/MONITORING&TESTING.svg",
+          "subCategoryId": "6"
+        },
+        {
+          "subCategoryName": "PITCH MARKING",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/pitch_marking.svg",
+          "subCategoryId": "7"
+        },
+        {
+          "subCategoryName": "RACE TIMING",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/race_timing.svg",
+          "subCategoryId": "8"
+        },
+        {
+          "subCategoryName": "SHOT CLOCKS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/shotclocks.svg",
+          "subCategoryId": "9"
+        },
+        {
+          "subCategoryName": "SNOW SPORTS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/SNOW_SPORTS.svg",
+          "subCategoryId": "10"
+        },
+        {
+          "subCategoryName": "WIFI SIGNAL",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/EQUIPMENT/wifi-signal.svg",
+          "subCategoryId": "11"
+        }
+      ]
+    },
+    {
+      "categoryName": "WEARABLES",
+      "categoryImage": "assets/img/Categories/WEARABLES.svg",
+      "categoryId": "4",
+      "subCategory": [
+        {
+          "subCategoryName": "FITNESS TRACKERS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/fitnesse_tracker.svg",
+          "subCategoryId": "1"
+        },
+        {
+          "subCategoryName": "HEALTH WEARABLES",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/HEALTH_WEARABLES.svg",
+          "subCategoryId": "2"
+        },
+        {
+          "subCategoryName": "JUMPING DEVICES",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/Jumping_DEVICES.svg",
+          "subCategoryId": "3"
+        },
+        {
+          "subCategoryName": "SMART CLOTHING",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/SMART_CLOTHING.svg",
+          "subCategoryId": "4"
+        },
+        {
+          "subCategoryName": "SMART JERSEYS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/SMART_JERSEYS.svg",
+          "subCategoryId": "5"
+        },
+        {
+          "subCategoryName": "SMART WATCHES",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/SMART_WATCHES.svg",
+          "subCategoryId": "6"
+        },
+        {
+          "subCategoryName": "SWIM SUITS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/WEARABLES/SWIM_SUITS.svg",
+          "subCategoryId": "7"
+        }
+      ]
+    },
+    {
+      "categoryName": "STADIUMS",
+      "categoryImage": "assets/img/Categories/STADIUMS.svg",
+      "categoryId": "5",
+      "subCategory": [
+        {
+          "subCategoryName": "AUDIO SYSTEMS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Stadiums/AUDIO_SYSTEMS.svg",
+          "subCategoryId": "1"
+        },
+        {
+          "subCategoryName": "DRONES",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Stadiums/DRONES.svg",
+          "subCategoryId": "2"
+        },
+        {
+          "subCategoryName": "INTERNET OF THINGS (IoT)",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Stadiums/IOT.svg",
+          "subCategoryId": "3"
+        },
+        {
+          "subCategoryName": "SECURITY & SAFETY",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Stadiums/SECURITY&SAFETY.svg",
+          "subCategoryId": "4"
+        },
+        {
+          "subCategoryName": "TICKETING",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Stadiums/TICKETING.svg",
+          "subCategoryId": "5"
+        },
+        {
+          "subCategoryName": "VIDEO SYSTEMS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/Stadiums/video-system.svg",
+          "subCategoryId": "6"
+        }
+      ]
+    },
+    {
+      "categoryName": "SPORTS TECHNOLOGY",
+      "categoryImage": "assets/img/Categories/SPORTS_TECHNOLOGY.svg",
+      "categoryId": "6",
+      "subCategory": [
+        {
+          "subCategoryName": "ATHLETE MANAGEMENT",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/Athlet_Management.svg",
+          "subCategoryId": "1"
+        },
+        {
+          "subCategoryName": "COACHING & TRAINING",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/coachingandtraining.svg",
+          "subCategoryId": "2"
+        },
+        {
+          "subCategoryName": "FITNESS & COMPANION",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/fitnessandmanagement.svg",
+          "subCategoryId": "3"
+        },
+        {
+          "subCategoryName": "SOCIAL & FAN ENGAGEMENT",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/SOCIAL&FAN_ENGAGEMENT.svg",
+          "subCategoryId": "4"
+        },
+        {
+          "subCategoryName": "SPORTS ANALYTICS",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/SPORTS_ANALYTICS.svg",
+          "subCategoryId": "5"
+        },
+        {
+          "subCategoryName": "SPORTS MANAGEMENT",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/SPORTS_MANAGEMENT.svg",
+          "subCategoryId": "6"
+        },
+        {
+          "subCategoryName": "VIRTUAL REALITY",
+          "subCategoryImage": "assets/img/Sub-categories/Sub/SPORTS_TECHNOLOGY/VIRTUAL_REALITY.svg",
+          "subCategoryId": "7"
+        }
+      ]
+    }
+  ]
 }

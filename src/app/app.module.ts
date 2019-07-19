@@ -23,6 +23,9 @@ import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
 //import { CertificatesComponent } from './sellerDashboard/certificates/certificates.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SliderModule } from 'angular-image-slider';
+
 
 @NgModule({
   declarations: [
@@ -34,9 +37,10 @@ import * as $ from 'jquery';
     SignupComponent,
     SearchComponent,
     ForBuyerComponent,
-    ForSellerComponent, 
+    ForSellerComponent,
     HowItWorksComponent,
-    PricingComponent, 
+    PricingComponent,
+
     //SellerDashboardComponent,
     //RfqComponent,
     //BookMarksComponent
@@ -48,7 +52,9 @@ import * as $ from 'jquery';
     BrowserAnimationsModule,
     BuyerModule,
     //SellerDashboardModule,
-    HttpClientModule
+    HttpClientModule,
+    SlickCarouselModule,
+    SliderModule
   ],
   exports: [BuyerModule,],
   providers: [],
