@@ -22,12 +22,13 @@ export class HomeComponent implements OnInit {
 
   }
   slideConfig = {
-    "slidesToShow": 4,
-    "slidesToScroll": 1,
-    "nextArrow": "<div class='nav-btn next-slide'></div>",
-    "prevArrow": "<div class='nav-btn prev-slide'></div>",
-    "dots": false,
-    "infinite": true
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    "nextArrow": "<div class='fa fa-arrow-right nextArrowBtn' style='position: absolute;z-index: 1000;top: 50%;right: -25px;'></div>",
+    "prevArrow": "<div class='fa fa-arrow-left prevArrowBtn' style='position: absolute;z-index: 1000;top: 50%;left: -25px;'></div>",
+    dots: false,
+    infinite: true,
+    arrows: true
   };
 
   public categoryItems() {
