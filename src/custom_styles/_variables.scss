@@ -119,8 +119,8 @@ $green-btn: #57bf57;
     left: -9999px;
   }
 
-  [type="radio"]:checked+label,
-  [type="radio"]:not(:checked)+label {
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
     position: relative;
     padding-left: 28px;
     cursor: pointer;
@@ -129,9 +129,9 @@ $green-btn: #57bf57;
     color: #666;
   }
 
-  [type="radio"]:checked+label:before,
-  [type="radio"]:not(:checked)+label:before {
-    content: '';
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -142,9 +142,9 @@ $green-btn: #57bf57;
     background: #fff;
   }
 
-  [type="radio"]:checked+label:after,
-  [type="radio"]:not(:checked)+label:after {
-    content: '';
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: "";
     width: 10px;
     height: 10px;
     background: #ed5324;
@@ -156,25 +156,30 @@ $green-btn: #57bf57;
     transition: all 0.2s ease;
   }
 
-  [type="radio"]:not(:checked)+label:after {
+  [type="radio"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
   }
 
-  [type="radio"]:checked+label:after {
+  [type="radio"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-
 }
 
 // End of Custom Radio Buttons
 
+// Media Queries for desktop
+$for-desktop: 991px;
 
-
-// Media Queries
+@mixin desktop {
+  @media screen and (max-width: #{$for-desktop}) {
+    @content;
+  }
+}
+// Media Queries for Tablet
 $for-tab: 768px;
 
 @mixin tablet {
@@ -182,3 +187,5 @@ $for-tab: 768px;
     @content;
   }
 }
+
+$for-mobile: 568px;

@@ -11,7 +11,7 @@ import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'seller', loadChildren: './seller-layout/seller-layout.module#SellerLayoutModule' },
+  { path: 'seller1', loadChildren: './seller-layout/seller-layout.module#SellerLayoutModule' },
   { path: 'login', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'search', component: SearchComponent },

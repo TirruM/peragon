@@ -35,7 +35,7 @@ export class SigninComponent implements OnInit {
       this.router.navigateByUrl("/buyerDashboard");
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
       this.sharedService.hideBuyerMenu.emit(false);
-      this.router.navigateByUrl("/seller/profile1");
+      this.router.navigateByUrl("/seller1/profile1");
     }
 
   }

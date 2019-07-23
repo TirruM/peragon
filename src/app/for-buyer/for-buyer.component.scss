@@ -6,41 +6,38 @@ $primary-bg-color: #f40785;
   #BANNER-SECTION
 \*------------------------------------*/
 
-
 .banner-image {
-    background-image: url('../../assets/img/women-shopping-online.jpg');
+  background-image: url("../../assets/img/women-shopping-online.jpg");
 }
 
 /*------------------------------------*\
   #FILTER-SECTION
 \*------------------------------------*/
 
-.buyer_search_filter{
-    .filter_header{
-        h2 {
-            color: black;
-            @extend %h-styles;
-        }
-
-       
+.buyer_search_filter {
+  .filter_header {
+    h2 {
+      color: black;
+      @extend %h-styles;
     }
-    .filter_wrapper {       
-        border: 2px solid #f2f2f2;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-        .filter_search_btn {
-            text-align: end;
-            color: #fff;
-        }
-        p {
-            font-size: 20px;
-            line-height: 1.85;
-            letter-spacing: 1.2px;
-            text-align: center;
-            color: #262626;
-            margin-bottom: 30px;
-        }
-    } 
+  }
+  .filter_wrapper {
+    border: 2px solid #f2f2f2;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    .filter_search_btn {
+      text-align: end;
+      color: #fff;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.85;
+      letter-spacing: 1.2px;
+      text-align: center;
+      color: #262626;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 /*------------------------------------*\
@@ -48,53 +45,60 @@ $primary-bg-color: #f40785;
 \*------------------------------------*/
 
 .about_manufacturers {
-    margin-top: 3rem;
-    .manu_header {     
-        h2 {
-            @extend %h-styles;
-        }
+  margin-top: 3rem;
+  .manu_header {
+    h2 {
+      @extend %h-styles;
     }
-    .manufact_card {
-        box-shadow: $box-shadow;
-        .manufact_logo {
-            height: 150px;
-            img {
-                width: 150px;
-            }
-        }        
-        .ratings {
-            color: yellow;
-            padding-right: 5px;
-        }
-        .reviews {
-            height: 85px;
-            p {
-                margin-bottom: 0.2rem;
-                font-size: 15px;
-                line-height: 1.85;
-                letter-spacing: 1.2px;
-                text-align: center;
-                color: #262626;
-                
-            }
-        }        
-        .manufact_details {
-            margin-top: 5px;
-            img {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                display: block;
-            }
-            .manufact_brand {
-                margin-left: 10px;
-                margin-top: 7px;
-                p {
-                    margin-bottom: 0;
-                }
-            }
-        }
+  }
+  .manufact_card {
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    .manufact_logo {
+      height: 150px;
+      img {
+        width: 150px;
+      }
     }
+    .ratings {
+      color: yellow;
+      padding-right: 5px;
+    }
+    .reviews {
+      height: 85px;
+      p {
+        margin-bottom: 0.2rem;
+        font-size: 15px;
+        line-height: 1.85;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #262626;
+      }
+      @include desktop {
+        height: 145px;
+      }
+    }
+    .manufact_details {
+      margin-top: 5px;
+      height: 70px;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+      }
+      .manufact_brand {
+        margin-left: 10px;
+        margin-top: 7px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @include desktop {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 /*------------------------------------*\
@@ -102,71 +106,77 @@ $primary-bg-color: #f40785;
 \*------------------------------------*/
 
 .sport-source-info {
-    margin-top: 3rem;
-    .sports_source {
-        width: 485px;
-        margin: auto;
-        text-align: center;
+  margin-top: 3rem;
+  .sports_source {
+    width: 485px;
+    margin: auto;
+    text-align: center;
+  }
+  .info {
+    box-shadow: $box-shadow;
+    padding: 3rem;
+    h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .info {
-        box-shadow: $box-shadow;
-        h2 {          
-            font-size: 22px;
-            margin-bottom: 20px;   
-            text-align: center;       
-        }
-        margin-bottom: 30px;
-            p {
-                @extend %list-p-styles;
-                @extend %tick-img;
-            }
+    margin-bottom: 30px;
+    p {
+      @extend %list-p-styles;
+      @extend %tick-img;
     }
+    // @include tablet {
+    //   padding-bottom: 75px;
+    // }
+    // @include desktop {
+    //   padding-bottom: 75px;
+    // }
+  }
 }
 
 /*------------------------------------*\
   #SUPPLIERSLIST-SECTION
 \*------------------------------------*/
-.manufacturers_list {    
-        h2 {
-            @extend %h-styles;
-        }
-   
-    .manufacturers_card {
-        // box-shadow: 0px 0px 0px 5px #d6e8eb59;
-        background-color: #d6e8eb59;
-        .card-wrapper {
-            padding: 1.5em;
-            small {
-                font-size: 85%;
-                letter-spacing: 1px;
-            }
-            p {
-                font-size: 20px;
-                line-height: 1.25;
-                letter-spacing: 1px;
-                text-align: left;
-                color: #262626;
-                margin-bottom: 10px;
-            }
-           
-        }
-       
-        .manufacturers_inner_card {
-            background-color: #9fcad836;
-            position: relative;
-            img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-            }
-            .manufacturers_logos {
-                position: absolute;
-                right: 10px;
-                bottom: 20px;
-                img {
-                    margin-right: 7px;
-                }
-            }
-        }
+.manufacturers_list {
+  h2 {
+    @extend %h-styles;
+  }
+
+  .manufacturers_card {
+    // box-shadow: 0px 0px 0px 5px #d6e8eb59;
+    background-color: #d6e8eb59;
+    .card-wrapper {
+      padding: 1.5em;
+      small {
+        font-size: 85%;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #262626;
+        margin-bottom: 10px;
+      }
     }
+
+    .manufacturers_inner_card {
+      background-color: #9fcad836;
+      position: relative;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .manufacturers_logos {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        img {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
 }

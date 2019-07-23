@@ -24,8 +24,8 @@ export class HomeComponent implements OnInit {
   slideConfig = {
     slidesToShow: 4,
     slidesToScroll: 1,
-    "nextArrow": "<div class='fa fa-arrow-right nextArrowBtn' style='position: absolute;z-index: 1000;top: 50%;right: -25px;'></div>",
-    "prevArrow": "<div class='fa fa-arrow-left prevArrowBtn' style='position: absolute;z-index: 1000;top: 50%;left: -25px;'></div>",
+    "nextArrow": "<div class='material-icons nextArrowBtn' style='position: absolute;z-index: 1000;top: 33%;right: -40px;font-size: 45px;color:#f2581d;'>arrow_forward_ios</div>",
+    "prevArrow": "<div class='material-icons prevArrowBtn' style='position: absolute;z-index: 1000;top: 33%;left: -25px;font-size: 45px;color:#f2581d;'>arrow_back_ios</div>",
     dots: false,
     infinite: true,
     arrows: true

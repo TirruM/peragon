@@ -15,7 +15,7 @@ const sellerRouter: Routes = [
     path: '',
     component: SellerLayoutComponent,
     children: [
-      { path: '', redirectTo: 'profile1', pathMatch: 'prefix'},
+      { path: '', redirectTo: 'profile1', pathMatch: 'prefix' },
       { path: 'profile1', component: SellerProfileComponentt },
       { path: 'messages', component: SellerMessagesComponent },
       { path: 'rfq', component: RfqComponent },

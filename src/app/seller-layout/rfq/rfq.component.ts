@@ -22,7 +22,7 @@ export class RfqComponent implements OnInit {
     );
   }
   onNavigateToRfqResponse() {
-    this.routes.navigateByUrl('sellerdashboard/rfqHome')
+    this.routes.navigateByUrl('rfqHome')
   }
 
 }

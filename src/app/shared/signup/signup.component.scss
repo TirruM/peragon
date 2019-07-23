@@ -1,61 +1,52 @@
 .tp-card {
-    max-width: 400px;
-    margin-bottom: 50px;
-    float: left;
-    margin: 30px
- }
- .buyer-signup-card {
-   max-width: 500px;
-   margin-bottom: 50px;
-   margin-left: 250px; 
-   margin-top: 20px;
+  max-width: 400px;
+  margin-bottom: 50px;
+  float: left;
+  margin: 30px;
 }
- .tp-header-image {
-    background-image: url('https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg');
-    background-size: cover;
- }
- .tp-buyer-image {
-   background-image: url('../../../assets/Images/buyer.png');
-   background-size: cover;
- }
- .signup-body{
-   left: 58%;
-   top: 20%;
-   margin-top: 50px;
-   margin-left: 150px; 
-   margin-bottom: 120px;
- }
-
-h4{
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 50px;
+.buyer-signup-card {
+  max-width: 500px;
+  margin-bottom: 50px;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+.tp-header-image {
+  background-image: url("https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg");
+  background-size: cover;
+}
+.tp-buyer-image {
+  background-image: url("../../../assets/Images/buyer.png");
+  background-size: cover;
 }
 
-.form-card{
-   width: 500px;
-  
+h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.form-card {
+  width: 500px;
 }
 
 .example-form {
-   min-width: 150px;
-   max-width: 500px;
-   width: 100%;
- }
- 
- .example-full-width {
-   width: 100%;
- }
- .back-btn{
-    margin-left: 25px;
-    border: 1px solid black;
- }
- .round-img img{
-   width: 40px;
-    height: 40px;
-    
- }
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
 
- .mat-card-header-text {
-   margin: 0 5px !important;
+.example-full-width {
+  width: 100%;
+}
+.back-btn {
+  margin-left: 25px;
+  border: 1px solid black;
+}
+.round-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.mat-card-header-text {
+  margin: 0 5px !important;
 }

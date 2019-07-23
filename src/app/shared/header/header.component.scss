@@ -1,115 +1,135 @@
 @import "../../../custom_styles/variables";
 
 .nav-bg {
-    padding-bottom: 20px;
-    background-color: #152331;
-    // border-width: 0px;
-    // -webkit-box-shadow: 0px 0px;
-    // box-shadow: 0px 0px;
-    // background-color: rgba(0,0,0,0.0);
-    // background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    // background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    // background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    // height: 63px;
+  padding-bottom: 20px;
+  background-color: #152331;
+  @include tablet {
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-bottom: 26px;
+  }
 }
+.navbar-toggler {
+  border-color: rgb(242, 88, 29);
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 88, 29)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  @extend %custom-input-types;
+}
+
 .logo {
-    height: 60px;
-    a {
-        padding: 20px 10px;
-    }
+  height: 60px;
+  a {
+    padding: 20px 10px;
+  }
 }
 .navbar-nav .current::after {
-    @extend %header-styles;      
-    @include tablet {
-        width: 0px;
-        height: 0px;
-    } 
+  @extend %header-styles;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
-.nav-items{
-    padding-top: 20px;
-    ul li {
-        padding: 0 15px;
-        a {
-            font-family: "lato",sans-serif;
-            font-weight: 700;
-            color: #fff;
-        }
+
+.nav-items {
+  padding-top: 20px;
+  ul li {
+    padding: 0 15px;
+    a {
+      font-family: "lato", sans-serif;
+      font-weight: 700;
+      color: #fff;
     }
-} 
+  }
+}
 
 .join-btn {
-    background-image: $gradient_bg_color;
-    background-color: #152331;
-    border-radius: 30px;
-    margin: 0 15px;
-    height: 45px;
+  background-image: $gradient_bg_color;
+  background-color: #152331;
+  border-radius: 30px;
+  margin: 0 15px;
+  height: 45px;
+  &:hover {
+    box-shadow: 0px 4px 10px #f2581d;
+  }
+  @include tablet {
+    background: none;
+    margin: 0;
     &:hover {
-        box-shadow: 0px 4px 10px #f2581d;
+      box-shadow: none;
     }
-    @include tablet {
-        background: none;
-        margin: 0;
-        &:hover {
-            box-shadow: none;
-        }
+  }
+  @include desktop {
+    background-image: none;
+    margin: 0;
+    &:hover {
+      box-shadow: none;
     }
+  }
 }
 .login-btn {
-    background-color: #fff;
-    border-radius: 30px;
-    margin-right: 15px;
-    height: 45px;
-    a {
-        color: #000 !important;
-        &:hover {
-            color: #f2581d !important;
-        }
+  background-color: #fff;
+  border-radius: 30px;
+  margin-right: 15px;
+  height: 45px;
+  a {
+    color: #000 !important;
+    &:hover {
+      color: #f2581d !important;
     }
-    @include tablet {
-        background: none;
-        
-        a {
-            color: #fff !important;
-            &:hover {
-                color: #fff !important;
-            }
-        }
-        
-    }
-    
-}
+  }
+  @include tablet {
+    background: none;
 
+    a {
+      color: #fff !important;
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+  @include desktop {
+    background-image: none;
+    margin: 0;
+    background-color: #152331;
+    a {
+      color: #fff !important;
+    }
+  }
+}
 
 /* start  buyer dropdown */
 
-    // .buyer-menu ul {
-    //     margin-left: 788px;
-        
-    // }
-    .forBuyer-menu-items {
-        color: #000!important;
+// .buyer-menu ul {
+//     margin-left: 788px;
 
-        &:hover {
-            color: #f2581d !important;
-        }
-    }
+// }
+.forBuyer-menu-items {
+  color: #000 !important;
 
-/* end buyer dropdown */    
+  &:hover {
+    color: #f2581d !important;
+  }
+}
+
+/* end buyer dropdown */
 /* start header profile  */
 
 .dropdown {
-    position: relative;
-    
-    img {
-        width: 28px;
-        margin-right: 8px;
-        border-radius: 50%;
-    }
+  position: relative;
 
-    .header-profile-text {
-        margin: 6px;
-    }
-    
+  img {
+    width: 28px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+
+  .header-profile-text {
+    margin: 6px;
+  }
 }
 
 /* End profile   */

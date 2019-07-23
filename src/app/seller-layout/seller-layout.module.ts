@@ -25,9 +25,9 @@ import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
-    SellerLayoutComponent, 
-    DashboardTestComponent, 
-    SideBarComponent, 
+    SellerLayoutComponent,
+    DashboardTestComponent,
+    SideBarComponent,
     SellerProfileComponentt,
     SellerMessagesComponent,
     RfqComponent,
@@ -51,7 +51,7 @@ import { SearchComponent } from './search/search.component';
     ReactiveFormsModule,
     ModalModule.forRoot()
   ],
-  entryComponents: [ AddProductModelComponent ],
+  entryComponents: [AddProductModelComponent],
   exports: [
     AboutComponent,
     ProductsComponent,
@@ -59,7 +59,8 @@ import { SearchComponent } from './search/search.component';
     CertificatesComponent,
     LocationsComponent,
     ShowRoomsComponent,
-    AddProductModelComponent
+    AddProductModelComponent,
+    RfqHomeComponent
   ]
 })
 export class SellerLayoutModule { }
