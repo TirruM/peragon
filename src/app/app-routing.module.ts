@@ -8,6 +8,7 @@ import { ForBuyerComponent } from './for-buyer/for-buyer.component';
 import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PricingComponent } from './pricing/pricing.component';
+//import { RfqHomeComponent } from './seller-layout/rfq-home/rfq-home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'forSeller', component: ForSellerComponent },
   { path: 'howitworks', component: HowItWorksComponent },
   { path: 'pricing', component: PricingComponent },
+  // { path: 'rfqHome', component: PricingComponent }
 
 ];
 
