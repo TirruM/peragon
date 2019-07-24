@@ -13,10 +13,10 @@ export class RfqHomeComponent implements OnInit {
   ngOnInit() {
   }
   onBackToRfq() {
-    this.routes.navigateByUrl('sellerdashboard/rfq')
+    this.routes.navigateByUrl('seller/rfq')
   }
   onReplyRfq() {
     alert("Your are successfully sent to Buyer");
-    this.routes.navigateByUrl('sellerdashboard/rfq');
+    this.routes.navigateByUrl('seller/rfq');
   }
 }
