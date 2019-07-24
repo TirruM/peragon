@@ -73,12 +73,12 @@ export class SignupComponent implements OnInit {
     this.sharedService.hideButtons.emit(true);
     localStorage.setItem("manufactureData", JSON.stringify(userObj));
     if (localStorage.getItem("manufacturelogin_flag") == "0") {
-      this.router.navigateByUrl("/seller1/profile1");
+      this.router.navigateByUrl("/seller/profile1");
     } if (localStorage.getItem("manufacturelogin_flag") == "1") {
-      this.router.navigateByUrl("/seller1/profile1");
+      this.router.navigateByUrl("/seller/profile1");
     } else {
       localStorage.setItem("manufacturelogin_flag", "0");
-      this.router.navigateByUrl("/seller1/profile1");
+      this.router.navigateByUrl("/seller/profile1");
     }
 
   }
