@@ -149,10 +149,10 @@
       <h2>Categories</h2>
       <hr />
       <div class="row d-flex" *ngFor="let item of outerArray; let i = index">
-        <div class="col-md-4 py-2" *ngFor="let categories of item">
+        <div class="col-md-4 py-2" *ngFor="let categories of item;let j=index">
           <div class="category_box">
             <a href="#{{ categories.categoryId }}" data-toggle="collapse" aria-expanded="true"
-              (click)="onCollapsible(categories,i)">
+              (click)="onCollapsible(categories,i,j)">
               <div class="buyers_card mb-3 p-3">
                 <div class="card-wrapper">
                   <div class="rfqs">
@@ -165,8 +165,30 @@
               </div>
             </a>
           </div>
+          <div *ngIf="mobileWidth && innerRowIndex === j && rowIndex === i">
+            <div *ngIf="mobileWidth" class="sub-category-container">
+              <div class="col py-2 order-md-last collapse fade" id="{{ currentCategoryObj.categoryId }}">
+                <div class="d-flex flex-nowrap justify-content-space sub-category-items">
+                  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                    <div ngxSlickItem class="slide" *ngFor="let subcategories of currentCategoryObj.subCategory">
+                      <div class="buyers_card mb-3 p-3 mt-1">
+                        <div class="card-wrapper">
+                          <div class="rfqs">
+                            <img [src]="subcategories.subCategoryImage" alt="Compression Gear" />
+                          </div>
+                          <div class="text-center manfact_details_card">
+                            <p>{{ subcategories.subCategoryName }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ngx-slick-carousel>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div *ngIf="rowIndex === i" class="sub-category-container">
+        <div *ngIf="rowIndex === i" class="sub-category-container" [hidden]="mobileWidth">
           <div class="col py-2 order-md-last collapse fade" id="{{ currentCategoryObj.categoryId }}">
             <div class="d-flex flex-nowrap justify-content-space sub-category-items">
               <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
@@ -184,9 +206,6 @@
                 </div>
               </ngx-slick-carousel>
             </div>
-
-
-
           </div>
         </div>
       </div>
