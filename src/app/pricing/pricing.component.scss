@@ -11,6 +11,9 @@
 h2 {
     font-size: 30px;
     margin-bottom: 35px;
+    @include mobile {
+        font-size: 20px;
+    }
 }
 .chooseyourtype {
     .type-card {

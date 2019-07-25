@@ -3,8 +3,11 @@
 .nav-bg {
   padding-bottom: 20px;
   background-color: #152331;
+  @include mobile {
+    padding-bottom: 25px;
+  }
   @include tablet {
-    padding-bottom: 26px;
+    padding-bottom: 25px;
   }
   @include desktop {
     padding-bottom: 26px;

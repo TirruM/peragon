@@ -29,6 +29,9 @@
             }
     h2 {
         @extend %h2-styles;
+        @include mobile {
+            font-size: 20px;
+        }
     }
     .list-para {
         margin-bottom: 30px;
@@ -37,6 +40,9 @@
             padding: 0px 70px 0px 46px;
             line-height: 2;
             @extend %tick-img;
+            @include mobile {
+                font-size: 14px;
+            }
         }
     }
     .res-img {
