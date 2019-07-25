@@ -12,4 +12,6 @@ export class BroadcastserviceService {
 
   hideBuyerMenu = new EventEmitter<any>();
 
+  hideFooter = new EventEmitter<any>();
+
 }

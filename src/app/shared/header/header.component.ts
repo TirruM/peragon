@@ -14,30 +14,35 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router, private sharedService: BroadcastserviceService) { }
 
   ngOnInit() {
-    if (localStorage.getItem("buyer_flag") == "1") {
-      this.signInFlag = false;
-    }
+    // if (localStorage.getItem("buyer_flag") == "1") {
+    //   this.signInFlag = false;
+    // }
   }
   ngAfterContentInit() {
 
     //this.sharedService.cartData.emit("ngAfterContentInit: " + this.data);
 
     this.sharedService.hideButtons.subscribe((data: any) => {
-      console.log("seller login Dat111a--->",data);
+      console.log("seller login Dat111a--->", data);
       if (data == true) {
         this.signInFlag = false;
+      } else {
+        this.signInFlag = true;
       }
+      this.dropDownMenu = data;
     });
 
-    this.sharedService.hideBuyerMenu.subscribe((buyerData) => {
-      this.buyerDropDown = buyerData;
-      console.log("seller login Data--->",this.buyerDropDown);
-      if (buyerData == true) {
-        this.dropDownMenu = true;
-      }else{
-        this.dropDownMenu = false;
-      }
-    })
+
+
+    // this.sharedService.hideBuyerMenu.subscribe((buyerData) => {
+    //   this.buyerDropDown = buyerData;
+    //   console.log("seller login Data--->",this.buyerDropDown);
+    //   if (buyerData == true) {
+    //     this.dropDownMenu = true;
+    //   }else{
+    //     this.dropDownMenu = false;
+    //   }
+    // })
 
   }
   public signIn() {
