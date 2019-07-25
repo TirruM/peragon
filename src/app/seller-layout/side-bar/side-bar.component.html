@@ -1,21 +1,21 @@
 <div class="" id="sidebar-wrapper">
-  <div class="seller-info d-flex">
+  <div class="seller-info d-flex flex-sm-column flex-lg-row">
     <div class="seller-image">
       <img src="assets/img/user2-160x160.jpg" class="rounded-circle" alt="User Image">
     </div>
-    <div class="info px-3">
+    <div class="info">
       <p>Best Way Fashion</p>
     </div>
   </div>
   <div class="list-group list-items-wrapper">
-    <nav class="navbar">
+    <nav class="navbar custom-navbar">
       <ul class="navbar-nav">
-        <li *ngFor="let menuItem of menuItems" class="nav-item">
-          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
-            <div (click)="menuClick(menuItem)" class="sidebar-links">
-              <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
-              <p class="d-inline">{{menuItem.title}}</p>
-            </div>
+        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem">
+          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive" (click)="menuClick(menuItem)">
+            <!-- <div (click)="menuClick(menuItem)" class="sidebar-links"> -->
+            <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
+            <span>{{menuItem.title}}</span>
+            <!-- </div> -->
           </a>
         </li>
       </ul>

@@ -172,7 +172,7 @@ $green-btn: #57bf57;
 // End of Custom Radio Buttons
 
 // Media Queries for desktop
-$for-desktop: 991px;
+$for-desktop: 1200px;
 
 @mixin desktop {
   @media screen and (max-width: #{$for-desktop}) {
@@ -180,12 +180,18 @@ $for-desktop: 991px;
   }
 }
 // Media Queries for Tablet
-$for-tab: 768px;
+$for-tab: 991px;
 
 @mixin tablet {
   @media screen and (max-width: #{$for-tab}) {
     @content;
   }
 }
+// Media Queries for Mobile
+$for-mobile: 768px;
 
-$for-mobile: 568px;
+@mixin mobile {
+  @media screen and (max-width: #{$for-mobile}) {
+    @content;
+  }
+}
