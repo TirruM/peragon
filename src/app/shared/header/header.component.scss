@@ -47,6 +47,16 @@
       color: #fff;
     }
   }
+  .inner-dropdown {
+    li {
+      a {
+        color: #000!important;
+        &:hover {
+          color: #f2581d !important;
+        }
+      }
+    }
+  }
 }
 
 .join-btn {
