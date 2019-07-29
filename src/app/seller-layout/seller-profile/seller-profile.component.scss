@@ -65,33 +65,57 @@
 }
 
 .box-body-sub-content {
-  display: inline-flex;
+  // display: inline-flex;
+  padding: 20px 100px;
   margin-bottom: 12px;
+  @include mobile {
+    padding: 0;
+  }
+  h6 {
+    @include mobile {
+      padding-left: 50px;
+    }
+  }
   .sub-content {
     font-size: 12px;
-    table {
-      margin-left: 105px;
-      th {
-        text-align: justify;
-        text-align-last: right;
-      }
-      tr {
-        .left {
-          text-align: justify;
-          text-align-last: right;
+    @include mobile {
+      padding: 10px 50px;
+    }
+    .sub-content-wrapper {
+      .group-label {
+        @include mobile {
+          flex-basis: 100px;
         }
-        .right {
-          text-align: justify;
-          text-align-last: left;
-          span {
-            margin-left: 27px;
-          }
+      }
+      .groups {
+        padding-left: 10px;
+      }
+      @include mobile {
+        .pl-27 {
+          padding-left: 27px;
         }
       }
     }
-    .sub-content-margin {
-      margin-left: 70px;
-    }
+    // table {
+    //   margin-left: 105px;
+    //   th {
+    //     text-align: justify;
+    //     text-align-last: right;
+    //   }
+    //   tr {
+    //     .left {
+    //       text-align: justify;
+    //       text-align-last: right;
+    //     }
+    //     .right {
+    //       text-align: justify;
+    //       text-align-last: left;
+    //       span {
+    //         margin-left: 27px;
+    //       }
+    //     }
+    //   }
+    // }
 
     .product-label {
       background-color: #ffffff;
