@@ -5,13 +5,15 @@
       <form [formGroup]="loginForm" class="example-form">
 
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="E-mail" [formControl]="loginForm.controls['email']" type="email">
+          <input matInput placeholder="E-mail" id="0" [formControl]="loginForm.controls['email']" type="email">
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="E-mail" placeholder="Password" [formControl]="loginForm.controls['password']" type="password">
+          <input matInput placeholder="E-mail" placeholder="Password" [formControl]="loginForm.controls['password']"
+            type="password">
         </mat-form-field>
         <!-- <mat-form-field class="example-full-width"> -->
-        <button type="button" mat-raised-button class="join-btn" [disabled]="loginForm.invalid" (click)="login()">Login</button>
+        <button type="button" mat-raised-button class="join-btn" [disabled]="loginForm.invalid"
+          (click)="login()">Login</button>
         <!-- </mat-form-field> -->
 
       </form>

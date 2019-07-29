@@ -1,4 +1,7 @@
 <div class="" id="sidebar-wrapper">
+  <button class="navbar-toggler sidebartoggler" type="button" data-toggle="collapse" data-target="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <div class="seller-info d-flex flex-sm-column flex-lg-row">
     <div class="seller-image">
       <img src="assets/img/user2-160x160.jpg" class="rounded-circle" alt="User Image">
@@ -8,8 +11,11 @@
     </div>
   </div>
   <div class="list-group list-items-wrapper">
-    <nav class="navbar custom-navbar">
-      <ul class="navbar-nav">
+
+    <nav class="navbar custom-navbar sidebar-nav">
+
+      <ul class="navbar-nav" id="sidebarnav">
+
         <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem">
           <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive" (click)="menuClick(menuItem)">
             <!-- <div (click)="menuClick(menuItem)" class="sidebar-links"> -->
