@@ -32,11 +32,14 @@ h3.h3 {
 \*------------------------------------*/
 
 .buyer-manufacturers {
-  margin: 80px 0;
+  margin: 80px;
 
   .bm-head {
     h2 {
       @extend %h-styles;
+      @include mobile {
+        font-size: 20px;
+      }
     }
 
     p {
@@ -46,12 +49,18 @@ h3.h3 {
       text-align: center;
       color: #262626;
       margin-bottom: 30px;
+      @include mobile {
+        font-size: 14px;
+      }
     }
   }
 
   .bm-list-items {
     h2 {
       @extend %h-styles;
+      @include mobile {
+        font-size: 25px;
+      }
     }
 
     .list-para {
@@ -60,12 +69,18 @@ h3.h3 {
       p {
         @extend %list-p-styles;
         @extend %tick-img;
+        @include mobile {
+          font-size: 14px;
+        }
       }
     }
 
     .signup-btn {
       @extend %btn-styles;
       padding: 6px 26px;
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
   }
 }
