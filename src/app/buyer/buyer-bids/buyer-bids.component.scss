@@ -22,6 +22,28 @@
 
     .create-rfq {
       margin-top: 30px;
+      .indicators {
+        margin-top: 11px;
+        margin-bottom: 30px;
+        ol{
+          bottom: -22px!important;
+          li {
+            background-color: #c2b3b3;
+          }
+        }
+        .carousel-control-prev-icon:after {
+          content: '<';
+          color: #f2581d!important;
+          background-image: none!important;
+          font-size: 45px;
+        }
+        .carousel-control-next-icon:after {
+          content: '>';
+          color: #f2581d!important;
+          background-image: none!important;
+          font-size: 45px;
+        }
+      }
     }
 
     h3 {
@@ -36,6 +58,18 @@
       border-radius: 26px;
       width: 106px;
       letter-spacing: 1px;
+      @include mobile {
+        margin-top: 0px;
+        width:67px;
+        font-size: 10px;
+        margin-bottom: 12px;
+      }
+      @include tablet {
+        margin-top: 0px;
+        width:67px;
+        font-size: 10px;
+        margin-bottom: 12px;
+      }
     }
 
     .create_rfqs {
@@ -62,7 +96,12 @@
   .rfq-text {
     font-size: 14px;
     padding: 75px 16px 0;
-
+    @include mobile {
+      padding: 75px 16px 8px 37px;
+    }
+    @include tablet {
+      padding: 75px 16px 8px 37px;
+    }
     p {
       margin-bottom: 0;
     }
@@ -116,6 +155,10 @@
 .manufact_card {
   box-shadow: $box-shadow;
   margin-right: 20px;
+  @include mobile {
+    margin-top: 16px;
+    margin-right: 0px;
+  }
 
   .manufact_logo {
     height: 150px;
@@ -132,7 +175,14 @@
 
   .reviews {
     height: 85px;
-
+    @include tablet {
+      height: 158px;
+    }
+    .reviews3 {
+      @include tablet {
+        height: 130px;
+      }
+    }
     p {
       margin-bottom: 0.2rem;
       font-size: 15px;
@@ -140,12 +190,12 @@
       letter-spacing: 1.2px;
       text-align: center;
       color: #262626;
-
     }
+    
   }
 
   .manufact_details {
-    margin-top: 5px;
+    // margin-top: 5px;
 
     img {
       width: 60px;
@@ -164,8 +214,18 @@
     }
   }
 }
-
+.custom-style {
+  @include tablet{
+    margin-top: 0px;
+  }
+}
 .margin-styles {
   margin-top: 120px;
   margin-bottom: 45px;
+  @include mobile {
+    margin-top: 345px;
+  }
+  @include tablet {
+    margin-top: 345px;
+  }
 }

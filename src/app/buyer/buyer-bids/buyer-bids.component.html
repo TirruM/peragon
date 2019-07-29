@@ -12,69 +12,153 @@
     </div>
   </section>
 
-  <section class="container-on-img">
-    <div class="container">
-      <div>
-        <h3>Requests for Quotations</h3>
-        <button class="btn btn-md view-all-btn">View All</button>
-      </div>  
-      <div class="row create-rfq">
-        <div class="d-flex flex-wrap">
-          <div class="col-md-3">
-            <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
-              <div>
-                <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
+  <section>
+    <div class="container-on-img">
+      <div class="container">
+        <div>
+          <h3>Requests for Quotations</h3>
+          <button class="btn btn-md view-all-btn">View All</button>
+        </div> 
+        <!-- Web view  -->
+        <div *ngIf="!isCarousel">  
+          <div class="row create-rfq">
+            <div class="d-flex flex-wrap">
+              <div class="col-md-3">
+                  <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
+                    <div>
+                      <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
+                    </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="manufact_card rfqs" (click)="rfqDetails();">
-              <div>
+              <div class="col-md-3">
+                    <div class="manufact_card rfqs" (click)="rfqDetails();">
+                      <div>
 
+                      </div>
+                      <div class="rfq-text">
+                        <p class="rfq-timing">3 Days Ago</p>
+                        <p class="rfq-text-styles">Soccer Balls-Yellow & Green</p>
+                      </div>
+                      <div class="rfq_footer">
+                        <i class="fa fa-envelope-o rfq-icon"><span></span></i>
+                        <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
+                      </div>
+                    </div>
               </div>
-              <div class="rfq-text">
-                <p class="rfq-timing">3 Days Ago</p>
-                <p class="rfq-text-styles">Soccer Balls-Yellow & Green</p>
-              </div>
-              <div class="rfq_footer">
-                <i class="fa fa-envelope-o rfq-icon"><span></span></i>
-                <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="manufact_card rfqs">
-              <div>
+              <div class="col-md-3">
+                    <div class="manufact_card rfqs">
+                      <div>
 
+                      </div>
+                      <div class="rfq-text">
+                        <p class="rfq-timing">2018-06-26</p>
+                        <p class="rfq-text-styles">Training Cones-Black & White</p>
+                      </div>
+                      <div class="rfq_footer">
+                        <i class="fa fa-envelope-o rfq-icon"><span></span></i>
+                        <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
+                      </div>
+                    </div>
               </div>
-              <div class="rfq-text">
-                <p class="rfq-timing">2018-06-26</p>
-                <p class="rfq-text-styles">Training Cones-Black & White</p>
-              </div>
-              <div class="rfq_footer">
-                <i class="fa fa-envelope-o rfq-icon"><span></span></i>
-                <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="manufact_card rfqs">
-              <div>
+              <div class="col-md-3">
+                    <div class="manufact_card rfqs">
+                      <div>
 
-              </div>
-              <div class="rfq-text">
-                <p class="rfq-timing">2018-06-26</p>
-                <p class="rfq-text-styles">Training Cones-Black & White</p>
-              </div>
-              <div class="rfq_footer">
-                <i class="fa fa-envelope-o rfq-icon inactive_icon" ></i>
-                <label class="rfq-status btn btn-outline-danger btn-sm">Inactive</label>
+                      </div>
+                      <div class="rfq-text">
+                        <p class="rfq-timing">2018-06-26</p>
+                        <p class="rfq-text-styles">Training Cones-Black & White</p>
+                      </div>
+                      <div class="rfq_footer">
+                        <i class="fa fa-envelope-o rfq-icon inactive_icon" ></i>
+                        <label class="rfq-status btn btn-outline-danger btn-sm">Inactive</label>
+                      </div>
+                    </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+        <!-- mobile / tab view  -->
+        <div *ngIf="isCarousel">  
+          <div class="create-rfq">
+              <div class="">
+                  <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
+                    <div>
+                      <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
+                    </div>
+                  </div>
+                </div>
+          </div>   
+          <div class="create-rfq">
+            <!-- <div class="d-flex flex-wrap"> -->
+              <div id="myCarousel" class="carousel slide indicators" data-ride="carousel">
+                <!-- <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>  -->
+                <div class="carousel-inner">
+                  <!-- <div class="d-flex flex-wrap"> -->
+                    <div class="carousel-item active">
+                            <div class="manufact_card rfqs" (click)="rfqDetails();">
+                              <div>
+            
+                              </div>
+                              <div class="rfq-text">
+                                <p class="rfq-timing">3 Days Ago</p>
+                                <p class="rfq-text-styles">Soccer Balls-Yellow & Green</p>
+                              </div>
+                              <div class="rfq_footer">
+                                <i class="fa fa-envelope-o rfq-icon"><span></span></i>
+                                <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="manufact_card rfqs">
+                              <div>
+            
+                              </div>
+                              <div class="rfq-text">
+                                <p class="rfq-timing">2018-06-26</p>
+                                <p class="rfq-text-styles">Training Cones-Black & White</p>
+                              </div>
+                              <div class="rfq_footer">
+                                <i class="fa fa-envelope-o rfq-icon"><span></span></i>
+                                <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="manufact_card rfqs">
+                              <div>
+            
+                              </div>
+                              <div class="rfq-text">
+                                <p class="rfq-timing">2018-06-26</p>
+                                <p class="rfq-text-styles">Training Cones-Black & White</p>
+                              </div>
+                              <div class="rfq_footer">
+                                <i class="fa fa-envelope-o rfq-icon inactive_icon" ></i>
+                                <label class="rfq-status btn btn-outline-danger btn-sm">Inactive</label>
+                              </div>
+                            </div>
+                    </div>
+                  <!-- </div> -->
+                </div> 
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>  
+            <!-- </div> -->
+          </div> 
+        </div>   
       </div>
-    </div>
+    </div>  
   </section>
 </div>
 <section>
@@ -144,13 +228,13 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
             </div>
-            <div class="reviews">
+            <div class="reviews3">
               <p>"Repeat orders and maintaining
                 upto date inventory helps us in
                 receiving goods on time"
               </p>
             </div>
-            <div class="d-flex manufact_details justify-content-center">
+            <div class="d-flex manufact_details justify-content-center custom-style">
               <img src="assets/img/para-sports-logo.png" alt="Para Sports logo">
               <div class="manufact_brand">
                 <p>Indian Paralympics</p>
