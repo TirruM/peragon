@@ -91,8 +91,14 @@
         font-weight: 600;
       }
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (min-width: 992px) {
         width: 215px;
+      }
+      @include tablet {
+        width: 320px;
+      }
+      @include mobile {
+        width: 280px;
       }
     }
   }
