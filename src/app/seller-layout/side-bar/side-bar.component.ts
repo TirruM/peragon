@@ -24,6 +24,7 @@ export const ROUTES: RouteInfo[] = [
 })
 export class SideBarComponent implements OnInit {
   menuItems: any[];
+  show: boolean = false;
 
   constructor(private router: Router) { }
 
@@ -48,7 +49,9 @@ export class SideBarComponent implements OnInit {
     }
     return true;
   }; */
-
+  public toggleCollapse() {
+    this.show = !this.show;
+  }
   public navigateToLogin() {
     this.router.navigate(['/login']);
   }

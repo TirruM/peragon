@@ -4,7 +4,7 @@
   position: relative;
 
   .banner-image {
-    background-image: url('../../../assets/img/women-shopping-online.jpg');
+    background-image: url("../../../assets/img/women-shopping-online.jpg");
 
     .image-text-box {
       position: absolute;
@@ -12,10 +12,13 @@
       top: 140px;
     }
   }
-
+}
+.rfqs-create-wrapper {
+  position: relative;
+  top: -112px;
   .container-on-img {
     background-color: #ffffff;
-    position: absolute;
+    // position: absolute;
     top: 404px;
     left: 73px;
     padding: 20px;
@@ -25,24 +28,28 @@
       .indicators {
         margin-top: 11px;
         margin-bottom: 30px;
-        ol{
-          bottom: -22px!important;
+        ol {
+          bottom: -22px !important;
           li {
             background-color: #c2b3b3;
           }
         }
         .carousel-control-prev-icon:after {
-          content: '<';
-          color: #f2581d!important;
-          background-image: none!important;
+          content: "<";
+          color: #f2581d !important;
+          background-image: none !important;
           font-size: 45px;
         }
         .carousel-control-next-icon:after {
-          content: '>';
-          color: #f2581d!important;
-          background-image: none!important;
+          content: ">";
+          color: #f2581d !important;
+          background-image: none !important;
           font-size: 45px;
         }
+      }
+      @include tablet {
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -60,21 +67,21 @@
       letter-spacing: 1px;
       @include mobile {
         margin-top: 0px;
-        width:67px;
+        width: 67px;
         font-size: 10px;
         margin-bottom: 12px;
       }
       @include tablet {
         margin-top: 0px;
-        width:67px;
+        width: 67px;
         font-size: 10px;
         margin-bottom: 12px;
       }
     }
 
     .create_rfqs {
-      height: 200px;
-      width: 260px;
+      height: 210px;
+      width: 280px;
 
       .rfq-btn {
         background-color: #57bf57;
@@ -83,149 +90,140 @@
         padding: 7px 21px;
         font-weight: 600;
       }
-    }
-  }
-}
 
-
-
-.rfqs {
-  height: 200px;
-  width: 260px;
-
-  .rfq-text {
-    font-size: 14px;
-    padding: 75px 16px 0;
-    @include mobile {
-      padding: 75px 16px 8px 37px;
-    }
-    @include tablet {
-      padding: 75px 16px 8px 37px;
-    }
-    p {
-      margin-bottom: 0;
-    }
-  }
-
-  .rfq_footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 17px 10px;
-
-    i {
-      position: relative;
-      padding: 4px;
-
-      span {
-        position: absolute;
-        right: 1px;
-        top: 2px;
-        width: 7px;
-        height: 7px;
-        background-color: #f53737;
-        border-radius: 50%;
+      @media screen and (max-width: 1200px) {
+        width: 215px;
       }
     }
-
-    .inactive_icon {
-      visibility: hidden;
-    }
   }
 
-  .rfq-timing {
-    font-weight: 700;
-  }
-
-  .rfq-text-styles {
-    padding-right: 90px;
-  }
-
-  .rfq-icon {
-    font-size: 20px;
-    color: #f53737;
-  }
-
-  .rfq-status {
-    font-weight: 500;
-  }
-
-}
-
-
-.manufact_card {
-  box-shadow: $box-shadow;
-  margin-right: 20px;
-  @include mobile {
-    margin-top: 16px;
-    margin-right: 0px;
-  }
-
-  .manufact_logo {
-    height: 150px;
-
-    img {
-      width: 150px;
-    }
-  }
-
-  .ratings {
-    color: yellow;
-    padding-right: 5px;
-  }
-
-  .reviews {
-    height: 85px;
-    @include tablet {
-      height: 158px;
-    }
-    .reviews3 {
+  .rfqs {
+    .rfq-text {
+      font-size: 14px;
+      padding: 75px 16px 0;
+      @include mobile {
+        padding: 75px 16px 8px 37px;
+      }
       @include tablet {
-        height: 130px;
+        padding: 75px 16px 8px 37px;
       }
-    }
-    p {
-      margin-bottom: 0.2rem;
-      font-size: 15px;
-      line-height: 1.85;
-      letter-spacing: 1.2px;
-      text-align: center;
-      color: #262626;
-    }
-    
-  }
-
-  .manufact_details {
-    // margin-top: 5px;
-
-    img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: block;
-    }
-
-    .manufact_brand {
-      margin-left: 10px;
-      margin-top: 7px;
-
       p {
         margin-bottom: 0;
       }
     }
+
+    .rfq_footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px 10px;
+
+      i {
+        position: relative;
+        padding: 4px;
+
+        span {
+          position: absolute;
+          right: 1px;
+          top: 2px;
+          width: 7px;
+          height: 7px;
+          background-color: #f53737;
+          border-radius: 50%;
+        }
+      }
+
+      .inactive_icon {
+        visibility: hidden;
+      }
+    }
+
+    .rfq-timing {
+      font-weight: 700;
+    }
+
+    .rfq-text-styles {
+      padding-right: 90px;
+    }
+
+    .rfq-icon {
+      font-size: 20px;
+      color: #f53737;
+    }
+
+    .rfq-status {
+      font-weight: 500;
+    }
   }
-}
-.custom-style {
-  @include tablet{
-    margin-top: 0px;
+
+  .manufact_card {
+    box-shadow: $box-shadow;
+    @include mobile {
+      margin: 15px auto;
+    }
+
+    .manufact_logo {
+      height: 150px;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .ratings {
+      color: yellow;
+      padding-right: 5px;
+    }
+
+    .reviews {
+      height: 85px;
+      @include tablet {
+        height: 158px;
+      }
+      .reviews3 {
+        @include tablet {
+          height: 130px;
+        }
+      }
+      p {
+        margin-bottom: 0.2rem;
+        font-size: 15px;
+        line-height: 1.85;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #262626;
+      }
+    }
+
+    .manufact_details {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+      }
+
+      .manufact_brand {
+        margin-left: 10px;
+        margin-top: 7px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
-}
-.margin-styles {
-  margin-top: 120px;
-  margin-bottom: 45px;
-  @include mobile {
-    margin-top: 345px;
+  .tile-margin {
+    @include tablet {
+      margin: 2px 54px;
+    }
   }
-  @include tablet {
-    margin-top: 345px;
+  .custom-style {
+    @include tablet {
+      margin-top: 0px;
+    }
+  }
+  .margin-styles {
+    margin-top: 120px;
+    margin-bottom: 45px;
   }
 }

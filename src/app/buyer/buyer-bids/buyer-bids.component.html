@@ -11,26 +11,31 @@
       </div>
     </div>
   </section>
-
+</div>
+<div class="rfqs-create-wrapper">
   <section>
-    <div class="container-on-img">
-      <div class="container">
-        <div>
-          <h3>Requests for Quotations</h3>
-          <button class="btn btn-md view-all-btn">View All</button>
-        </div> 
-        <!-- Web view  -->
-        <div *ngIf="!isCarousel">  
-          <div class="row create-rfq">
-            <div class="d-flex flex-wrap">
-              <div class="col-md-3">
-                  <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
-                    <div>
-                      <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
+    <div class="container">
+      <div class="container-on-img">
+        <div class="col-sm-12">
+          <div class="my-2">
+            <h3>Requests for Quotations</h3>
+          </div>
+          <div>
+            <button class="btn btn-md view-all-btn">View All</button>
+          </div>
+          <!-- Web view  -->
+          <div *ngIf="!isCarousel">
+            <div class="row">
+              <div class="create-rfq">
+                <div class="d-flex flex-wrap">
+                  <div class="col-md-4">
+                    <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
+                      <div>
+                        <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
+                      </div>
                     </div>
                   </div>
-              </div>
-              <div class="col-md-3">
+                  <div class="col-md-4">
                     <div class="manufact_card rfqs" (click)="rfqDetails();">
                       <div>
 
@@ -44,8 +49,8 @@
                         <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
                       </div>
                     </div>
-              </div>
-              <div class="col-md-3">
+                  </div>
+                  <div class="col-md-4">
                     <div class="manufact_card rfqs">
                       <div>
 
@@ -59,8 +64,8 @@
                         <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
                       </div>
                     </div>
-              </div>
-              <div class="col-md-3">
+                  </div>
+                  <!-- <div class="col-md-3">
                     <div class="manufact_card rfqs">
                       <div>
 
@@ -70,28 +75,29 @@
                         <p class="rfq-text-styles">Training Cones-Black & White</p>
                       </div>
                       <div class="rfq_footer">
-                        <i class="fa fa-envelope-o rfq-icon inactive_icon" ></i>
+                        <i class="fa fa-envelope-o rfq-icon inactive_icon"></i>
                         <label class="rfq-status btn btn-outline-danger btn-sm">Inactive</label>
                       </div>
                     </div>
+                  </div> -->
+                </div>
               </div>
             </div>
           </div>
-        </div> 
-        <!-- mobile / tab view  -->
-        <div *ngIf="isCarousel">  
-          <div class="create-rfq">
+          <!-- mobile / tab view  -->
+          <div *ngIf="isCarousel">
+            <div class="create-rfq d-flex justify-content-center">
               <div class="">
-                  <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center">
-                    <div>
-                      <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
-                    </div>
+                <div class="create_rfqs manufact_card d-flex justify-content-center align-items-center tile-margin">
+                  <div>
+                    <button class="btn rfq-btn" (click)="createNewRFQ();">+ New RFQ</button>
                   </div>
                 </div>
-          </div>   
-          <div class="create-rfq">
-            <!-- <div class="d-flex flex-wrap"> -->
-              <div id="myCarousel" class="carousel slide indicators" data-ride="carousel">
+              </div>
+            </div>
+            <div class="create-rfq">
+              <!-- <div class="d-flex flex-wrap"> -->
+              <div id="myCarousel" class="carousel slide indicators " data-ride="carousel">
                 <!-- <ol class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -100,150 +106,154 @@
                 </ol>  -->
                 <div class="carousel-inner">
                   <!-- <div class="d-flex flex-wrap"> -->
-                    <div class="carousel-item active">
-                            <div class="manufact_card rfqs" (click)="rfqDetails();">
-                              <div>
-            
-                              </div>
-                              <div class="rfq-text">
-                                <p class="rfq-timing">3 Days Ago</p>
-                                <p class="rfq-text-styles">Soccer Balls-Yellow & Green</p>
-                              </div>
-                              <div class="rfq_footer">
-                                <i class="fa fa-envelope-o rfq-icon"><span></span></i>
-                                <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
-                              </div>
-                            </div>
+                  <div class="carousel-item active">
+                    <div class="manufact_card rfqs tile-margin" (click)="rfqDetails();">
+                      <div>
+
+                      </div>
+                      <div class="rfq-text">
+                        <p class="rfq-timing">3 Days Ago</p>
+                        <p class="rfq-text-styles">Soccer Balls-Yellow & Green</p>
+                      </div>
+                      <div class="rfq_footer">
+                        <i class="fa fa-envelope-o rfq-icon"><span></span></i>
+                        <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
+                      </div>
                     </div>
-                    <div class="carousel-item">
-                            <div class="manufact_card rfqs">
-                              <div>
-            
-                              </div>
-                              <div class="rfq-text">
-                                <p class="rfq-timing">2018-06-26</p>
-                                <p class="rfq-text-styles">Training Cones-Black & White</p>
-                              </div>
-                              <div class="rfq_footer">
-                                <i class="fa fa-envelope-o rfq-icon"><span></span></i>
-                                <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
-                              </div>
-                            </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="manufact_card rfqs tile-margin">
+                      <div>
+
+                      </div>
+                      <div class="rfq-text">
+                        <p class="rfq-timing">2018-06-26</p>
+                        <p class="rfq-text-styles">Training Cones-Black & White</p>
+                      </div>
+                      <div class="rfq_footer">
+                        <i class="fa fa-envelope-o rfq-icon"><span></span></i>
+                        <label class="rfq-status btn btn-outline-success btn-sm">Active</label>
+                      </div>
                     </div>
-                    <div class="carousel-item">
-                            <div class="manufact_card rfqs">
-                              <div>
-            
-                              </div>
-                              <div class="rfq-text">
-                                <p class="rfq-timing">2018-06-26</p>
-                                <p class="rfq-text-styles">Training Cones-Black & White</p>
-                              </div>
-                              <div class="rfq_footer">
-                                <i class="fa fa-envelope-o rfq-icon inactive_icon" ></i>
-                                <label class="rfq-status btn btn-outline-danger btn-sm">Inactive</label>
-                              </div>
-                            </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="manufact_card rfqs tile-margin">
+                      <div>
+
+                      </div>
+                      <div class="rfq-text">
+                        <p class="rfq-timing">2018-06-26</p>
+                        <p class="rfq-text-styles">Training Cones-Black & White</p>
+                      </div>
+                      <div class="rfq_footer">
+                        <i class="fa fa-envelope-o rfq-icon inactive_icon"></i>
+                        <label class="rfq-status btn btn-outline-danger btn-sm">Inactive</label>
+                      </div>
                     </div>
+                  </div>
                   <!-- </div> -->
-                </div> 
+                </div>
                 <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
                   <span class="carousel-control-prev-icon"></span>
                 </a>
                 <a class="carousel-control-next" href="#myCarousel" data-slide="next">
                   <span class="carousel-control-next-icon"></span>
                 </a>
-              </div>  
-            <!-- </div> -->
-          </div> 
-        </div>   
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
       </div>
-    </div>  
+    </div>
   </section>
-</div>
-<section>
-  <div class="margin-styles">
+
+  <section>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="manufact_card p-3 text-center">
-            <div class="manufact_logo">
-              <img src="assets/img/Vumero-logo.png" alt="Vumero Logo">
-            </div>
-            <div class="ratings">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-            <div class="reviews">
-              <p>"I cannot recommend Vumero
-                enough. A safe, quality and on
-                time delivery with good pricing."
-              </p>
-            </div>
-            <div class="d-flex manufact_details justify-content-center">
-              <img src="assets/img/bcci-logo.png" alt="Bcci logo">
-              <div class="manufact_brand">
-                <p>BCCI</p>
-                <p>India</p>
+      <div class="margin-styles">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="manufact_card p-3 text-center">
+                <div class="manufact_logo">
+                  <img src="assets/img/Vumero-logo.png" alt="Vumero Logo">
+                </div>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="reviews">
+                  <p>"I cannot recommend Vumero
+                    enough. A safe, quality and on
+                    time delivery with good pricing."
+                  </p>
+                </div>
+                <div class="d-flex manufact_details justify-content-center">
+                  <img src="assets/img/bcci-logo.png" alt="Bcci logo">
+                  <div class="manufact_brand">
+                    <p>BCCI</p>
+                    <p>India</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="manufact_card p-3 text-center">
-            <div class="manufact_logo">
-              <img src="assets/img/ruby-logo.png" alt="Ruby Logo">
-            </div>
-            <div class="ratings">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-            <div class="reviews">
-              <p>"Very responsive during RFP."</p>
-            </div>
-            <div class="d-flex manufact_details justify-content-center">
-              <img src="assets/img/NBL-logo.svg" alt="NBL logo">
-              <div class="manufact_brand">
-                <p>NBL</p>
-                <p>Australia</p>
+            <div class="col-md-4">
+              <div class="manufact_card p-3 text-center">
+                <div class="manufact_logo">
+                  <img src="assets/img/ruby-logo.png" alt="Ruby Logo">
+                </div>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="reviews">
+                  <p>"Very responsive during RFP."</p>
+                </div>
+                <div class="d-flex manufact_details justify-content-center">
+                  <img src="assets/img/NBL-logo.svg" alt="NBL logo">
+                  <div class="manufact_brand">
+                    <p>NBL</p>
+                    <p>Australia</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="manufact_card p-3 text-center">
-            <div class="manufact_logo">
-              <img src="assets/img/process-logo.jpg" alt="Sports Logo">
-            </div>
-            <div class="ratings">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-            <div class="reviews3">
-              <p>"Repeat orders and maintaining
-                upto date inventory helps us in
-                receiving goods on time"
-              </p>
-            </div>
-            <div class="d-flex manufact_details justify-content-center custom-style">
-              <img src="assets/img/para-sports-logo.png" alt="Para Sports logo">
-              <div class="manufact_brand">
-                <p>Indian Paralympics</p>
-                <p>India</p>
+            <div class="col-md-4">
+              <div class="manufact_card p-3 text-center">
+                <div class="manufact_logo">
+                  <img src="assets/img/process-logo.jpg" alt="Sports Logo">
+                </div>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="reviews3">
+                  <p>"Repeat orders and maintaining
+                    upto date inventory helps us in
+                    receiving goods on time"
+                  </p>
+                </div>
+                <div class="d-flex manufact_details justify-content-center custom-style">
+                  <img src="assets/img/para-sports-logo.png" alt="Para Sports logo">
+                  <div class="manufact_brand">
+                    <p>Indian Paralympics</p>
+                    <p>India</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>

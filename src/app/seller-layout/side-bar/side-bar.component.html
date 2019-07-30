@@ -1,5 +1,5 @@
-<div class="" id="sidebar-wrapper">
-  <button class="navbar-toggler sidebartoggler" type="button" data-toggle="collapse" data-target="">
+<div class="" id="sidebar-wrapper" [class.show]="show">
+  <button class="navbar-toggler sidebartoggler" type="button" data-target="" (click)="toggleCollapse()">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="seller-info d-flex flex-sm-column flex-lg-row">
@@ -16,7 +16,7 @@
 
       <ul class="navbar-nav" id="sidebarnav">
 
-        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem">
+        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem" (click)="toggleCollapse()">
           <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive" (click)="menuClick(menuItem)">
             <!-- <div (click)="menuClick(menuItem)" class="sidebar-links"> -->
             <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>

@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   signInFlag: boolean = true;
   dropDownMenu: boolean = false;
   buyerDropDown: boolean = false;
+  show: boolean = false;
   constructor(private router: Router, private sharedService: BroadcastserviceService) { }
 
   ngOnInit() {
@@ -44,6 +45,9 @@ export class HeaderComponent implements OnInit {
     //   }
     // })
 
+  }
+  toggleCollapse() {
+    this.show = !this.show;
   }
   public signIn() {
     this.router.navigateByUrl('/login');

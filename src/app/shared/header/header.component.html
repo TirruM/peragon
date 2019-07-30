@@ -2,41 +2,45 @@
   <div class="logo">
     <a class="navbar-brand" [routerLink]="['/']"><img src="assets/img/Peragon_logo.png" alt=""></a>
   </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button (click)="toggleCollapse()" class="navbar-toggler" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-end nav-items" id="collapsibleNavbar">
+  <div class="collapse navbar-collapse justify-content-end nav-items" id="collapsibleNavbar" [class.show]="show">
     <ul class="navbar-nav">
-      <li class="nav-item custom-nav-item" routerLinkActive="current">
-        <a class="nav-link" [routerLink]="['/howitworks']">How it works</a>
+      <li class="nav-item custom-nav-item" routerLinkActive="current" (click)="toggleCollapse()">
+        <a class="nav-link" [routerLink]="['/howitworks']" data-toggle="collapse">How it
+          works</a>
       </li>
       <!-- <li class="nav-item">
           <a class="nav-link">Our Members</a>
         </li> -->
-      <li class="nav-item custom-nav-item buyer-menu dropdown" routerLinkActive="current" *ngIf="dropDownMenu">
+      <li class="nav-item custom-nav-item buyer-menu dropdown" routerLinkActive="current" *ngIf="dropDownMenu"
+        (click)="toggleCollapse()">
         <a class="nav-link nav-link dropdown-toggle" data-toggle="dropdown">For
           Buyers</a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item forBuyer-menu-items">Why Perogon?</a></li>
-          <li><a class="dropdown-item forBuyer-menu-items" (click)="requestForQuatation();">Request For Quotations</a>
+          <li><a class="dropdown-item forBuyer-menu-items" data-toggle="collapse">Why Perogon?</a></li>
+          <li><a class="dropdown-item forBuyer-menu-items" (click)="requestForQuatation();"
+              data-toggle="collapse">Request For Quotations</a>
           </li>
         </ul>
       </li>
-      <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="!dropDownMenu">
-        <a class="nav-link nav-link " [routerLink]="['/forBuyer']">For Buyers</a>
+      <li class="nav-item custom-nav-item buyer-menu" routerLinkActive="current" *ngIf="!dropDownMenu"
+        (click)="toggleCollapse()">
+        <a class="nav-link nav-link " [routerLink]="['/forBuyer']" data-toggle="collapse">For Buyers</a>
 
       </li>
-      <li class="nav-item custom-nav-item" routerLinkActive="current">
-        <a class="nav-link" [routerLink]="['/forSeller']">For Suppliers</a>
+      <li class="nav-item custom-nav-item" routerLinkActive="current" (click)="toggleCollapse()">
+        <a class="nav-link" [routerLink]="['/forSeller']" data-toggle="collapse">For Suppliers</a>
       </li>
-      <li class="nav-item custom-nav-item" routerLinkActive="current">
-        <a class="nav-link" [routerLink]="['/pricing']">Pricing</a>
+      <li class="nav-item custom-nav-item" routerLinkActive="current" (click)="toggleCollapse()">
+        <a class="nav-link" [routerLink]="['/pricing']" data-toggle="collapse">Pricing</a>
       </li>
       <li class="nav-item join-btn" *ngIf="signInFlag">
-        <a class="nav-link" (click)="signUp()">Join Now</a>
+        <a class="nav-link" (click)="signUp()" data-toggle="collapse" (click)="toggleCollapse()">Join Now</a>
       </li>
       <li class="nav-item login-btn" *ngIf="signInFlag">
-        <a class="nav-link" (click)="signIn()">Login</a>
+        <a class="nav-link" (click)="signIn()" data-toggle="collapse" (click)="toggleCollapse()">Login</a>
       </li>
 
 
