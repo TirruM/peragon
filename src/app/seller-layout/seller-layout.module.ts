@@ -40,7 +40,8 @@ import { SearchComponent } from './search/search.component';
     CertificatesComponent,
     LocationsComponent,
     AddProductModelComponent,
-    SearchComponent
+    SearchComponent,
+
   ],
   imports: [
     CommonModule,

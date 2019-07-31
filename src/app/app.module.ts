@@ -6,44 +6,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { SigninComponent } from './shared/signin/signin.component';
-import { SignupComponent } from './shared/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearchComponent } from './search/search.component';
-import { ForBuyerComponent } from './for-buyer/for-buyer.component';
-import { HowItWorksComponent } from './how-it-works/how-it-works.component';
-import { PricingComponent } from './pricing/pricing.component';
-//import { SellerDashboardModule } from './sellerDashboard/seller-dashboard/seller-dashboard.module';
-//import { SellerDashboardComponent } from './seller/seller-dashboard/seller-dashboard.component';
-//import { RfqComponent } from './sellerDashboard/rfq/rfq.component';
-//import { BookMarksComponent } from './sellerDashboard/book-marks/book-marks.component';
-import { ForSellerComponent } from './for-seller/for-seller.component';
 import { HttpClientModule } from '@angular/common/http';
-import * as $ from 'jquery';
-//import { CertificatesComponent } from './sellerDashboard/certificates/certificates.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SliderModule } from 'angular-image-slider';
+import { MainModule } from './main/main/main.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    SigninComponent,
-    SignupComponent,
-    SearchComponent,
-    ForBuyerComponent,
-    ForSellerComponent,
-    HowItWorksComponent,
-    PricingComponent,
-
-    //SellerDashboardComponent,
-    //RfqComponent,
-    //BookMarksComponent
   ],
   imports: [
     BrowserModule,
@@ -51,12 +24,12 @@ import { SliderModule } from 'angular-image-slider';
     SharedModule,
     BrowserAnimationsModule,
     BuyerModule,
-    //SellerDashboardModule,
     HttpClientModule,
     SlickCarouselModule,
-    SliderModule
+    SliderModule, MainModule
   ],
-  exports: [BuyerModule,],
+  exports: [BuyerModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
