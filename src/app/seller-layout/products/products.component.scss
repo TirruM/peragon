@@ -1,6 +1,7 @@
 @import "../../../custom_styles/variables";
 
 .overview-text {
+  font-size: 13px;
   p {
     margin-bottom: 0px;
   }
@@ -43,6 +44,7 @@
   margin: 16px 0px 16px 0px;
   background-color: #fff1f8;
   padding: 9px;
+  font-size: 13px;
   text-align: center;
   p {
     margin-bottom: 0px;
@@ -57,6 +59,7 @@
 }
 
 .overview-body {
+  font-size: 13px;
   .box-style {
     padding: 0px !important;
     .bg-color {
@@ -79,6 +82,9 @@
   .top-products {
     margin: 9px 0px 11px 0px;
     background-color: #f9f9f9;
+    button {
+      font-size: 13px;
+    }
   }
   .sub-text {
     // font-size: 13px;
@@ -94,6 +100,7 @@
   border-radius: 26px;
   width: fit-content;
   padding: 4px;
+  font-size: 13px;
 }
 .edit-details {
   .status-btns {

@@ -50,6 +50,11 @@
   }
 
   .view-certificate{
+    h3 {
+      @include tablet {
+        font-size: 20px;
+      }
+    }
     .certificate-img img{
       border-radius: 50%;
       width: 75%;
