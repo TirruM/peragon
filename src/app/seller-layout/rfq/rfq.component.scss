@@ -6,7 +6,7 @@
     .buyers_card {
       box-shadow: $box-shadow;
       margin: 16px;
-  
+  width: 200px;
       // transition: 0.3s all ease;
       .card-wrapper {
         .rfqs {
@@ -81,3 +81,6 @@
   }
 }
 
+.slick-prev:before, .slick-next:before {
+  color: #09529b !important;
+}

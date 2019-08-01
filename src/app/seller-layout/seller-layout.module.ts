@@ -21,6 +21,7 @@ import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
 import { ModalModule } from 'ngx-bootstrap';
 import { AddProductModelComponent } from './add-product-model/add-product-model.component';
 import { SearchComponent } from './search/search.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { SearchComponent } from './search/search.component';
     MatChipsModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
+    SlickCarouselModule,
     ModalModule.forRoot()
   ],
   entryComponents: [AddProductModelComponent],

@@ -159,4 +159,10 @@ hr {
 
 .custom {
   min-width: 1200px;
+  @include tablet {
+    min-width: 800px; 
+  }
+  @include mobile {
+    min-width: 400px;
+  }
 }

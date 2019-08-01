@@ -3,6 +3,7 @@
 .product-modal {
   padding: 0.8rem 1.1rem;
   position: relative;
+ 
   .modal-close-btn {
     position: absolute;
     top: -15px;
@@ -12,6 +13,21 @@
     background: #fff;
     border-radius: 50%;
     padding: 0px 6px;
+  }
+
+  .product-wrapper {
+    .visibility {
+      display: flex;
+      @include tablet {
+        // display: inline-block;
+        flex-direction: row;
+        overflow: scroll; 
+      }
+      @include mobile {
+        flex-direction: row;
+        overflow-x: scroll;
+      }
+    }
   }
 
   .product-images {
@@ -127,6 +143,12 @@
       input[type="text"] {
         margin: 0px 0px 10px 0px;
         width: 100%;
+        @include tablet {
+          min-width: 100%;
+        }
+        @include mobile {
+          min-width: 100%;
+        }
       }
       .product-descr {
        
