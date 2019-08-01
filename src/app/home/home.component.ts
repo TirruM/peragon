@@ -39,6 +39,7 @@ export class HomeComponent implements OnInit {
     dots: false,
     infinite: true,
     arrows: true,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 768,
@@ -48,6 +49,12 @@ export class HomeComponent implements OnInit {
       },
       {
         breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1200,
         settings: {
           slidesToShow: 1
         }
