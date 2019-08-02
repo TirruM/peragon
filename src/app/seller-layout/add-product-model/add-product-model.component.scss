@@ -3,7 +3,7 @@
 .product-modal {
   padding: 0.8rem 1.1rem;
   position: relative;
- 
+
   .modal-close-btn {
     position: absolute;
     top: -15px;
@@ -20,8 +20,8 @@
       display: flex;
       @include tablet {
         // display: inline-block;
-        flex-direction: row;
-        overflow: scroll; 
+        // flex-direction: row;
+        overflow: scroll;
       }
       @include mobile {
         flex-direction: row;
@@ -61,7 +61,7 @@
       .img-uploaded-container {
         min-height: 155px;
         width: 165px;
-        height: 155px;   
+        height: 155px;
         margin: 7px 15px 0px 0;
         // border: 1px solid;
         .uploaded-img {
@@ -95,7 +95,7 @@
           height: 155px;
           width: 165px;
           padding: 0;
-           img {
+          img {
             height: 155px;
             width: 165px;
             max-width: 165px;
@@ -109,7 +109,7 @@
               font-size: 30px;
             }
           }
-        }        
+        }
       }
       .main-picture {
         border-bottom: 3px solid $green-btn;
@@ -117,7 +117,6 @@
       div[class$="box"] {
         color: #f2f2f2;
       }
-      
 
       .upload-img input[type="file"] {
         font-size: 100px;
@@ -131,7 +130,7 @@
   .product-form {
     margin-left: 6px;
     p {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
     form {
       font-size: 13px;
@@ -151,18 +150,16 @@
         }
       }
       .product-descr {
-       
         input:focus {
-         @extend %custom-input-types;
+          @extend %custom-input-types;
         }
         ::-webkit-input-placeholder {
           font-size: 11px !important;
         }
-    
+
         :-moz-placeholder {
           font-size: 11px !important;
         }
-    
       }
       .target-group {
         .radio-btns {
@@ -170,7 +167,6 @@
             margin-right: 0px;
           }
         }
-       
       }
       .product-category {
         label {
@@ -183,16 +179,15 @@
         }
       }
       .modal-btns {
-          margin-top: 20px;
-          .btn-cancel {
-            padding: 2px 30px;
-          }
+        margin-top: 20px;
+        .btn-cancel {
+          padding: 2px 30px;
+        }
         .btn-publish {
-            @extend %colored-btn;
-            padding: 2px 30px;
+          @extend %colored-btn;
+          padding: 2px 30px;
         }
       }
-      
     }
   }
 }
