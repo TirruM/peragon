@@ -7,23 +7,19 @@
   top: 0px;
   z-index: 20;
   padding-top: 70px;
-  // background: #fff;
-  // box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 30px;
   @include mobile {
     width: 70px;
+    margin-top: 0;
   }
-  // @include tablet {
-  //   width: 70px;
-  // }
 }
 .main-wrapper {
   margin-left: 240px;
   // height: calc(100vh - 64px);
   position: relative;
   overflow: auto;
-  //   width: 1280px;
   @include mobile {
-    margin-left: 70px;
+    margin-left: 0px !important;
   }
   @include tablet {
     margin-left: 70px;

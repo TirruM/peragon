@@ -4,19 +4,19 @@
   padding-bottom: 20px;
   background-color: #152331;
   @include mobile {
-    padding-bottom: 25px;
+    padding-bottom: 5px !important;
+    padding-top: 5px;
   }
   @include tablet {
-    padding-bottom: 25px;
-  }
-  @include mobile {
-    padding-bottom: 26px;
+    padding-bottom: 8px;
   }
 }
 .navbar-toggler {
-  border-color: rgb(242, 88, 29);
+  border-color: #152331;
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 88, 29)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
   @extend %custom-input-types;
 }
@@ -25,6 +25,21 @@
   height: 60px;
   a {
     padding: 20px 10px;
+    @include tablet {
+      padding: 10px;
+    }
+    img {
+      @include mobile {
+        width: 115px;
+        height: 30px;
+      }
+    }
+  }
+  @include mobile {
+    height: 50px;
+  }
+  @include tablet {
+    height: 55px;
   }
 }
 .navbar-nav .current::after {
@@ -50,7 +65,7 @@
   .inner-dropdown {
     li {
       a {
-        color: #000!important;
+        color: #000 !important;
         &:hover {
           color: #f2581d !important;
         }

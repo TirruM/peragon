@@ -4,12 +4,10 @@
   .mini-sidebar {
     position: fixed !important;
     left: 0 !important;
-    // margin-top: 24px;
-    // .custom-navbar {
     width: 200px;
     background-color: #fbfbfb;
     height: 100vh;
-    // display: block;
+    transition: ease-in-out 0.5s;
     ul .custom-navitem {
       a {
         color: #212529;
@@ -30,11 +28,10 @@
       border-left: 3px solid rgb(233, 50, 50);
       padding-top: 0px;
       padding-bottom: 0px;
-      background-color: #fbfbfb;
+      // background-color: #fbfbfb;
       font-weight: bold;
-      width: 186px !important;
+      width: 184px !important;
     }
-    // }
 
     .sidebartoggler {
       position: relative;
@@ -49,12 +46,8 @@
     display: none;
     @include mobile {
       display: block;
-      // position: relative;
-      // top: 0;
-      // left: 180px;
     }
   }
-  margin-top: 37px;
   .seller-info {
     .seller-image {
       img {
@@ -122,9 +115,7 @@
           width: 70px;
           &:hover {
             width: 150px;
-            // height: 29px;
             background-color: #212529;
-            // color: black;
 
             display: block;
             span {
@@ -144,12 +135,6 @@
           margin-left: 0.25rem;
           font-size: 13px;
           display: inline;
-          //   @include tablet {
-          //     display: none;
-          //   }
-          //   @include desktop {
-          //     display: none;
-          //   }
         }
       }
     }
@@ -159,10 +144,12 @@
     position: absolute;
   }
   .navbar-toggler {
-    border-color: rgb(242, 88, 29);
+    border-color: rgb(255, 255, 255);
     position: absolute;
-    left: 175px;
+    left: 170px;
     .navbar-toggler-icon {
+      width: 1.2em;
+      height: 1.2em;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 88, 29)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
     @extend %custom-input-types;
