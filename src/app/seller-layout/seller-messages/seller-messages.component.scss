@@ -15,7 +15,7 @@
     box-shadow: $box-shadow;
 
     .messages-sidebar {
-      padding: 4px;
+      padding: 11px;
       border-right: 0.4px solid #efefef;
       // box-shadow: 0 0px 6px 0px rgba(0, 0, 0, 0.12);
 
@@ -97,8 +97,10 @@
     .messages-body {
       .rfq_response {
         .message-header {
+          padding: 3px 4px 4px 11px;
+          margin: 1px 3px 2px 18px;
           border-bottom: 1px solid black;
-          padding: 15px;
+          // padding: 15px;
 
           .buyer_title {
             a {
@@ -136,6 +138,7 @@
 
         mat-form-field {
           margin-right: 12px;
+          min-width: 88%;
         }
 
         .user_info {
@@ -148,6 +151,9 @@
         }
 
         .rfq_responselist {
+          @include tablet {
+            margin: 40px 10px 2px 26px;
+          }  
           border-radius: 20px;
           border: 1px solid;
           max-width: 412px;
@@ -196,7 +202,7 @@
 
         .buyer-reply-container {
           margin: 20px 0;
-          padding: 15px;
+          padding: 22px;
 
           p {
             display: inline;
@@ -221,28 +227,34 @@
         }
 
         .chatbox {
-          padding: 15px;
+          padding: 23px;
+          .chatdata { 
+            @include tablet {
+              display: flex;
+            }
+            i {
+              box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+              border-radius: 50%;
+              width: 35px;
+              height: 32px;
+              padding: 4px;
+              @include tablet {
+                margin-top: 8px;
+              }
+            }
 
-          .attachment_icon {
-            box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            width: 35px;
-            height: 32px;
-            padding: 4px;
-          }
-
-          mat-form-field {
-            width: 100%;
-          }
-
-          .send_btn {
+            mat-form-field {
+              min-width: 100%;
+            }
+          }  
+          // .send_btn {
             button {
               border-radius: 25px;
               padding: 7px 22px;
               color: #fff;
               background-color: #57bf57;
             }
-          }
+          // }
         }
       }
     }
