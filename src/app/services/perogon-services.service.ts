@@ -12,4 +12,7 @@ export class PerogonServices {
   public getJSON(): Observable<any> {
     return this.http.get("./assets/categories.json")
   }
+  public getSellerMessages(): Observable<any> {
+    return this.http.get("./assets/seller-messages.json")
+  }
 }

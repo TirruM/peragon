@@ -1,0 +1,20 @@
+{
+    "status": 200,
+    "message": "success",
+    "data": [
+        {
+            "companyName": "MacsOfTechnologies",
+            "companyDesc": "Lorem ipsum dolor Lorem ipsum dolor sit.",
+            "messagesCount": "3",
+            "CategoryName": "Men's Polo Shirt",
+            "SubCategoryName": "Best Blue Mode GmB"
+        },
+        {
+            "companyName": "ABC Company",
+            "companyDesc": "Lorem ipsum dolor Lorem ipsum dolor sit.",
+            "messagesCount": "1",
+            "CategoryName": "Men's Nike shoe",
+            "SubCategoryName": "Abc"
+        }
+    ]
+}
