@@ -1,226 +1,225 @@
 @import "../../custom_styles/variables";
 $primary-bg-color: #f40785;
 
-
 /*------------------------------------*\
   #BANNER-SECTION
 \*------------------------------------*/
 
 .banner-image {
-    background-image: url('../../assets/img/tennis-manufacture.jpg');
+  background-image: url("../../assets/img/tennis-manufacture.jpg");
 }
-.manufacture_search_filter{
-    .filter_header{
-        h2 {
-            color: black;
-            @extend %h-styles;
-            @include mobile {
-                font-size: 20px;
-            }
-        }
-
+.manufacture_search_filter {
+  .filter_header {
+    h2 {
+      color: black;
+      @extend %h-styles;
+      @include mobile {
+        font-size: 20px;
+      }
     }
+  }
 }
 /*------------------------------------*\
   #FILTER-SECTION
 \*------------------------------------*/
 .buyer_search_filter {
-    margin: 60px 0;
-    .filter_header {
-        @extend %h-styles;
-        h2 {
-            @include mobile {
-                font-size: 20px;
-            }
-        }    
+  margin: 60px 0;
+  .filter_header {
+    @extend %h-styles;
+    h2 {
+      @include mobile {
+        font-size: 20px;
+      }
     }
-        .filter_wrapper {
-            border: 1px solid #f2f2f2;
-            padding: 10px 20px;
-            margin-bottom: 10px;
-            .filter_search_btn {
-                text-align: end;
-                color: #fff;
-            }
-        }
+  }
+  .filter_wrapper {
+    border: 1px solid #f2f2f2;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    .filter_search_btn {
+      text-align: end;
+      color: #fff;
+    }
+  }
 }
 
 /*------------------------------------*\
   #MANUFACTURERS-SECTION
 \*------------------------------------*/
 .about_manufacturers {
-    margin-top: 3rem;
-    .manu_header {
-        @extend %h-styles;
-        h2 {
-            @include mobile {
-                font-size: 20px;
-            }
-        }
+  margin-top: 3rem;
+  .manu_header {
+    @extend %h-styles;
+    h2 {
+      @include mobile {
+        font-size: 20px;
+      }
     }
-    .manufact_card {
-        box-shadow: $box-shadow;
-        img {
-            width: 150px;
-        }
-        .manufact_logo {
-            height: 150px;
-            img {
-                width: 150px;
-            }
-        }  
-        .ratings {
-            color: yellow;
-            padding-right: 5px;
-        }
-       
-        .reviews {
-            height: 80px;
-            small {
-                margin-bottom: 0.2rem;
-                font-size: 15px;
-                line-height: 1.85;
-                letter-spacing: 1.2px;
-                text-align: center;
-                color: #262626;
-                
-            }
-        }   
-        .manufact_details {
-            margin-top: 5px;
-            img {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                display: block;
-            }
-            .manufact_brand {
-                margin-left: 10px;
-                margin-top: 7px;
-                p {
-                    margin-bottom: 0;
-                    letter-spacing: 1px;
-                }
-            }
-            
-        }
+  }
+  .manufact_card {
+    box-shadow: $box-shadow;
+    margin-bottom: 30px;
+    img {
+      width: 150px;
     }
+    .manufact_logo {
+      height: 150px;
+      img {
+        width: 150px;
+      }
+    }
+    .ratings {
+      color: yellow;
+      padding-right: 5px;
+    }
+
+    .reviews {
+      height: 80px;
+      small {
+        margin-bottom: 0.2rem;
+        font-size: 15px;
+        line-height: 1.85;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #262626;
+      }
+    }
+    .manufact_details {
+      margin-top: 5px;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+      }
+      .manufact_brand {
+        margin-left: 10px;
+        margin-top: 7px;
+        p {
+          margin-bottom: 0;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
 }
 
 /*------------------------------------*\
   #BUYERSEXP-SECTION
 \*------------------------------------*/
 .sport-source-info {
-    margin-top: 3rem;
-    .buyers_exp {
-        @extend %h-styles;  
-        h2 {
-            @include mobile {
-                font-size: 20px;
-            }
-        }      
+  margin-top: 3rem;
+  .buyers_exp {
+    @extend %h-styles;
+    h2 {
+      @include mobile {
+        font-size: 20px;
+      }
     }
-    .info {
-        box-shadow: $box-shadow;
-        // background-image: url("../../assets/img/icon4.png");
-        // background-repeat: no-repeat;
-        // background-position: top;
-        h3 {
-            font-size: 22px;
-            color: $text-color;
-            min-height: 40px!important;
-            @include mobile {
-                font-size: 20px;
-            }
-        }
-        p {
-            margin-bottom: 0;
-            @extend %list-p-styles;
-            @extend %tick-img;
-            @include mobile {
-                font-size: 14px;
-            }
-        }
+  }
+  .info {
+    box-shadow: $box-shadow;
+    margin-bottom: 30px;
+    // background-image: url("../../assets/img/icon4.png");
+    // background-repeat: no-repeat;
+    // background-position: top;
+    h3 {
+      font-size: 22px;
+      color: $text-color;
+      min-height: 40px !important;
+      @include mobile {
+        font-size: 20px;
+      }
     }
+    p {
+      margin-bottom: 0;
+      @extend %list-p-styles;
+      @extend %tick-img;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
 }
 /*------------------------------------*\
   #MANUFACTURERSLIST-SECTION
 \*------------------------------------*/
 
 .manufacturers_list {
-    margin: 2rem 0;
-        .manufact_heading {
-            @extend %h-styles;
-            h2 {
-                font-size: 20px;
-            }
-        }
-    .buyers_card {
-        box-shadow: $box-shadow;
-        .card-wrapper {
-            .rfqs {
-                label {
-                    background-image: $gradient_bg_color;
-                    color: #fff;
-                    padding: 5px 10px;                
-                }
-                img{
-                    display: block;
-                    margin: 0 auto;
-                    width:160px;
-                    height:160px;
-                }
-            }
-            .manfact_details_card {
-                width: 150px;
-                margin: auto;
-                .ratings {
-                    color: yellow;
-                }
-                p {
-                    margin-bottom: 0.2rem;
-                    letter-spacing: 1px;
-                }
-                i {
-                    padding-right: 4px;
-                }
-                .units {
-                    background-color: #939393;
-                    color: #fff;
-                    padding: 5px 10px;
-                }
-            }
-        }
+  margin: 2rem 0;
+  .manufact_heading {
+    @extend %h-styles;
+    h2 {
+      font-size: 20px;
     }
+  }
+  .buyers_card {
+    box-shadow: $box-shadow;
+    margin-bottom: 30px;
+    .card-wrapper {
+      .rfqs {
+        label {
+          background-image: $gradient_bg_color;
+          color: #fff;
+          padding: 5px 10px;
+        }
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 160px;
+          height: 160px;
+        }
+      }
+      .manfact_details_card {
+        width: 150px;
+        margin: auto;
+        .ratings {
+          color: yellow;
+        }
+        p {
+          margin-bottom: 0.2rem;
+          letter-spacing: 1px;
+        }
+        i {
+          padding-right: 4px;
+        }
+        .units {
+          background-color: #939393;
+          color: #fff;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
 }
 .become_a_member {
-    margin: 3rem 0;
-    .become_heading {
-        @extend %h-styles;
-        h2 {
-            @include mobile {
-                font-size: 20px;
-            }
-        }
+  margin: 3rem 0;
+  .become_heading {
+    @extend %h-styles;
+    h2 {
+      @include mobile {
+        font-size: 20px;
+      }
     }
-    .become_mem_list {
-        p {
-            @extend %list-p-styles;
-            @include mobile {
-                font-size: 14px;
-            }
-        }
-    }
-    .working_img {
-        img {
-            width: 276px;
-        }
-    }
+  }
+  .become_mem_list {
     p {
-        @extend %list-p-styles;
-        @extend %tick-img;
-        // @include mobile  {
-        //     font-size: 14px;
-        // }
+      @extend %list-p-styles;
+      @include mobile {
+        font-size: 14px;
+      }
     }
+  }
+  .working_img {
+    img {
+      width: 276px;
+    }
+  }
+  p {
+    @extend %list-p-styles;
+    @extend %tick-img;
+    // @include mobile  {
+    //     font-size: 14px;
+    // }
+  }
 }

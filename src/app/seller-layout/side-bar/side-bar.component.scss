@@ -2,7 +2,7 @@
 
 @media (max-width: 768px) {
   .mini-sidebar {
-    position: fixed;
+    position: fixed !important;
     left: 0 !important;
     // margin-top: 24px;
     // .custom-navbar {

@@ -25,6 +25,9 @@
 
     .create-rfq {
       margin-top: 30px;
+      .create-rfq-container {
+        width: 100%;
+      }
       .indicators {
         margin-top: 11px;
         margin-bottom: 30px;
@@ -46,10 +49,6 @@
           background-image: none !important;
           font-size: 45px;
         }
-      }
-      @include tablet {
-        display: flex;
-        justify-content: center;
       }
     }
 
@@ -81,7 +80,7 @@
 
     .create_rfqs {
       height: 210px;
-      width: 280px;
+      // width: 280px;
 
       .rfq-btn {
         background-color: #57bf57;
@@ -91,15 +90,15 @@
         font-weight: 600;
       }
 
-      @media screen and (min-width: 992px) {
-        width: 215px;
-      }
-      @include tablet {
-        width: 320px;
-      }
-      @include mobile {
-        width: 280px;
-      }
+      // @media screen and (min-width: 992px) {
+      //   width: 215px;
+      // }
+      // @include tablet {
+      //   width: 320px;
+      // }
+      // @include mobile {
+      //   width: 280px;
+      // }
     }
   }
 
