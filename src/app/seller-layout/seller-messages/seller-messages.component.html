@@ -18,20 +18,23 @@
             </div>
             <div class="sidebar-body">
               <ul class="nav flex-column" role="tablist" aria-orientation="vertical">
-                <li class="isActive" aria-selected="true">
-                  <a href="#user1" class="nav-link" data-toggle="pill">
+                <li class="isActive" aria-selected="true" *ngFor="let messages of sellerMessages;let i=index">
+                  <a href="#user1" class="nav-link" data-toggle="pill" (click)="onMessageClick(messages,i)">
                     <div class="sidebar-body-content">
                       <div><img src="../../../assets/img/header-profile-img.jpg"></div>
-                      <div class="notification">2</div>
+                      <!-- <div class="notification">2</div> -->
+                      <div class="notification">{{messages.messagesCount}}</div>
                       <div class="sidebar-body-text">
                         <div>
-                          <h6>M@csof Technologies</h6>
+                          <!-- <h6>M@csof Technologies</h6> -->
+                          <h6>{{messages.companyName}}</h6>
                         </div>
                         <div class="paragraph">
                           <p>Lorem ipsum dolor.</p>
                         </div>
                         <div class="sub-paragraph">
-                          <p>Lorem ipsum dolor Lorem ipsum dolor sit.</p>
+                          <!-- <p>Lorem ipsum dolor Lorem ipsum dolor sit.</p> -->
+                          <p>{{messages.companyDesc}}</p>
                         </div>
                       </div>
                       <div class="dotted-icon">
@@ -41,400 +44,250 @@
                       </div>
                     </div>
                   </a>
-                </li>
-                <li>
-                  <a href="#user2" class="nav-link" data-toggle="pill">
-                    <div class="sidebar-body-content">
-                      <div><img src="../../../assets/img/header-profile-img.jpg"></div>
-                      <div class="notification">2</div>
-                      <div class="sidebar-body-text">
+
+                  <div *ngIf="mobileWidth && messageIndex === i&& listClickCount==1">
+                    <div class="tab-content">
+                      <div class="messages-body">
                         <div>
-                          <h6>M@csof Technologies</h6>
-                        </div>
-                        <div class="paragraph">
-                          <p> Lorem ipsum dolor.</p>
-                        </div>
-                        <div class="sub-paragraph">
-                          <p> Lorem ipsum dolor Lorem ipsum dolor sit.</p>
+                          <section>
+                            <div class="container">
+                              <div class="rfq_response">
+                                <div class="row">
+                                  <div class="col-12 px-0">
+                                    <div>
+                                      <div class="d-flex justify-content-between message-header">
+                                        <div class="buyer_title">
+                                          <p class="mb-0"><strong>Men's Polo Shirt</strong></p>
+                                          <a href="">Best Blue Mode GmBH</a>
+                                        </div>
+                                        <div class="user_info">
+                                          <mat-icon>account_circle</mat-icon>
+                                          <mat-icon mat-icon-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
+                                          <mat-menu #menu="matMenu">
+                                            <button mat-menu-item>
+                                              <mat-icon>perm_identity</mat-icon>
+                                              <span>View Profile</span>
+                                            </button>
+                                            <button mat-menu-item>
+                                              <mat-icon>delete_outline</mat-icon>
+                                              <span>Discard</span>
+                                            </button>
+                                          </mat-menu>
+                                        </div>
+                                      </div>
+                                      <div class="rfq_responselist">
+                                        <div class="seller_response">
+                                          <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
+                                          <small>We are following the request quotation for Men's Polo Shirt</small>
+                                        </div>
+                                        <div class="seller_qna">
+                                          <div>
+                                            <i class="fa fa-check right_icon"></i>
+                                            <div class="response_options">
+                                              <p><span class="text-success">Yes</span>,we produce Product Men's Polo
+                                                Shirt.</p>
+                                              <small>we produce on average 100000 pieces per year</small>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <i class="fa fa-times cross_icon"></i>
+                                            <div class="response_options">
+                                              <p><span class="text-success">Yes</span>,we cannot fulfill all
+                                                specifications.</p>
+                                              <small>Need to source correct fabrics</small>
+                                            </div>
+                                          </div>
+
+                                          <div>
+                                            <i class="fa fa-check right_icon"></i>
+                                            <div class="response_options">
+                                              <p><span class="text-success">Yes</span>,we agree to the price.</p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <i class="fa fa-check right_icon"></i>
+                                            <div class="response_options">
+                                              <p><span class="text-success">Yes</span>,we can produce the requested
+                                                quantity.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div>
+                                            <i class="fa fa-check right_icon"></i>
+                                            <div class="response_options">
+                                              <p><span class="text-success">Yes</span>,we can make the delivery date.
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <!-- <i class="fa fa-check right_icon"></i> -->
+                                          <div class="response_options">
+
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                      <div class="clearfix"></div>
+                                      <div class="buyer-reply-container">
+                                        <div>
+                                          <mat-icon>account_circle</mat-icon>
+                                          <p>Karin Lehmann</p>
+                                        </div>
+                                        <div class="buyer-reply-message">
+                                          <p>Hi this is Sathish, thanks for your reply.</p>
+                                          <p>{{message}}</p>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <div class="flex-nowrap align-items-center chatbox">
+                                          <!-- <div class="attachment_icon"> -->
+                                          <div class="chatData">
+                                            <i class="material-icons">attachment</i>
+                                            <!-- </div> -->
+                                            <mat-form-field>
+                                              <input matInput type="text" (input)="onSellerReplyMessage($event)">
+                                            </mat-form-field>
+                                          </div>
+                                          <!-- <div class="send_btn"> -->
+                                          <button class="btn btn-md" (click)="onReplyToBuyer()">Send</button>
+                                          <!-- </div> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
                         </div>
                       </div>
-                      <div class="dotted-icon">
-                        <div class="dotted">
-                          <mat-icon mat-icon-button>more_vert</mat-icon>
-                        </div>
-                      </div>
+                      <!-- </div> -->
+
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#user3" class="nav-link" data-toggle="pill">
-                    <div class="sidebar-body-content">
-                      <div><img src="../../../assets/img/header-profile-img.jpg"></div>
-                      <div class="sidebar-body-text">
-                        <div>
-                          <h6>M@csof Technologies</h6>
-                        </div>
-                        <div class="paragraph">
-                          <p> Lorem ipsum dolor.</p>
-                        </div>
-                        <div class="sub-paragraph">
-                          <p> Lorem ipsum dolor Lorem ipsum dolor sit.</p>
-                        </div>
-                      </div>
-                      <div class="dotted-icon">
-                        <div class="dotted">
-                          <mat-icon mat-icon-button>more_vert</mat-icon>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                  </div>
+
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-8 pl-0">
+        <div class="col-md-8 pl-0" *ngIf="!mobileWidth">
           <div class="tab-content">
-            <!-- <div>
-          <p>testing</p>
-        </div> -->
-            <div class="tab-pane fade show active" id="user1" role="tabpanel">
-              <div class="messages-body">
-                <div>
-                  <section>
-                    <div class="container">
-                      <div class="rfq_response">
-                        <div class="row">
-                          <div class="col-12 px-0">
-                            <div>
-                              <div class="d-flex justify-content-between message-header">
-                                <div class="buyer_title">
-                                  <p class="mb-0"><strong>Men's Polo Shirt</strong></p>
-                                  <a href="">Best Blue Mode GmBH</a>
-                                </div>
-                                <div class="user_info">
-                                  <mat-icon>account_circle</mat-icon>
-                                  <mat-icon mat-icon-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
-                                  <mat-menu #menu="matMenu">
-                                    <button mat-menu-item>
-                                      <mat-icon>perm_identity</mat-icon>
-                                      <span>View Profile</span>
-                                    </button>
-                                    <button mat-menu-item>
-                                      <mat-icon>delete_outline</mat-icon>
-                                      <span>Discard</span>
-                                    </button>
-                                  </mat-menu>
-                                </div>
+            <!-- <div class="tab-pane fade show active"> -->
+            <div class="messages-body">
+              <div>
+                <section>
+                  <div class="container">
+                    <div class="rfq_response">
+                      <div class="row">
+                        <div class="col-12 px-0">
+                          <div>
+                            <div class="d-flex justify-content-between message-header">
+                              <div class="buyer_title">
+                                <p class="mb-0"><strong>Men's Polo Shirt</strong></p>
+                                <a href="">Best Blue Mode GmBH</a>
                               </div>
-                              <div class="rfq_responselist">
-                                <div class="seller_response">
-                                  <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                                  <small>We are following the request quotation for Men's Polo Shirt</small>
-                                </div>
-                                <div class="seller_qna">
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
-                                      <small>we produce on average 100000 pieces per year</small>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-times cross_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we cannot fulfill all specifications.</p>
-                                      <small>Need to source correct fabrics</small>
-                                    </div>
-                                  </div>
-
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we agree to the price.</p>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we can produce the requested quantity.
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
-                                    </div>
-                                  </div>
-                                </div>
+                              <div class="user_info">
+                                <mat-icon>account_circle</mat-icon>
+                                <mat-icon mat-icon-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
+                                <mat-menu #menu="matMenu">
+                                  <button mat-menu-item>
+                                    <mat-icon>perm_identity</mat-icon>
+                                    <span>View Profile</span>
+                                  </button>
+                                  <button mat-menu-item>
+                                    <mat-icon>delete_outline</mat-icon>
+                                    <span>Discard</span>
+                                  </button>
+                                </mat-menu>
+                              </div>
+                            </div>
+                            <div class="rfq_responselist">
+                              <div class="seller_response">
+                                <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
+                                <small>We are following the request quotation for Men's Polo Shirt</small>
+                              </div>
+                              <div class="seller_qna">
                                 <div>
-                                  <!-- <i class="fa fa-check right_icon"></i> -->
+                                  <i class="fa fa-check right_icon"></i>
                                   <div class="response_options">
-
+                                    <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
+                                    <small>we produce on average 100000 pieces per year</small>
+                                  </div>
+                                </div>
+                                <div>
+                                  <i class="fa fa-times cross_icon"></i>
+                                  <div class="response_options">
+                                    <p><span class="text-success">Yes</span>,we cannot fulfill all specifications.</p>
+                                    <small>Need to source correct fabrics</small>
                                   </div>
                                 </div>
 
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="buyer-reply-container">
                                 <div>
-                                  <mat-icon>account_circle</mat-icon>
-                                  <p>Karin Lehmann</p>
+                                  <i class="fa fa-check right_icon"></i>
+                                  <div class="response_options">
+                                    <p><span class="text-success">Yes</span>,we agree to the price.</p>
+                                  </div>
                                 </div>
-                                <div class="buyer-reply-message">
-                                  <p>Hi this is Sathish, thanks for your reply.</p>
-                                  <p>{{message}}</p>
+                                <div>
+                                  <i class="fa fa-check right_icon"></i>
+                                  <div class="response_options">
+                                    <p><span class="text-success">Yes</span>,we can produce the requested quantity.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div>
+                                  <i class="fa fa-check right_icon"></i>
+                                  <div class="response_options">
+                                    <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
+                                  </div>
                                 </div>
                               </div>
                               <div>
-                                <div class="flex-nowrap align-items-center chatbox">
-                                  <!-- <div class="attachment_icon"> -->
-                                  <div class="chatData">
-                                    <i class="material-icons">attachment</i>
-                                  <!-- </div> -->
-                                    <mat-form-field>
-                                      <input matInput type="text" (input)="onSellerReplyMessage($event)">
-                                    </mat-form-field>
-                                  </div>  
-                                  <!-- <div class="send_btn"> -->
-                                    <button class="btn btn-md" (click)="onReplyToBuyer()">Send</button>
-                                  <!-- </div> -->
+                                <!-- <i class="fa fa-check right_icon"></i> -->
+                                <div class="response_options">
+
                                 </div>
+                              </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="buyer-reply-container">
+                              <div>
+                                <mat-icon>account_circle</mat-icon>
+                                <p>Karin Lehmann</p>
+                              </div>
+                              <div class="buyer-reply-message">
+                                <p>Hi this is Sathish, thanks for your reply.</p>
+                                <p>{{message}}</p>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="flex-nowrap align-items-center chatbox">
+                                <!-- <div class="attachment_icon"> -->
+                                <div class="chatData">
+                                  <i class="material-icons">attachment</i>
+                                  <!-- </div> -->
+                                  <mat-form-field>
+                                    <input matInput type="text" (input)="onSellerReplyMessage($event)">
+                                  </mat-form-field>
+                                </div>
+                                <!-- <div class="send_btn"> -->
+                                <button class="btn btn-md" (click)="onReplyToBuyer()">Send</button>
+                                <!-- </div> -->
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </section>
-                </div>
+                  </div>
+                </section>
               </div>
             </div>
-            <div class="tab-pane fade" id="user2" role="tabpanel">
-              <div class="messages-body">
-                <div>
-                  <section>
-                    <div class="container">
-                      <div class="rfq_response">
-                        <div class="row">
-                          <div class="col-12 px-0">
-                            <div>
-                              <div class="d-flex justify-content-between message-header">
-                                <div class="buyer_title">
-                                  <p class="mb-0"><strong>Men's Polo Shirt</strong></p>
-                                  <a href="">Best Blue Mode GmBH</a>
-                                </div>
-                                <div class="user_info">
-                                  <mat-icon>account_circle</mat-icon>
-                                  <mat-icon mat-icon-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
-                                  <mat-menu #menu="matMenu">
-                                    <button mat-menu-item>
-                                      <mat-icon>perm_identity</mat-icon>
-                                      <span>View Profile</span>
-                                    </button>
-                                    <button mat-menu-item>
-                                      <mat-icon>delete_outline</mat-icon>
-                                      <span>Discard</span>
-                                    </button>
-                                  </mat-menu>
-                                </div>
-                              </div>
-                              <div class="rfq_responselist">
-                                <div class="seller_response">
-                                  <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                                  <small>We are following the request quotation for Men's Polo Shirt</small>
-                                </div>
-                                <div class="seller_qna">
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
-                                      <small>we produce on average 100000 pieces per year</small>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-times cross_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we cannot fulfill all specifications.</p>
-                                      <small>Need to source correct fabrics</small>
-                                    </div>
-                                  </div>
+            <!-- </div> -->
 
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we agree to the price.</p>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we can produce the requested quantity.
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div>
-                                  <!-- <i class="fa fa-check right_icon"></i> -->
-                                  <div class="response_options">
-
-                                  </div>
-                                </div>
-
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="buyer-reply-container">
-                                <div>
-                                  <mat-icon>account_circle</mat-icon>
-                                  <p>Karin Lehmann</p>
-                                </div>
-                                <div class="buyer-reply-message">
-                                  <p>{{message}}</p>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="flex-nowrap align-items-center chatbox">
-                                  <!-- <div class="attachment_icon"> -->
-                                  <div class="chatData"> 
-                                    <i class="material-icons">attachment</i>
-                                  <!-- </div> -->
-                                    <mat-form-field>
-                                      <input matInput type="text" (input)="onSellerReplyMessage($event)">
-                                    </mat-form-field>
-                                  </div>    
-                                  <!-- <div class="send_btn"> -->
-                                    <button class="btn btn-md" (click)="onReplyToBuyer()">Send</button>
-                                  <!-- </div> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="user3" role="tabpanel">
-              <div class="messages-body">
-                <div>
-                  <section>
-                    <div class="container">
-                      <div class="rfq_response">
-                        <div class="row">
-                          <div class="col-12 px-0">
-                            <div>
-                              <div class="d-flex justify-content-between message-header">
-                                <div class="buyer_title">
-                                  <p class="mb-0"><strong>Men's Polo Shirt</strong></p>
-                                  <a href="">Best Blue Mode GmBH</a>
-                                </div>
-                                <div class="user_info">
-                                  <mat-icon>account_circle</mat-icon>
-                                  <mat-icon mat-icon-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
-                                  <mat-menu #menu="matMenu">
-                                    <button mat-menu-item>
-                                      <mat-icon>perm_identity</mat-icon>
-                                      <span>View Profile</span>
-                                    </button>
-                                    <button mat-menu-item>
-                                      <mat-icon>delete_outline</mat-icon>
-                                      <span>Discard</span>
-                                    </button>
-                                  </mat-menu>
-                                </div>
-                              </div>
-                              <div class="rfq_responselist">
-                                <div class="seller_response">
-                                  <p>Dear Karin Lehmann, from Best Blue Mode GmBH</p>
-                                  <small>We are following the request quotation for Men's Polo Shirt</small>
-                                </div>
-                                <div class="seller_qna">
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we produce Product Men's Polo Shirt.</p>
-                                      <small>we produce on average 100000 pieces per year</small>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-times cross_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we cannot fulfill all specifications.</p>
-                                      <small>Need to source correct fabrics</small>
-                                    </div>
-                                  </div>
-
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we agree to the price.</p>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we can produce the requested quantity.
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <i class="fa fa-check right_icon"></i>
-                                    <div class="response_options">
-                                      <p><span class="text-success">Yes</span>,we can make the delivery date.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div>
-                                  <!-- <i class="fa fa-check right_icon"></i> -->
-                                  <div class="response_options">
-
-                                  </div>
-                                </div>
-
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="buyer-reply-container">
-                                <div>
-                                  <mat-icon>account_circle</mat-icon>
-                                  <p>Karin Lehmann</p>
-                                </div>
-                                <div class="buyer-reply-message">
-                                  <p>{{message}}</p>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="d-flex flex-nowrap align-items-center chatbox">
-                                  <!-- <div class="attachment_icon"> -->
-                                  <div class="chatData"> 
-                                    <i class="material-icons">attachment</i>
-                                  <!-- </div> -->
-                                    <mat-form-field>
-                                      <input matInput type="text" (input)="onSellerReplyMessage($event)">
-                                    </mat-form-field>
-                                  </div>   
-                                  <!-- <div class="send_btn"> -->
-                                    <button class="btn btn-md" (click)="onReplyToBuyer()">Send</button>
-                                  <!-- </div> -->
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -30,7 +30,6 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
-
     $(function () {
       $('.sidebartoggler').on('click', function () {
         if ($('#sidebar-wrapper').hasClass('mini-sidebar')) {
@@ -51,13 +50,24 @@ export class SideBarComponent implements OnInit {
   }; */
   public toggleCollapse() {
     this.show = !this.show;
+
   }
   public navigateToLogin() {
     this.router.navigate(['/login']);
   }
 
   public menuClick(menuItem) {
+    this.show = !this.show;
+    $(function () {
+      if ($('#sidebar-wrapper').hasClass('mini-sidebar')) {
+        $('body').trigger('resize');
+        $('#sidebar-wrapper').removeClass('mini-sidebar');
+      } else {
+        $('body').trigger('resize');
+        $('#sidebar-wrapper').addClass('mini-sidebar');
+      }
 
+    });
   }
 
 

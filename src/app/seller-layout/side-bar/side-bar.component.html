@@ -16,8 +16,8 @@
 
       <ul class="navbar-nav" id="sidebarnav">
 
-        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem" (click)="toggleCollapse()">
-          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive" (click)="menuClick(menuItem)">
+        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem" (click)="menuClick()">
+          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
             <!-- <div (click)="menuClick(menuItem)" class="sidebar-links"> -->
             <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
             <span>{{menuItem.title}}</span>
