@@ -27,28 +27,28 @@ export class RfqComponent implements OnInit {
     this.routes.navigateByUrl('seller/rfqHome')
   }
 
-  // slides = [
-  //   {
-  //     img: "assets/Images/rfqImage1.jfif",
-  //     time: "1 hour ago",
-  //     name: "Men's Polo Shirt"
-  //   },
-  //   {
-  //     img: "assets/Images/rfqImage2.jfif",
-  //     time: "1 hour ago",
-  //     name: "Men's Sweater"
-  //   },
-  //   {
-  //     img: "assets/Images/rfqimage3.jpg",
-  //     time: "2019-06-24",
-  //     name: "T-Shirts"
-  //   },
-  //   {
-  //     img: "assets/Images/rfqimage3.jpg",
-  //     time: "2019-06-24",
-  //     name: "T-Shirts"
-  //   }
-  // ];
+  slides = [
+    {
+      img: "assets/Images/rfqImage1.jfif",
+      time: "1 hour ago",
+      name: "Men's Polo Shirt"
+    },
+    {
+      img: "assets/Images/rfqImage2.jfif",
+      time: "1 hour ago",
+      name: "Men's Sweater"
+    },
+    {
+      img: "assets/Images/rfqimage3.jpg",
+      time: "2019-06-24",
+      name: "T-Shirts"
+    },
+    {
+      img: "assets/Images/rfqimage3.jpg",
+      time: "2019-06-24",
+      name: "T-Shirts"
+    }
+  ];
   
   slideConfig = {
     slidesToShow : 4,

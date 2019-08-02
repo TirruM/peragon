@@ -7,26 +7,27 @@
         </div>
         <div class="opportunity-rfq">
           <!-- <div> -->
+           
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
               <!-- <div id="demo" class="carousel slide">
 
                 <div class="carousel-inner">
                   <div class="carousel-item active"> -->
-                    <div class="d-flex">
-                      <div ngxSlickItem class="slide col-sm-3">
+                    <div class="d-flex flex-nowrap justify-content-space">
+                      <div ngxSlickItem *ngFor="let slide of slides" class="slide col-sm-3">
                         <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
                           <div class="card-wrapper">
                             <div class="rfqs">
-                              <img src="assets/Images/rfqImage1.jfif" alt="image" class="img-fluid">
+                              <img src="{{slide.img}}" alt="image" class="img-fluid">
                             </div>
                             <div class="text-center manfact_details_card">
-                              <p>1 hour ago</p>
-                              <p>Men's Polo Shirt</p>
+                              <p>{{slide.time}}</p>
+                              <p>{{slide.name}}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div ngxSlickItem class="slide col-sm-3">   
+                     <!-- <div ngxSlickItem class="slide col-sm-3">  
                         <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
                           <div class="card-wrapper">
                             <div class="rfqs">
@@ -64,7 +65,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div>  -->
                     </div>
 
                   <!-- </div> -->
@@ -134,6 +135,7 @@
                 </a> -->
               <!-- </div> -->
             </ngx-slick-carousel>  
+         
           <!-- </div>  -->
         </div>
       </div>
