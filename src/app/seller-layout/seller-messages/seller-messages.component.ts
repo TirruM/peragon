@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PerogonServices } from 'src/app/services/perogon-services.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-seller-messages',
@@ -16,7 +17,7 @@ export class SellerMessagesComponent implements OnInit {
   currentMessageObj: any;
   mobileWidth: any;
   listClickCount: number = 0;
-  constructor(private services: PerogonServices) { }
+  constructor(private services: PerogonServices, public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit() {
     console.log(window.innerWidth);
@@ -30,6 +31,16 @@ export class SellerMessagesComponent implements OnInit {
     this.services.getSellerMessages().subscribe((response: any) => {
       console.log("seller messages response--->" + JSON.stringify(response));
       this.sellerMessages = response.data;
+    });
+
+    this.breakpointObserver.observe([
+      '(max-width: 991px)'
+    ]).subscribe(result => {
+      if (result.matches) {
+        console.log('Viewport is 500px or over!');
+      } else {
+        console.log('Viewport is getting smaller!');
+      }
     });
   }
   onSellerReplyMessage(event: Event) {
