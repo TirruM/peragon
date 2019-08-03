@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 
 import { BroadcastserviceService } from "../services/broadcastservice.service";
 declare var $: any;
-
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Component({
   selector: 'app-seller-layout',
   templateUrl: './seller-layout.component.html',
@@ -10,11 +10,20 @@ declare var $: any;
 })
 export class SellerLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
   showMinisidebar = false;
-  constructor(private broadCastService: BroadcastserviceService) { }
+  constructor(private broadCastService: BroadcastserviceService, public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit() {
     this.broadCastService.hideFooter.emit(true);
     this.broadCastService.hideButtons.emit(true);
+    this.breakpointObserver.observe([
+      '(max-width: 768px)'
+    ]).subscribe(result => {
+      if (result.matches) {
+        $('#seller-wrapper').addClass('mini-sidebar');
+      } else {
+        $('#seller-wrapper').removeClass('mini-sidebar');
+      }
+    });
   }
   ngOnDestroy(): void {
     this.broadCastService.hideButtons.emit(false);
@@ -33,7 +42,6 @@ export class SellerLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
     };
     $(window).ready(set);
     $(window).on('resize', set);
-
     $('body').trigger('resize');
   }
 

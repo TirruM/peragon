@@ -1,3 +1,4 @@
+import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
@@ -8,6 +9,7 @@ import { BookMarksComponent } from './book-marks/book-marks.component';
 import { ShowRoomsComponent } from './show-rooms/show-rooms.component';
 import { RfqHomeComponent } from './rfq-home/rfq-home.component';
 import { SellerProfileComponentt } from './seller-profile/seller-profile.component';
+import { SearchComponent } from './search/search.component';
 //import { DashboardTestComponent } from './dashboard-test/dashboard-test.component';
 
 const sellerRouter: Routes = [
@@ -21,7 +23,9 @@ const sellerRouter: Routes = [
       { path: 'rfq', component: RfqComponent },
       { path: 'bookmarks', component: BookMarksComponent },
       { path: 'showrooms', component: ShowRoomsComponent },
-      { path: 'rfqHome', component: RfqHomeComponent }
+      { path: 'rfqHome', component: RfqHomeComponent },
+      { path: 'search', component: SearchComponent },
+      { path: 'newsfeed', component: NewsFeedComponent },
     ]
   }
 ]

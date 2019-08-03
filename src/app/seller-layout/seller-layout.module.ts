@@ -22,6 +22,7 @@ import { ModalModule } from 'ngx-bootstrap';
 import { AddProductModelComponent } from './add-product-model/add-product-model.component';
 import { SearchComponent } from './search/search.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NewsFeedComponent } from './news-feed/news-feed.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     LocationsComponent,
     AddProductModelComponent,
     SearchComponent,
+    NewsFeedComponent,
 
   ],
   imports: [
