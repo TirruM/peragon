@@ -54,8 +54,8 @@ export class RfqComponent implements OnInit {
     slidesToShow : 4,
     slidesToScroll: 1,
     // "nextArrow":"<div class='nav-btn next-slide'></div>",
-    "nextArrow": "<div class='material-icons nextArrowBtn' style='color:#f2581d;'>arrow_forward_ios</div>",
-    "prevArrow": "<div class='material-icons prevArrowBtn' style='color:#f2581d;'>arrow_back_ios</div>",
+    "nextArrow" : "<div class='material-icons nextArrowBtn' style='position:absolute;top:33%; color:#f2581d; font-size:30px;'>arrow_forward_ios</div>",
+    "prevArrow" : "<div class='material-icons prevArrowBtn' style='position:absolute;top:40%; left:0px; color:#f2581d; font-size:30px;'>arrow_back_ios</div>",
     // "prevArrow":"<div class='nav-btn prev-slide'></div>",
     dots: false,
     infinite: true,
@@ -65,19 +65,19 @@ export class RfqComponent implements OnInit {
       {
         breakpoint : 768,
         settings : {
-          slidesToShow: 2,
+          slidesToShow: 1,
         }
       },
       {
         breakpoint : 991,
         settings : {
-          slidesToShow : 3,
+          slidesToShow : 1,
         }
       },
       {
         breakpoint : 1200,
         settings : {
-          slidesToShow : 4,
+          slidesToShow : 1,
         }
       }
 

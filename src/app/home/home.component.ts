@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
 
   }
   slideConfig = {
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 1,
     centerMode: true,
