@@ -37,8 +37,10 @@ export class SellerMessagesComponent implements OnInit {
       '(max-width: 991px)'
     ]).subscribe(result => {
       if (result.matches) {
+        this.mobileWidth = true;
         console.log('Viewport is 500px or over!');
       } else {
+        this.mobileWidth = false;
         console.log('Viewport is getting smaller!');
       }
     });
