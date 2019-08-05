@@ -1,6 +1,6 @@
 @import "../../../custom_styles/variables";
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .mini-sidebar {
     position: fixed !important;
     left: 0 !important;
@@ -44,7 +44,7 @@
 #sidebar-wrapper {
   .sidebartoggler {
     display: none;
-    @include mobile {
+    @include tablet {
       display: block;
     }
   }
@@ -64,6 +64,9 @@
       @include tablet {
         padding: 0;
       }
+    }
+    @include tablet {
+      padding: 0 1rem;
     }
   }
   .list-items-wrapper {
@@ -139,7 +142,7 @@
       }
     }
   }
-  @include mobile {
+  @include tablet {
     left: -170px;
     position: absolute;
   }

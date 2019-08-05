@@ -13,10 +13,13 @@ body {
 body {
   margin: 0;
   font-family: "lato", Roboto, "Helvetica Neue", sans-serif;
-  padding-top: 64px;
+  padding-top: 93px;
   ::selection {
     color: #fff;
     background: #f2581d;
+  }
+  @include tablet {
+    padding-top: 64px;
   }
 }
 
@@ -163,7 +166,7 @@ hr {
 .custom {
   min-width: 1200px;
   @include tablet {
-    min-width: 800px;
+    min-width: 730px;
   }
   @include mobile {
     min-width: 400px;
