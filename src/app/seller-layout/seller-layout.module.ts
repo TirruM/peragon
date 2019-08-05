@@ -61,7 +61,8 @@ import { SearchComponent } from './search/search.component';
     LocationsComponent,
     ShowRoomsComponent,
     AddProductModelComponent,
-    RfqHomeComponent
+    RfqHomeComponent,
+    SearchComponent
   ]
 })
 export class SellerLayoutModule { }

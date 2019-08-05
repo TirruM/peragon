@@ -10,13 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SliderModule } from 'angular-image-slider';
-import { MainModule } from './main/main/main.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +25,7 @@ import { MainModule } from './main/main/main.module';
     BuyerModule,
     HttpClientModule,
     SlickCarouselModule,
-    SliderModule, MainModule
+    SliderModule
   ],
   exports: [BuyerModule,
   ],

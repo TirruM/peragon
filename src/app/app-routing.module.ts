@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 const routes: Routes = [
-  { path: '', loadChildren: './main/main/main.module#MainModule' },
+  { path: '', loadChildren: './main-layout/main-layout.module#MainLayoutModule' },
   { path: 'seller', loadChildren: './seller-layout/seller-layout.module#SellerLayoutModule' },
 ];
 
