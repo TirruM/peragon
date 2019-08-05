@@ -31,6 +31,7 @@ export class SellerMessagesComponent implements OnInit {
     this.services.getSellerMessages().subscribe((response: any) => {
       console.log("seller messages response--->" + JSON.stringify(response));
       this.sellerMessages = response.data;
+      this.currentMessageObj = this.sellerMessages[0];
     });
 
     this.breakpointObserver.observe([
@@ -54,6 +55,7 @@ export class SellerMessagesComponent implements OnInit {
   onMessageClick(currentMessageObj, messageIndex) {
     this.messageIndex = messageIndex;
     this.currentMessageObj = currentMessageObj;
+
     if (this.listClickCount < 1) {
       this.listClickCount++;
     } else {

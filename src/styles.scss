@@ -13,7 +13,7 @@ body {
 body {
   margin: 0;
   font-family: "lato", Roboto, "Helvetica Neue", sans-serif;
-  padding-top: 93px;
+  padding-top: 64px;
   ::selection {
     color: #fff;
     background: #f2581d;
@@ -67,6 +67,9 @@ hr {
         @include mobile {
           font-size: 28px;
         }
+        @include tablet {
+          font-size: 40px;
+        }
       }
       h5 {
         color: #fff;
@@ -88,7 +91,7 @@ hr {
       }
       @include tablet {
         left: 33px;
-        bottom: 200px;
+        bottom: 140px;
       }
     }
     @include tablet {
@@ -160,7 +163,7 @@ hr {
 .custom {
   min-width: 1200px;
   @include tablet {
-    min-width: 800px; 
+    min-width: 800px;
   }
   @include mobile {
     min-width: 400px;

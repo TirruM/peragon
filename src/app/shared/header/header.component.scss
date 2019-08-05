@@ -45,10 +45,7 @@
 .navbar-nav .current::after {
   @extend %header-styles;
   @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
+    margin: 0;
   }
 }
 

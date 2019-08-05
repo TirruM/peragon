@@ -37,17 +37,24 @@
             background-color: #c2b3b3;
           }
         }
+        .carousel-control-prev {
+          left: -26px;
+        }
         .carousel-control-prev-icon:after {
           content: "<";
           color: #f2581d !important;
           background-image: none !important;
           font-size: 45px;
+          position: absolute;
+          top: 29%;
         }
         .carousel-control-next-icon:after {
           content: ">";
           color: #f2581d !important;
           background-image: none !important;
           font-size: 45px;
+          position: absolute;
+          top: 29%;
         }
       }
     }

@@ -59,6 +59,7 @@ $primary-bg-color: #f40785;
   .manufact_card {
     box-shadow: $box-shadow;
     margin-bottom: 30px;
+    padding: 1rem;
     img {
       width: 150px;
     }
@@ -83,6 +84,9 @@ $primary-bg-color: #f40785;
         text-align: center;
         color: #262626;
       }
+      @include tablet {
+        height: 180px;
+      }
     }
     .manufact_details {
       margin-top: 5px;
@@ -100,6 +104,12 @@ $primary-bg-color: #f40785;
           letter-spacing: 1px;
         }
       }
+      @include tablet {
+        height: 100px;
+      }
+    }
+    @include tablet {
+      padding-bottom: 50px;
     }
   }
 }

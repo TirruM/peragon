@@ -12,6 +12,9 @@
     width: 70px;
     margin-top: 0;
   }
+  @include tablet {
+    width: 70px;
+  }
 }
 .main-wrapper {
   margin-left: 240px;
