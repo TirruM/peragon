@@ -19,8 +19,8 @@
     <button type="button" class="close" (click)="onCancel()">&times;</button>
   </div>
   <div class="product-wrapper">
-    <div class="d-flex">
-      <div class="col-8">
+    <div class="visibility">
+      <div class="col-12 col-md-8">
         <div class="product-images">
           <p class="products-heading">Add Product to your Showroom</p>
           <small>Visible in your profile, news feeds of your followers, and inspiration boards for buyers
@@ -44,28 +44,28 @@
                 </button>
               </div>
               <ng-template #temp>
-              <div class="img-uploaded-container">
-                <div class="uploaded-img">
+                <div class="img-uploaded-container">
+                  <div class="uploaded-img">
                     <div>
-                    <img [src]="imageUpload_0" alt="" class="img-fluid">
+                      <img [src]="imageUpload_0" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center crud-icons">
+                    <div>
+                      <i class="material-icons">
+                        info
+                      </i>
+                    </div>
+                    <div>
+                      <i class="material-icons">
+                        edit
+                      </i>
+                      <i class="material-icons">
+                        delete
+                      </i>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center crud-icons">
-                  <div>
-                    <i class="material-icons">
-                      info
-                    </i>
-                  </div>
-                  <div>
-                    <i class="material-icons">
-                      edit
-                    </i>
-                    <i class="material-icons">
-                      delete
-                    </i>
-                  </div>
-                </div>
-              </div>
               </ng-template>
               <div class="upload-img front-view-box">
                 <button class="btn product-add-btn">
@@ -102,13 +102,15 @@
         </div>
 
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <div class="product-form">
           <form>
             <div class="product-descr">
               <p>Showroom Post</p>
-              <input type="text" class="form-control" placeholder="Product Title" [(ngModel)]="productTitle" name="productTitle">
-              <input type="text" class="form-control" placeholder="Description of the Product"  [(ngModel)]="productDesc" name="productDesc">
+              <input type="text" class="form-control" placeholder="Product Title" [(ngModel)]="productTitle"
+                name="productTitle">
+              <input type="text" class="form-control" placeholder="Description of the Product" [(ngModel)]="productDesc"
+                name="productDesc">
             </div>
             <div class="target-group">
               <p>Target Group<sup>*</sup></p>

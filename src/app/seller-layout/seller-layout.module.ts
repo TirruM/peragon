@@ -21,6 +21,8 @@ import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
 import { ModalModule } from 'ngx-bootstrap';
 import { AddProductModelComponent } from './add-product-model/add-product-model.component';
 import { SearchComponent } from './search/search.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NewsFeedComponent } from './news-feed/news-feed.component';
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { SearchComponent } from './search/search.component';
     LocationsComponent,
     AddProductModelComponent,
     SearchComponent,
+    NewsFeedComponent,
 
   ],
   imports: [
@@ -50,6 +53,7 @@ import { SearchComponent } from './search/search.component';
     MatChipsModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
+    SlickCarouselModule,
     ModalModule.forRoot()
   ],
   entryComponents: [AddProductModelComponent],

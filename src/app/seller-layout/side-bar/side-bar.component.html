@@ -2,6 +2,7 @@
   <button class="navbar-toggler sidebartoggler" type="button" data-target="" (click)="toggleCollapse()">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <!-- <img src="assets/img/side-menu-button.png" class="navbar-toggler sidebartoggler" alt="" (click)="toggleCollapse()"> -->
   <div class="seller-info d-flex flex-sm-column flex-lg-row">
     <div class="seller-image">
       <img src="assets/img/user2-160x160.jpg" class="rounded-circle" alt="User Image">
@@ -16,8 +17,8 @@
 
       <ul class="navbar-nav" id="sidebarnav">
 
-        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem" (click)="toggleCollapse()">
-          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive" (click)="menuClick(menuItem)">
+        <li *ngFor="let menuItem of menuItems" class="nav-item custom-navitem" (click)="menuClick()">
+          <a class="nav-link" [routerLink]="[menuItem.path]" routerLinkActive="isActive">
             <!-- <div (click)="menuClick(menuItem)" class="sidebar-links"> -->
             <mat-icon class="material-icons">{{menuItem.icon}}</mat-icon>
             <span>{{menuItem.title}}</span>

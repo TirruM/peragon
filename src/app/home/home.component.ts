@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
 
   }
   slideConfig = {
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 1,
     centerMode: true,
@@ -53,6 +53,12 @@ export class HomeComponent implements OnInit {
       },
       {
         breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1200,
         settings: {
           slidesToShow: 1
         }

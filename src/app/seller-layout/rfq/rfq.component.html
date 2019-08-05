@@ -5,137 +5,144 @@
         <div>
           <h3>New Opportunities</h3>
         </div>
-        <div class="opportunity-rfq">
+        
+          <!-- <div> -->
+           
+            
+              <!-- <div id="demo" class="carousel slide">
 
-          <div id="demo" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"> -->
+                    <div class="opportunity-rfq">
+                      <div class="d-flex flex-nowrap justify-content-space carousel-styles">
+                        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                          <div ngxSlickItem class="slide" *ngFor="let slide of slides">
+                            <div class="col-sm-3">
+                              <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                                <div class="card-wrapper">
+                                  <div class="rfqs">
+                                    <img src="{{slide.img}}" alt="image" class="img-fluid">
+                                  </div>
+                                  <div class="text-center manfact_details_card">
+                                    <p>{{slide.time}}</p>
+                                    <p>{{slide.name}}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  
+                          </div>
+                        </ngx-slick-carousel>  
+                      <!-- <div ngxSlickItem class="slide col-sm-3">  
+                          <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                            <div class="card-wrapper">
+                              <div class="rfqs">
+                                <img src="assets/Images/rfqImage2.jfif" alt="image" class="img-fluid">
+                              </div>
+                              <div class="text-center manfact_details_card">
+                                <p>1 hour ago</p>
+                                <p>Men's Sweater</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div ngxSlickItem class="slide col-sm-3">
+                          <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                            <div class="card-wrapper">
+                              <div class="rfqs">
+                                <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
+                              </div>
+                              <div class="text-center manfact_details_card">
+                                <p>2019-06-24</p>
+                                <p>T-Shirts</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div ngxSlickItem class="slide col-sm-3">
+                          <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                            <div class="card-wrapper">
+                              <div class="rfqs">
+                                <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
+                              </div>
+                              <div class="text-center manfact_details_card">
+                                <p>2019-06-24</p>
+                                <p>T-Shirts</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  -->
+                      </div>
+                    </div>  
+                  <!-- </div> -->
+                  <!-- <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                          <div class="card-wrapper">
+                            <div class="rfqs">
+                              <img src="assets/Images/rfqImage1.jfif" alt="image" class="img-fluid">
+                            </div>
+                            <div class="text-center manfact_details_card">
+                              <p>1 hour ago</p>
+                              <p>Men's Polo Shirt</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                          <div class="card-wrapper">
+                            <div class="rfqs">
+                              <img src="assets/Images/rfqImage2.jfif" alt="image" class="img-fluid">
+                            </div>
+                            <div class="text-center manfact_details_card">
+                              <p>1 hour ago</p>
+                              <p>Men's Sweater</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                          <div class="card-wrapper">
+                            <div class="rfqs">
+                              <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="text-center manfact_details_card">
+                              <p>2019-06-24</p>
+                              <p>T-Shirts</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
+                          <div class="card-wrapper">
+                            <div class="rfqs">
+                              <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="text-center manfact_details_card">
+                              <p>2019-06-24</p>
+                              <p>T-Shirts</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqImage1.jfif" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>1 hour ago</p>
-                          <p>Men's Polo Shirt</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqImage2.jfif" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>1 hour ago</p>
-                          <p>Men's Sweater</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>2019-06-24</p>
-                          <p>T-Shirts</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>2019-06-24</p>
-                          <p>T-Shirts</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqImage1.jfif" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>1 hour ago</p>
-                          <p>Men's Polo Shirt</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqImage2.jfif" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>1 hour ago</p>
-                          <p>Men's Sweater</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>2019-06-24</p>
-                          <p>T-Shirts</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-3">
-                    <div class="buyers_card mb-3 p-3" (click)="onNavigateToRfqResponse()">
-                      <div class="card-wrapper">
-                        <div class="rfqs">
-                          <img src="assets/Images/rfqimage3.jpg" alt="image" class="img-fluid">
-                        </div>
-                        <div class="text-center manfact_details_card">
-                          <p>2019-06-24</p>
-                          <p>T-Shirts</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-
-          </div>
-
-        </div>
+                  </div> -->
+                <!-- </div> -->
+                <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a> -->
+              <!-- </div> -->
+           
+         
+          <!-- </div>  -->
+       
       </div>
     </section>
     <section>

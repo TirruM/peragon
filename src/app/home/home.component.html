@@ -17,7 +17,7 @@
         <button class="btn our_members-btn">Our Members</button>
     </div> -->
 </div>
-<div class="container">
+<div class="container-fluid">
   <section class="buyer-manufacturers">
     <div class="row">
       <div class="text-center bm-head">
@@ -61,88 +61,6 @@
     </div>
   </section>
 
-  <!-- Trending Products -->
-  <!-- <section>
-    <div class="trending_products">
-      <div class="container">
-        <h2>Categories</h2>
-        <hr>
-        
-        <div id="accordion">
-          <div class="row">
-
-            <div class="col-md-4" *ngFor="let category of segmentedGroups">
-              <a class="card-link" data-toggle="collapse" href="#{{category.categoryId}}">
-                <div>
-                  <div class="buyers_card mb-3 p-3">
-                    <div class="card-wrapper">
-                      <div class="rfqs">
-                        <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                      </div>
-                      <div class="text-center manfact_details_card">
-                        <div class="ratings">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <p>{{category.categoryName}}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div id="{{category.categoryId}}" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="buyers_card p-3">
-                        <div class="card-wrapper">
-                          <div class="rfqs">
-                            <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                          </div>
-                          <div class="text-center manfact_details_card">
-                            <div class="ratings">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                            </div>
-                            <p>{{category.categoryName}}</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="buyers_card p-3">
-                        <div class="card-wrapper">
-                          <div class="rfqs">
-                            <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                          </div>
-                          <div class="text-center manfact_details_card">
-                            <div class="ratings">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                            </div>
-                            <p>{{category.categoryName}}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <div class="trending_products" [hidden]="false">
     <div class="container">
@@ -222,78 +140,6 @@
       </div>
     </div>
   </div>
-  <!-- Tenders -->
-  <!-- <section>
-        <div class="tenders">
-            <div class="container">
-                <h2>Tenders</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="tenders_card mb-3 p-3">
-                            <div class="card-wrapper">
-                                <div class="rfqs">
-                                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                                </div>
-                                <div class="text-center manfact_details_card">
-                                    <p><b>Gloves</b></p>
-                                    <p>Bid Value: <b>$1000</b></p>
-                                    <p>Quantity: <b>1000</b></p>
-                                    <p>ABC Pty Ltd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tenders_card mb-3 p-3">
-                            <div class="card-wrapper">
-                                <div class="rfqs">
-                                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                                </div>
-                                <div class="text-center manfact_details_card">
-                                    <p><b>Gloves</b></p>
-                                    <p>Bid Value: <b>$1000</b></p>
-                                    <p>Quantity: <b>1000</b></p>
-                                    <p>ABC Pty Ltd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tenders_card mb-3 p-3">
-                            <div class="card-wrapper">
-                                <div class="rfqs">
-                                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                                </div>
-                                <div class="text-center manfact_details_card">
-                                    <p><b>Gloves</b></p>
-                                    <p>Bid Value: <b>$1000</b></p>
-                                    <p>Quantity: <b>1000</b></p>
-                                    <p>ABC Pty Ltd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="tenders_card mb-3 p-3">
-                            <div class="card-wrapper">
-                                <div class="rfqs">
-                                    <img src="assets/Images/sports/Football_3.jpg" alt="image">
-                                </div>
-                                <div class="text-center manfact_details_card">
-                                    <p><b>Gloves</b></p>
-                                    <p>Bid Value: <b>$1000</b></p>
-                                    <p>Quantity: <b>1000</b></p>
-                                    <p>ABC Pty Ltd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
 
   <section class="support">
     <div class="container">

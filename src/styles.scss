@@ -40,57 +40,63 @@ hr {
 \*------------------------------------*/
 
 .head-part {
-    position: relative;
-    .banner-image {
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 650px;
-        height: 650px;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        .transparent-layer {
-            bottom: 0;
-            background: rgb(0, 0, 0); 
-            background: rgba(0, 0, 0, 0.5);
-            min-height: 650px;
-            height: 650px;
-            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        }
-        .image-text-box {
-            position: absolute;
-            left: 90px;
-            bottom: 140px;
-                h1
-                {
-                    padding-bottom: 15px;
-                    @extend %h1-styles;
-                    @include mobile {
-                        font-size: 20px;
-                    }  
-                }
-                h5 {
-                    color: #fff;
-                    letter-spacing: 1.5px;
-                    font-size: 2rem;
-                    margin-bottom: 1em;
-                    @include mobile {
-                        font-size: 1rem;
-                    }
-                }
-                .signup-btn {
-                    background-color: #152331;
-                    padding-bottom: 13px;
-                    @extend %btn-styles;
-                    @include mobile {
-                        font-size: 0.8rem;
-                    }  
-                }
-            }    
-        }
+  position: relative;
+  .banner-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    height: 650px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    .transparent-layer {
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5);
+      min-height: 650px;
+      height: 650px;
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
     }
-  
-
+    .image-text-box {
+      position: absolute;
+      left: 90px;
+      bottom: 140px;
+      h1 {
+        padding-bottom: 15px;
+        @extend %h1-styles;
+        @include mobile {
+          font-size: 28px;
+        }
+      }
+      h5 {
+        color: #fff;
+        letter-spacing: 1.5px;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        @include mobile {
+          font-size: 1rem;
+          letter-spacing: 1.3px;
+        }
+      }
+      .signup-btn {
+        background-color: #152331;
+        padding-bottom: 13px;
+        @extend %btn-styles;
+        @include mobile {
+          font-size: 0.8rem;
+        }
+      }
+      @include tablet {
+        left: 33px;
+        bottom: 200px;
+      }
+    }
+    @include tablet {
+      min-height: 520px;
+      height: 520px;
+    }
+  }
+}
 
 /* Admin styles */
 .side-bg {
@@ -153,4 +159,10 @@ hr {
 
 .custom {
   min-width: 1200px;
+  @include tablet {
+    min-width: 800px; 
+  }
+  @include mobile {
+    min-width: 400px;
+  }
 }

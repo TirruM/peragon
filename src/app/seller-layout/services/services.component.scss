@@ -71,6 +71,13 @@ button {
     .upload-file-btn {
       position: absolute;
       left: 472px;
+      @include tablet {
+        left: 222px;
+      }
+      @include mobile {
+        left: 100px;
+        top: 190px;
+      }
       top: 143px;
       .btn {
         color: #fff;
