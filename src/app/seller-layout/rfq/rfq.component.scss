@@ -5,9 +5,10 @@
     margin: 40px auto;
     .buyers_card {
       box-shadow: $box-shadow;
-      margin: 16px;
-      width: 200px;
-      // transition: 0.3s all ease;
+      margin: 1px 12px;
+      // width: 230px;
+      transition: 0.3s all ease;
+      padding: 10px 30px;
       .card-wrapper {
         .rfqs {
           img {
@@ -40,6 +41,12 @@
           }
         }
       }
+      // @include tablet {
+      //   margin-right: 12px;
+      //   margin-left: 13px;
+      //   margin-top: 10px;
+      //   width: 227px;
+      // }
     }
 
     //   }
@@ -81,3 +88,16 @@
 .slick-next:before {
   color: #09529b !important;
 }
+// .slide {
+//   width: 243px !important;
+// }
+.slick-track {
+  display: flex !important;
+}
+.sub-category-container {
+  width: 100%;
+}
+// .slick-slider {
+//   width: 90%;
+//   margin: auto;
+// }
