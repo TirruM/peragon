@@ -2,54 +2,55 @@
 @import "../../custom_styles/variables";
 
 %h2-styles {
-    font-size: 25px;
-    letter-spacing: 2px;
-    line-height: 32px;
-    margin-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  margin-bottom: 20px;
 }
-
 
 /*------------------------------------*\
   #BANNER-SECTION
 \*------------------------------------*/
 
 .banner-image {
-        background-image: url('../../assets/Images/background.JPG');
+  background-image: url("../../assets/Images/background.JPG");
 }
-
 
 /*------------------------------------*\
   #COMPANY-SECTION,#BOOKMARKS-SECTION,#DIGITAL-SECTION
 \*------------------------------------*/
 
-.company-profile, .bookmarks, .digital-supplier {
-    margin: 60px 0;
-    .top-mar {
-                margin-top:60px;
-            }
-    h2 {
-        @extend %h2-styles;
-        @include mobile {
-            font-size: 20px;
-        }
+.company-profile,
+.bookmarks,
+.digital-supplier {
+  margin: 60px 0;
+  .top-mar {
+    margin-top: 60px;
+  }
+  h2 {
+    @extend %h2-styles;
+    @include mobile {
+      font-size: 20px;
     }
-    .list-para {
-        margin-bottom: 30px;
-        p {
-            @extend %list-p-styles;
-            padding: 0px 70px 0px 46px;
-            line-height: 2;
-            @extend %tick-img;
-            @include mobile {
-                font-size: 14px;
-            }
-        }
+  }
+  .list-para {
+    margin-bottom: 30px;
+    p {
+      @extend %list-p-styles;
+      padding: 0px 70px 0px 46px;
+      line-height: 2;
+      @extend %tick-img;
+      @include mobile {
+        font-size: 14px;
+      }
     }
-    .res-img {
-        height: 654px;
-        width: 800px;
-        box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+  }
+  .res-img {
+    height: 654px;
+    width: 800px;
+    box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.1);
+    @include mobile {
+      height: 220px;
     }
-
+  }
 }
-
