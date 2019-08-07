@@ -4,6 +4,7 @@
   .mini-sidebar {
     position: fixed !important;
     left: 0 !important;
+    top: 72px;
     width: 200px;
     background-color: #fbfbfb;
     height: 100vh;
@@ -147,13 +148,21 @@
     position: absolute;
   }
   .navbar-toggler {
-    border-color: rgb(255, 255, 255);
+    border-color: transparent;
     position: absolute;
     left: 170px;
     .navbar-toggler-icon {
       width: 1.2em;
       height: 1.2em;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(242, 88, 29)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      @include tablet {
+        width: 1.5em;
+        height: 1.5em;
+      }
+      @include mobile {
+        width: 1.2em;
+        height: 1.2em;
+      }
     }
     @extend %custom-input-types;
   }

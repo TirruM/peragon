@@ -130,6 +130,7 @@ $primary-bg-color: #f40785;
   .info {
     box-shadow: $box-shadow;
     margin-bottom: 30px;
+    padding: 48px 48px 48px 48px;
     // background-image: url("../../assets/img/icon4.png");
     // background-repeat: no-repeat;
     // background-position: top;
@@ -148,6 +149,12 @@ $primary-bg-color: #f40785;
       @include mobile {
         font-size: 14px;
       }
+    }
+  }
+  .p-bot {
+    padding-bottom: 71px;
+    @include tablet {
+      padding-bottom: 48px;
     }
   }
 }

@@ -36,7 +36,7 @@
       <li class="nav-item custom-nav-item" routerLinkActive="current" (click)="toggleCollapse()">
         <a class="nav-link" [routerLink]="['/pricing']" data-toggle="collapse">Pricing</a>
       </li>
-      <li class="nav-item join-btn" *ngIf="signInFlag">
+      <li class="nav-item join-btn" routerLinkActive="current" *ngIf="signInFlag">
         <a class="nav-link" (click)="signUp()" data-toggle="collapse" (click)="toggleCollapse()">Join Now</a>
       </li>
       <li class="nav-item login-btn" *ngIf="signInFlag">
