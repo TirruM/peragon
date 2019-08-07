@@ -52,6 +52,7 @@ $primary-bg-color: #f40785;
   .manu_header {
     h2 {
       @extend %h-styles;
+      margin-left: 18px !important;
       @include mobile {
         font-size: 19px;
       }
@@ -115,7 +116,7 @@ $primary-bg-color: #f40785;
 .sport-source-info {
   margin-top: 3rem;
   .sports_source {
-    width: 485px;
+    // width: 485px;
     margin: auto;
     text-align: center;
     h3 {

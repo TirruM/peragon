@@ -31,6 +31,12 @@ h4 {
 
 .form-card {
   width: 500px;
+  @include mobile {
+    width: auto;
+  }
+  @include tablet {
+    width: auto;
+  }
 }
 
 .example-form {

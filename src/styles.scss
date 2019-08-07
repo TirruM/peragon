@@ -68,7 +68,7 @@ hr {
         padding-bottom: 15px;
         @extend %h1-styles;
         @include mobile {
-          font-size: 28px;
+          font-size: 25px !important;
         }
         @include tablet {
           font-size: 40px;
