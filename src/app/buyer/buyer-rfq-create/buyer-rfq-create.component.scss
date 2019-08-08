@@ -1,58 +1,58 @@
 @import "../../../custom_styles/variables";
 
 .banner-image {
-    background-image: url('../../../assets/img/women-shopping-online.jpg');
-    .image-text-box {
-        position: absolute;
-        left: 60px;
-        top: 140px;
-    }
+  background-image: url("../../../assets/img/women-shopping-online.jpg");
+  .image-text-box {
+    position: absolute;
+    left: 60px;
+    top: 140px;
+  }
 }
 
 .main-img {
-    position: relative;
+  position: relative;
 }
 .container-on-img {
-    background-color: #ffffff;
-    position: relative;
-    top: -178px;
+  background-color: #ffffff;
+  position: relative;
+  top: -178px;
 }
 
-.full-width{
-    width: 100%;
+.full-width {
+  width: 100%;
 }
 
 .back-btn {
-    margin-top: 10px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    padding-left: 8px;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
-    width: 93px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding-left: 8px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  width: 93px;
 
-    i {
-        padding-right: 8px;
-    }
+  i {
+    padding-right: 8px;
+  }
 }
 .form-main-heading {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    h4 {
-        margin-left: 107px;
-        margin-top: -30px;
-    }
+  margin-bottom: 20px;
+  margin-top: 10px;
+  h4 {
+    margin-left: 107px;
+    margin-top: -30px;
+  }
 }
 
 .manufact_card {
-    box-shadow: $box-shadow;
-    .form-group {
-        label {
-            font-size: 14px;
-        }
+  box-shadow: $box-shadow;
+  .form-group {
+    label {
+      font-size: 14px;
     }
+  }
 
-    .rfq-form {
-       padding: 30px;
+  .rfq-form {
+    padding: 30px;
 
     //    .upload-file-btn {
     //        background-image: $gradient_bg_color;
@@ -66,69 +66,71 @@
     //        }
     //    }
     .file-container {
-        background-color: #f2f2f2;
-        height: 260px;
-        // position: relative;
-        .upload_file {
-            text-align: center;
-            padding-top: 72px;
-                .btn {
-                    color: #fff;
-                    background-color: #28a745;
-                    padding: 5px 15px;
-                    border-radius: 33px;
-                    font-size: 14px;
-                    font-weight: 700;
-                    // margin-left: 128px;
-                }
-                input[type=file] {
-                    // font-size: 100px;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    opacity: 0;
-                }
-            p {
-                margin-bottom: 0;
-                // text-align: center;
-            }
-            label {
-                font-size: 13px;
-            }
+      background-color: #f2f2f2;
+      height: 260px;
+      // position: relative;
+      .upload_file {
+        text-align: center;
+        padding-top: 72px;
+        .btn {
+          color: #fff;
+          background-color: #28a745;
+          padding: 5px 15px;
+          border-radius: 33px;
+          font-size: 14px;
+          font-weight: 700;
+          // margin-left: 128px;
         }
+        input[type="file"] {
+          // font-size: 100px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+        p {
+          margin-bottom: 0;
+          // text-align: center;
+        }
+        label {
+          font-size: 13px;
+        }
+      }
     }
-    
 
-       .form-btns {
-            button {
-                background-image: $gradient_bg_color;
-                border-radius: 24px;
-                width: 100px;
-                letter-spacing: 1px;
-                border: aliceblue;
-            }    
-            .cancel-btn {
-                margin-right: 20px;
-            }
-        }
-
-       .form-checkbox {
-            margin-top: 18px;
-
-            .one-time-checkbox {
-                margin-left: 90px;
-                @include tablet {
-                    margin-left: 10px;
-                }
-            }
-        }
+    .form-btns {
+      button {
+        background-image: $gradient_bg_color;
+        border-radius: 24px;
+        width: 100px;
+        letter-spacing: 1px;
+        border: aliceblue;
+      }
+      .cancel-btn {
+        margin-right: 20px;
+      }
     }
-}    
+
+    .form-checkbox {
+      margin-top: 18px;
+
+      .one-time-checkbox {
+        margin-left: 90px;
+        @include tablet {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .define-order {
+    margin-top: 20px;
+  }
+}
 
 .mat-checkbox-layout {
-    padding-right: 30px !important;
+  padding-right: 30px !important;
 }
 
 .form-btns {
-    text-align: right;
+  text-align: right;
 }
