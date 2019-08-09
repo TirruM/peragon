@@ -55,6 +55,9 @@
           display: inline-block;
           vertical-align: super;
         }
+        @include mobile {
+          display: block;
+        }
       }
     }
     .product-images-upload {
@@ -109,6 +112,10 @@
               display: block;
               font-size: 30px;
             }
+          }
+          @include mobile {
+            width: 115px;
+            height: 115px;
           }
         }
       }
