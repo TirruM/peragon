@@ -108,7 +108,7 @@
 <section>
   <div class="container-fluid">
     <div class="box-style">
-      <p>Profile Strength:{{profileStrength}}</p>
+      <p class="profile">Profile Strength:{{profileStrength}}</p>
       <div class="progress">
         <div class="one success-color">
           <button class=" btn-tab-progress"><i class="fa fa-check-circle-o "
@@ -263,7 +263,7 @@
       <app-about></app-about>
     </div>
     <div id="products" class="tab-pane fade " [ngClass]="{'show':selectedTab =='2','active':selectedTab =='2'}">
-      <p>products works</p>
+      <!-- <p>products works</p> -->
       <app-products></app-products>
     </div>
     <div id="services" class="tab-pane fade " [ngClass]="{'show':selectedTab =='3','active':selectedTab =='3'}">

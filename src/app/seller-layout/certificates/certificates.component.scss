@@ -1,6 +1,7 @@
 @import "../../../custom_styles/variables";
 
 .no-certificates-content1 {
+  font-size: 13px;
   padding: 5px 5px 0px 2px;
   .add-certificates {
     text-align: center;
@@ -53,6 +54,9 @@
     h3 {
       @include tablet {
         font-size: 20px;
+      }
+      @include mobile {
+        font-size: 12px;
       }
     }
     .certificate-img img{
