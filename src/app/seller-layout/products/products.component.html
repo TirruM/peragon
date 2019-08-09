@@ -112,7 +112,7 @@
 
 <div [ngSwitch]="addProductFeatureSwitch">
   <div *ngSwitchCase="'addFeature'">
-    <div class="box-style">
+    <div class="box-style product-features">
       <p><b>Product Features</b></p>
       <div class="main-text">
         <button class="btn btn-md add-btn" (click)="addProductFeature()">+ Add "Features"</button>
@@ -120,7 +120,7 @@
     </div>
   </div>
   <div *ngSwitchCase="'addNewProductFeature'">
-    <div class="box-style">
+    <div class="box-style product-features">
       <p><b>Edit "Product Features"</b></p>
       <div class="edit-details">
         <form>
