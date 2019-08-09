@@ -3,6 +3,9 @@
 .showroom-container {
   h5 {
     font-weight: bold;
+    @include mobile {
+      font-size: 14px;
+    }
   }
   .box-style {
     margin: 10px 0;
@@ -20,6 +23,9 @@
       i {
         font-size: 70px;
         display: block;
+        @include mobile {
+          font-size: 45px;
+        }
       }
       small {
         font-size: 70%;
