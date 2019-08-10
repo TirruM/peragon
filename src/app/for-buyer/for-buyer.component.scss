@@ -68,6 +68,11 @@ $primary-bg-color: #f40785;
         width: 150px;
       }
     }
+    .Vumero-logo {
+      @include mobile {
+        height: 82px;
+      }
+    } 
     .ratings {
       color: yellow;
       padding-right: 5px;
@@ -84,6 +89,9 @@ $primary-bg-color: #f40785;
       }
       @include desktop {
         height: 145px;
+      }
+      @include mobile {
+        height: 90px;
       }
     }
     .manufact_details {

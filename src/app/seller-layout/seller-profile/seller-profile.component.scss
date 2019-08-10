@@ -117,14 +117,22 @@
   }
 
   .product-label {
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: $box-shadow;
-    padding: 5px 16px 5px 16px;
-    margin-right: 16px;
-    text-align: center;
+    @include mobile {
+      display: flex;
+    }
+    label { 
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: $box-shadow;
+      padding: 5px 16px 7px 16px;
+      margin-right: 16px;
+      text-align: center;
+      font-size: 10px;
+    }
+    
   }
 }
+
 
 .product-btns {
   margin: 10px;
@@ -359,3 +367,4 @@ ul {
 }
 
 /* end Progress bar colors */
+
