@@ -72,6 +72,9 @@ $primary-bg-color: #f40785;
       img {
         width: 150px;
       }
+      @include mobile {
+        height: 100px;
+      }
     }
     .ratings {
       color: yellow;
@@ -91,6 +94,9 @@ $primary-bg-color: #f40785;
       }
       @include tablet {
         height: 180px;
+      }
+      @include mobile {
+        height: 100px;
       }
     }
     .manufact_details {
@@ -113,6 +119,9 @@ $primary-bg-color: #f40785;
       }
       @include tablet {
         height: 100px;
+      }
+      @include mobile {
+        height: 70px;
       }
     }
     @include tablet {
@@ -178,7 +187,7 @@ $primary-bg-color: #f40785;
     }
   }
   .buyers_card {
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow; 
     margin-bottom: 30px;
     .card-wrapper {
       .rfqs {

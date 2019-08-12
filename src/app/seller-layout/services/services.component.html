@@ -52,43 +52,45 @@
     </div>
   </div>
 </div>
-<div [ngSwitch]="addTreatmentsSwitch">
-  <div class="box-style" *ngSwitchCase="'noTreatments'">
-    <p class="text"><b>Treatments</b></p>
-    <div class="main-text">
-      <button class="btn btn-md add-btn" (click)="addTreatments()">+ Add "Treatments"</button>
-    </div>
-  </div>
-  <div class="treatments" *ngSwitchCase="'addTreatments'">
-    <div class="box-style">
-      <p class="text"><b>Edit "Treatments"</b></p>
-      <div class="edit-details">
-        <div class="form-group">
-          <label class="upload-text">Fabric</label>
-          <input type="text" class="form-control" placeholder="Specify Material">
-        </div>
-        <div class="form-group">
-          <label class="upload-text">Leather</label>
-          <input type="text" class="form-control" placeholder="Specify Material">
-        </div>
-      </div>
-      <div class="status-btns">
-        <button class="btn btn-md btn-cancel">Cancel</button>
-        <button class="btn btn-md btn-success" (click)="saveTreatments()">Save</button>
-      </div>
-    </div>
-  </div>
-  <div [ngSwitch]="treatmentDetailsSwitch">
-    <div class="box-style" *ngSwitchCase="'treatmentsDetail'" >
+<div class="mb-35">
+  <div [ngSwitch]="addTreatmentsSwitch">
+    <div class="box-style" *ngSwitchCase="'noTreatments'">
       <p class="text"><b>Treatments</b></p>
-      <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
-      <div class="material-items">
-        <p>Fabric</p>
-        <ul>
-          <li>Garment-Dye</li>
-          <li>Mercerisation</li>
-        </ul>
+      <div class="main-text">
+        <button class="btn btn-md add-btn" (click)="addTreatments()">+ Add "Treatments"</button>
+      </div>
+    </div>
+    <div class="treatments" *ngSwitchCase="'addTreatments'">
+      <div class="box-style">
+        <p class="text"><b>Edit "Treatments"</b></p>
+        <div class="edit-details">
+          <div class="form-group">
+            <label class="upload-text">Fabric</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+          <div class="form-group">
+            <label class="upload-text">Leather</label>
+            <input type="text" class="form-control" placeholder="Specify Material">
+          </div>
+        </div>
+        <div class="status-btns">
+          <button class="btn btn-md btn-cancel">Cancel</button>
+          <button class="btn btn-md btn-success" (click)="saveTreatments()">Save</button>
+        </div>
+      </div>
+    </div>
+    <div [ngSwitch]="treatmentDetailsSwitch">
+      <div class="box-style" *ngSwitchCase="'treatmentsDetail'" >
+        <p class="text"><b>Treatments</b></p>
+        <button class="btn btn-sm"><i class="fa fa-pencil"></i></button>
+        <div class="material-items">
+          <p>Fabric</p>
+          <ul>
+            <li>Garment-Dye</li>
+            <li>Mercerisation</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</div>  

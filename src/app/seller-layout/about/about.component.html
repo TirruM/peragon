@@ -245,66 +245,68 @@
       </div>
     </div>
   </div>
-  <div [ngSwitch]="addLinksandwebsiteSwitch">
-    <div *ngSwitchCase="'linksandwebsite'">
-      <div class="about-description">
-        <p><b>Links and Websites</b></p>
-        <div>
-          Link Description:
-          <p *ngIf="'link ==null' ? '' : link"></p>
-          {{ link }}<br />
-          Website URL :
-          <p *ngIf="'link ==null' ? '' : link"></p>
-          {{ url }}
+  <div class="mb-35">
+    <div [ngSwitch]="addLinksandwebsiteSwitch">
+      <div *ngSwitchCase="'linksandwebsite'">
+        <div class="about-description">
+          <p><b>Links and Websites</b></p>
+          <div>
+            Link Description:
+            <p *ngIf="'link ==null' ? '' : link"></p>
+            {{ link }}<br />
+            Website URL :
+            <p *ngIf="'link ==null' ? '' : link"></p>
+            {{ url }}
+          </div>
+          <div class="description-content">
+            <p>
+              Add links to your websites, videos and media channels that showcase
+              your company
+            </p>
+            <button class="btn btn-md" (click)="addLinksAndWebsite()">
+              + Add Links
+            </button>
+          </div>
         </div>
-        <div class="description-content">
-          <p>
-            Add links to your websites, videos and media channels that showcase
-            your company
-          </p>
-          <button class="btn btn-md" (click)="addLinksAndWebsite()">
-            + Add Links
-          </button>
+      </div>
+      <div *ngSwitchCase="'add-Linksandweb'">
+        <div class="about-description">
+          <p><b>Add "Links and Websites"</b></p>
+          <form [formGroup]="aboutLinksForm">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="linkDescription"
+                placeholder="Link Description"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="url"
+                placeholder="URL(http://www.example.com)"
+              />
+            </div>
+            <div class="status-btns">
+              <button
+                class="btn btn-md btn-cancel"
+                (click)="displayLinksandWebsite()"
+              >
+                Cancel
+              </button>
+              <button
+                class="btn btn-md btn-success"
+                type="button"
+                (click)="onDisplayLinks()"
+              >
+                Save
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <div *ngSwitchCase="'add-Linksandweb'">
-      <div class="about-description">
-        <p><b>Add "Links and Websites"</b></p>
-        <form [formGroup]="aboutLinksForm">
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              formControlName="linkDescription"
-              placeholder="Link Description"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              formControlName="url"
-              placeholder="URL(http://www.example.com)"
-            />
-          </div>
-          <div class="status-btns">
-            <button
-              class="btn btn-md btn-cancel"
-              (click)="displayLinksandWebsite()"
-            >
-              Cancel
-            </button>
-            <button
-              class="btn btn-md btn-success"
-              type="button"
-              (click)="onDisplayLinks()"
-            >
-              Save
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+  </div>  
 </div>
