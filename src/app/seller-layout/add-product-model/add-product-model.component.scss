@@ -21,11 +21,11 @@
       @include tablet {
         // display: inline-block;
         // flex-direction: row;
-        overflow: scroll;
+        // overflow: scroll;
       }
       @include mobile {
         flex-direction: row;
-        overflow-x: scroll;
+        // overflow-x: scroll;
         display: block !important;
       }
     }

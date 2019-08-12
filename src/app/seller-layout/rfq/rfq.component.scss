@@ -81,12 +81,14 @@
   /*RFQ Tables*/
   .rfq-table {
     margin: 50px auto;
+    overflow-x: scroll;
   }
 }
 
 .slick-prev:before,
 .slick-next:before {
   color: #09529b !important;
+  
 }
 // .slide {
 //   width: 243px !important;
