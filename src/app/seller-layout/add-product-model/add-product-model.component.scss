@@ -5,9 +5,12 @@
   position: relative;
 
   .modal-close-btn {
+    color: red;
+    background-color: #FF0000;
+    opacity: 1;
     position: absolute;
-    top: -15px;
-    right: -16px;
+    top: -8px;
+    right: -4px;
     height: 27px;
     width: 27px;
     background: #fff;

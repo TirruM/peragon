@@ -14,10 +14,11 @@
   </div>
 </div> -->
 <div class="product-modal">
-  <div class="modal-close-btn">
-    <!-- <button type="button" class="close" data-dismiss="modal" (click)="bsModalRef.hide()">&times;</button> -->
+  <!-- <div class="modal-close-btn">
+     <button type="button" class="close" data-dismiss="modal" (click)="bsModalRef.hide()">&times;</button> 
     <button type="button" class="close" (click)="onCancel()">&times;</button>
-  </div>
+  </div> -->
+  <button class="modal-close-btn close" type="button" (click)="onCancel()"><i class="fa fa-times"></i></button>
   <div class="product-wrapper">
     <div class="visibility">
       <div class="col-12 col-md-8">
@@ -211,7 +212,7 @@
             </div>
             <div class="product-category">
               <p>Segment <sup>*</sup></p>
-              <ul class="list-unstyled radio-btns d-flex flex-wrap">
+              <ul class="list-unstyled radio-btns d-inline">
                 <li *ngFor="let segment of segmentedGroups" class="flex-fill">
                   <input type="radio" name="radio-btn" (change)="onCheckSegmentGroup(segment)"
                     id="{{segment.categoryId}}">
