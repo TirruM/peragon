@@ -69,8 +69,11 @@ export class SignupComponent implements OnInit {
       "email": this.manufacturersignupForm.value.email,
       "companyname": this.manufacturersignupForm.value.companyname,
     }
-    //localStorage.setItem("manufacturelogin_flag", "0");
-    this.sharedService.hideButtons.emit(true);
+    let headerHideValues = {
+      "dropDown": false,
+      "btns": false
+    };
+    this.sharedService.hideButtons.emit(headerHideValues);
     localStorage.setItem("manufactureData", JSON.stringify(userObj));
     if (localStorage.getItem("manufacturelogin_flag") == "0") {
       this.router.navigateByUrl("/seller/profile1");
@@ -83,6 +86,11 @@ export class SignupComponent implements OnInit {
 
   }
   public buyerSignup() {
+    let headerHideValues = {
+      "dropDown": true,
+      "btns": false
+    };
+    this.sharedService.hideButtons.emit(headerHideValues);
     this.router.navigateByUrl("/buyerDashboard");
   }
   public back() {

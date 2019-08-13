@@ -27,14 +27,22 @@ export class SigninComponent implements OnInit {
   }
 
   public login() {
-    this.sharedService.hideButtons.emit(true);
+    // this.sharedService.hideButtons.emit(true);
+    let headerHideValues = {
+    }
     if (this.loginForm.value.email === 'buyer@gmail.com' && this.loginForm.value.password === 'buyer') {
-      this.sharedService.hideBuyerMenu.emit(true);
-      localStorage.setItem("buyer_flag", "1");
-      console.log("hello");
+      headerHideValues = {
+        "dropDown": true,
+        "btns": false
+      };
+      this.sharedService.hideButtons.emit(headerHideValues);
       this.router.navigateByUrl("/buyerDashboard");
     } else if (this.loginForm.value.email === 'seller@gmail.com' && this.loginForm.value.password === 'seller') {
-      this.sharedService.hideBuyerMenu.emit(false);
+      headerHideValues = {
+        "dropDown": false,
+        "btns": false
+      };
+      this.sharedService.hideButtons.emit(headerHideValues);
       this.router.navigateByUrl("/seller/profile1");
     }
 

@@ -14,7 +14,6 @@ export class SellerLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngOnInit() {
     this.broadCastService.hideFooter.emit(true);
-    this.broadCastService.hideButtons.emit(true);
     this.breakpointObserver.observe([
       '(max-width: 768px)'
     ]).subscribe(result => {
@@ -26,7 +25,6 @@ export class SellerLayoutComponent implements OnInit, OnDestroy, AfterViewInit {
     });
   }
   ngOnDestroy(): void {
-    this.broadCastService.hideButtons.emit(false);
     this.broadCastService.hideFooter.emit(false);
   }
   ngAfterViewInit() {

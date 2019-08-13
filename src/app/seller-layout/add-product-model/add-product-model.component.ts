@@ -12,10 +12,10 @@ export class AddProductModelComponent implements OnInit {
   public onClose: Subject<boolean>;
   segmentedGroups: any;
   productGroups: any;
-  imageUpload_0: string | ArrayBuffer="";
-  imageUpload_1: string | ArrayBuffer;
-  imageUpload_2: string | ArrayBuffer;
-  imageUpload_3: string | ArrayBuffer;
+  imageUpload_0: string | ArrayBuffer = "";
+  imageUpload_1: string | ArrayBuffer = "";
+  imageUpload_2: string | ArrayBuffer = "";
+  imageUpload_3: string | ArrayBuffer = "";
 
   modalObject = {};
   productTitle: string;
@@ -33,13 +33,13 @@ export class AddProductModelComponent implements OnInit {
 
   public onCloseBtn(): void {
     this.modalObject = {
-      imageUpload_0 : this.imageUpload_0,
+      imageUpload_0: this.imageUpload_0,
       imageUpload_1: this.imageUpload_1,
       imageUpload_2: this.imageUpload_2,
       title: this.productTitle,
       description: this.productDesc
     }
-    this._bsModalRef.hide();    
+    this._bsModalRef.hide();
   }
 
   onCheckSegmentGroup(segment) {
@@ -53,9 +53,9 @@ export class AddProductModelComponent implements OnInit {
     if (eve.target.files && eve.target.files[0]) {
       let fileReader = new FileReader();
       fileReader.readAsDataURL(eve.target.files[0]);
-      fileReader.onload = () => {
-        // console.log("reader image", event);
-        if (val === 0) {        
+      fileReader.onload = (e) => {
+        console.log("reader image", event);
+        if (val === 0) {
           this.imageUpload_0 = fileReader.result;
         } else if (val === 1) {
           this.imageUpload_1 = fileReader.result;

@@ -15,37 +15,14 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router, private sharedService: BroadcastserviceService) { }
 
   ngOnInit() {
-    // if (localStorage.getItem("buyer_flag") == "1") {
-    //   this.signInFlag = false;
-    // }
-  }
-  ngAfterContentInit() {
-
-    //this.sharedService.cartData.emit("ngAfterContentInit: " + this.data);
-
     this.sharedService.hideButtons.subscribe((data: any) => {
-      console.log("seller login Dat111a--->", data);
-      if (data == true) {
-        this.signInFlag = false;
-      } else {
-        this.signInFlag = true;
-      }
-      this.dropDownMenu = data;
+      console.log("hidebtn data", data);
+      this.signInFlag = data.btns;
+      this.dropDownMenu = data.dropDown;
     });
-
-
-
-    // this.sharedService.hideBuyerMenu.subscribe((buyerData) => {
-    //   this.buyerDropDown = buyerData;
-    //   console.log("seller login Data--->",this.buyerDropDown);
-    //   if (buyerData == true) {
-    //     this.dropDownMenu = true;
-    //   }else{
-    //     this.dropDownMenu = false;
-    //   }
-    // })
-
   }
+
+
   toggleCollapse() {
     this.show = !this.show;
   }
@@ -60,7 +37,6 @@ export class HeaderComponent implements OnInit {
   public logout() {
     this.signInFlag = true;
     this.dropDownMenu = false;
-    //localStorage.setItem("manufacturelogin_flag", "0");
     this.router.navigateByUrl('/');
   }
 
