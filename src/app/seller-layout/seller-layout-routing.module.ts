@@ -10,6 +10,7 @@ import { ShowRoomsComponent } from './show-rooms/show-rooms.component';
 import { RfqHomeComponent } from './rfq-home/rfq-home.component';
 import { SellerProfileComponentt } from './seller-profile/seller-profile.component';
 import { SearchComponent } from './search/search.component';
+import { DashboardTestComponent } from './dashboard-test/dashboard-test.component';
 //import { DashboardTestComponent } from './dashboard-test/dashboard-test.component';
 
 const sellerRouter: Routes = [
@@ -17,8 +18,9 @@ const sellerRouter: Routes = [
     path: '',
     component: SellerLayoutComponent,
     children: [
-      { path: '', redirectTo: 'profile1', pathMatch: 'prefix' },
+      { path: '', redirectTo: 'dasboard', pathMatch: 'prefix' },
       { path: 'profile1', component: SellerProfileComponentt },
+      { path: 'dasboard', component: DashboardTestComponent },
       { path: 'messages', component: SellerMessagesComponent },
       { path: 'rfq', component: RfqComponent },
       { path: 'bookmarks', component: BookMarksComponent },
