@@ -23,6 +23,7 @@ import { AddProductModelComponent } from './add-product-model/add-product-model.
 import { SearchComponent } from './search/search.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
+import { RfqDashboardComponent } from './rfq-dashboard/rfq-dashboard.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { NewsFeedComponent } from './news-feed/news-feed.component';
     AddProductModelComponent,
     SearchComponent,
     NewsFeedComponent,
+    RfqDashboardComponent,
 
   ],
   imports: [
