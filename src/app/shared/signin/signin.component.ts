@@ -50,7 +50,7 @@ export class SigninComponent implements OnInit {
         btns: false
       };
       this.sharedService.hideButtons.emit(headerHideValues);
-      this.router.navigateByUrl("/seller/profile1");
+      this.router.navigateByUrl("/seller/dasboard");
     }
   }
 }
