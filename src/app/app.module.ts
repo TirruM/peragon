@@ -1,35 +1,33 @@
-import { BuyerModule } from './buyer/buyer.module';
-import { SharedModule } from './shared/shared.module';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+//import { BuyerModule } from './buyer/buyer.module';
+import { SharedModule } from "./shared/shared.module";
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { SliderModule } from 'angular-image-slider';
-
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./shared/header/header.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from "@angular/common/http";
+import { SlickCarouselModule } from "ngx-slick-carousel";
+import { SliderModule } from "angular-image-slider";
+import { ChartsModule } from "ng2-charts";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
-    BuyerModule,
+    //BuyerModule,
     HttpClientModule,
     SlickCarouselModule,
-    SliderModule
+    SliderModule,
+    ChartsModule
   ],
-  exports: [BuyerModule,
-  ],
+  // exports: [BuyerModule,
+  // ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
