@@ -17,7 +17,7 @@ import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { LocationsComponent } from './locations/locations.component';
-import { MatChipsModule, MatAutocompleteModule } from '@angular/material';
+import { MatChipsModule, MatAutocompleteModule, MatNativeDateModule, MatDatepickerModule } from '@angular/material';
 import { ModalModule } from 'ngx-bootstrap';
 import { AddProductModelComponent } from './add-product-model/add-product-model.component';
 import { SearchComponent } from './search/search.component';
@@ -56,6 +56,8 @@ import { RfqDashboardComponent } from './rfq-dashboard/rfq-dashboard.component';
     MatAutocompleteModule,
     ReactiveFormsModule,
     SlickCarouselModule,
+    MatDatepickerModule,       
+    MatNativeDateModule,
     ModalModule.forRoot()
   ],
   entryComponents: [AddProductModelComponent],

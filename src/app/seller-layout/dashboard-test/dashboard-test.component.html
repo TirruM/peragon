@@ -5,23 +5,41 @@
       <div class="row">
         <div class="col-md-4">
           <div class="select">
-            <select class="form-control">
-              <option>Day</option>
-              <option>Weekly</option>
-              <option>3 Months</option>
-              <option>6 Months</option>
-              <option>Custom</option>
-            </select>
+            <!-- <label for="">Filters</label> -->
+            <mat-form-field>
+              <mat-select class="" placeholder="Filter">
+                <mat-option>Day</mat-option>
+                <mat-option>Weekly</mat-option>
+                <mat-option>3 Months</mat-option>
+                <mat-option>6 Months</mat-option>
+                <mat-option>Custom</mat-option>
+              </mat-select>
+            </mat-form-field>  
           </div>
         </div>
         <div class="col-md-3">
+          <div class="from-datepicker">
 
+              <mat-form-field>
+                  <input matInput [matDatepicker]="picker1" placeholder="From Date" [(ngModel)]="inputStartDate">
+                  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                  <mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
+              </mat-form-field>
+          </div>
         </div>
         <div class="col-md-3">
-
+          <div class="to-datepicker">
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker2" placeholder="To Date" [(ngModel)]="inputEndDate">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
+            </mat-form-field>
+          </div>
         </div>
         <div class="col-md-2">
-
+          <div class="search-btn">
+            <button class="btn btn-md btn-primary">Search</button>
+          </div>
         </div>
       </div>
     </div>  
@@ -102,12 +120,17 @@
     <div class="margin">
       <div class="row">
         <div class="col-md-6">
-
+          <div class="card">
+            <div class="card-body">
+              <p><b> RFQ Activity</b></p>
+              <div id="chartdiv"></div>
+            </div>
+          </div>
         </div>
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
-              <p class="act-heading">Todo List</p>
+              <p class="act-heading"><b> Todo List</b></p>
               <div>
                 <ul class="activities"> 
                   <li class="act-list">
@@ -159,7 +182,7 @@
           <div class="card">
             <div class="card-body">
               <div class="sales-text">
-                <p>Sales Report</p>
+                <p><b> Sales Report</b></p>
               </div>
               <div class="container-fluid">
                 <div class="row bg-blue">
@@ -238,7 +261,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="chat-heading">
-                    <p>Quick Chat</p>
+                    <p><b> Quick Chat</b></p>
                   </div>
                   <div class="container-fluid">
                     <div class="d-flex">
@@ -299,7 +322,7 @@
                   <div>
                     <div class="search">
                       <input type="text" class="form-control" placeholder="Say something...">
-                      <button class="btn btn-sm btn-primary search-btn"><i class="fa fa-paper-plane-o"></i></button>
+                      <button class="btn btn-sm btn-primary btn-search"><i class="fa fa-paper-plane-o"></i></button>
                     </div>
                   </div>
                 </div>

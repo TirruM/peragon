@@ -1,3 +1,4 @@
+@import "../../../custom_styles/variables";
 body {
     background-color: #eef5f9;
     font-size: 14px;
@@ -13,9 +14,25 @@ section {
            margin-bottom: 25px;
            padding: 20px;
             .select {
-                select {
+                // margin-top: -11px;
+                mat-form-field {
                     width: 100%;
+                }
+            }
+            .search-btn {
+                button { 
+                    background-image: $gradient_bg_color;
+                    background-color: #152331;
+                    border-radius: 30px;
+                    margin: 10px 15px 0px 0px;
+                    height: 38px;
+                    padding: 0px 20px 0px 20px;
+                    border: none;
+                    outline: none;
+                    &:hover {
+                        box-shadow: 0px 4px 10px #f2581d;
                     }
+                }
             }
         }    
        .custom-card {
@@ -42,6 +59,9 @@ section {
 
        .margin {
            margin-top: 40px;
+           #chartdiv {
+               height: 403px;
+           }
            .card-body {
                .act-heading {
                     border-bottom: 1px solid #ebedf5;
@@ -67,7 +87,7 @@ section {
                                 left: -55px;
                                 width: 31px;
                                 height: 31px;
-                                background-color: #007ae1;
+                                background-image: $gradient_bg_color;
                                 color: #fff;
                                 font-size: 16px;
                                 padding: 3px 2px 2px 11px;
@@ -94,6 +114,10 @@ section {
                     background-color: #03a9f4;
                     .bg-blue {
                         color: #fff;
+                        padding-top: 13px;
+                    }
+                    h3 {
+                        margin-left: 90px;
                     }
                 }  
                 .sales-report-table {
@@ -197,6 +221,7 @@ section {
 
                         .send-msg {
                             align-items: flex-end !important;
+                            margin-left: 245px;
                             .user-img {
                                 order: 1 !important;
                             }
@@ -222,10 +247,14 @@ section {
                         border-radius: 25px;
                     }
                     button {
+                        background-image: $gradient_bg_color;
                         position: absolute;
                         right: 16px;
                         top: 18px;
                         border-radius: 25px;
+                        border: none;
+                        outline: none;
+
                     }
                 }
             }    
