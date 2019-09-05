@@ -120,7 +120,110 @@
     </div>
 </div> -->
 <section>
-  <div class="col-md-12">
+  <div class="container-fluid dashboard-main">
+    <div class="container-fluid filters">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="select">
+            <select class="form-control">
+              <option>Day</option>
+              <option>Weekly</option>
+              <option>3 Months</option>
+              <option>6 Months</option>
+              <option>Custom</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <input class="form-control" type="text" placeholder="fromDate" />
+        </div>
+        <div class="col-md-3">
+          <input class="form-control" type="text" placeholder="toDate" />
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card custom-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div>
+                <div class="d-flex chart-no">
+                  <h4>2376</h4>
+                  <i class="fa fa-angle-down red" aria-hidden="true"></i>
+                </div>
+				<h6>Order Received</h6>
+				
+				<!-- <div class="ml-auto">
+						<div id="sparklinedash3">
+						  <canvas
+							width="51"
+							height="50"
+							style="display: inline-block; width: 51px; height: 50px; vertical-align: top;"
+						  ></canvas>
+						</div>
+              </div> -->
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card custom-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div>
+                <div class="d-flex chart-no">
+                  <h4>3670</h4>
+                  <i class="fa fa-angle-up blue" aria-hidden="true"></i>
+                </div>
+                <h6>Tax Deduction</h6>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card custom-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div>
+                <div class="d-flex chart-no">
+                  <h4>1562</h4>
+                  <i class="fa fa-angle-up blue" aria-hidden="true"></i>
+                </div>
+                <h6>Revenue status</h6>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card custom-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div>
+                <div class="d-flex chart-no">
+                  <h4>35%</h4>
+                  <i class="fa fa-angle-down red" aria-hidden="true"></i>
+                </div>
+                <h6>Yearly Sales</h6>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-12"> -->
     <div class="row">
       <div class="col-md-6 dashBoard">
         <div class="card">
@@ -161,6 +264,7 @@
             </canvas>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
