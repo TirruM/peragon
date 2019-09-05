@@ -1,0 +1,234 @@
+body {
+    background-color: #eef5f9;
+    font-size: 14px;
+    color: #72777a;
+    letter-spacing: .2px;
+}
+section {
+    background-color: #eef5f9;
+    .dashboard-main {
+       padding: 30px 30px 25px;
+       .filters {
+           background-color: #fff;
+           margin-bottom: 25px;
+           padding: 20px;
+            .select {
+                select {
+                    width: 100%;
+                    }
+            }
+        }    
+       .custom-card {
+           border: none;
+
+            .card-body {
+                h6 {
+                    font-size: 14px;
+                }
+                .chart-no {
+                    i {
+                        font-size: 27px;
+                        margin-left: 4px;
+                    }
+                    .red {
+                        color: #ef5350!important;
+                    }
+                    .blue {
+                        color: #26dad2!important;
+                    }
+                }
+            }
+       }
+
+       .margin {
+           margin-top: 40px;
+           .card-body {
+               .act-heading {
+                    border-bottom: 1px solid #ebedf5;
+                    margin-bottom: 0px !important;
+                    padding-bottom: 14px;
+               }
+               .activities {
+                    list-style: none;
+                    border-left: 1px solid #ebedf5;
+                    margin-left: 10px;
+                    padding-top: 23px;
+                    .act-list {
+                        position: relative;
+                        margin-bottom: 40px; 
+                        .list-info {
+                            p {
+                                // letter-spacing: 1px;
+                                margin: 0 0 5px 0;
+                                line-height: 150%;
+                            }
+                            .label {
+                                position: absolute;
+                                left: -55px;
+                                width: 31px;
+                                height: 31px;
+                                background-color: #007ae1;
+                                color: #fff;
+                                font-size: 16px;
+                                padding: 3px 2px 2px 11px;
+                                
+                            }
+                            .com-name {
+                                color: #aab3c3;
+                                padding-right: 9px;
+                            }
+                        }
+                    }
+               }
+           }
+       }
+
+       .sales-report {
+           margin-top: 10px;
+           .card-body {
+               padding: 0px;
+                .sales-text {
+                    padding: 10px;
+                }
+                .container-fluid { 
+                    background-color: #03a9f4;
+                    .bg-blue {
+                        color: #fff;
+                    }
+                }  
+                .sales-report-table {
+                    padding: 20px;
+                    table {
+                        // border-bottom: 2px solid #e9ecef;
+                        // border-collapse: initial;
+                        thead th {
+                            vertical-align: bottom;
+                            border-bottom: 2px solid #e9ecef;
+                            padding: 10px 32px 10px 32px;
+                        }
+                        tbody {
+                            td {
+                                padding: 10px 32px 10px 32px;
+                                vertical-align: middle;
+                                border-top: 1px solid #e9ecef;
+                                font-size: 14px;
+                                // font-weight: 600!important;
+                                .background {
+                                    line-height: 0!important;
+                                    padding: 10px!important;
+                                    border-radius: 10rem;display: inline-block;
+                                    font-size: 75%;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    white-space: nowrap;
+                                    vertical-align: baseline;
+                                }
+                                .bg1 {
+                                    color: #d32f2f!important;
+                                    background-color: #ffebee!important;
+                                    
+                                }
+                                .bg2 {
+                                    color: #512da8!important;
+                                    background-color: #ede7f6!important;
+                                    
+                                }
+                                .bg3 {
+                                    color: #388e3c!important;
+                                    background-color: #e8f5e9!important;
+                                }
+                                .bg4 {
+                                    color: #f57c00!important;
+                                    background-color: #fff3e0!important;
+                                }
+                                .bg5 {
+                                    color: #fbc02d!important;
+                                    background-color: #fffde7!important;
+                                }
+                            }
+                        }
+                    }
+                } 
+                .sales-bottom-link {
+                    border-top: 1px solid rgba(0,0,0,.0625)!important;
+                    text-align: center;
+                    padding: 20px !important;
+                    width: 100%!important;
+                    a {
+                        color: #0f9aee;
+                        text-decoration: none;
+                    }
+                }
+           }
+       }
+
+       .chat-box {
+            .card-body { 
+                padding: 0px;
+                .chat-heading {
+                    padding: 10px;
+                }
+                .container-fluid {
+                        background-color: #f2f3f5!important;
+                        .messages {
+                            align-items: flex-start;
+                            padding-top: 2.5px!important;
+                            padding-bottom: 2.5px!important;
+                            .msg-item {
+                                background-color: #fff!important;
+                                border-radius: 2px!important;
+                                line-height: 1.5!important;
+                                padding: 6px 10px 6px 10px;
+                                align-items: center;
+                                margin: 10px 1px 10px 1px;
+                                font-size: 14px;
+                                .msg-time {
+                                    margin-right: 10px!important;
+                                }
+                            }
+                        }
+                        .user-img {
+                            padding: 8px;
+                            img {
+                                width: 38px;
+                                border-radius: 25px; 
+                            }
+                        }
+
+                        .send-msg {
+                            align-items: flex-end !important;
+                            .user-img {
+                                order: 1 !important;
+                            }
+                            .send {
+                                order: 0 !important;
+                                .reply {
+                                    align-items: flex-end;
+                                }
+                                .ord-0 {
+                                    order: 0;
+                                }
+                                .ord-1 {
+                                    order: 1;
+                                    margin-left: 8px;
+                                }
+                            }
+                        }
+                }
+                .search {
+                    padding: 15px;
+                    position: relative;
+                    input {
+                        border-radius: 25px;
+                    }
+                    button {
+                        position: absolute;
+                        right: 16px;
+                        top: 18px;
+                        border-radius: 25px;
+                    }
+                }
+            }    
+       }
+    }
+}
