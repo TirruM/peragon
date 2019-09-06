@@ -48,6 +48,7 @@ section {
                     }
                     h4 {
                         font-size: 15px;
+                        font-weight: 700;
                     }
                     .success {
                         color: #3ad82b!important;
@@ -55,6 +56,9 @@ section {
                     .fail {
                         color: #f53117!important;
                     }
+                }
+                .line-chart {
+                    margin-left: 15px;
                 }
             }
        }

@@ -76,7 +76,40 @@ export class DashboardTestComponent implements OnInit {
     this.lineChart();
   }
 
-  
+    ngAfterViewInit() {
+      $("#sparkline1").sparkline([5, 2, 7, 5, 6, 3, 4], {
+        type: "bar",
+        barColor: "#03a9f3",
+        height: '60',
+        barWidth: '3',
+        resize: true,
+        barSpacing: '5'
+      });
+      $("#sparkline2").sparkline([2, 6, 7, 4, 4, 2, 4], {
+        type: "bar",
+        barColor: '#7460ee',
+        height: '60',
+        barWidth: '3',
+        resize: true,
+        barSpacing: '5'
+      });
+      $("#sparkline3").sparkline([5, 6, 7, 2,-4, -2, 4], {
+        type: "bar",
+        barColor: '#26c6da',
+        height: '60',
+        barWidth: '3',
+        resize: true,
+        barSpacing: '5'
+      });
+      $("#sparkline4").sparkline([1, 6, 3, 7, -3, -2, 4], {
+        type: "bar",
+        barColor: "#7460ee",
+        height: '60',
+        barWidth: '3',
+        resize: true,
+        barSpacing: '5'
+      });
+    }
 
   public lineChart() {
     let chart = am4core.create("chartdiv", am4charts.XYChart);
