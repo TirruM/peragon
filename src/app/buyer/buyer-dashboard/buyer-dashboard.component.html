@@ -121,60 +121,78 @@
 </div> -->
 <section>
   <div class="container-fluid dashboard-main">
-		<div class="container-fluid filters">
-				<div class="row">
-				  <div class="col-md-4">
-					<div class="select">
-					  <!-- <label for="">Filters</label> -->
-					  <mat-form-field>
-						<mat-select class="" placeholder="Filter">
-						  <mat-option>Day</mat-option>
-						  <mat-option>Weekly</mat-option>
-						  <mat-option>3 Months</mat-option>
-						  <mat-option>6 Months</mat-option>
-						  <mat-option>Custom</mat-option>
-						</mat-select>
-					  </mat-form-field>  
-					</div>
-				  </div>
-				  <div class="col-md-3">
-					<div class="from-datepicker">
-		  
-						<mat-form-field>
-							<input matInput [matDatepicker]="picker1" placeholder="From Date" [(ngModel)]="inputStartDate">
-							<mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-							<mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
-						</mat-form-field>
-					</div>
-				  </div>
-				  <div class="col-md-3">
-					<div class="to-datepicker">
-					  <mat-form-field>
-						<input matInput [matDatepicker]="picker2" placeholder="To Date" [(ngModel)]="inputEndDate">
-						<mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-						<mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
-					  </mat-form-field>
-					</div>
-				  </div>
-				  <div class="col-md-2">
-					<div class="search-btn">
-					  <button class="btn btn-md btn-primary">Search</button>
-					</div>
-				  </div>
-				</div>
-			  </div>
+    <div class="container-fluid filters">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="select">
+            <!-- <label for="">Filters</label> -->
+            <mat-form-field>
+              <mat-select class="" placeholder="Filter">
+                <mat-option>Day</mat-option>
+                <mat-option>Weekly</mat-option>
+                <mat-option>3 Months</mat-option>
+                <mat-option>6 Months</mat-option>
+                <mat-option>Custom</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="from-datepicker">
+            <mat-form-field>
+              <input
+                matInput
+                [matDatepicker]="picker1"
+                placeholder="From Date"
+                [(ngModel)]="inputStartDate"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker1"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="to-datepicker">
+            <mat-form-field>
+              <input
+                matInput
+                [matDatepicker]="picker2"
+                placeholder="To Date"
+                [(ngModel)]="inputEndDate"
+              />
+              <mat-datepicker-toggle
+                matSuffix
+                [for]="picker2"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="search-btn">
+            <button class="btn btn-md btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-3">
         <div class="card custom-card">
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div>
-				<!-- <h6>Total Quote Value</h6> -->
+                <!-- <h6>Total Quote Value</h6> -->
                 <div class="d-flex chart-no">
-                  <h4 >5689</h4>
+                  <h4>5689</h4>
                   <i class="fa fa-angle-up green" aria-hidden="true"></i>
                 </div>
-				<h6>Total Quote Value</h6>
+                <h6>Total Quote Value</h6>
+                <!-- <div id="sparkline">
+                  <span class="bar"></span>
+                </div> -->
               </div>
             </div>
           </div>
@@ -199,50 +217,56 @@
     </div>
 
     <!-- <div class="col-md-12"> -->
-	<div class="margin">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <p>RFQ Status</p>
-            <canvas
-              baseChart
-              [data]="pieChartData"
-              [labels]="pieChartLabels"
-              [chartType]="pieChartType"
-              [options]="pieChartOptions"
-              [plugins]="pieChartPlugins"
-              [legend]="pieChartLegend"
-            >
-            </canvas>
+    <div class="RFQ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <p>RFQ Status</p>
+              <canvas
+                baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins"
+                [legend]="pieChartLegend"
+              >
+              </canvas>
+            </div>
           </div>
         </div>
-        <div class="card barChart">
-          <div class="card-body">
-            <p>RFQ Activity</p>
-            <div id="chartdiv"></div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <p>RFQ Win/loss</p>
+              <canvas
+                baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [plugins]="barChartPlugins"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"
+              >
+              </canvas>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="RFQ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <p>RFQ Activity</p>
+              <div id="chartdiv"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <p>RFQ Win/loss</p>
-            <canvas
-              baseChart
-              [datasets]="barChartData"
-              [labels]="barChartLabels"
-              [options]="barChartOptions"
-              [plugins]="barChartPlugins"
-              [legend]="barChartLegend"
-              [chartType]="barChartType"
-            >
-            </canvas>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-	</div>
-</div>	
+    </div>
   </div>
 </section>

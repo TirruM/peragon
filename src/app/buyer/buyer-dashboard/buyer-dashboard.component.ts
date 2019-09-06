@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+// import $ from "jquery-sparkline/jquery.sparkline.js";
 import { ChartType, ChartOptions, ChartDataSets } from "chart.js";
 import {
   SingleDataSet,
@@ -64,6 +65,55 @@ export class BuyerDashboardComponent implements OnInit {
   ngOnInit() {
     this.lineChart();
   }
+  // ngAfterViewInit() {
+  //   $("#sparkline").sparkline([5, 6, 7, 2, 0, -4, -2, 4], {
+  //     type: "bar",
+  //     barColor: "#7fff00"
+  //   });
+  // }
+  // ngAfterViewInit() {
+  //   const sparklineLogin = function() {
+  //     (<any>$('#sparklinedash')).sparkline([0, 5, 6, 10, 9, 12, 4, 9], {
+  //       type: 'bar',
+  //       height: '50',
+  //       barWidth: '2',
+  //       resize: true,
+  //       barSpacing: '5',
+  //       barColor: '#26c6da'
+  //     });
+  //     (<any>$('#sparklinedash2')).sparkline([0, 5, 6, 10, 9, 12, 4, 9], {
+  //       type: 'bar',
+  //       height: '50',
+  //       barWidth: '2',
+  //       resize: true,
+  //       barSpacing: '5',
+  //       barColor: '#7460ee'
+  //     });
+  //     (<any>$('#sparklinedash3')).sparkline([0, 5, 6, 10, 9, 12, 4, 9], {
+  //       type: 'bar',
+  //       height: '50',
+  //       barWidth: '2',
+  //       resize: true,
+  //       barSpacing: '5',
+  //       barColor: '#03a9f3'
+  //     });
+  //     (<any>$('#sparklinedash4')).sparkline([0, 5, 6, 10, 9, 12, 4, 9], {
+  //       type: 'bar',
+  //       height: '50',
+  //       barWidth: '2',
+  //       resize: true,
+  //       barSpacing: '5',
+  //       barColor: '#f62d51'
+  //     });
+  //   };
+  //   let sparkResize;
+
+  //   $(window).resize(function(e) {
+  //     clearTimeout(sparkResize);
+  //     sparkResize = setTimeout(sparklineLogin, 500);
+  //   });
+  //   sparklineLogin();
+  // }
 
   public lineChart() {
     let chart = am4core.create("chartdiv", am4charts.XYChart);

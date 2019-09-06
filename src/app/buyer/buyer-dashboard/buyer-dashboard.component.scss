@@ -26,12 +26,15 @@ section {
   background-color: #f5f5f5;
   .dashboard-main {
     padding: 30px 30px 25px;
-    .margin {
+    .RFQ {
       margin-top: 30px;
-      .barChart {
-        margin-top: 20px;
+
+      .card-body {
+        p {
+          font-weight: 600;
+        }
         #chartdiv {
-          height: 250px;
+          height: 297px;
         }
       }
     }
@@ -88,22 +91,3 @@ a {
 .fa {
   color: #4183d7;
 }
-
-p {
-  font-family: Lato;
-}
-// .dashBoard {
-//   .card {
-//     margin-top: 20px;
-//     margin-bottom: 20px;
-//     .card-body {
-//       p {
-//         font-weight: 600;
-//         font-size: 14px;
-//       }
-//     }
-//   }
-// }
-// #chartdiv {
-//   height: 250px;
-// }
