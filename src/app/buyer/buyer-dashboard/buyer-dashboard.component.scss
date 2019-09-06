@@ -1,7 +1,4 @@
-//  body{
-//     background: rgb(224, 220, 236);
-// }
-
+@import "../../../custom_styles/variables";
 .custom-card {
   border: none;
 
@@ -10,6 +7,7 @@
       font-size: 14px;
     }
     .chart-no {
+      // margin-left: 50px;
       i {
         font-size: 27px;
         margin-left: 4px;
@@ -28,16 +26,41 @@ section {
   background-color: #f5f5f5;
   .dashboard-main {
     padding: 30px 30px 25px;
+    .margin {
+      margin-top: 30px;
+      .barChart {
+        margin-top: 20px;
+        #chartdiv {
+          height: 250px;
+        }
+      }
+    }
     .filters {
       background-color: #fff;
       margin-bottom: 25px;
       padding: 20px;
-       .select {
-           select {
-               width: 100%;
-               }
-       }
-   }    
+      .select {
+        // margin-top: -11px;
+        mat-form-field {
+          width: 100%;
+        }
+      }
+      .search-btn {
+        button {
+          background-image: $gradient_bg_color;
+          background-color: #152331;
+          border-radius: 30px;
+          margin: 10px 15px 0px 0px;
+          height: 38px;
+          padding: 0px 20px 0px 20px;
+          border: none;
+          outline: none;
+          &:hover {
+            box-shadow: 0px 4px 10px #f2581d;
+          }
+        }
+      }
+    }
   }
 }
 span {
@@ -69,20 +92,18 @@ a {
 p {
   font-family: Lato;
 }
-.dashBoard {
-  // display: block;
-  .card {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    .card-body {
-      p {
-        font-weight: 600;
-        font-size: 14px;
-      }
-    }
-  }
-}
-#chartdiv {
-  height: 250px;
-  // position: relative;
-}
+// .dashBoard {
+//   .card {
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//     .card-body {
+//       p {
+//         font-weight: 600;
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }
+// #chartdiv {
+//   height: 250px;
+// }

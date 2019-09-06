@@ -24,6 +24,7 @@ import { SearchComponent } from './search/search.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NewsFeedComponent } from './news-feed/news-feed.component';
 import { RfqDashboardComponent } from './rfq-dashboard/rfq-dashboard.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { RfqDashboardComponent } from './rfq-dashboard/rfq-dashboard.component';
     SlickCarouselModule,
     MatDatepickerModule,       
     MatNativeDateModule,
+    ChartsModule,
     ModalModule.forRoot()
   ],
   entryComponents: [AddProductModelComponent],

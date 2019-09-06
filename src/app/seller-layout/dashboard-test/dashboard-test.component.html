@@ -175,8 +175,48 @@
             </div>
           </div>
         </div>
-      </div>  
+      </div> 
+      <div class="margin">
+        <div class="row">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-body">
+                    <p>RFQ Status</p>
+                    <canvas
+                      baseChart
+                      [data]="pieChartData"
+                      [labels]="pieChartLabels"
+                      [chartType]="pieChartType"
+                      [options]="pieChartOptions"
+                      [plugins]="pieChartPlugins"
+                      [legend]="pieChartLegend"
+                    >
+                    </canvas>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <p>RFQ Win/loss</p>
+                  <canvas
+                    baseChart
+                    [datasets]="barChartData"
+                    [labels]="barChartLabels"
+                    [options]="barChartOptions"
+                    [plugins]="barChartPlugins"
+                    [legend]="barChartLegend"
+                    [chartType]="barChartType"
+                  >
+                  </canvas>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+        </div>
+      </div>   
     </div>
+    
     <!-- <div class="sales-report">
       <div class="row">
         <div class="col-md-6">

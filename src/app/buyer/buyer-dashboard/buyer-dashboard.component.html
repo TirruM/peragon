@@ -121,53 +121,60 @@
 </div> -->
 <section>
   <div class="container-fluid dashboard-main">
-    <div class="container-fluid filters">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="select">
-            <select class="form-control">
-              <option>Day</option>
-              <option>Weekly</option>
-              <option>3 Months</option>
-              <option>6 Months</option>
-              <option>Custom</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <input class="form-control" type="text" placeholder="fromDate" />
-        </div>
-        <div class="col-md-3">
-          <input class="form-control" type="text" placeholder="toDate" />
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-primary">Search</button>
-        </div>
-      </div>
-    </div>
+		<div class="container-fluid filters">
+				<div class="row">
+				  <div class="col-md-4">
+					<div class="select">
+					  <!-- <label for="">Filters</label> -->
+					  <mat-form-field>
+						<mat-select class="" placeholder="Filter">
+						  <mat-option>Day</mat-option>
+						  <mat-option>Weekly</mat-option>
+						  <mat-option>3 Months</mat-option>
+						  <mat-option>6 Months</mat-option>
+						  <mat-option>Custom</mat-option>
+						</mat-select>
+					  </mat-form-field>  
+					</div>
+				  </div>
+				  <div class="col-md-3">
+					<div class="from-datepicker">
+		  
+						<mat-form-field>
+							<input matInput [matDatepicker]="picker1" placeholder="From Date" [(ngModel)]="inputStartDate">
+							<mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+							<mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
+						</mat-form-field>
+					</div>
+				  </div>
+				  <div class="col-md-3">
+					<div class="to-datepicker">
+					  <mat-form-field>
+						<input matInput [matDatepicker]="picker2" placeholder="To Date" [(ngModel)]="inputEndDate">
+						<mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+						<mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
+					  </mat-form-field>
+					</div>
+				  </div>
+				  <div class="col-md-2">
+					<div class="search-btn">
+					  <button class="btn btn-md btn-primary">Search</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
     <div class="row">
       <div class="col-md-3">
         <div class="card custom-card">
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div>
+				<!-- <h6>Total Quote Value</h6> -->
                 <div class="d-flex chart-no">
-                  <h4>2376</h4>
-                  <i class="fa fa-angle-down red" aria-hidden="true"></i>
+                  <h4 >5689</h4>
+                  <i class="fa fa-angle-up green" aria-hidden="true"></i>
                 </div>
-				<h6>Order Received</h6>
-				
-				<!-- <div class="ml-auto">
-						<div id="sparklinedash3">
-						  <canvas
-							width="51"
-							height="50"
-							style="display: inline-block; width: 51px; height: 50px; vertical-align: top;"
-						  ></canvas>
-						</div>
-              </div> -->
-
-              
+				<h6>Total Quote Value</h6>
               </div>
             </div>
           </div>
@@ -180,41 +187,9 @@
               <div>
                 <div class="d-flex chart-no">
                   <h4>3670</h4>
-                  <i class="fa fa-angle-up blue" aria-hidden="true"></i>
-                </div>
-                <h6>Tax Deduction</h6>
-              </div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card custom-card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <div>
-                <div class="d-flex chart-no">
-                  <h4>1562</h4>
-                  <i class="fa fa-angle-up blue" aria-hidden="true"></i>
-                </div>
-                <h6>Revenue status</h6>
-              </div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card custom-card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <div>
-                <div class="d-flex chart-no">
-                  <h4>35%</h4>
                   <i class="fa fa-angle-down red" aria-hidden="true"></i>
                 </div>
-                <h6>Yearly Sales</h6>
+                <h6>RFQ's Completed</h6>
               </div>
               <div></div>
             </div>
@@ -224,8 +199,9 @@
     </div>
 
     <!-- <div class="col-md-12"> -->
+	<div class="margin">
     <div class="row">
-      <div class="col-md-6 dashBoard">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-body">
             <p>RFQ Status</p>
@@ -241,14 +217,14 @@
             </canvas>
           </div>
         </div>
-        <div class="card">
+        <div class="card barChart">
           <div class="card-body">
             <p>RFQ Activity</p>
             <div id="chartdiv"></div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 dashBoard">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-body">
             <p>RFQ Win/loss</p>
@@ -266,6 +242,7 @@
         </div>
         <!-- </div> -->
       </div>
-    </div>
+	</div>
+</div>	
   </div>
 </section>

@@ -1,20 +1,64 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ChartType, ChartOptions, ChartDataSets } from "chart.js";
+import {
+  SingleDataSet,
+  Label,
+  monkeyPatchChartJsLegend,
+  monkeyPatchChartJsTooltip
+} from "ng2-charts";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 am4core.useTheme(am4themes_animated);
 @Component({
-  selector: 'app-dashboard-test',
-  templateUrl: './dashboard-test.component.html',
-  styleUrls: ['./dashboard-test.component.scss']
+  selector: "app-dashboard-test",
+  templateUrl: "./dashboard-test.component.html",
+  styleUrls: ["./dashboard-test.component.scss"]
 })
 export class DashboardTestComponent implements OnInit {
+  // pi-chart
+  public pieChartOptions: ChartOptions = {
+    responsive: true
+  };
+  public pieChartLabels: Label[] = [
+    ["Download", "Sales"],
+    ["In", "Store", "Sales"],
+    "Mail Sales"
+  ];
+  public pieChartData: SingleDataSet = [300, 500, 100];
+  public pieChartType: ChartType = "pie";
+  public pieChartLegend = true;
+  public pieChartPlugins = [];
 
-  constructor() { }
+  // bar-chart
+  public barChartOptions: ChartOptions = {
+    responsive: true
+  };
+  public barChartLabels: Label[] = [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012"
+  ];
+  public barChartType: ChartType = "bar";
+  public barChartLegend = true;
+  public barChartPlugins = [];
+
+  public barChartData: ChartDataSets[] = [
+    { data: [65, 59, 80, 81, 56, 55, 40], label: "Win" },
+    { data: [28, 48, 40, 19, 86, 27, 90], label: "Loss" }
+  ];
+
+  constructor() {
+    monkeyPatchChartJsTooltip();
+    monkeyPatchChartJsLegend();
+  }
 
   ngOnInit() {
     this.lineChart();
-
   }
 
   public lineChart() {
