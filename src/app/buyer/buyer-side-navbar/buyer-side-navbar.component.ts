@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buyer-side-navbar.component.scss']
 })
 export class BuyerSideNavbarComponent implements OnInit {
-
+  show: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  public toggleCollapse() {
+    this.show = !this.show;
+
+  }
 }

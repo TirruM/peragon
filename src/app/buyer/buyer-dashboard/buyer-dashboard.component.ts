@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-// import $ from "jquery-sparkline/jquery.sparkline.js";
 import { ChartType, ChartOptions, ChartDataSets } from "chart.js";
 import {
   SingleDataSet,
@@ -67,7 +66,7 @@ export class BuyerDashboardComponent implements OnInit {
     this.lineChart();
   }
   ngAfterViewInit() {
-    $("#sparkline1").sparkline([5, 6, 7, 2, -4, -2, 4], {
+    (<any>$("#sparkline1")).sparkline([5, 6, 7, 2, -4, -2, 4], {
       type: "bar",
       barColor: "#7fff00",
       height: "60",
@@ -75,7 +74,7 @@ export class BuyerDashboardComponent implements OnInit {
       resize: true,
       barSpacing: "5"
     });
-    $("#sparkline2").sparkline([2, 4, 10, 9, 8, 12, 6], {
+    (<any>$("#sparkline2")).sparkline([2, 4, 10, 9, 8, 12, 6], {
       type: "bar",
       barColor: "#26c6da",
       height: "60",

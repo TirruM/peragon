@@ -77,7 +77,7 @@ export class DashboardTestComponent implements OnInit {
   }
 
     ngAfterViewInit() {
-      $("#sparkline1").sparkline([5, 2, 7, 5, 6, 3, 4], {
+      (<any>$("#sparkline1")).sparkline([5, 2, 7, 5, 6, 3, 4], {
         type: "bar",
         barColor: "#03a9f3",
         height: '60',
@@ -85,7 +85,7 @@ export class DashboardTestComponent implements OnInit {
         resize: true,
         barSpacing: '5'
       });
-      $("#sparkline2").sparkline([2, 6, 7, 4, 4, 2, 4], {
+      (<any>$("#sparkline2")).sparkline([2, 6, 7, 4, 4, 2, 4], {
         type: "bar",
         barColor: '#7460ee',
         height: '60',
@@ -93,7 +93,7 @@ export class DashboardTestComponent implements OnInit {
         resize: true,
         barSpacing: '5'
       });
-      $("#sparkline3").sparkline([5, 6, 7, 2,-4, -2, 4], {
+      (<any>$("#sparkline3")).sparkline([5, 6, 7, 2,-4, -2, 4], {
         type: "bar",
         barColor: '#26c6da',
         height: '60',
@@ -101,7 +101,7 @@ export class DashboardTestComponent implements OnInit {
         resize: true,
         barSpacing: '5'
       });
-      $("#sparkline4").sparkline([1, 6, 3, 7, -3, -2, 4], {
+      (<any>$("#sparkline4")).sparkline([1, 6, 3, 7, -3, -2, 4], {
         type: "bar",
         barColor: "#7460ee",
         height: '60',
