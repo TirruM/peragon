@@ -127,46 +127,26 @@
           <div class="select">
             <!-- <label for="">Filters</label> -->
             <mat-form-field>
-              <mat-select class="" placeholder="Filter">
-                <mat-option>Day</mat-option>
-                <mat-option>Weekly</mat-option>
-                <mat-option>3 Months</mat-option>
-                <mat-option>6 Months</mat-option>
-                <mat-option>Custom</mat-option>
+              <mat-select class="" placeholder="Filter" #typeValue (selectionChange)="selectDate($event.value)">
+                <mat-option *ngFor="let type of types" [value]="type.id">{{type.name}}</mat-option>
               </mat-select>
             </mat-form-field>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" *ngIf="showDatepicker">
           <div class="from-datepicker">
             <mat-form-field>
-              <input
-                matInput
-                [matDatepicker]="picker1"
-                placeholder="From Date"
-                [(ngModel)]="inputStartDate"
-              />
-              <mat-datepicker-toggle
-                matSuffix
-                [for]="picker1"
-              ></mat-datepicker-toggle>
+              <input matInput [matDatepicker]="picker1" placeholder="From Date" [(ngModel)]="inputStartDate">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
               <mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
             </mat-form-field>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" *ngIf="showDatepicker">
           <div class="to-datepicker">
             <mat-form-field>
-              <input
-                matInput
-                [matDatepicker]="picker2"
-                placeholder="To Date"
-                [(ngModel)]="inputEndDate"
-              />
-              <mat-datepicker-toggle
-                matSuffix
-                [for]="picker2"
-              ></mat-datepicker-toggle>
+              <input matInput [matDatepicker]="picker2" placeholder="To Date" [(ngModel)]="inputEndDate">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
               <mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
             </mat-form-field>
           </div>

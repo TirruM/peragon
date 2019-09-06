@@ -62,7 +62,7 @@ export class DashboardTestComponent implements OnInit {
   ];
 
   custom : String;
-  showDatepicker : boolean;
+  showDatepicker : boolean = false;;
   showSelect: boolean;
   constructor() {
     monkeyPatchChartJsTooltip();

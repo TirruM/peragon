@@ -51,6 +51,7 @@ export class BuyerDashboardComponent implements OnInit {
   public barChartType: ChartType = "bar";
   public barChartLegend = true;
   public barChartPlugins = [];
+  showDatepicker : boolean = false;
 
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: "Win" },
@@ -114,6 +115,15 @@ export class BuyerDashboardComponent implements OnInit {
   //   });
   //   sparklineLogin();
   // }
+
+
+  types = [
+    { id : 1, name: "Day" },
+    { id : 2, name: "Last Week" },
+    { id : 3, name : "Last Month" },
+    { id : 4, name: "Last 90 Days" },
+    { id : 5, name: "Custom" }
+  ];
 
   public lineChart() {
     let chart = am4core.create("chartdiv", am4charts.XYChart);
@@ -223,5 +233,14 @@ export class BuyerDashboardComponent implements OnInit {
 
     // Add legend
     chart.legend = new am4charts.Legend();
+  }
+
+  selectDate(value) {
+    console.log("selected value====",value);
+    if(value == 5) {
+      this.showDatepicker = true;
+    }else {
+      this.showDatepicker = false;
+    }
   }
 }
