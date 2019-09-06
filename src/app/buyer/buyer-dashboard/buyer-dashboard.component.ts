@@ -51,7 +51,7 @@ export class BuyerDashboardComponent implements OnInit {
   public barChartType: ChartType = "bar";
   public barChartLegend = true;
   public barChartPlugins = [];
-  showDatepicker : boolean = false;
+  showDatepicker: boolean = false;
 
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: "Win" },
@@ -66,12 +66,24 @@ export class BuyerDashboardComponent implements OnInit {
   ngOnInit() {
     this.lineChart();
   }
-  // ngAfterViewInit() {
-  //   $("#sparkline").sparkline([5, 6, 7, 2, 0, -4, -2, 4], {
-  //     type: "bar",
-  //     barColor: "#7fff00"
-  //   });
-  // }
+  ngAfterViewInit() {
+    $("#sparkline1").sparkline([5, 6, 7, 2, -4, -2, 4], {
+      type: "bar",
+      barColor: "#7fff00",
+      height: "60",
+      barWidth: "3",
+      resize: true,
+      barSpacing: "5"
+    });
+    $("#sparkline2").sparkline([2, 4, 10, 9, 8, 12, 6], {
+      type: "bar",
+      barColor: "#26c6da",
+      height: "60",
+      barWidth: "3",
+      resize: true,
+      barSpacing: "5"
+    });
+  }
   // ngAfterViewInit() {
   //   const sparklineLogin = function() {
   //     (<any>$('#sparklinedash')).sparkline([0, 5, 6, 10, 9, 12, 4, 9], {
@@ -116,13 +128,12 @@ export class BuyerDashboardComponent implements OnInit {
   //   sparklineLogin();
   // }
 
-
   types = [
-    { id : 1, name: "Day" },
-    { id : 2, name: "Last Week" },
-    { id : 3, name : "Last Month" },
-    { id : 4, name: "Last 90 Days" },
-    { id : 5, name: "Custom" }
+    { id: 1, name: "Day" },
+    { id: 2, name: "Last Week" },
+    { id: 3, name: "Last Month" },
+    { id: 4, name: "Last 90 Days" },
+    { id: 5, name: "Custom" }
   ];
 
   public lineChart() {
@@ -236,10 +247,10 @@ export class BuyerDashboardComponent implements OnInit {
   }
 
   selectDate(value) {
-    console.log("selected value====",value);
-    if(value == 5) {
+    console.log("selected value====", value);
+    if (value == 5) {
       this.showDatepicker = true;
-    }else {
+    } else {
       this.showDatepicker = false;
     }
   }
