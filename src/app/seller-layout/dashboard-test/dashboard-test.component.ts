@@ -54,11 +54,11 @@ export class DashboardTestComponent implements OnInit {
   ];
 
   types = [
-    { id : "Day" },
-    { id : "Last Week" },
-    { id : "Last Month" },
-    { id : "Last 90 Days" },
-    { id : "Custom" }
+    { id : 1, name: "Day" },
+    { id : 2, name: "Last Week" },
+    { id : 3, name : "Last Month" },
+    { id : 4, name: "Last 90 Days" },
+    { id : 5, name: "Custom" }
   ];
 
   custom : String;
@@ -192,11 +192,9 @@ export class DashboardTestComponent implements OnInit {
 
   selectDate(value) {
     console.log("selected value====",value);
-    if(value == "Custom") {
-      // this.showSelect = true;
+    if(value == 5) {
       this.showDatepicker = true;
-    }
-    else {
+    }else {
       this.showDatepicker = false;
     }
   }
