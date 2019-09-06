@@ -3,40 +3,36 @@
     <!-- <p>it's fine</p> -->
     <div class="container-fluid filters">
       <div class="row">
-        <div class="col-md-4">
+        <div *ngIf="!showDatepicker" class="col-md-4">
           <div class="select">
             <!-- <label for="">Filters</label> -->
             <mat-form-field>
-              <mat-select class="" placeholder="Filter">
-                <mat-option>Day</mat-option>
-                <mat-option>Last Week</mat-option>
-                <mat-option>Last Month</mat-option>
-                <mat-option>Last 90 Days</mat-option>
-                <mat-option>Last 6 Months</mat-option>
-                <mat-option>Custom</mat-option>
+              <mat-select *ngIf="showSelect" class="" placeholder="Filter" #typeValue (selectionChange)="selectDate($event.value)">
+                <mat-option *ngFor="let type of types" [value]="type.id">{{type.id}}</mat-option>
               </mat-select>
-            </mat-form-field>  
+            </mat-form-field>   
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="from-datepicker">
-
+        <div *ngIf="showDatepicker" id="datePicker">
+          <div class="col-md-3">
+            <div class="from-datepicker">
               <mat-form-field>
-                  <input matInput [matDatepicker]="picker1" placeholder="From Date" [(ngModel)]="inputStartDate">
-                  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                  <mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
+                <input matInput [matDatepicker]="picker1" placeholder="From Date" [(ngModel)]="inputStartDate">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
               </mat-form-field>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="to-datepicker">
-            <mat-form-field>
-              <input matInput [matDatepicker]="picker2" placeholder="To Date" [(ngModel)]="inputEndDate">
-              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-              <mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
-            </mat-form-field>
+          <div class="col-md-3">
+            <div class="to-datepicker">
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker2" placeholder="To Date" [(ngModel)]="inputEndDate">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2 [startAt]="endDate"></mat-datepicker>
+              </mat-form-field>
+            </div>
           </div>
-        </div>
+        </div>  
         <div class="col-md-2">
           <div class="search-btn">
             <button class="btn btn-md btn-primary">Search</button>
@@ -51,10 +47,10 @@
             <div class="d-flex align-items-center">
               <div>
                 <div class="d-flex chart-no">
-                  <h4>2376</h4>
-                  <i class="fa fa-angle-down red" aria-hidden="true"></i>
+                  <h4>$3,687,420</h4>
+                  <i class="fa fa-angle-down success" aria-hidden="true"></i>
                 </div>
-                <h6>Order Received</h6>
+                <h6>Total RFQ value won</h6>
               </div>
               <div>
                 
@@ -69,10 +65,10 @@
             <div class="d-flex align-items-center">
               <div>
                 <div class="d-flex chart-no">
-                  <h4>3670</h4>
-                  <i class="fa fa-angle-up blue" aria-hidden="true"></i>
+                  <h4>10:1</h4>
+                  <i class="fa fa-angle-up success" aria-hidden="true"></i>
                 </div>
-                <h6>Tax Deduction</h6>
+                <h6>RFQ-win loss ratio</h6>
               </div>
               <div>
 
@@ -87,10 +83,10 @@
             <div class="d-flex align-items-center">
               <div>
                 <div class="d-flex chart-no">
-                  <h4>1562</h4>
-                  <i class="fa fa-angle-up blue" aria-hidden="true"></i>
+                  <h4>$3.6M : $10.4M</h4>
+                  <i class="fa fa-angle-up fail" aria-hidden="true"></i>
                 </div>
-                <h6>Revenue status</h6>
+                <h6>RFQ-Win ratio in $</h6>
               </div>
               <div>
                     
@@ -105,10 +101,10 @@
             <div class="d-flex align-items-center">
               <div>
                 <div class="d-flex chart-no">
-                  <h4>35%</h4>
-                  <i class="fa fa-angle-down red" aria-hidden="true"></i>
+                  <h4>32</h4>
+                  <i class="fa fa-angle-down fail" aria-hidden="true"></i>
                 </div>
-                <h6>Yearly Sales</h6>
+                <h6>RFQ's won so far</h6>
               </div>
               <div>
                     
@@ -118,12 +114,12 @@
         </div>
       </div>
     </div>
-    <div class="margin">
+    <div class="rfq-status">
       <div class="row">
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
-              <p><b> RFQ Activities List</b></p>
+              <p><b> RFQ Activity</b></p>
               <div id="chartdiv"></div>
             </div>
           </div>
@@ -131,7 +127,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
-              <p class="act-heading"><b> Recent Activities</b></p>
+              <p class="act-heading"><b>RFQ Activities List</b></p>
               <div>
                 <ul class="activities"> 
                   <li class="act-list">
@@ -176,12 +172,12 @@
           </div>
         </div>
       </div> 
-      <div class="margin">
+      <div class="rfq-status">
         <div class="row">
           <div class="col-md-6">
               <div class="card">
                   <div class="card-body">
-                    <p>RFQ Status</p>
+                    <p><b> RFQ Status</b></p>
                     <canvas
                       baseChart
                       [data]="pieChartData"
@@ -198,7 +194,7 @@
           <div class="col-md-6">
               <div class="card">
                 <div class="card-body">
-                  <p>RFQ Win/loss</p>
+                  <p><b>RFQ Win/loss</b></p>
                   <canvas
                     baseChart
                     [datasets]="barChartData"
