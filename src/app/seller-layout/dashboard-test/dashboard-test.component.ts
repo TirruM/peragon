@@ -16,6 +16,7 @@ am4core.useTheme(am4themes_animated);
   styleUrls: ["./dashboard-test.component.scss"]
 })
 export class DashboardTestComponent implements OnInit {
+
   // pi-chart
   public pieChartOptions: ChartOptions = {
     responsive: true
@@ -52,14 +53,30 @@ export class DashboardTestComponent implements OnInit {
     { data: [28, 48, 40, 19, 86, 27, 90], label: "Loss" }
   ];
 
+  types = [
+    { id : "Day" },
+    { id : "Last Week" },
+    { id : "Last Month" },
+    { id : "Last 90 Days" },
+    { id : "Custom" }
+  ];
+
+  custom : String;
+  showDatepicker : boolean;
+  showSelect: boolean;
   constructor() {
     monkeyPatchChartJsTooltip();
     monkeyPatchChartJsLegend();
   }
 
+  
+ // types : [];
+
   ngOnInit() {
     this.lineChart();
   }
+
+  
 
   public lineChart() {
     let chart = am4core.create("chartdiv", am4charts.XYChart);
@@ -169,5 +186,18 @@ export class DashboardTestComponent implements OnInit {
 
     // Add legend
     chart.legend = new am4charts.Legend();
+  }
+
+  
+
+  selectDate(value) {
+    console.log("selected value====",value);
+    if(value == "Custom") {
+      // this.showSelect = true;
+      this.showDatepicker = true;
+    }
+    else {
+      this.showDatepicker = false;
+    }
   }
 }
