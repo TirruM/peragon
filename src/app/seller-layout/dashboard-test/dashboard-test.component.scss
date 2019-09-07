@@ -47,6 +47,9 @@ section {
                         margin-left: 4px;
                     }
                     h4 {
+                        background-image: $gradient_bg_color;
+                        color:transparent;
+                        background-clip: text;
                         font-size: 15px;
                         font-weight: 700;
                     }
