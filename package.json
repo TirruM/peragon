@@ -28,7 +28,7 @@
     "@types/swiper": "^4.2.4",
     "angular-image-slider": "0.0.8",
     "angular2-useful-swiper": "^8.0.1-beta.1",
-    "bootstrap": "^4.1.0",
+    "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "core-js": "^2.5.4",
     "datatables.net": "^1.10.19",
